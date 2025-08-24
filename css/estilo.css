@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+}
+
+input#buscador {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    font-size: 1em;
+}
+
+ul#lista li {
+    margin: 5px 0;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #ccc; /* línea horizontal para separar */
+    margin: 10px 0;             /* espacio arriba y abajo */
+}
+
+pre .estribillo {
+    font-weight: bold;
+    color: rgb(0, 2, 142);
+}
+
+pre.original {
+    font-style: italic;
+    color: #000000;
+}
+
+pre .gr {
+    color: rgb(163, 0, 0);
+    text-decoration: underline;
+    text-decoration-style: double;
+}
+
+pre .ag {
+    color: rgb(106, 99, 0);
+    text-decoration: overline;
+}
+
