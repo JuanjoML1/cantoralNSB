@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Cantoral</title>
+  <link rel="stylesheet" href="css/estilo.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+<body>
+  <h1>Cantoral</h1>
+
+  <div class="toolbar">
+    <input type="text" id="buscador" placeholder="Buscar canción..." />
+    <select id="filter-section">
+      <option value="all">Todas las secciones</option>
+      <!-- Se rellenará con secciones únicas del JSON -->
+    </select>
+    <select id="filter-group">
+      <option value="all">Todos los grupos</option>
+      <!-- Se rellenará con grupos únicos del JSON -->
+    </select>
+    <select id="sort">
+      <option value="title-asc">Orden: Título (A–Z)</option>
+      <option value="number-asc">Orden: Número (asc)</option>
+      <option value="number-desc">Orden: Número (desc)</option>
+    </select>
+  </div>
+
+  <ul id="lista"></ul>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

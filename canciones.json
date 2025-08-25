@@ -1,0 +1,26 @@
+[
+  {
+    "title": "A Belén se va y se viene",
+    "file": "canciones/a_belen_se_va_y_se_viene.html",
+    "sections": ["entrada", "navidad"],
+    "group": "Adviento-Navidad",
+    "number": 101,
+    "keywords": ["villancico", "belén"]
+  },
+  {
+    "title": "A Dios den gracias los pueblos",
+    "file": "canciones/a_dios_den_gracias_los_pueblos.html",
+    "sections": ["misa", "comunion"],
+    "group": "Repertorio común",
+    "number": 202,
+    "keywords": ["salmo", "eucaristía"]
+  },
+  {
+    "title": "Ven Señor",
+    "file": "canciones/ven_senor.html",
+    "sections": ["adviento", "entrada"],
+    "group": "Adviento-Navidad",
+    "number": 55,
+    "keywords": ["maranatha"]
+  }
+]

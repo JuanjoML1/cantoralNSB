@@ -58,7 +58,7 @@ pre .estribillo {
     color: rgb(0, 2, 142);
 }
 
-pre .original {
+pre.original { /*¿Por qué aquí un espacio lo rompe?*/
     font-style: italic;
     color: #000000;
 }
@@ -72,4 +72,30 @@ pre .gr {
 pre .ag {
     color: rgb(106, 99, 0);
     text-decoration: overline;
+}
+
+
+
+
+/* Barra de controles */
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.toolbar input,
+.toolbar select {
+  padding: .5rem .7rem;
+  font-size: 1rem;
+}
+
+/* Pequeño ajuste responsive */
+@media (max-width: 600px) {
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
