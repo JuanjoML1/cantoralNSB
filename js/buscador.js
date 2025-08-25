@@ -1,4 +1,4 @@
-document.getElementById("buscador").addEventListener("keyup", function() {
+document.getElementById("buscador").addEventListener("keyup", function () {
     let filtro = this.value.toLowerCase();
     let items = document.querySelectorAll("#lista li");
     items.forEach(li => {

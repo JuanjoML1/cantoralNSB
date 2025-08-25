@@ -12,14 +12,45 @@ input#buscador {
     font-size: 1em;
 }
 
-ul#lista li {
-    margin: 5px 0;
+#lista {
+    list-style: none;
+    /* elimina los bullets */
+    padding: 0;
+    /* quita padding por defecto del <ul> */
+    margin: 0;
+    /* quita margen por defecto del <ul> */
+}
+
+#lista a {
+    display: block;
+    /* Hace que cada enlace ocupe toda la línea, clic fácil en móvil */
+    padding: 0.2em 1em;
+    /* Espacio interno: 0.2em arriba/abajo, 1em izquierda/derecha */
+    margin: 0.2em 0;
+    /* Separación entre enlaces: 0.2em arriba y abajo */
+    background-color: #f0f0f0;
+    /* Color de fondo gris claro */
+    text-decoration: none;
+    /* Quita el subrayado del enlace */
+    color: #000000;
+    /* Color del texto gris oscuro */
+    border-radius: 4px;
+    /* Esquinas ligeramente redondeadas */
+    transition: background 0.2s;
+    /* Transición suave de 0.2s al cambiar el fondo (hover) */
+}
+
+#lista a:hover {
+    background-color: #dce4f0;
+    /* Cambia el fondo al pasar el cursor */
 }
 
 hr {
     border: none;
-    border-top: 2px solid #ccc; /* línea horizontal para separar */
-    margin: 10px 0;             /* espacio arriba y abajo */
+    border-top: 2px solid #ccc;
+    /* línea horizontal para separar */
+    margin: 10px 0;
+    /* espacio arriba y abajo */
 }
 
 pre .estribillo {
@@ -27,7 +58,7 @@ pre .estribillo {
     color: rgb(0, 2, 142);
 }
 
-pre.original {
+pre.original { /*¿Por qué aquí un espacio lo rompe?*/
     font-style: italic;
     color: #000000;
 }
@@ -41,4 +72,30 @@ pre .gr {
 pre .ag {
     color: rgb(106, 99, 0);
     text-decoration: overline;
+}
+
+
+
+
+/* Barra de controles */
+.toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.toolbar input,
+.toolbar select {
+  padding: .5rem .7rem;
+  font-size: 1rem;
+}
+
+/* Pequeño ajuste responsive */
+@media (max-width: 600px) {
+  .toolbar {
+    flex-direction: column;
+    align-items: stretch;
+  }
 }
