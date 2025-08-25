@@ -1,494 +1,964 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<title>Cantoral</title>
-<link rel="stylesheet" href="css/estilo.css">
+  <meta charset="UTF-8">
+  <title>Cantoral</title>
+  <link rel="stylesheet" href="css/estilo.css">
 </head>
+
 <body>
-<h1>Cantoral</h1>
-<input type="text" id="buscador" placeholder="Buscar canción...">
-<ul id="lista">
-  <li><a href="canciones/a_belen_se_va_y_se_viene.html">A Belén se va y se viene</a></li>
-  <li><a href="canciones/a_dios_den_gracias_los_pueblos.html">A Dios den gracias los pueblos</a></li>
-  <li><a href="canciones/a_donde_me_quereis_llevar.html">A dónde me queréis llevar</a></li>
-  <li><a href="canciones/a_la_fiesta_del_señor.html">A la fiesta del Señor</a></li>
-  <li><a href="canciones/a_ti_acudo.html">A ti acudo</a></li>
-  <li><a href="canciones/a_ti_que_eres_el_signo.html">A ti que eres el signo</a></li>
-  <li><a href="canciones/abba,_padre.html">Abba, Padre</a></li>
-  <li><a href="canciones/abre_tu_tienda_al_señor.html">Abre tu tienda al Señor</a></li>
-  <li><a href="canciones/abro_mi_ser.html">Abro mi ser</a></li>
-  <li><a href="canciones/acerquemonos_todos_al_altar.html">Acerquémonos todos al altar</a></li>
-  <li><a href="canciones/adorando.html">Adorando</a></li>
-  <li><a href="canciones/adorare_tu_cuerpo_herido.html">Adoraré tu cuerpo herido</a></li>
-  <li><a href="canciones/agua,_lavame.html">Agua, lávame</a></li>
-  <li><a href="canciones/al_atardecer_de_la_vida.html">Al atardecer de la vida</a></li>
-  <li><a href="canciones/al_ver_jesus.html">Al ver Jesús</a></li>
-  <li><a href="canciones/alegre_la_mañana.html">Alegre la mañana</a></li>
-  <li><a href="canciones/alegremonos,_hermanos.html">Alegrémonos, hermanos</a></li>
-  <li><a href="canciones/alegria,_alegria,_alegria.html">Alegría, alegría, alegría</a></li>
-  <li><a href="canciones/alelu-aleluya.html">Alelu-aleluya</a></li>
-  <li><a href="canciones/aleluya_(junto_a_ti,_jesus).html">Aleluya (Junto a ti, Jesús)</a></li>
-  <li><a href="canciones/aleluya_(santiago).html">Aleluya (Santiago)</a></li>
-  <li><a href="canciones/aleluya_cantara.html">Aleluya cantará</a></li>
-  <li><a href="canciones/aleluya_de_adviento.html">Aleluya de Adviento</a></li>
-  <li><a href="canciones/aleluya_por_esa_gente.html">Aleluya por esa gente</a></li>
-  <li><a href="canciones/aleluya,_creo_en_ti,_señor.html">Aleluya, creo en Ti, Señor</a></li>
-  <li><a href="canciones/aleluya,_el_señor_es_nuestro_rey.html">Aleluya, el Señor es nuestro Rey</a></li>
-  <li><a href="canciones/aleluya,_es_la_fiesta_del_señor.html">Aleluya, es la fiesta del Señor</a></li>
-  <li><a href="canciones/aleluya,_ha_nacido_el_salvador.html">Aleluya, ha nacido el salvador</a></li>
-  <li><a href="canciones/algo_nuevo.html">Algo nuevo</a></li>
-  <li><a href="canciones/alimento_de_amor_(el_loco).html">Alimento de amor (El loco)</a></li>
-  <li><a href="canciones/alma_misionera.html">Alma misionera</a></li>
-  <li><a href="canciones/alrededor_de_tu_mesa.html">Alrededor de tu mesa</a></li>
-  <li><a href="canciones/alza_tu_mano_(comunidad).html">Alza tu mano (Comunidad)</a></li>
-  <li><a href="canciones/amando_hasta_el_extremo.html">Amando hasta el extremo</a></li>
-  <li><a href="canciones/amaos_(como_el_padre_me_amo).html">Amaos (Como el Padre me amó)</a></li>
-  <li><a href="canciones/amar_es_darse.html">Amar es darse</a></li>
-  <li><a href="canciones/andando_por_el_camino.html">Andando por el camino</a></li>
-  <li><a href="canciones/ante_ti,_señor.html">Ante Ti, Señor</a></li>
-  <li><a href="canciones/anunciaremos_tu_reino,_señor.html">Anunciaremos tu reino, Señor</a></li>
-  <li><a href="canciones/aqui_tienes_el_pan.html">Aquí tienes el Pan</a></li>
-  <li><a href="canciones/ave_maria.html">Ave María</a></li>
-  <li><a href="canciones/ay,_del_chiquirritin.html">Ay, del chiquirritín</a></li>
-  <li><a href="canciones/ayudame_a_caminar.html">Ayúdame a caminar</a></li>
-  <li><a href="canciones/bendigamos_al_señor.html">Bendigamos al Señor</a></li>
-  <li><a href="canciones/bienaventurados_seremos,_señor.html">Bienaventurados seremos, Señor</a></li>
-  <li><a href="canciones/bienaventuranzas_(33_el_musical).html">Bienaventuranzas (33 El Musical)</a></li>
-  <li><a href="canciones/bienaventuranzas_(kairoi).html">Bienaventuranzas (Kairoi)</a></li>
-  <li><a href="canciones/bienvenidos.html">Bienvenidos</a></li>
-  <li><a href="canciones/caminamos_hacia_el_sol.html">Caminamos hacia el Sol</a></li>
-  <li><a href="canciones/caminando_voy.html">Caminando voy</a></li>
-  <li><a href="canciones/caminare_hoy_en_tu_presencia.html">Caminaré hoy en tu presencia</a></li>
-  <li><a href="canciones/campana_sobre_campana.html">Campana sobre campana</a></li>
-  <li><a href="canciones/canta_aleluya.html">Canta aleluya</a></li>
-  <li><a href="canciones/cantad_a_dios.html">Cantad a Dios</a></li>
-  <li><a href="canciones/cantare_eternamente.html">Cantaré eternamente</a></li>
-  <li><a href="canciones/cantemos_al_amor_de_los_amores.html">Cantemos al amor de los amores</a></li>
-  <li><a href="canciones/cantemos_todos_la_navidad.html">Cantemos todos la Navidad</a></li>
-  <li><a href="canciones/cerca_de_ti,_señor.html">Cerca de Ti, Señor</a></li>
-  <li><a href="canciones/cerca_esta_el_señor.html">Cerca está el Señor</a></li>
-  <li><a href="canciones/comeremos_de_la_mesa.html">Comeremos de la mesa</a></li>
-  <li><a href="canciones/como_sal,_como_luz.html">Como sal, como luz</a></li>
-  <li><a href="canciones/compartir_junto_al_señor.html">Compartir junto al Señor</a></li>
-  <li><a href="canciones/con_vosotros_esta.html">Con vosotros está</a></li>
-  <li><a href="canciones/confieso.html">Confieso</a></li>
-  <li><a href="canciones/corazon_inquieto.html">Corazón inquieto</a></li>
-  <li><a href="canciones/cordero_de_dios_(algete).html">Cordero de Dios (Algete)</a></li>
-  <li><a href="canciones/cordero_de_dios_(aragües).html">Cordero de Dios (Aragüés)</a></li>
-  <li><a href="canciones/cordero_de_dios_(boliviano).html">Cordero de Dios (boliviano)</a></li>
-  <li><a href="canciones/cordero_de_dios_(manzano).html">Cordero de Dios (Manzano)</a></li>
-  <li><a href="canciones/cordero_de_dios_(maristas).html">Cordero de Dios (Maristas)</a></li>
-  <li><a href="canciones/cordero_de_dios_(mies).html">Cordero de Dios (MiEs)</a></li>
-  <li><a href="canciones/cristo_ha_resucitado.html">Cristo ha resucitado</a></li>
-  <li><a href="canciones/cristo_nos_da_la_libertad.html">Cristo nos da la libertad</a></li>
-  <li><a href="canciones/cristo_por_nosotros.html">Cristo por nosotros</a></li>
-  <li><a href="canciones/cuando_el_pobre_nada_tiene.html">Cuando el pobre nada tiene</a></li>
-  <li><a href="canciones/da_la_paz_al_mundo.html">Da la paz al mundo</a></li>
-  <li><a href="canciones/danos_un_corazon.html">Danos un corazón</a></li>
-  <li><a href="canciones/dime_como_ser_pan.html">Dime cómo ser pan</a></li>
-  <li><a href="canciones/dime,_niño.html">Dime, niño</a></li>
-  <li><a href="canciones/dios_es_amor.html">Dios es amor</a></li>
-  <li><a href="canciones/dios_es_fiel.html">Dios es fiel</a></li>
-  <li><a href="canciones/dios_esta_aqui.html">Dios está aquí</a></li>
-  <li><a href="canciones/dios_nos_convoca.html">Dios nos convoca</a></li>
-  <li><a href="canciones/dolorosa.html">Dolorosa</a></li>
-  <li><a href="canciones/donde_hay_caridad_y_amor.html">Donde hay caridad y amor</a></li>
-  <li><a href="canciones/dulce_muchacha_humilde_de_palestina.html">Dulce muchacha humilde de Palestina</a></li>
-  <li><a href="canciones/el_amor_es_nuestro_canto.html">El amor es nuestro canto</a></li>
-  <li><a href="canciones/el_caliz_que_bendecimos.html">El cáliz que bendecimos</a></li>
-  <li><a href="canciones/el_calor_de_tu_palabra.html">El calor de tu palabra</a></li>
-  <li><a href="canciones/el_camino_no_lo_haremos_solos.html">El camino no lo haremos solos</a></li>
-  <li><a href="canciones/el_espiritu_de_dios_(33_el_musical).html">El Espíritu de Dios (33 El Musical)</a></li>
-  <li><a href="canciones/el_niño_dios_ha_nacido_en_belen.html">El niño Dios ha nacido en Belén</a></li>
-  <li><a href="canciones/el_que_muere_por_mi.html">El que muere por mí</a></li>
-  <li><a href="canciones/el_señor_dios_nos_amo.html">El Señor Dios nos amó</a></li>
-  <li><a href="canciones/el_señor_es_mi_luz.html">El Señor es mi luz</a></li>
-  <li><a href="canciones/el_señor_es_mi_pastor.html">El Señor es mi pastor</a></li>
-  <li><a href="canciones/el_señor_es_mi_pastor,_nada_me_falta_(completo).html">El Señor es mi pastor, nada me falta (completo)</a></li>
-  <li><a href="canciones/el_señor_nos_ha_nacido_en_belen.html">El Señor nos ha nacido en Belén</a></li>
-  <li><a href="canciones/el_señor_nos_ha_reunido.html">El Señor nos ha reunido</a></li>
-  <li><a href="canciones/el_señor_os_dara_su_espiritu_santo.html">El Señor os dará su Espíritu Santo</a></li>
-  <li><a href="canciones/el_señor_resucito.html">El Señor resucitó</a></li>
-  <li><a href="canciones/el_tamborilero.html">El tamborilero</a></li>
-  <li><a href="canciones/el_vendra_y_te_salvara.html">Él vendrá y te salvará</a></li>
-  <li><a href="canciones/en_el_mar_he_oido_hoy.html">En el mar he oído hoy</a></li>
-  <li><a href="canciones/en_el_señor_estamos_congregados.html">En el Señor estamos congregados</a></li>
-  <li><a href="canciones/en_la_comida_que_cristo_nos_da.html">En la comida que Cristo nos da</a></li>
-  <li><a href="canciones/en_mi_debilidad.html">En mi debilidad</a></li>
-  <li><a href="canciones/en_mi_getsemani.html">En mi Getsemaní</a></li>
-  <li><a href="canciones/enciendeme.html">Enciéndeme</a></li>
-  <li><a href="canciones/enviame.html">Envíame</a></li>
-  <li><a href="canciones/eres_el_fuego,_el_amor.html">Eres el fuego, el amor</a></li>
-  <li><a href="canciones/eres_mi_riqueza.html">Eres mi riqueza</a></li>
-  <li><a href="canciones/es_de_locos.html">Es de locos</a></li>
-  <li><a href="canciones/escucha,_tu,_la_palabra_de_dios.html">Escucha, tú, la Palabra de Dios</a></li>
-  <li><a href="canciones/esta_es_tu_fiesta.html">Esta es tu fiesta</a></li>
-  <li><a href="canciones/este_es_el_dia_en_que_actuo_el_señor.html">Este es el día en que actuó el Señor</a></li>
-  <li><a href="canciones/esto_que_te_doy.html">Esto que te doy</a></li>
-  <li><a href="canciones/fuente_de_paz_y_fidelidad.html">Fuente de paz y fidelidad</a></li>
-  <li><a href="canciones/gloria_a_dios_(no_se_como_alabarte).html">Gloria a Dios (No sé cómo alabarte)</a></li>
-  <li><a href="canciones/gloria_a_dios_en_el_cielo.html">Gloria a Dios en el cielo</a></li>
-  <li><a href="canciones/gloria_a_dios,_gloria_al_padre.html">Gloria a Dios, gloria al Padre</a></li>
-  <li><a href="canciones/gloria_y_alabanza.html">Gloria y alabanza</a></li>
-  <li><a href="canciones/gloria,_gloria_a_dios.html">Gloria, gloria a Dios</a></li>
-  <li><a href="canciones/gloria,_gloria,_aleluya.html">Gloria, gloria, aleluya</a></li>
-  <li><a href="canciones/gracias,_señor.html">Gracias, Señor</a></li>
-  <li><a href="canciones/gritad_que_dios_es_grande.html">Gritad que Dios es grande</a></li>
-  <li><a href="canciones/hablame.html">Háblame</a></li>
-  <li><a href="canciones/hagase.html">Hágase</a></li>
-  <li><a href="canciones/hay_un_corazon_que_late.html">Hay un corazón que late</a></li>
-  <li><a href="canciones/he_venido_a_servir.html">He venido a servir</a></li>
-  <li><a href="canciones/himno_a_nuestra_señora_de_la_almudena.html">Himno a Nuestra Señora de la Almudena</a></li>
-  <li><a href="canciones/himno_a_san_jose.html">Himno a San José</a></li>
-  <li><a href="canciones/hosanna,_hosanna,_hosanna.html">Hosanna, hosanna, hosanna</a></li>
-  <li><a href="canciones/hoy_el_señor_resucito.html">Hoy el Señor resucitó</a></li>
-  <li><a href="canciones/hoy_en_la_tierra.html">Hoy en la tierra</a></li>
-  <li><a href="canciones/hoy_vuelvo_de_lejos.html">Hoy vuelvo de lejos</a></li>
-  <li><a href="canciones/hoy,_señor,_te_damos_gracias.html">Hoy, Señor, te damos gracias</a></li>
-  <li><a href="canciones/hoy,_señor,_te_dare.html">Hoy, Señor, te daré</a></li>
-  <li><a href="canciones/huracan.html">Huracán</a></li>
-  <li><a href="canciones/iglesia_soy.html">Iglesia soy</a></li>
-  <li><a href="canciones/iluminame,_señor.html">Ilumíname, Señor</a></li>
-  <li><a href="canciones/jesus_es_señor.html">Jesús es Señor</a></li>
-  <li><a href="canciones/jesus_esta_entre_nosotros.html">Jesús está entre nosotros</a></li>
-  <li><a href="canciones/jesus,_amigo.html">Jesús, amigo</a></li>
-  <li><a href="canciones/jesus,_nuestra_pascua.html">Jesús, nuestra Pascua</a></li>
-  <li><a href="canciones/jesus,_ven_tu.html">Jesús, ven tú</a></li>
-  <li><a href="canciones/junto_a_ti,_maria.html">Junto a ti, María</a></li>
-  <li><a href="canciones/junto_al_vino_y_al_pan.html">Junto al vino y el pan</a></li>
-  <li><a href="canciones/juntos_cantemos_hoy.html">Juntos cantemos hoy</a></li>
-  <li><a href="canciones/juntos_como_hermanos.html">Juntos como hermanos</a></li>
-  <li><a href="canciones/juntos_nos_acercamos.html">Juntos nos acercamos</a></li>
-  <li><a href="canciones/la_bondad_y_el_amor_del_señor.html">La bondad y el amor del Señor</a></li>
-  <li><a href="canciones/la_cena_del_señor.html">La cena del Señor</a></li>
-  <li><a href="canciones/la_paz_te_doy.html">La paz te doy</a></li>
-  <li><a href="canciones/la_virgen_sueña_caminos.html">La Virgen sueña caminos</a></li>
-  <li><a href="canciones/lampara_es_tu_palabra.html">Lámpara es tu palabra</a></li>
-  <li><a href="canciones/letanias.html">Letanías</a></li>
-  <li><a href="canciones/llevad_la_buena_noticia.html">Llevad la buena noticia</a></li>
-  <li><a href="canciones/lo_que_hemos_visto_y_oido.html">Lo que hemos visto y oído</a></li>
-  <li><a href="canciones/los_magos_vienen_de_oriente.html">Los magos vienen de Oriente</a></li>
-  <li><a href="canciones/madre_de_todos_los_hombres.html">Madre de todos los hombres</a></li>
-  <li><a href="canciones/maria_de_nazaret.html">María de Nazaret</a></li>
-  <li><a href="canciones/maria,_la_madre_buena.html">María, la madre buena</a></li>
-  <li><a href="canciones/maria,_madre_nuestra.html">María, madre nuestra</a></li>
-  <li><a href="canciones/maria,_maria.html">María, María</a></li>
-  <li><a href="canciones/maria,_mirame.html">María, mírame</a></li>
-  <li><a href="canciones/maria,_musica_de_dios.html">María, música de Dios</a></li>
-  <li><a href="canciones/me_levantare.html">Me levantaré</a></li>
-  <li><a href="canciones/mi_dios_esta_vivo.html">Mi Dios está vivo</a></li>
-  <li><a href="canciones/mirad_al_suelo.html">Mirad al suelo</a></li>
-  <li><a href="canciones/mirad,_jesus_resucita_hoy.html">Mirad, Jesús resucita hoy</a></li>
-  <li><a href="canciones/mueveme_mi_dios.html">Muéveme mi Dios</a></li>
-  <li><a href="canciones/mujer_fuerte.html">Mujer fuerte</a></li>
-  <li><a href="canciones/nace_el_niño_en_un_portal.html">Nace el niño en un portal</a></li>
-  <li><a href="canciones/nada_has_pensado.html">Nada has pensado</a></li>
-  <li><a href="canciones/nada_nos_separara.html">Nada nos separará</a></li>
-  <li><a href="canciones/nadie_te_ama_como_yo.html">Nadie te ama como Yo</a></li>
-  <li><a href="canciones/navidad,_es_navidad.html">Navidad, es Navidad</a></li>
-  <li><a href="canciones/navidad,_navidad.html">Navidad, Navidad</a></li>
-  <li><a href="canciones/necesitamos_comer_tu_pan.html">Necesitamos comer tu pan</a></li>
-  <li><a href="canciones/no_adoreis_a_nadie.html">No adoréis a nadie</a></li>
-  <li><a href="canciones/no_me_mueve.html">No me mueve</a></li>
-  <li><a href="canciones/no_podemos_caminar_(hambre_de_dios).html">No podemos caminar (Hambre de Dios)</a></li>
-  <li><a href="canciones/no_quiero_alejarme_de_ti.html">No quiero alejarme de ti</a></li>
-  <li><a href="canciones/no_se_canso_de_hacer_el_bien.html">No se cansó de hacer el bien</a></li>
-  <li><a href="canciones/no_temas.html">No temas</a></li>
-  <li><a href="canciones/noche_de_paz.html">Noche de paz</a></li>
-  <li><a href="canciones/nunca_suenan_las_campanas.html">Nunca suenan las campanas</a></li>
-  <li><a href="canciones/oh,_dios,_tu_eres_mi_dios_(sed_de_dios).html">Oh, Dios, tú eres mi Dios (Sed de Dios)</a></li>
-  <li><a href="canciones/oh,_mi_dios,_crea_en_mi.html">Oh, mi Dios, crea en mí</a></li>
-  <li><a href="canciones/oh,_señor,_mueve_mi_espiritu.html">Oh, Señor, mueve mi espíritu</a></li>
-  <li><a href="canciones/ojala_escuchemos_hoy_su_voz.html">Ojalá escuchemos hoy su voz</a></li>
-  <li><a href="canciones/oracion_del_pobre.html">Oración del pobre</a></li>
-  <li><a href="canciones/os_doy_un_mandato_nuevo.html">Os doy un mandato nuevo</a></li>
-  <li><a href="canciones/padre_nuestro_(erdozain).html">Padre nuestro (Erdozáin)</a></li>
-  <li><a href="canciones/padre_nuestro_(mexicano).html">Padre nuestro (mexicano)</a></li>
-  <li><a href="canciones/padre_nuestro_zaragozano.html">Padre nuestro zaragozano</a></li>
-  <li><a href="canciones/padre_nuestro,_padre_nuestro.html">Padre nuestro, padre nuestro</a></li>
-  <li><a href="canciones/padre_nuestro,_tu_que_estas.html">Padre nuestro, tú que estás</a></li>
-  <li><a href="canciones/padre,_unenos.html">Padre, únenos</a></li>
-  <li><a href="canciones/padre,_vuelvo_a_ti.html">Padre, vuelvo a ti</a></li>
-  <li><a href="canciones/para_el_que_sabe.html">Para el que sabe</a></li>
-  <li><a href="canciones/pastores,_venid.html">Pastores, venid</a></li>
-  <li><a href="canciones/paz_en_la_tierra.html">Paz en la tierra</a></li>
-  <li><a href="canciones/paz,_señor,_en_el_cielo_y_la_tierra.html">Paz, Señor, en el cielo y la tierra</a></li>
-  <li><a href="canciones/peregrino_(exodo_y_liberacion).html">Peregrino (Éxodo y liberación)</a></li>
-  <li><a href="canciones/peregrinos_de_la_paz_y_la_alegria.html">Peregrinos de la paz y la alegría</a></li>
-  <li><a href="canciones/pescador_de_hombres.html">Pescador de hombres</a></li>
-  <li><a href="canciones/pon_tu_mano.html">Pon tu mano</a></li>
-  <li><a href="canciones/por_la_paz_no_callare.html">Por la paz no callaré</a></li>
-  <li><a href="canciones/por_los_hombres.html">Por los hombres</a></li>
-  <li><a href="canciones/por_ti,_mi_dios.html">Por ti, mi Dios</a></li>
-  <li><a href="canciones/pregon_pascual.html">Pregón Pascual</a></li>
-  <li><a href="canciones/preparad_el_camino_al_señor.html">Preparad el camino al Señor</a></li>
-  <li><a href="canciones/principio_y_fundamento.html">Principio y fundamento</a></li>
-  <li><a href="canciones/protegeme,_dios_mio.html">Protégeme, Dios mío</a></li>
-  <li><a href="canciones/pueblo_mio.html">Pueblo mío</a></li>
-  <li><a href="canciones/purificame,_señor.html">Purifícame, Señor</a></li>
-  <li><a href="canciones/que_alegria_cuando_me_dijeron.html">Qué alegría cuando me dijeron</a></li>
-  <li><a href="canciones/que_sea_mi_vida_la_sal.html">Que sea mi vida la sal</a></li>
-  <li><a href="canciones/que_te_puedo_dar.html">Qué te puedo dar</a></li>
-  <li><a href="canciones/que_tendra_lo_pequeño.html">Qué tendrá lo pequeño</a></li>
-  <li><a href="canciones/que_tu_palabra_nos_cambie_el_corazon.html">Que tu palabra nos cambie el corazón</a></li>
-  <li><a href="canciones/que_ves_en_la_noche.html">Qué ves en la noche</a></li>
-  <li><a href="canciones/quedate_con_nosotros.html">Quédate con nosotros</a></li>
-  <li><a href="canciones/quien_nos_separara.html">Quién nos separará</a></li>
-  <li><a href="canciones/quiero_alabarte.html">Quiero alabarte</a></li>
-  <li><a href="canciones/quiero_caminar.html">Quiero caminar</a></li>
-  <li><a href="canciones/quiero_caminar_contigo,_maria.html">Quiero caminar contigo, María</a></li>
-  <li><a href="canciones/quiero_ser_pan.html">Quiero ser pan</a></li>
-  <li><a href="canciones/reina_del_cielo.html">Reina del Cielo</a></li>
-  <li><a href="canciones/resucito,_aleluya.html">Resucitó, aleluya</a></li>
-  <li><a href="canciones/reunidos_en_el_nombre_del_señor.html">Reunidos en el nombre del Señor</a></li>
-  <li><a href="canciones/salve,_madre.html">Salve, Madre</a></li>
-  <li><a href="canciones/salve,_regina.html">Salve, Regina</a></li>
-  <li><a href="canciones/santa_maria_del_camino.html">Santa María del Camino</a></li>
-  <li><a href="canciones/santo_(cielo_y_tierra_pasaran).html">Santo (Cielo y tierra pasarán)</a></li>
-  <li><a href="canciones/santo_(estan_llenos_de_tu_amor).html">Santo (Están llenos de tu amor)</a></li>
-  <li><a href="canciones/santo_(händel).html">Santo (Händel)</a></li>
-  <li><a href="canciones/santo_(hosanna_en_el_cielo_al_señor).html">Santo (Hosanna en el Cielo al Señor)</a></li>
-  <li><a href="canciones/santo_(liturgico).html">Santo (litúrgico)</a></li>
-  <li><a href="canciones/santo_(mocedades).html">Santo (Mocedades)</a></li>
-  <li><a href="canciones/santo_(olguin).html">Santo (Olguín)</a></li>
-  <li><a href="canciones/santo_(santo_domingo_de_silos).html">Santo (Santo Domingo de Silos)</a></li>
-  <li><a href="canciones/santo_(the_beatles).html">Santo (The Beatles)</a></li>
-  <li><a href="canciones/santo_eres,_señor,_dios_nuestro.html">Santo eres, Señor, Dios nuestro</a></li>
-  <li><a href="canciones/santo_es_el_señor.html">Santo es el Señor</a></li>
-  <li><a href="canciones/santo_salvadoreño.html">Santo salvadoreño</a></li>
-  <li><a href="canciones/santo_zaireño.html">Santo zaireño</a></li>
-  <li><a href="canciones/santo,_santo,_santo.html">Santo, Santo, Santo</a></li>
-  <li><a href="canciones/se_acerca_tu_navidad.html">Se acerca tu Navidad</a></li>
-  <li><a href="canciones/secuencia_de_pascua.html">Secuencia de Pascua</a></li>
-  <li><a href="canciones/señor,_ten_piedad.html">Señor, ten piedad</a></li>
-  <li><a href="canciones/señor,_ten_piedad_de_nosotros.html">Señor, ten piedad de nosotros</a></li>
-  <li><a href="canciones/shalom_haberim.html">Shalom haberim</a></li>
-  <li><a href="canciones/si_dios_a_su_mesa_nos_quiere_sentar.html">Si Dios a su mesa nos quiere sentar</a></li>
-  <li><a href="canciones/si_me_falta_el_amor.html">Si me falta el amor</a></li>
-  <li><a href="canciones/siempre_estuviste_aqui_(almudena).html">Siempre estuviste aquí (Almudena)</a></li>
-  <li><a href="canciones/sigue_habiendo.html">Sigue habiendo</a></li>
-  <li><a href="canciones/sois_la_sal.html">Sois la sal</a></li>
-  <li><a href="canciones/sois_la_semilla.html">Sois la semilla</a></li>
-  <li><a href="canciones/somos_un_pueblo_que_camina.html">Somos un pueblo que camina</a></li>
-  <li><a href="canciones/tan_cerca_de_mi.html">Tan cerca de mí</a></li>
-  <li><a href="canciones/tanto_amo_dios_al_mundo.html">Tanto amó Dios al mundo</a></li>
-  <li><a href="canciones/te_amo,_señor.html">Te amo, Señor</a></li>
-  <li><a href="canciones/te_damos_gracias,_señor.html">Te damos gracias, Señor</a></li>
-  <li><a href="canciones/te_ensalzare,_señor.html">Te ensalzaré, Señor</a></li>
-  <li><a href="canciones/te_ofrecemos.html">Te ofrecemos</a></li>
-  <li><a href="canciones/ten_piedad_de_mi,_señor.html">Ten piedad de mi, Señor</a></li>
-  <li><a href="canciones/tengo_que_gritar.html">Tengo que gritar</a></li>
-  <li><a href="canciones/todo_mi_ser_(alabo_tu_bondad).html">Todo mi ser (Alabo tu bondad)</a></li>
-  <li><a href="canciones/todos_unidos.html">Todos unidos</a></li>
-  <li><a href="canciones/tomad,_comed.html">Tomad, comed</a></li>
-  <li><a href="canciones/tomado_de_la_mano.html">Tomado de la mano</a></li>
-  <li><a href="canciones/traemos_a_tu_altar.html">Traemos a tu altar</a></li>
-  <li><a href="canciones/tu_eres_capaz.html">Tú eres capaz</a></li>
-  <li><a href="canciones/tu_eres_el_dios_que_nos_salva.html">Tú eres el Dios que nos salva</a></li>
-  <li><a href="canciones/tu_nos_dijiste_que_la_muerte.html">Tú nos dijiste que la muerte</a></li>
-  <li><a href="canciones/tu_palabra_me_da_vida.html">Tu Palabra me da vida</a></li>
-  <li><a href="canciones/tu_reino_es_vida.html">Tu Reino es vida</a></li>
-  <li><a href="canciones/un_dia_abri_los_ojos.html">Un día abrí los ojos</a></li>
-  <li><a href="canciones/un_niño_se_te_acerco.html">Un niño se te acercó</a></li>
-  <li><a href="canciones/un_nuevo_sitio_disponed.html">Un nuevo sitio disponed</a></li>
-  <li><a href="canciones/un_pueblo_que_camina_por_el_mundo.html">Un pueblo que camina por el mundo</a></li>
-  <li><a href="canciones/una_espiga_dorada.html">Una espiga dorada</a></li>
-  <li><a href="canciones/una_nueva_vida.html">Una nueva vida</a></li>
-  <li><a href="canciones/una_tarde_en_la_playa.html">Una tarde en la playa</a></li>
-  <li><a href="canciones/una_voz_clama_en_el_desierto.html">Una voz clama en el desierto</a></li>
-  <li><a href="canciones/unidos_a_todos_los_pueblos.html">Unidos a todos los pueblos</a></li>
-  <li><a href="canciones/unidos_en_la_fiesta.html">Unidos en la fiesta</a></li>
-  <li><a href="canciones/vamos_a_preparar.html">Vamos a preparar</a></li>
-  <li><a href="canciones/vamos_cantando_al_señor.html">Vamos cantando al Señor</a></li>
-  <li><a href="canciones/vamos_todos_al_banquete.html">Vamos todos al banquete</a></li>
-  <li><a href="canciones/vaso_nuevo.html">Vaso nuevo</a></li>
-  <li><a href="canciones/ven_a_celebrar.html">Ven a celebrar</a></li>
-  <li><a href="canciones/ven_a_la_fiesta.html">Ven a la fiesta</a></li>
-  <li><a href="canciones/ven_y_descansate.html">Ven y descánsate</a></li>
-  <li><a href="canciones/ven,_espiritu_de_dios_(esprit_createur).html">Ven, Espíritu de Dios (Esprit createur)</a></li>
-  <li><a href="canciones/ven,_espiritu_de_dios_(kairoi).html">Ven, Espíritu de Dios (Kairoi)</a></li>
-  <li><a href="canciones/ven,_espiritu_divino_(secuencia_de_pentecostes).html">Ven, Espíritu divino (Secuencia de Pentecostés)</a></li>
-  <li><a href="canciones/ven,_no_apartes_de_mi_los_ojos.html">Ven, no apartes de mí los ojos</a></li>
-  <li><a href="canciones/ven,_salvador.html">Ven, Salvador</a></li>
-  <li><a href="canciones/ven,_si_te_has_caido_levantate.html">Ven, si te has caído levántate</a></li>
-  <li><a href="canciones/venid,_fieles_todos_(adeste_fideles).html">Venid, fieles todos (Adeste fideles)</a></li>
-  <li><a href="canciones/venimos_a_escuchar_tu_voz.html">Venimos a escuchar tu voz</a></li>
-  <li><a href="canciones/victoria,_tu_reinaras.html">Victoria, tú reinarás</a></li>
-  <li><a href="canciones/vienen_con_alegria.html">Vienen con alegría</a></li>
-  <li><a href="canciones/vive_tu_amor_en_mi.html">Vive tu amor en mí</a></li>
-  <li><a href="canciones/vivid_la_navidad.html">Vivid la Navidad</a></li>
-  <li><a href="canciones/viviremos_firmes_en_la_fe.html">Viviremos firmes en la fe</a></li>
-  <li><a href="canciones/volar.html">Volar</a></li>
-  <li><a href="canciones/ya_vienen_los_reyes_magos.html">Ya vienen los Reyes Magos</a></li>
-  <li><a href="canciones/yendo_contigo.html">Yendo contigo</a></li>
-  <li><a href="canciones/yo_cantare_(magnificat).html">Yo cantaré (Magnificat)</a></li>
-  <li><a href="canciones/yo_celebrare.html">Yo celebraré</a></li>
-  <li><a href="canciones/yo_soy_el_pan_de_vida.html">Yo soy el Pan de Vida</a></li>
-  <li><a href="canciones/yo_soy_la_luz_del_mundo.html">Yo soy la luz del mundo</a></li>
-  <li><a href="canciones/yo_soy_la_vida_y_la_verdad.html">Yo soy la Vida y la Verdad</a></li>
-  <li></li>
-  <li><a href="canciones/zu_wem_sollen_wir_gehen.html">A quién iremos, Señor (Taizé)</a></li>
-  <li><a href="canciones/jubilate_deo.html">Al Señor alabe (Taizé)</a></li>
-  <li><a href="canciones/wysławiajcie_pana.html">Alabado sea el Señor (Taizé)</a></li>
-  <li><a href="canciones/jubelt_und_freut_euch.html">Alégrate y goza en el Señor (Taizé)</a></li>
-  <li><a href="canciones/in_resurrectione_tua.html">Alégrense el Cielo y la Tierra (Taizé)</a></li>
-  <li><a href="canciones/alleluia_11.html">Aleluya 11 (Taizé)</a></li>
-  <li><a href="canciones/alleluia_17.html">Aleluya 17 (Taizé)</a></li>
-  <li><a href="canciones/alleluia_22.html">Aleluya 22 (Taizé)</a></li>
-  <li><a href="canciones/alleluia_7.html">Aleluya 7 (Taizé)</a></li>
-  <li><a href="canciones/alleluia_94.html">Aleluya 94 (Taizé)</a></li>
-  <li><a href="canciones/alleluia_96.html">Aleluya 96 (Taizé)</a></li>
-  <li><a href="canciones/alleluia_97.html">Aleluya 97 (Taizé)</a></li>
-  <li><a href="canciones/benissez_le_seigneur.html">Bendecid al Señor (Taizé)</a></li>
-  <li><a href="canciones/benedictus_qui_venit_(canon).html">Bendito el que viene (canon) (Taizé)</a></li>
-  <li><a href="canciones/cantarei_ao_senhor.html">Cantaré al Señor (Taizé)</a></li>
-  <li><a href="canciones/eat_this_bread.html">Come este pan (Taizé)</a></li>
-  <li><a href="canciones/dominus_spiritus_est.html">Cristo es Espíritu y Dios (Taizé)</a></li>
-  <li><a href="canciones/surrexit_christus.html">Cristo está vivo (Taizé)</a></li>
-  <li><a href="canciones/surrexit_dominus_vere_(canon).html">Cristo ha resucitado (canon) (Taizé)</a></li>
-  <li><a href="canciones/jesus_le_christ.html">Cristo Jesús (Taizé)</a></li>
-  <li><a href="canciones/dona_nobis_pacem.html">Danos la paz del corazón (Taizé)</a></li>
-  <li><a href="canciones/dona_la_pace.html">Danos la paz, oh, Señor (Taizé)</a></li>
-  <li><a href="canciones/da_pacem..._in_diebus.html">Danos la paz, Señor (Taizé)</a></li>
-  <li><a href="canciones/da_pacem_cordium_(canon).html">Danos, Señor, la paz (canon) (Taizé)</a></li>
-  <li><a href="canciones/de_noche.html">De noche (Taizé)</a></li>
-  <li><a href="canciones/nunc_dimittis.html">Deja ahora (Taizé)</a></li>
-  <li><a href="canciones/despierta_tu_que_duermes.html">Despierta tú que duermes (Taizé)</a></li>
-  <li><a href="canciones/beati_voi_poveri.html">Dichosos los pobres (Taizé)</a></li>
-  <li><a href="canciones/christe_salvator.html">Dios de la vida (Taizé)</a></li>
-  <li><a href="canciones/bog_jest_miłością.html">Dios es ternura (Taizé)</a></li>
-  <li><a href="canciones/bogoroditse_dievo_1.html">Dios te salve (Taizé)</a></li>
-  <li><a href="canciones/herre,_visa_mig_vägen.html">Dios, muéstrame tu senda (Taizé)</a></li>
-  <li><a href="canciones/dieu_ne_peut_que_donner.html">Dios, que nos ama (Taizé)</a></li>
-  <li><a href="canciones/ubi_caritas.html">Donde hay amor (Taizé)</a></li>
-  <li><a href="canciones/el_alma_que_anda_en_amor.html">El alma que anda en amor (Taizé)</a></li>
-  <li><a href="canciones/the_kingdom_of_god.html">El Reino de Dios (Taizé)</a></li>
-  <li><a href="canciones/el_senyor.html">El Señor es mi fortaleza (Taizé)</a></li>
-  <li><a href="canciones/il_signore_ti_ristora.html">El Señor es quien restaura (Taizé)</a></li>
-  <li><a href="canciones/voici_dieu_qui_vient_à_mon_secours.html">El Señor, que viene en mi ayuda (Taizé)</a></li>
-  <li><a href="canciones/dans_nos_obscurites.html">En nuestra oscuridad (Taizé)</a></li>
-  <li><a href="canciones/spiritus_jesu_christi.html">Espíritu de Dios vivo (Taizé)</a></li>
-  <li><a href="canciones/psallite_deo.html">Este es el día del Señor (Taizé)</a></li>
-  <li><a href="canciones/heureux_qui_s’abandonne_à_toi.html">Feliz quien se abandona (Taizé)</a></li>
-  <li><a href="canciones/jesus,_remember_me.html">Jesús, acuérdate de mí (Taizé)</a></li>
-  <li><a href="canciones/jesus,_ma_joie.html">Jesús, mi vida (Taizé)</a></li>
-  <li><a href="canciones/jubilate_coeli_(canon).html">Júbilo en el cielo (canon) (Taizé)</a></li>
-  <li><a href="canciones/l’ajuda_em_vindrà.html">La ayuda vendrá (Taizé)</a></li>
-  <li><a href="canciones/misericordias_domini.html">La misericordia del Señor (Taizé)</a></li>
-  <li><a href="canciones/ad_te_jesu_christe.html">Levanto mi alma (Taizé)</a></li>
-  <li><a href="canciones/confitemini_domino.html">Llénanos, Señor, de tu paz (Taizé)</a></li>
-  <li><a href="canciones/magnificat_(canon).html">Magnificat (canon) (Taizé)</a></li>
-  <li><a href="canciones/aber_du_weisst_den_weg_für_mich.html">Mas tú sabes que senda es para mí (Taizé)</a></li>
-  <li><a href="canciones/iedere_nacht_verlang_ik.html">Mi corazón te anhela (Taizé)</a></li>
-  <li><a href="canciones/nada_te_turbe.html">Nada te turbe (Taizé)</a></li>
-  <li><a href="canciones/esprit_consolateur.html">Oh, Dios consolador (Taizé)</a></li>
-  <li><a href="canciones/deus,_deus_meus_(canon).html">Oh, Dios, tú, Dios mío (canon) (Taizé)</a></li>
-  <li><a href="canciones/in_manus_tuas.html">Oh, Padre, entre tus manos (Taizé)</a></li>
-  <li><a href="canciones/para_mim,_ser_feliz.html">Para mí ser feliz (Taizé)</a></li>
-  <li><a href="canciones/bleibet_hier.html">Permaneced conmigo (Taizé)</a></li>
-  <li><a href="canciones/per_crucem.html">Por tu Cruz (Taizé)</a></li>
-  <li><a href="canciones/behüte_mich_gott.html">Protégeme, Dios (Taizé)</a></li>
-  <li><a href="canciones/laudate_dominum.html">Que alabe al Señor (Taizé)</a></li>
-  <li><a href="canciones/bonum_est_confidere.html">Qué bueno es confiar en ti (Taizé)</a></li>
-  <li><a href="canciones/laudate_omnes_gentes.html">Que todo el mundo alabe (Taizé)</a></li>
-  <li><a href="canciones/let_all_who_are_thirsty_come.html">Que venga a ti (Taizé)</a></li>
-  <li><a href="canciones/staňte_se_soli.html">Sé sal que sala (Taizé)</a></li>
-  <li><a href="canciones/señor,_que_florezca_tu_justicia.html">Señor, que florezca tu justicia (Taizé)</a></li>
-  <li><a href="canciones/adoramus_te_o_christe.html">Te adoramos (Taizé)</a></li>
-  <li><a href="canciones/kyrie_1.html">Ten piedad, Señor 1 (Taizé)</a></li>
-  <li><a href="canciones/kyrie_20.html">Ten piedad, Señor 20 (Taizé)</a></li>
-  <li><a href="canciones/kyrie_6.html">Ten piedad, Señor 6 (Taizé)</a></li>
-  <li><a href="canciones/kyrie_8.html">Ten piedad, Señor 8 (Taizé)</a></li>
-  <li><a href="canciones/bless_the_lord.html">Tengo sed de ti (Taizé)</a></li>
-  <li><a href="canciones/tu_sei_sorgente_viva.html">Tú eres fuente viva (Taizé)</a></li>
-  <li><a href="canciones/sanasi_on_lamppu.html">Tu palabra alumbra (Taizé)</a></li>
-  <li><a href="canciones/tu_palabra,_señor.html">Tu palabra, Señor (Taizé)</a></li>
-  <li><a href="canciones/crucem_tuam.html">Tu santa cruz (Taizé)</a></li>
-  <li><a href="canciones/christe,_lux_mundi.html">Tú, luz del mundo (Taizé)</a></li>
-  <li><a href="canciones/cantate_domino_canticum_novum.html">Un canto nuevo (Taizé)</a></li>
-  <li><a href="canciones/vieni_spirito_creatore_(canon).html">Ven, Espíritu (canon) (Taizé)</a></li>
-  <li><a href="canciones/tui_amoris.html">Ven, Espíritu de Dios (Taizé)</a></li>
-  <li><a href="canciones/i_am_sure_i_shall_see.html">Yo ya sé qué veré (Taizé)</a></li>
-  <li></li>
-  <li><a href="canciones/aber_du_weisst_den_weg_für_mich.html">Aber du weisst den Weg für mich</a></li>
-  <li><a href="canciones/ad_te_jesu_christe.html">Ad te Jesu Christe</a></li>
-  <li><a href="canciones/adoramus_te_o_christe.html">Adoramus te O Christe</a></li>
-  <li><a href="canciones/alleluia_11.html">Alleluia 11</a></li>
-  <li><a href="canciones/alleluia_17.html">Alleluia 17</a></li>
-  <li><a href="canciones/alleluia_22.html">Alleluia 22</a></li>
-  <li><a href="canciones/alleluia_7.html">Alleluia 7</a></li>
-  <li><a href="canciones/alleluia_94.html">Alleluia 94</a></li>
-  <li><a href="canciones/alleluia_96.html">Alleluia 96</a></li>
-  <li><a href="canciones/alleluia_97.html">Alleluia 97</a></li>
-  <li><a href="canciones/beati_voi_poveri.html">Beati voi poveri</a></li>
-  <li><a href="canciones/behüte_mich_gott.html">Behüte mich Gott</a></li>
-  <li><a href="canciones/benedictus_qui_venit_(canon).html">Benedictus qui venit (canon)</a></li>
-  <li><a href="canciones/benissez_le_seigneur.html">Bénissez le Seigneur</a></li>
-  <li><a href="canciones/bleibet_hier.html">Bleibet hier</a></li>
-  <li><a href="canciones/bless_the_lord.html">Bless the Lord</a></li>
-  <li><a href="canciones/bog_jest_miłością.html">Bóg jest miłością</a></li>
-  <li><a href="canciones/bogoroditse_dievo_1.html">Bogoroditse Dievo 1</a></li>
-  <li><a href="canciones/bonum_est_confidere.html">Bonum est confidere</a></li>
-  <li><a href="canciones/cantarei_ao_senhor.html">Cantarei ao Senhor</a></li>
-  <li><a href="canciones/cantate_domino_canticum_novum.html">Cantate Domino canticum novum</a></li>
-  <li><a href="canciones/christe_salvator.html">Christe Salvator</a></li>
-  <li><a href="canciones/christe,_lux_mundi.html">Christe, lux mundi</a></li>
-  <li><a href="canciones/confitemini_domino.html">Confitemini Domino</a></li>
-  <li><a href="canciones/crucem_tuam.html">Crucem tuam</a></li>
-  <li><a href="canciones/da_pacem_cordium_(canon).html">Da pacem cordium (canon)</a></li>
-  <li><a href="canciones/da_pacem..._in_diebus.html">Da pacem... in diebus</a></li>
-  <li><a href="canciones/dans_nos_obscurites.html">Dans nos obscurités</a></li>
-  <li><a href="canciones/deus,_deus_meus_(canon).html">Deus, Deus meus (canon)</a></li>
-  <li><a href="canciones/dieu_ne_peut_que_donner.html">Dieu ne peut que donner</a></li>
-  <li><a href="canciones/dominus_spiritus_est.html">Dominus spiritus est</a></li>
-  <li><a href="canciones/dona_la_pace.html">Dona la pace</a></li>
-  <li><a href="canciones/dona_nobis_pacem.html">Dona nobis pacem</a></li>
-  <li><a href="canciones/eat_this_bread.html">Eat this bread</a></li>
-  <li><a href="canciones/el_senyor.html">El Senyor</a></li>
-  <li><a href="canciones/esprit_consolateur.html">Esprit consolateur</a></li>
-  <li><a href="canciones/herre,_visa_mig_vägen.html">Herre, visa mig vägen</a></li>
-  <li><a href="canciones/heureux_qui_s’abandonne_à_toi.html">Heureux qui s’abandonne à toi</a></li>
-  <li><a href="canciones/i_am_sure_i_shall_see.html">I am sure I shall see</a></li>
-  <li><a href="canciones/iedere_nacht_verlang_ik.html">Iedere nacht verlang ik</a></li>
-  <li><a href="canciones/il_signore_ti_ristora.html">Il Signore ti ristora</a></li>
-  <li><a href="canciones/in_manus_tuas.html">In manus tuas</a></li>
-  <li><a href="canciones/in_resurrectione_tua.html">In resurrectione tua</a></li>
-  <li><a href="canciones/eat_this_bread.html">Jesus Christ, bread of life</a></li>
-  <li><a href="canciones/jesus_le_christ.html">Jésus le Christ</a></li>
-  <li><a href="canciones/jesus,_ma_joie.html">Jésus, ma joie</a></li>
-  <li><a href="canciones/jesus,_remember_me.html">Jesus, remember me</a></li>
-  <li><a href="canciones/jubelt_und_freut_euch.html">Jubelt und freut euch</a></li>
-  <li><a href="canciones/jubilate_coeli_(canon).html">Jubilate coeli (canon)</a></li>
-  <li><a href="canciones/jubilate_deo.html">Jubilate Deo</a></li>
-  <li><a href="canciones/kyrie_1.html">Kyrie 1</a></li>
-  <li><a href="canciones/kyrie_20.html">Kyrie 20</a></li>
-  <li><a href="canciones/kyrie_6.html">Kyrie 6</a></li>
-  <li><a href="canciones/kyrie_8.html">Kyrie 8</a></li>
-  <li><a href="canciones/l’ajuda_em_vindrà.html">L’ajuda em vindrà</a></li>
-  <li><a href="canciones/laudate_dominum.html">Laudate Dominum</a></li>
-  <li><a href="canciones/laudate_omnes_gentes.html">Laudate omnes gentes</a></li>
-  <li><a href="canciones/let_all_who_are_thirsty_come.html">Let all who are thirsty come</a></li>
-  <li><a href="canciones/magnificat_(canon).html">Magnificat (canon)</a></li>
-  <li><a href="canciones/misericordias_domini.html">Misericordias Domini</a></li>
-  <li><a href="canciones/nunc_dimittis.html">Nunc dimittis</a></li>
-  <li><a href="canciones/para_mim,_ser_feliz.html">Para mim, ser feliz</a></li>
-  <li><a href="canciones/per_crucem.html">Per crucem</a></li>
-  <li><a href="canciones/psallite_deo.html">Psallite Deo</a></li>
-  <li><a href="canciones/sanasi_on_lamppu.html">Sanasi on lamppu</a></li>
-  <li><a href="canciones/spiritus_jesu_christi.html">Spiritus Jesu Christi</a></li>
-  <li><a href="canciones/staňte_se_soli.html">Staňte se solí</a></li>
-  <li><a href="canciones/surrexit_christus.html">Surrexit Christus</a></li>
-  <li><a href="canciones/surrexit_dominus_vere_(canon).html">Surrexit Dominus vere (canon)</a></li>
-  <li><a href="canciones/the_kingdom_of_god.html">The kingdom of God</a></li>
-  <li><a href="canciones/tu_sei_sorgente_viva.html">Tu sei sorgente viva</a></li>
-  <li><a href="canciones/tui_amoris.html">Tui amoris</a></li>
-  <li><a href="canciones/ubi_caritas.html">Ubi caritas</a></li>
-  <li><a href="canciones/vieni_spirito_creatore_(canon).html">Vieni Spirito creatore (canon)</a></li>
-  <li><a href="canciones/voici_dieu_qui_vient_à_mon_secours.html">Voici Dieu qui vient à mon secours</a></li>
-  <li><a href="canciones/wysławiajcie_pana.html">Wysławiajcie Pana</a></li>
-  <li><a href="canciones/zu_wem_sollen_wir_gehen.html">Zu wem sollen wir gehen</a></li>
-</ul>
-<script src="js/buscador.js"></script>
+  <h1>Cantoral</h1>
+
+  <div id="buscador-container">
+    <select id="filtro">
+      <option value="titulo" selected>Título</option>
+      <option value="autor">Autor</option>
+      <option value="momento">Momento</option>
+      <option value="todos">Todos</option>
+    </select>
+    <input type="text" id="buscador" placeholder="Buscar canción...">
+  </div>
+
+  <ul id="lista">
+    <li data-author="Miguel Manzano" data-momento="Navidad" data-bib="-"><a
+        href="canciones/a_belen_se_va_y_se_viene.html">A Belén se va y se viene</a></li>
+    <li data-author="Juan Antonio Espinosa" data-momento="Antífonas" data-bib="-"><a
+        href="canciones/a_dios_den_gracias_los_pueblos.html">A Dios den gracias los pueblos</a></li>
+    <li data-author="TSNC" data-momento="Antífonas" data-bib="San Ignacio de Loyola"><a
+        href="canciones/a_donde_me_quereis_llevar.html">A dónde me queréis llevar</a></li>
+    <li data-author="Juanjo Elezkano" data-momento="Entrada" data-bib="-"><a
+        href="canciones/a_la_fiesta_del_señor.html">A la fiesta del Señor</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Juan 6, 68"><a
+        href="canciones/zu_wem_sollen_wir_gehen.html">A quién iremos, Señor</a></li>
+    <li data-author="Pedro Núñez" data-momento="Antífonas" data-bib="-"><a href="canciones/a_ti_acudo.html">A ti
+        acudo</a></li>
+    <li data-author="Ramón Capilla" data-momento="María" data-bib="-"><a href="canciones/a_ti_que_eres_el_signo.html">A
+        ti que eres el signo</a></li>
+    <li data-author="Alejandro Ruiz" data-momento="Entrada" data-bib="Gálatas 4,6"><a
+        href="canciones/abba,_padre.html">Abba, Padre</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a
+        href="canciones/aber_du_weisst_den_weg_für_mich.html">Aber du weisst den Weg für mich</a></li>
+    <li data-author="Carmelo Erdozáin" data-momento="Entrada" data-bib="-"><a
+        href="canciones/abre_tu_tienda_al_señor.html">Abre tu tienda al Señor</a></li>
+    <li data-author="Pelayo Sánchez" data-momento="Comunión" data-bib="-"><a href="canciones/abro_mi_ser.html">Abro mi
+        ser</a></li>
+    <li data-author="Francisco Palazón" data-momento="Entrada" data-bib="-"><a
+        href="canciones/acerquemonos_todos_al_altar.html">Acerquémonos todos al altar</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/ad_te_jesu_christe.html">Ad te Jesu
+        Christe</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/adoramus_te_o_christe.html">Adoramus
+        te O Christe</a></li>
+    <li data-author="Parroquia San Juan de Ávila" data-momento="Comunión" data-bib="-"><a
+        href="canciones/adorando.html">Adorando</a></li>
+    <li data-author="Josep Asunción" data-momento="Comunión" data-bib="-"><a
+        href="canciones/adorare_tu_cuerpo_herido.html">Adoraré tu cuerpo herido</a></li>
+    <li data-author="Brotes de Olivo" data-momento="Perdón - Agua" data-bib="-"><a
+        href="canciones/agua,_lavame.html">Agua, lávame</a></li>
+    <li data-author="Francisco Palazón" data-momento="Comunión" data-bib="San Juan de la Cruz"><a
+        href="canciones/al_atardecer_de_la_vida.html">Al atardecer de la vida</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Salmo 66, 1"><a href="canciones/jubilate_deo.html">Al
+        Señor alabe</a></li>
+    <li data-author="Joaquín Madurga" data-momento="Comunión" data-bib="Juan 6, 60-68"><a
+        href="canciones/al_ver_jesus.html">Al ver Jesús</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/wysławiajcie_pana.html">Alabado sea
+        el Señor</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Joel 2, 21-23"><a
+        href="canciones/jubelt_und_freut_euch.html">Alégrate y goza en el Señor</a></li>
+    <li data-author="Juan Antonio Espinosa" data-momento="Entrada" data-bib="-"><a
+        href="canciones/alegre_la_mañana.html">Alegre la mañana</a></li>
+    <li data-author="J. Pedro Martins" data-momento="Entrada" data-bib="-"><a
+        href="canciones/alegremonos,_hermanos.html">Alegrémonos, hermanos</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/in_resurrectione_tua.html">Alégrense
+        el Cielo y la Tierra</a></li>
+    <li data-author="-" data-momento="Navidad" data-bib="-"><a href="canciones/alegria,_alegria,_alegria.html">Alegría,
+        alegría, alegría</a></li>
+    <li data-author="Taizé" data-momento="Aleluya" data-bib="-"><a href="canciones/alelu-aleluya.html">Alelu-aleluya</a>
+    </li>
+    <li data-author="" data-momento="Aleluya" data-bib=""><a href="canciones/aleluya_cohen.html">Aleluya (Cohen)</a>
+    </li>
+    <li data-author="Kairoi" data-momento="Aleluya" data-bib="-"><a
+        href="canciones/aleluya_(junto_a_ti,_jesus).html">Aleluya (Junto a ti, Jesús)</a></li>
+    <li data-author="Nico Montero" data-momento="Aleluya" data-bib="-"><a
+        href="canciones/aleluya_(santiago).html">Aleluya (Santiago)</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/alleluia_11.html">Aleluya 11</a>
+    </li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/alleluia_17.html">Aleluya 17</a>
+    </li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/alleluia_22.html">Aleluya 22</a>
+    </li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/alleluia_7.html">Aleluya 7</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/alleluia_94.html">Aleluya 94</a>
+    </li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/alleluia_96.html">Aleluya 96</a>
+    </li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/alleluia_97.html">Aleluya 97</a>
+    </li>
+    <li data-author="Brotes de Olivo" data-momento="Aleluya" data-bib="-"><a
+        href="canciones/aleluya_cantara.html">Aleluya cantará</a></li>
+    <li data-author="-" data-momento="Aleluya" data-bib="-"><a href="canciones/aleluya_de_adviento.html">Aleluya de
+        Adviento</a></li>
+    <li data-author="Jaime Espino" data-momento="Aleluya" data-bib="-"><a
+        href="canciones/aleluya_por_esa_gente.html">Aleluya por esa gente</a></li>
+    <li data-author="Cesáreo Gabarain" data-momento="Aleluya" data-bib="-"><a
+        href="canciones/aleluya,_creo_en_ti,_señor.html">Aleluya, creo en Ti, Señor</a></li>
+    <li data-author="Miguel Manzano" data-momento="Aleluya" data-bib="Salmo 96"><a
+        href="canciones/aleluya,_el_señor_es_nuestro_rey.html">Aleluya, el Señor es nuestro Rey</a></li>
+    <li data-author="Carmelo Erdozáin" data-momento="Aleluya" data-bib="-"><a
+        href="canciones/aleluya,_es_la_fiesta_del_señor.html">Aleluya, es la fiesta del Señor</a></li>
+    <li data-author="Joaquín Madurga" data-momento="Aleluya" data-bib="-"><a
+        href="canciones/aleluya,_ha_nacido_el_salvador.html">Aleluya, ha nacido el salvador</a></li>
+    <li data-author="TSNC" data-momento="Antífonas" data-bib="Isaías 43, 19"><a href="canciones/algo_nuevo.html">Algo
+        nuevo</a></li>
+    <li data-author="Grupo Gente Nueva" data-momento="Ofertorio" data-bib="-"><a
+        href="canciones/alimento_de_amor_(el_loco).html">Alimento de amor (El loco)</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/alleluia_11.html">Alleluia 11</a>
+    </li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/alleluia_17.html">Alleluia 17</a>
+    </li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/alleluia_22.html">Alleluia 22</a>
+    </li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/alleluia_7.html">Alleluia 7</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/alleluia_94.html">Alleluia 94</a>
+    </li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/alleluia_96.html">Alleluia 96</a>
+    </li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/alleluia_97.html">Alleluia 97</a>
+    </li>
+    <li data-author="Enrique García Vélez" data-momento="Comunión" data-bib="-"><a
+        href="canciones/alma_misionera.html">Alma misionera</a></li>
+    <li data-author="Francisco Palazón" data-momento="Entrada" data-bib="-"><a
+        href="canciones/alrededor_de_tu_mesa.html">Alrededor de tu mesa</a></li>
+    <li data-author="Comunidad San Pedro" data-momento="Comunión" data-bib="-"><a
+        href="canciones/alza_tu_mano_(comunidad).html">Alza tu mano (Comunidad)</a></li>
+    <li data-author="Maite López" data-momento="Comunión" data-bib="Juan 13, 1-9"><a
+        href="canciones/amando_hasta_el_extremo.html">Amando hasta el extremo</a></li>
+    <li data-author="Kairoi" data-momento="Comunión" data-bib="Juan 15, 9-11"><a
+        href="canciones/amaos_(como_el_padre_me_amo).html">Amaos (Como el Padre me amó)</a></li>
+    <li data-author="Emilio Vicente Mateu" data-momento="Comunión" data-bib="-"><a
+        href="canciones/amar_es_darse.html">Amar es darse</a></li>
+    <li data-author="Joaquín Madurga" data-momento="Ofertorio" data-bib="Lucas 24, 13-35"><a
+        href="canciones/andando_por_el_camino.html">Andando por el camino</a></li>
+    <li data-author="Carmelo Erdozáin" data-momento="Ofertorio" data-bib="-"><a
+        href="canciones/ante_ti,_señor.html">Ante Ti, Señor</a></li>
+    <li data-author="Cristóbal Halffter" data-momento="Despedida" data-bib="Romanos 14, 17"><a
+        href="canciones/anunciaremos_tu_reino,_señor.html">Anunciaremos tu reino, Señor</a></li>
+    <li data-author="Padre Ernesto" data-momento="Ofertorio" data-bib="-"><a
+        href="canciones/aqui_tienes_el_pan.html">Aquí tienes el Pan</a></li>
+    <li data-author="Toño Casado" data-momento="María" data-bib="-"><a href="canciones/ave_maria.html">Ave María</a>
+    </li>
+    <li data-author="-" data-momento="Navidad" data-bib="-"><a href="canciones/ay,_del_chiquirritin.html">Ay, del
+        chiquirritín</a></li>
+    <li data-author="José Vives" data-momento="Antífonas" data-bib="Mateo 14, 22-33"><a
+        href="canciones/ayudame_a_caminar.html">Ayúdame a caminar</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/beati_voi_poveri.html">Beati voi
+        poveri</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/behüte_mich_gott.html">Behüte mich
+        Gott</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Daniel 3, 57-90"><a
+        href="canciones/benissez_le_seigneur.html">Bendecid al Señor</a></li>
+    <li data-author="Pelayo Sánchez" data-momento="Espíritu" data-bib="Lucas 4, 18"><a
+        href="canciones/bendigamos_al_señor.html">Bendigamos al Señor</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Marcos 11, 9"><a
+        href="canciones/benedictus_qui_venit_(canon).html">Bendito el que viene (canon)</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a
+        href="canciones/benedictus_qui_venit_(canon).html">Benedictus qui venit (canon)</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/benissez_le_seigneur.html">Bénissez
+        le Seigneur</a></li>
+    <li data-author="Emilio Vicente Mateu" data-momento="Comunión" data-bib="Mateo 5, 3-12"><a
+        href="canciones/bienaventurados_seremos,_señor.html">Bienaventurados seremos, Señor</a></li>
+    <li data-author="Toño Casado" data-momento="Comunión" data-bib="Mateo 5, 3-12"><a
+        href="canciones/bienaventuranzas_(33_el_musical).html">Bienaventuranzas (33 El Musical)</a></li>
+    <li data-author="Kairoi" data-momento="Comunión" data-bib="Juan 12, 24"><a
+        href="canciones/bienaventuranzas_(kairoi).html">Bienaventuranzas (Kairoi)</a></li>
+    <li data-author="Toño Casado" data-momento="Entrada" data-bib="-"><a
+        href="canciones/bienvenidos.html">Bienvenidos</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/bleibet_hier.html">Bleibet hier</a>
+    </li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/bless_the_lord.html">Bless the
+        Lord</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/bog_jest_miłością.html">Bóg jest
+        miłością</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a
+        href="canciones/bogoroditse_dievo_1.html">Bogoroditse Dievo 1</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/bonum_est_confidere.html">Bonum est
+        confidere</a></li>
+    <li data-author="Juan Antonio Espinosa" data-momento="Entrada" data-bib="-"><a
+        href="canciones/caminamos_hacia_el_sol.html">Caminamos hacia el Sol</a></li>
+    <li data-author="Cesáreo Gabarain" data-momento="Entrada" data-bib="-"><a
+        href="canciones/caminando_voy.html">Caminando voy</a></li>
+    <li data-author="Ixcís" data-momento="Antífonas" data-bib="Salmo 116, 9"><a
+        href="canciones/caminare_hoy_en_tu_presencia.html">Caminaré hoy en tu presencia</a></li>
+    <li data-author="-" data-momento="Navidad" data-bib="-"><a href="canciones/campana_sobre_campana.html">Campana sobre
+        campana</a></li>
+    <li data-author="Linda Stassen" data-momento="Aleluya" data-bib="-"><a href="canciones/canta_aleluya.html">Canta
+        aleluya</a></li>
+    <li data-author="Pedro Núñez" data-momento="Antífonas" data-bib="Salmo 150"><a
+        href="canciones/cantad_a_dios.html">Cantad a Dios</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Salmo 104, 33-34"><a
+        href="canciones/cantarei_ao_senhor.html">Cantaré al Señor</a></li>
+    <li data-author="Francisco Palazón" data-momento="Antífonas" data-bib="Salmo 88"><a
+        href="canciones/cantare_eternamente.html">Cantaré eternamente</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/cantarei_ao_senhor.html">Cantarei ao
+        Senhor</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a
+        href="canciones/cantate_domino_canticum_novum.html">Cantate Domino canticum novum</a></li>
+    <li data-author="Ignacio Busca de Sagastizabal" data-momento="Especiales" data-bib="-"><a
+        href="canciones/cantemos_al_amor_de_los_amores.html">Cantemos al amor de los amores</a></li>
+    <li data-author="Emilio Vicente Mateu" data-momento="Navidad" data-bib="-"><a
+        href="canciones/cantemos_todos_la_navidad.html">Cantemos todos la Navidad</a></li>
+    <li data-author="Sarah Flower Adams" data-momento="Comunión" data-bib="-"><a
+        href="canciones/cerca_de_ti,_señor.html">Cerca de Ti, Señor</a></li>
+    <li data-author="Carmelo Erdozáin" data-momento="Comunión" data-bib="Salmo 145"><a
+        href="canciones/cerca_esta_el_señor.html">Cerca está el Señor</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/christe_salvator.html">Christe
+        Salvator</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/christe,_lux_mundi.html">Christe,
+        lux mundi</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Juan 6, 35"><a href="canciones/eat_this_bread.html">Come
+        este pan</a></li>
+    <li data-author="Juanjo Elezkano" data-momento="Entrada" data-bib="-"><a
+        href="canciones/comeremos_de_la_mesa.html">Comeremos de la mesa</a></li>
+    <li data-author="Ixcís" data-momento="Antífonas" data-bib="Mateo 5, 13-16"><a
+        href="canciones/como_sal,_como_luz.html">Como sal, como luz</a></li>
+    <li data-author="Carmelo Erdozáin" data-momento="Antífonas" data-bib="-"><a
+        href="canciones/compartir_junto_al_señor.html">Compartir junto al Señor</a></li>
+    <li data-author="Miguel Manzano" data-momento="Comunión" data-bib="Mateo 25, 35-46"><a
+        href="canciones/con_vosotros_esta.html">Con vosotros está</a></li>
+    <li data-author="Alberto Arija" data-momento="Perdón - Agua" data-bib="-"><a
+        href="canciones/confieso.html">Confieso</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/confitemini_domino.html">Confitemini
+        Domino</a></li>
+    <li data-author="Elena Ráfales" data-momento="Comunión" data-bib="San Agustín"><a
+        href="canciones/corazon_inquieto.html">Corazón inquieto</a></li>
+    <li data-author="-" data-momento="Cordero de Dios" data-bib="-"><a
+        href="canciones/cordero_de_dios_(algete).html">Cordero de Dios (Algete)</a></li>
+    <li data-author="Tomás Aragüés" data-momento="Cordero de Dios" data-bib="-"><a
+        href="canciones/cordero_de_dios_(aragües).html">Cordero de Dios (Aragüés)</a></li>
+    <li data-author="-" data-momento="Cordero de Dios" data-bib="-"><a
+        href="canciones/cordero_de_dios_(boliviano).html">Cordero de Dios (boliviano)</a></li>
+    <li data-author="Miguel Manzano" data-momento="Cordero de Dios" data-bib="-"><a
+        href="canciones/cordero_de_dios_(manzano).html">Cordero de Dios (Manzano)</a></li>
+    <li data-author="Alejandro Mejía" data-momento="Cordero de Dios" data-bib="-"><a
+        href="canciones/cordero_de_dios_(maristas).html">Cordero de Dios (Maristas)</a></li>
+    <li data-author="Misioneros de la Esperanza" data-momento="Cordero de Dios" data-bib="-"><a
+        href="canciones/cordero_de_dios_(mies).html">Cordero de Dios (MiEs)</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="2 Corintios 3, 17"><a
+        href="canciones/dominus_spiritus_est.html">Cristo es Espíritu y Dios</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/surrexit_christus.html">Cristo está
+        vivo</a></li>
+    <li data-author="Taizé" data-momento="Comunión" data-bib="-"><a href="canciones/cristo_ha_resucitado.html">Cristo ha
+        resucitado</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Lucas 24, 34"><a
+        href="canciones/surrexit_dominus_vere_(canon).html">Cristo ha resucitado (canon)</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/jesus_le_christ.html">Cristo
+        Jesús</a></li>
+    <li data-author="Carmelo Erdozáin" data-momento="Comunión" data-bib="-"><a
+        href="canciones/cristo_nos_da_la_libertad.html">Cristo nos da la libertad</a></li>
+    <li data-author="Carmelo Erdozáin" data-momento="Antífonas" data-bib="Filipenses 2, 8-9"><a
+        href="canciones/cristo_por_nosotros.html">Cristo por nosotros</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/crucem_tuam.html">Crucem tuam</a>
+    </li>
+    <li data-author="Miguel Manzano" data-momento="Ofertorio" data-bib="-"><a
+        href="canciones/cuando_el_pobre_nada_tiene.html">Cuando el pobre nada tiene</a></li>
+    <li data-author="Toño Casado" data-momento="Paz" data-bib="-"><a href="canciones/da_la_paz_al_mundo.html">Da la paz
+        al mundo</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/da_pacem_cordium_(canon).html">Da
+        pacem cordium (canon)</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/da_pacem..._in_diebus.html">Da
+        pacem... in diebus</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/dona_nobis_pacem.html">Danos la paz
+        del corazón</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/dona_la_pace.html">Danos la paz, oh,
+        Señor</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Sirácides (Eclesiástico) 50, 23"><a
+        href="canciones/da_pacem..._in_diebus.html">Danos la paz, Señor</a></li>
+    <li data-author="Juan Antonio Espinosa" data-momento="Comunión" data-bib="Ezequiel 36, 26-28"><a
+        href="canciones/danos_un_corazon.html">Danos un corazón</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a
+        href="canciones/da_pacem_cordium_(canon).html">Danos, Señor, la paz (canon)</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/dans_nos_obscurites.html">Dans nos
+        obscurités</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib="Luis Rosales"><a href="canciones/de_noche.html">De
+        noche</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Lucas 2, 29"><a href="canciones/nunc_dimittis.html">Deja
+        ahora</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a
+        href="canciones/v_tebi_je_izvir_življenja.html">Dentro llevas la fuente de vida</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib="Efesios 5, 14"><a
+        href="canciones/despierta_tu_que_duermes.html">Despierta tú que duermes</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/deus,_deus_meus_(canon).html">Deus, Deus
+        meus (canon)</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Lucas 6, 20"><a
+        href="canciones/beati_voi_poveri.html">Dichosos los pobres</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/dieu_ne_peut_que_donner.html">Dieu ne
+        peut que donner</a></li>
+    <li data-author="Salomé Arricibita" data-momento="Comunión" data-bib="-"><a
+        href="canciones/dime_como_ser_pan.html">Dime cómo ser pan</a></li>
+    <li data-author="-" data-momento="Navidad" data-bib="-"><a href="canciones/dime,_niño.html">Dime, niño</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/christe_salvator.html">Dios de la
+        vida</a></li>
+    <li data-author="Cesáreo Gabarain" data-momento="Entrada" data-bib="1 Juan 4, 8"><a
+        href="canciones/dios_es_amor.html">Dios es amor</a></li>
+    <li data-author="Alberto Taulé" data-momento="Comunión" data-bib="-"><a href="canciones/dios_es_fiel.html">Dios es
+        fiel</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/bog_jest_miłością.html">Dios es
+        ternura</a></li>
+    <li data-author="Javier Gacías" data-momento="Entrada" data-bib="-"><a href="canciones/dios_esta_aqui.html">Dios
+        está aquí</a></li>
+    <li data-author="Carmelo Erdozáin" data-momento="Entrada" data-bib="-"><a
+        href="canciones/dios_nos_convoca.html">Dios nos convoca</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/bogoroditse_dievo_1.html">Dios te
+        salve</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Santa Brígida de Suecia"><a
+        href="canciones/herre,_visa_mig_vägen.html">Dios, muéstrame tu senda</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/dieu_ne_peut_que_donner.html">Dios,
+        que nos ama</a></li>
+    <li data-author="Juan Antonio Espinosa" data-momento="Comunión" data-bib="Juan 19, 25-27"><a
+        href="canciones/dolorosa.html">Dolorosa</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/dominus_spiritus_est.html">Dominus
+        spiritus est</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/dona_la_pace.html">Dona la pace</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/dona_nobis_pacem.html">Dona nobis
+        pacem</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/ubi_caritas.html">Donde hay amor</a>
+    </li>
+    <li data-author="Joaquín Madurga" data-momento="Ofertorio" data-bib="-"><a
+        href="canciones/donde_hay_caridad_y_amor.html">Donde hay caridad y amor</a></li>
+    <li data-author="-" data-momento="María" data-bib="-"><a
+        href="canciones/dulce_muchacha_humilde_de_palestina.html">Dulce muchacha humilde de Palestina</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/eat_this_bread.html">Eat this bread</a>
+    </li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib="San Juan de la Cruz"><a
+        href="canciones/el_alma_que_anda_en_amor.html">El alma que anda en amor</a></li>
+    <li data-author="Kairoi" data-momento="Comunión" data-bib="-"><a href="canciones/el_amor_es_nuestro_canto.html">El
+        amor es nuestro canto</a></li>
+    <li data-author="Francisco Palazón" data-momento="Antífonas" data-bib="Salmo 115"><a
+        href="canciones/el_caliz_que_bendecimos.html">El cáliz que bendecimos</a></li>
+    <li data-author="Brotes de Olivo" data-momento="Comunión" data-bib="-"><a
+        href="canciones/el_calor_de_tu_palabra.html">El calor de tu palabra</a></li>
+    <li data-author="Gen Rosso" data-momento="Comunión" data-bib="-"><a
+        href="canciones/el_camino_no_lo_haremos_solos.html">El camino no lo haremos solos</a></li>
+    <li data-author="Toño Casado" data-momento="Espíritu" data-bib="Isaías 11, 8-9"><a
+        href="canciones/el_espiritu_de_dios_(33_el_musical).html">El Espíritu de Dios (33 El Musical)</a></li>
+    <li data-author="Cesáreo Gabarain" data-momento="Navidad" data-bib="-"><a
+        href="canciones/el_niño_dios_ha_nacido_en_belen.html">El niño Dios ha nacido en Belén</a></li>
+    <li data-author="Francisco Alvarado (Schönstatt)" data-momento="Comunión" data-bib="Mateo 26,14-27,66"><a
+        href="canciones/el_que_muere_por_mi.html">El que muere por mí</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Romanos 14, 17"><a
+        href="canciones/the_kingdom_of_god.html">El Reino de Dios</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/el_senyor.html">El Senyor</a></li>
+    <li data-author="Popular francesa" data-momento="Comunión" data-bib="Mateo 26, 26-30"><a
+        href="canciones/el_señor_dios_nos_amo.html">El Señor Dios nos amó</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Isaías 12, 2"><a href="canciones/el_senyor.html">El Señor
+        es mi fortaleza</a></li>
+    <li data-author="Alberto Taulé" data-momento="Antífonas" data-bib="Salmo 27"><a
+        href="canciones/el_señor_es_mi_luz.html">El Señor es mi luz</a></li>
+    <li data-author="Palazón - Erdozáin" data-momento="Antífonas" data-bib="Salmo 23"><a
+        href="canciones/el_señor_es_mi_pastor.html">El Señor es mi pastor</a></li>
+    <li data-author="Nico Montero" data-momento="Antífonas" data-bib="Salmo 23"><a
+        href="canciones/el_señor_es_mi_pastor,_nada_me_falta_(completo).html">El Señor es mi pastor, nada me falta
+        (completo)</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="San Ambrosio de Milán"><a
+        href="canciones/il_signore_ti_ristora.html">El Señor es quien restaura</a></li>
+    <li data-author="Emilio Vicente Mateu" data-momento="Navidad" data-bib="-"><a
+        href="canciones/el_señor_nos_ha_nacido_en_belen.html">El Señor nos ha nacido en Belén</a></li>
+    <li data-author="Kairoi" data-momento="Entrada" data-bib="-"><a href="canciones/el_señor_nos_ha_reunido.html">El
+        Señor nos ha reunido</a></li>
+    <li data-author="Kairoi" data-momento="Espíritu" data-bib="Lucas 11:13"><a
+        href="canciones/el_señor_os_dara_su_espiritu_santo.html">El Señor os dará su Espíritu Santo</a></li>
+    <li data-author="Joaquín Madurga" data-momento="Entrada" data-bib="-"><a href="canciones/el_señor_resucito.html">El
+        Señor resucitó</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Salmo 30, 2"><a
+        href="canciones/voici_dieu_qui_vient_à_mon_secours.html">El Señor, que viene en mi ayuda</a></li>
+    <li data-author="-" data-momento="Navidad" data-bib="-"><a href="canciones/el_tamborilero.html">El tamborilero</a>
+    </li>
+    <li data-author="Bob Fitts y Gary Sadler" data-momento="Comunión" data-bib="Isaías 35, 4"><a
+        href="canciones/el_vendra_y_te_salvara.html">Él vendrá y te salvará</a></li>
+    <li data-author="Popular" data-momento="Padrenuestro" data-bib="-"><a href="canciones/en_el_mar_he_oido_hoy.html">En
+        el mar he oído hoy</a></li>
+    <li data-author="Popular - O sinner man" data-momento="Entrada" data-bib="-"><a
+        href="canciones/en_el_señor_estamos_congregados.html">En el Señor estamos congregados</a></li>
+    <li data-author="Juan Antonio Espinosa" data-momento="Ofertorio" data-bib="-"><a
+        href="canciones/en_la_comida_que_cristo_nos_da.html">En la comida que Cristo nos da</a></li>
+    <li data-author="Brotes de Olivo" data-momento="Antífonas" data-bib="2 Corintios 12, 10"><a
+        href="canciones/en_mi_debilidad.html">En mi debilidad</a></li>
+    <li data-author="Eduardo Meana" data-momento="Comunión" data-bib="Lucas 22, 39-46"><a
+        href="canciones/en_mi_getsemani.html">En mi Getsemaní</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/dans_nos_obscurites.html">En nuestra
+        oscuridad</a></li>
+    <li data-author="Hakuna" data-momento="Entrada" data-bib="-"><a href="canciones/enciendeme.html">Enciéndeme</a></li>
+    <li data-author="Brotes de Olivo" data-momento="Comunión" data-bib="-"><a href="canciones/enviame.html">Envíame</a>
+    </li>
+    <li data-author="Kairoi" data-momento="Entrada" data-bib="1 Reyes 19, 11-12"><a
+        href="canciones/eres_el_fuego,_el_amor.html">Eres el fuego, el amor</a></li>
+    <li data-author="Cesáreo Gabarain" data-momento="Comunión" data-bib="Mateo 13, 44"><a
+        href="canciones/eres_mi_riqueza.html">Eres mi riqueza</a></li>
+    <li data-author="Alberto y Emilia" data-momento="Comunión" data-bib="-"><a href="canciones/es_de_locos.html">Es de
+        locos</a></li>
+    <li data-author="Carmelo Erdozáin" data-momento="Antífonas" data-bib="-"><a
+        href="canciones/escucha,_tu,_la_palabra_de_dios.html">Escucha, tú, la Palabra de Dios</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/spiritus_jesu_christi.html">Espíritu
+        de Dios vivo</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/esprit_consolateur.html">Esprit
+        consolateur</a></li>
+    <li data-author="Joaquín Madurga" data-momento="Entrada" data-bib="-"><a
+        href="canciones/esta_es_tu_fiesta.html">Esta es tu fiesta</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Salmo 47, 7"><a href="canciones/psallite_deo.html">Este es
+        el día del Señor</a></li>
+    <li data-author="Miguel Manzano" data-momento="Antífonas" data-bib="Salmos 118, 24"><a
+        href="canciones/este_es_el_dia_en_que_actuo_el_señor.html">Este es el día en que actuó el Señor</a></li>
+    <li data-author="Eduardo Ortiz" data-momento="Ofertorio" data-bib="-"><a href="canciones/esto_que_te_doy.html">Esto
+        que te doy</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Hermano Roger de Taizé"><a
+        href="canciones/heureux_qui_s’abandonne_à_toi.html">Feliz quien se abandona</a></li>
+    <li data-author="Pelayo Sánchez" data-momento="María" data-bib="-"><a
+        href="canciones/fuente_de_paz_y_fidelidad.html">Fuente de paz y fidelidad</a></li>
+    <li data-author="Kairoi" data-momento="Gloria" data-bib="-"><a
+        href="canciones/gloria_a_dios_(no_se_como_alabarte).html">Gloria a Dios (No sé cómo alabarte)</a></li>
+    <li data-author="Francisco Palazón" data-momento="Gloria" data-bib="-"><a
+        href="canciones/gloria_a_dios_en_el_cielo.html">Gloria a Dios en el cielo</a></li>
+    <li data-author="Coral Católica Juvenil" data-momento="Gloria" data-bib="-"><a
+        href="canciones/gloria_a_dios,_gloria_al_padre.html">Gloria a Dios, gloria al Padre</a></li>
+    <li data-author="Anónimo" data-momento="Gloria" data-bib="-"><a href="canciones/gloria_y_alabanza.html">Gloria y
+        alabanza</a></li>
+    <li data-author="Toño Casado" data-momento="Gloria" data-bib="-"><a
+        href="canciones/gloria,_gloria_a_dios.html">Gloria, gloria a Dios</a></li>
+    <li data-author="Andrés Barriales" data-momento="Gloria" data-bib="-"><a
+        href="canciones/gloria,_gloria,_aleluya.html">Gloria, gloria, aleluya</a></li>
+    <li data-author="Ricardo de la Fuente" data-momento="Despedida" data-bib="-"><a
+        href="canciones/gracias,_señor.html">Gracias, Señor</a></li>
+    <li data-author="Parroquia del Buen Pastor" data-momento="Antífonas" data-bib="Salmos 145, 1"><a
+        href="canciones/gritad_que_dios_es_grande.html">Gritad que Dios es grande</a></li>
+    <li data-author="Kairoi" data-momento="Comunión" data-bib="-"><a href="canciones/hablame.html">Háblame</a></li>
+    <li data-author="Migueli" data-momento="María" data-bib="Lucas 1:38"><a href="canciones/hagase.html">Hágase</a></li>
+    <li data-author="Paloma Falconi" data-momento="Comunión" data-bib="-"><a
+        href="canciones/hay_un_corazon_que_late.html">Hay un corazón que late</a></li>
+    <li data-author="Ain Karem" data-momento="Antífonas" data-bib="Mateo 20, 26-28"><a
+        href="canciones/he_venido_a_servir.html">He venido a servir</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/herre,_visa_mig_vägen.html">Herre, visa
+        mig vägen</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a
+        href="canciones/heureux_qui_s’abandonne_à_toi.html">Heureux qui s’abandonne à toi</a></li>
+    <li data-author="Francisco Palazón" data-momento="María" data-bib="-"><a
+        href="canciones/himno_a_nuestra_señora_de_la_almudena.html">Himno a Nuestra Señora de la Almudena</a></li>
+    <li data-author="José Antonio Poblete" data-momento="Comunión" data-bib="-"><a
+        href="canciones/himno_a_san_jose.html">Himno a San José</a></li>
+    <li data-author="Carmelo Erdozáin" data-momento="Especiales" data-bib="Juan 12, 12-19"><a
+        href="canciones/hosanna,_hosanna,_hosanna.html">Hosanna, hosanna, hosanna</a></li>
+    <li data-author="(Adaptación) Barriales" data-momento="Despedida" data-bib="-"><a
+        href="canciones/hoy_el_señor_resucito.html">Hoy el Señor resucitó</a></li>
+    <li data-author="-" data-momento="Navidad" data-bib="-"><a href="canciones/hoy_en_la_tierra.html">Hoy en la
+        tierra</a></li>
+    <li data-author="Carmelo Erdozáin" data-momento="Comunión" data-bib="Lucas 15, 11-32"><a
+        href="canciones/hoy_vuelvo_de_lejos.html">Hoy vuelvo de lejos</a></li>
+    <li data-author="Juan Antonio Espinosa" data-momento="Despedida" data-bib="-"><a
+        href="canciones/hoy,_señor,_te_damos_gracias.html">Hoy, Señor, te damos gracias</a></li>
+    <li data-author="Brotes de Olivo" data-momento="Comunión" data-bib="-"><a
+        href="canciones/hoy,_señor,_te_dare.html">Hoy, Señor, te daré</a></li>
+    <li data-author="Hakuna" data-momento="Comunión" data-bib="-"><a href="canciones/huracan.html">Huracán</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/i_am_sure_i_shall_see.html">I am sure I
+        shall see</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/iedere_nacht_verlang_ik.html">Iedere
+        nacht verlang ik</a></li>
+    <li data-author="Cesáreo Gabarain" data-momento="Comunión" data-bib="-"><a href="canciones/iglesia_soy.html">Iglesia
+        soy</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/il_signore_ti_ristora.html">Il Signore ti
+        ristora</a></li>
+    <li data-author="Renovación Carismática Católica" data-momento="Comunión" data-bib="-"><a
+        href="canciones/iluminame,_señor.html">Ilumíname, Señor</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/in_manus_tuas.html">In manus tuas</a>
+    </li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/in_resurrectione_tua.html">In
+        resurrectione tua</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/eat_this_bread.html">Jesus Christ, bread
+        of life</a></li>
+    <li data-author="Kairoi" data-momento="Entrada" data-bib="1 Corintios 12, 3"><a
+        href="canciones/jesus_es_señor.html">Jesús es Señor</a></li>
+    <li data-author="Kairoi" data-momento="Entrada" data-bib="-"><a
+        href="canciones/jesus_esta_entre_nosotros.html">Jesús está entre nosotros</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/jesus_le_christ.html">Jésus le Christ</a>
+    </li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Lucas 23, 42"><a
+        href="canciones/jesus,_remember_me.html">Jesús, acuérdate de mí</a></li>
+    <li data-author="Marcela de María" data-momento="Comunión" data-bib="-"><a href="canciones/jesus,_amigo.html">Jesús,
+        amigo</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/jesus,_ma_joie.html">Jésus, ma joie</a>
+    </li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/jesus,_ma_joie.html">Jesús, mi
+        vida</a></li>
+    <li data-author="J. Pedro Martins" data-momento="Comunión" data-bib="-"><a
+        href="canciones/jesus,_nuestra_pascua.html">Jesús, nuestra Pascua</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/jesus,_remember_me.html">Jesus, remember
+        me</a></li>
+    <li data-author="Toño Casado" data-momento="Comunión" data-bib="-"><a href="canciones/jesus,_ven_tu.html">Jesús, ven
+        tú</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/jubelt_und_freut_euch.html">Jubelt und
+        freut euch</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/jubilate_coeli_(canon).html">Jubilate
+        coeli (canon)</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/jubilate_deo.html">Jubilate Deo</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/jubilate_coeli_(canon).html">Júbilo
+        en el cielo (canon)</a></li>
+    <li data-author="-" data-momento="María" data-bib="-"><a href="canciones/junto_a_ti,_maria.html">Junto a ti,
+        María</a></li>
+    <li data-author="Toño Casado" data-momento="Ofertorio" data-bib="-"><a
+        href="canciones/junto_al_vino_y_al_pan.html">Junto al vino y el pan</a></li>
+    <li data-author="J. Pedro Martins" data-momento="Comunión" data-bib="-"><a
+        href="canciones/juntos_cantemos_hoy.html">Juntos cantemos hoy</a></li>
+    <li data-author="Cesáreo Gabarain" data-momento="Entrada" data-bib="-"><a
+        href="canciones/juntos_como_hermanos.html">Juntos como hermanos</a></li>
+    <li data-author="Pablo Coloma" data-momento="Ofertorio" data-bib="-"><a
+        href="canciones/juntos_nos_acercamos.html">Juntos nos acercamos</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/kyrie_1.html">Kyrie 1</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/kyrie_20.html">Kyrie 20</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/kyrie_6.html">Kyrie 6</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/kyrie_8.html">Kyrie 8</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/l’ajuda_em_vindrà.html">L’ajuda em
+        vindrà</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Salmo 121, 2"><a
+        href="canciones/l’ajuda_em_vindrà.html">La ayuda vendrá</a></li>
+    <li data-author="Kairoi" data-momento="Antífonas" data-bib="Salmo 23, 6"><a
+        href="canciones/la_bondad_y_el_amor_del_señor.html">La bondad y el amor del Señor</a></li>
+    <li data-author="Jesucristo Superstar" data-momento="Ofertorio" data-bib="-"><a
+        href="canciones/la_cena_del_señor.html">La cena del Señor</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Salmo 89, 2"><a
+        href="canciones/misericordias_domini.html">La misericordia del Señor</a></li>
+    <li data-author="-" data-momento="Paz" data-bib="-"><a href="canciones/la_paz_te_doy.html">La paz te doy</a></li>
+    <li data-author="-" data-momento="María" data-bib="-"><a href="canciones/la_virgen_sueña_caminos.html">La Virgen
+        sueña caminos</a></li>
+    <li data-author="Ain Karem" data-momento="Antífonas" data-bib="Salmos 119, 105"><a
+        href="canciones/lampara_es_tu_palabra.html">Lámpara es tu palabra</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/laudate_dominum.html">Laudate Dominum</a>
+    </li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/laudate_omnes_gentes.html">Laudate omnes
+        gentes</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/let_all_who_are_thirsty_come.html">Let
+        all who are thirsty come</a></li>
+    <li data-author="-" data-momento="Especiales" data-bib="-"><a href="canciones/letanias.html">Letanías</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Salmo 143, 8"><a
+        href="canciones/ad_te_jesu_christe.html">Levanto mi alma</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Salmo 136, 1"><a
+        href="canciones/confitemini_domino.html">Llénanos, Señor, de tu paz</a></li>
+    <li data-author="-" data-momento="Paz" data-bib="-"><a href="canciones/llevad_la_buena_noticia.html">Llevad la buena
+        noticia</a></li>
+    <li data-author="Antonio Alcalde" data-momento="Despedida" data-bib="-"><a
+        href="canciones/lo_que_hemos_visto_y_oido.html">Lo que hemos visto y oído</a></li>
+    <li data-author="Emilio Vicente Mateu" data-momento="Navidad" data-bib="-"><a
+        href="canciones/los_magos_vienen_de_oriente.html">Los magos vienen de Oriente</a></li>
+    <li data-author="Juan Antonio Espinosa" data-momento="María" data-bib="-"><a
+        href="canciones/madre_de_todos_los_hombres.html">Madre de todos los hombres</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Lucas 1, 46"><a
+        href="canciones/magnificat_(canon).html">Magnificat (canon)</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/magnificat_(canon).html">Magnificat
+        (canon)</a></li>
+    <li data-author="Migueli" data-momento="María" data-bib="-"><a href="canciones/maria_de_nazaret.html">María de
+        Nazaret</a></li>
+    <li data-author="Kairoi" data-momento="María" data-bib="-"><a href="canciones/maria,_la_madre_buena.html">María, la
+        madre buena</a></li>
+    <li data-author="-" data-momento="María" data-bib="-"><a href="canciones/maria,_madre_nuestra.html">María, madre
+        nuestra</a></li>
+    <li data-author="Toño Casado" data-momento="María" data-bib="-"><a href="canciones/maria,_maria.html">María,
+        María</a></li>
+    <li data-author="-" data-momento="María" data-bib="-"><a href="canciones/maria,_mirame.html">María, mírame</a></li>
+    <li data-author="Kairoi" data-momento="María" data-bib="-"><a href="canciones/maria,_musica_de_dios.html">María,
+        música de Dios</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Dietrich Bonhoeffer"><a
+        href="canciones/aber_du_weisst_den_weg_für_mich.html">Mas tú sabes que senda es para mí</a></li>
+    <li data-author="Brotes de Olivo" data-momento="Antífonas" data-bib="Lucas 15, 18-20"><a
+        href="canciones/me_levantare.html">Me levantaré</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Isaías 26, 9"><a
+        href="canciones/iedere_nacht_verlang_ik.html">Mi corazón te anhela</a></li>
+    <li data-author="Manuel José Alonso y José Pagán" data-momento="Perdón - Agua" data-bib="-"><a
+        href="canciones/mi_dios_esta_vivo.html">Mi Dios está vivo</a></li>
+    <li data-author="Miguel Manzano" data-momento="Comunión" data-bib="Mateo 6, 19"><a
+        href="canciones/mirad_al_suelo.html">Mirad al suelo</a></li>
+    <li data-author="Kairoi" data-momento="Entrada" data-bib="-"><a
+        href="canciones/mirad,_jesus_resucita_hoy.html">Mirad, Jesús resucita hoy</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/misericordias_domini.html">Misericordias
+        Domini</a></li>
+    <li data-author="Ixcís" data-momento="Antífonas" data-bib="-"><a href="canciones/mueveme_mi_dios.html">Muéveme mi
+        Dios</a></li>
+    <li data-author="Francisco Palazón" data-momento="María" data-bib="-"><a href="canciones/mujer_fuerte.html">Mujer
+        fuerte</a></li>
+    <li data-author="-" data-momento="Navidad" data-bib="-"><a href="canciones/nace_el_niño_en_un_portal.html">Nace el
+        niño en un portal</a></li>
+    <li data-author="Brotes de Olivo" data-momento="Antífonas" data-bib="1 Corintios 2, 9"><a
+        href="canciones/nada_has_pensado.html">Nada has pensado</a></li>
+    <li data-author="Brotes de Olivo" data-momento="Antífonas" data-bib="-"><a
+        href="canciones/nada_nos_separara.html">Nada nos separará</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib="Santa Teresa de Ávila"><a
+        href="canciones/nada_te_turbe.html">Nada te turbe</a></li>
+    <li data-author="Martín Valverde" data-momento="Comunión" data-bib="Lucas 23, 26-56"><a
+        href="canciones/nadie_te_ama_como_yo.html">Nadie te ama como Yo</a></li>
+    <li data-author="José Luis Perales" data-momento="Navidad" data-bib="-"><a
+        href="canciones/navidad,_es_navidad.html">Navidad, es Navidad</a></li>
+    <li data-author="José Luis Perales" data-momento="Navidad" data-bib="-"><a
+        href="canciones/navidad,_navidad.html">Navidad, Navidad</a></li>
+    <li data-author="Juanjo Elezkano" data-momento="Comunión" data-bib="-"><a
+        href="canciones/necesitamos_comer_tu_pan.html">Necesitamos comer tu pan</a></li>
+    <li data-author="Luis Alfredo Díaz Britos" data-momento="Antífonas" data-bib="Éxodo 20, 3-17"><a
+        href="canciones/no_adoreis_a_nadie.html">No adoréis a nadie</a></li>
+    <li data-author="-" data-momento="Comunión" data-bib="-"><a href="canciones/no_me_mueve.html">No me mueve</a></li>
+    <li data-author="Juan Antonio Espinosa" data-momento="Comunión" data-bib="-"><a
+        href="canciones/no_podemos_caminar_(hambre_de_dios).html">No podemos caminar (Hambre de Dios)</a></li>
+    <li data-author="Kairoi" data-momento="Antífonas" data-bib="Ruth 1, 16-17"><a
+        href="canciones/no_quiero_alejarme_de_ti.html">No quiero alejarme de ti</a></li>
+    <li data-author="Migueli" data-momento="Paz" data-bib="-"><a href="canciones/no_se_canso_de_hacer_el_bien.html">No
+        se cansó de hacer el bien</a></li>
+    <li data-author="Jaime Olguín" data-momento="Comunión" data-bib="-"><a href="canciones/no_temas.html">No temas</a>
+    </li>
+    <li data-author="-" data-momento="Navidad" data-bib="-"><a href="canciones/noche_de_paz.html">Noche de paz</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/nunc_dimittis.html">Nunc dimittis</a>
+    </li>
+    <li data-author="-" data-momento="Navidad" data-bib="-"><a href="canciones/nunca_suenan_las_campanas.html">Nunca
+        suenan las campanas</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/esprit_consolateur.html">Oh, Dios
+        consolador</a></li>
+    <li data-author="Juan Jáuregi" data-momento="Antífonas" data-bib="Salmo 62"><a
+        href="canciones/oh,_dios,_tu_eres_mi_dios_(sed_de_dios).html">Oh, Dios, tú eres mi Dios (Sed de Dios)</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Salmo 63, 2-5"><a
+        href="canciones/deus,_deus_meus_(canon).html">Oh, Dios, tú, Dios mío (canon)</a></li>
+    <li data-author="Carmelo Erdozáin" data-momento="Antífonas" data-bib="Salmo 50"><a
+        href="canciones/oh,_mi_dios,_crea_en_mi.html">Oh, mi Dios, crea en mí</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Lucas 23, 46"><a href="canciones/in_manus_tuas.html">Oh,
+        Padre, entre tus manos</a></li>
+    <li data-author="Anónimo" data-momento="Perdón - Agua" data-bib="-"><a
+        href="canciones/oh,_señor,_mueve_mi_espiritu.html">Oh, Señor, mueve mi espíritu</a></li>
+    <li data-author="Cesáreo Gabarain" data-momento="Antífonas" data-bib="-"><a
+        href="canciones/ojala_escuchemos_hoy_su_voz.html">Ojalá escuchemos hoy su voz</a></li>
+    <li data-author="Kairoi" data-momento="Comunión" data-bib="-"><a href="canciones/oracion_del_pobre.html">Oración del
+        pobre</a></li>
+    <li data-author="Anónimo" data-momento="Antífonas" data-bib="Juan 13, 34-35"><a
+        href="canciones/os_doy_un_mandato_nuevo.html">Os doy un mandato nuevo</a></li>
+    <li data-author="Carmelo Erdozáin" data-momento="Padrenuestro" data-bib="-"><a
+        href="canciones/padre_nuestro_(erdozain).html">Padre nuestro (Erdozáin)</a></li>
+    <li data-author="-" data-momento="Padrenuestro" data-bib="-"><a href="canciones/padre_nuestro_(mexicano).html">Padre
+        nuestro (mexicano)</a></li>
+    <li data-author="Pedro Antonio Garza" data-momento="Padrenuestro" data-bib="-"><a
+        href="canciones/padre_nuestro_zaragozano.html">Padre nuestro zaragozano</a></li>
+    <li data-author="Toño Casado" data-momento="Padrenuestro" data-bib="-"><a
+        href="canciones/padre_nuestro,_padre_nuestro.html">Padre nuestro, padre nuestro</a></li>
+    <li data-author="Simon & Garfunkel" data-momento="Padrenuestro" data-bib="-"><a
+        href="canciones/padre_nuestro,_tu_que_estas.html">Padre nuestro, tú que estás</a></li>
+    <li data-author="Rick Ridings" data-momento="Paz" data-bib="-"><a href="canciones/padre,_unenos.html">Padre,
+        únenos</a></li>
+    <li data-author="Kairoi" data-momento="Perdón - Agua" data-bib="Lc 15, 11-32"><a
+        href="canciones/padre,_vuelvo_a_ti.html">Padre, vuelvo a ti</a></li>
+    <li data-author="-" data-momento="Comunión" data-bib="-"><a href="canciones/para_el_que_sabe.html">Para el que
+        sabe</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/para_mim,_ser_feliz.html">Para mí
+        ser feliz</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/para_mim,_ser_feliz.html">Para mim, ser
+        feliz</a></li>
+    <li data-author="-" data-momento="Navidad" data-bib="-"><a href="canciones/pastores,_venid.html">Pastores, venid</a>
+    </li>
+    <li data-author="Kairós" data-momento="Paz" data-bib="-"><a href="canciones/paz_en_la_tierra.html">Paz en la
+        tierra</a></li>
+    <li data-author="Anónimo" data-momento="Paz" data-bib="-"><a
+        href="canciones/paz,_señor,_en_el_cielo_y_la_tierra.html">Paz, Señor, en el cielo y la tierra</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/per_crucem.html">Per crucem</a></li>
+    <li data-author="Cesáreo Gabarain" data-momento="Entrada" data-bib="-"><a
+        href="canciones/peregrino_(exodo_y_liberacion).html">Peregrino (Éxodo y liberación)</a></li>
+    <li data-author="Antonio Alcalde" data-momento="Entrada" data-bib="-"><a
+        href="canciones/peregrinos_de_la_paz_y_la_alegria.html">Peregrinos de la paz y la alegría</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Mateo 26, 38"><a
+        href="canciones/bleibet_hier.html">Permaneced conmigo</a></li>
+    <li data-author="Cesáreo Gabarain" data-momento="Comunión" data-bib="Lucas 6, 13-16"><a
+        href="canciones/pescador_de_hombres.html">Pescador de hombres</a></li>
+    <li data-author="-" data-momento="Paz" data-bib="-"><a href="canciones/pon_tu_mano.html">Pon tu mano</a></li>
+    <li data-author="-" data-momento="Paz" data-bib="-"><a href="canciones/por_la_paz_no_callare.html">Por la paz no
+        callaré</a></li>
+    <li data-author="Gregorio Fernández" data-momento="Ofertorio" data-bib="-"><a
+        href="canciones/por_los_hombres.html">Por los hombres</a></li>
+    <li data-author="Juan Antonio Espinosa" data-momento="Despedida" data-bib="Isaías 41, 10"><a
+        href="canciones/por_ti,_mi_dios.html">Por ti, mi Dios</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/per_crucem.html">Por tu Cruz</a>
+    </li>
+    <li data-author="Kairoi" data-momento="Especiales" data-bib="-"><a href="canciones/pregon_pascual.html">Pregón
+        Pascual</a></li>
+    <li data-author="Stephen Schwartz" data-momento="Entrada" data-bib="Isaías 40, 3-27"><a
+        href="canciones/preparad_el_camino_al_señor.html">Preparad el camino al Señor</a></li>
+    <li data-author="José María Olaizola" data-momento="Comunión" data-bib="-"><a
+        href="canciones/principio_y_fundamento.html">Principio y fundamento</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Salmo 16, 1-11"><a
+        href="canciones/behüte_mich_gott.html">Protégeme, Dios</a></li>
+    <li data-author="Ricardo Cantalapiedra" data-momento="Comunión" data-bib="-"><a
+        href="canciones/protegeme,_dios_mio.html">Protégeme, Dios mío</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/psallite_deo.html">Psallite Deo</a></li>
+    <li data-author="Ricardo Cantalapiedra" data-momento="Comunión" data-bib="Miqueas 6, 3-8"><a
+        href="canciones/pueblo_mio.html">Pueblo mío</a></li>
+    <li data-author="Carmelo Erdozáin" data-momento="Comunión" data-bib="-"><a
+        href="canciones/purificame,_señor.html">Purifícame, Señor</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Salmo 117, 1"><a href="canciones/laudate_dominum.html">Que
+        alabe al Señor</a></li>
+    <li data-author="Miguel Manzano" data-momento="Entrada" data-bib="Salmo 122"><a
+        href="canciones/que_alegria_cuando_me_dijeron.html">Qué alegría cuando me dijeron</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Salmo 118, 8-9"><a
+        href="canciones/bonum_est_confidere.html">Qué bueno es confiar en ti</a></li>
+    <li data-author="Brotes de Olivo" data-momento="Despedida" data-bib="Mateo 5, 13-16"><a
+        href="canciones/que_sea_mi_vida_la_sal.html">Que sea mi vida la sal</a></li>
+    <li data-author="Luis Alfredo Díaz Britos" data-momento="Ofertorio" data-bib="-"><a
+        href="canciones/que_te_puedo_dar.html">Qué te puedo dar</a></li>
+    <li data-author="Antonio Alcalde" data-momento="Comunión" data-bib="-"><a
+        href="canciones/que_tendra_lo_pequeño.html">Qué tendrá lo pequeño</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Salmo 117, 1"><a
+        href="canciones/laudate_omnes_gentes.html">Que todo el mundo alabe</a></li>
+    <li data-author="Toño Casado" data-momento="Comunión" data-bib="-"><a
+        href="canciones/que_tu_palabra_nos_cambie_el_corazon.html">Que tu palabra nos cambie el corazón</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Apocalipsis 22, 17"><a
+        href="canciones/let_all_who_are_thirsty_come.html">Que venga a ti</a></li>
+    <li data-author="Juan Antonio Espinosa" data-momento="Entrada" data-bib="Isaías 21, 11-12"><a
+        href="canciones/que_ves_en_la_noche.html">Qué ves en la noche</a></li>
+    <li data-author="Juan Antonio Espinosa" data-momento="Comunión" data-bib="Lucas 24, 13-35"><a
+        href="canciones/quedate_con_nosotros.html">Quédate con nosotros</a></li>
+    <li data-author="Marcos Frisina" data-momento="Comunión" data-bib="-"><a
+        href="canciones/quien_nos_separara.html">Quién nos separará</a></li>
+    <li data-author="Maranatha" data-momento="Entrada" data-bib="-"><a href="canciones/quiero_alabarte.html">Quiero
+        alabarte</a></li>
+    <li data-author="Sor Trini - Hijas de la Caridad" data-momento="Antífonas" data-bib="-"><a
+        href="canciones/quiero_caminar.html">Quiero caminar</a></li>
+    <li data-author="Athenas" data-momento="María" data-bib="-"><a
+        href="canciones/quiero_caminar_contigo,_maria.html">Quiero caminar contigo, María</a></li>
+    <li data-author="Eduardo Meana" data-momento="Comunión" data-bib="-"><a href="canciones/quiero_ser_pan.html">Quiero
+        ser pan</a></li>
+    <li data-author="Francisco Palazón" data-momento="María" data-bib="-"><a href="canciones/reina_del_cielo.html">Reina
+        del Cielo</a></li>
+    <li data-author="Kiko Argüello" data-momento="Comunión" data-bib="-"><a
+        href="canciones/resucito,_aleluya.html">Resucitó, aleluya</a></li>
+    <li data-author="Francisco Palazón" data-momento="Entrada" data-bib="-"><a
+        href="canciones/reunidos_en_el_nombre_del_señor.html">Reunidos en el nombre del Señor</a></li>
+    <li data-author="-" data-momento="María" data-bib="-"><a href="canciones/salve,_madre.html">Salve, Madre</a></li>
+    <li data-author="Gen Verde" data-momento="María" data-bib="-"><a href="canciones/salve,_regina.html">Salve,
+        Regina</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/sanasi_on_lamppu.html">Sanasi on
+        lamppu</a></li>
+    <li data-author="Juan Antonio Espinosa" data-momento="María" data-bib="-"><a
+        href="canciones/santa_maria_del_camino.html">Santa María del Camino</a></li>
+    <li data-author="Jesús Cardeñoso" data-momento="Santo" data-bib="-"><a
+        href="canciones/santo_(cielo_y_tierra_pasaran).html">Santo (Cielo y tierra pasarán)</a></li>
+    <li data-author="Toño Casado" data-momento="Santo" data-bib="-"><a
+        href="canciones/santo_(estan_llenos_de_tu_amor).html">Santo (Están llenos de tu amor)</a></li>
+    <li data-author="Georg Friedrich Händel" data-momento="Santo" data-bib="-"><a
+        href="canciones/santo_(händel).html">Santo (Händel)</a></li>
+    <li data-author="Toño Casado" data-momento="Santo" data-bib="-"><a
+        href="canciones/santo_(hosanna_en_el_cielo_al_señor).html">Santo (Hosanna en el Cielo al Señor)</a></li>
+    <li data-author="Francisco Palazón" data-momento="Santo" data-bib="-"><a href="canciones/santo_(palazon).html">Santo
+        (Palazón)</a></li>
+    <li data-author="Mocedades" data-momento="Santo" data-bib="-"><a href="canciones/santo_(mocedades).html">Santo
+        (Mocedades)</a></li>
+    <li data-author="Jaime Olguín" data-momento="Santo" data-bib="-"><a href="canciones/santo_(olguin).html">Santo
+        (Olguín)</a></li>
+    <li data-author="-" data-momento="Santo" data-bib="-"><a href="canciones/santo_(santo_domingo_de_silos).html">Santo
+        (Santo Domingo de Silos)</a></li>
+    <li data-author="The Beatles" data-momento="Santo" data-bib="-"><a href="canciones/santo_(the_beatles).html">Santo
+        (The Beatles)</a></li>
+    <li data-author="-" data-momento="Santo" data-bib="-"><a href="canciones/santo_eres,_señor,_dios_nuestro.html">Santo
+        eres, Señor, Dios nuestro</a></li>
+    <li data-author="-" data-momento="Santo" data-bib="-"><a href="canciones/santo_es_el_señor.html">Santo es el
+        Señor</a></li>
+    <li data-author="Misa salvadoreña" data-momento="Santo" data-bib="-"><a
+        href="canciones/santo_salvadoreño.html">Santo salvadoreño</a></li>
+    <li data-author="-" data-momento="Santo" data-bib="-"><a href="canciones/santo_zaireño.html">Santo zaireño</a></li>
+    <li data-author="TSNC" data-momento="Santo" data-bib="-"><a href="canciones/santo,_santo,_santo.html">Santo, Santo,
+        Santo</a></li>
+    <li data-author="Anónimo" data-momento="Comunión" data-bib="-"><a href="canciones/se_acerca_tu_navidad.html">Se
+        acerca tu Navidad</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Mateo 5, 13-14"><a href="canciones/staňte_se_soli.html">Sé
+        sal que sala</a></li>
+    <li data-author="A. B. Celada Alonso" data-momento="Especiales" data-bib="-"><a
+        href="canciones/secuencia_de_pascua.html">Secuencia de Pascua</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib="Salmo 72, 6-19"><a
+        href="canciones/señor,_que_florezca_tu_justicia.html">Señor, que florezca tu justicia</a></li>
+    <li data-author="Coro Niño Jesús (Cádiz)" data-momento="Perdón - Agua" data-bib="-"><a
+        href="canciones/señor,_ten_piedad.html">Señor, ten piedad</a></li>
+    <li data-author="Popular" data-momento="Perdón - Agua" data-bib="-"><a
+        href="canciones/señor,_ten_piedad_de_nosotros.html">Señor, ten piedad de nosotros</a></li>
+    <li data-author="Popular judío" data-momento="Paz" data-bib="-"><a href="canciones/shalom_haberim.html">Shalom
+        haberim</a></li>
+    <li data-author="Popular" data-momento="Comunión" data-bib="-"><a
+        href="canciones/si_dios_a_su_mesa_nos_quiere_sentar.html">Si Dios a su mesa nos quiere sentar</a></li>
+    <li data-author="Francisco Palazón" data-momento="Comunión" data-bib="-"><a
+        href="canciones/si_me_falta_el_amor.html">Si me falta el amor</a></li>
+    <li data-author="" data-momento="Comunión" data-bib=""><a href="canciones/siempre_en_ti.html">Siempre en ti</a></li>
+    <li data-author="Toño Casado" data-momento="María" data-bib="-"><a
+        href="canciones/siempre_estuviste_aqui_(almudena).html">Siempre estuviste aquí (Almudena)</a></li>
+    <li data-author="Ixcís" data-momento="Ofertorio" data-bib="Juan 13, 12-16"><a
+        href="canciones/sigue_habiendo.html">Sigue habiendo</a></li>
+    <li data-author="Luis Guitarra" data-momento="Antífonas" data-bib="Mateo 5, 13-16"><a
+        href="canciones/sois_la_sal.html">Sois la sal</a></li>
+    <li data-author="Cesáreo Gabarain" data-momento="Comunión" data-bib="Marcos 16, 15-18"><a
+        href="canciones/sois_la_semilla.html">Sois la semilla</a></li>
+    <li data-author="Emilio Vicente Mateu" data-momento="Comunión" data-bib="-"><a
+        href="canciones/somos_un_pueblo_que_camina.html">Somos un pueblo que camina</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/spiritus_jesu_christi.html">Spiritus Jesu
+        Christi</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/staňte_se_soli.html">Staňte se solí</a>
+    </li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/surrexit_christus.html">Surrexit
+        Christus</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a
+        href="canciones/surrexit_dominus_vere_(canon).html">Surrexit Dominus vere (canon)</a></li>
+    <li data-author="Cesáreo Gabarain" data-momento="Comunión" data-bib="-"><a href="canciones/tan_cerca_de_mi.html">Tan
+        cerca de mí</a></li>
+    <li data-author="Alicia Mendoza" data-momento="Comunión" data-bib="-"><a
+        href="canciones/tanto_amo_dios_al_mundo.html">Tanto amó Dios al mundo</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/adoramus_te_o_christe.html">Te
+        adoramos</a></li>
+    <li data-author="Marco López" data-momento="Antífonas" data-bib="Salmo 18, 1-3"><a
+        href="canciones/te_amo,_señor.html">Te amo, Señor</a></li>
+    <li data-author="Pelayo Sánchez" data-momento="Gloria" data-bib="-"><a
+        href="canciones/te_damos_gracias,_señor.html">Te damos gracias, Señor</a></li>
+    <li data-author="Ricardo Cantalapiedra" data-momento="Antífonas" data-bib="Salmo 29"><a
+        href="canciones/te_ensalzare,_señor.html">Te ensalzaré, Señor</a></li>
+    <li data-author="Toño Casado" data-momento="Ofertorio" data-bib="-"><a href="canciones/te_ofrecemos.html">Te
+        ofrecemos</a></li>
+    <li data-author="Popular" data-momento="Perdón - Agua" data-bib="-"><a
+        href="canciones/ten_piedad_de_mi,_señor.html">Ten piedad de mi, Señor</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/kyrie_1.html">Ten piedad, Señor
+        1</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/kyrie_20.html">Ten piedad, Señor
+        20</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/kyrie_6.html">Ten piedad, Señor
+        6</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/kyrie_8.html">Ten piedad, Señor
+        8</a></li>
+    <li data-author="Anónimo" data-momento="Comunión" data-bib="Jeremías 1, 5"><a
+        href="canciones/tengo_que_gritar.html">Tengo que gritar</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Salmo 103, 1-4"><a
+        href="canciones/bless_the_lord.html">Tengo sed de ti</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/the_kingdom_of_god.html">The kingdom of
+        God</a></li>
+    <li data-author="Kairoi" data-momento="Gloria" data-bib="-"><a
+        href="canciones/todo_mi_ser_(alabo_tu_bondad).html">Todo mi ser (Alabo tu bondad)</a></li>
+    <li data-author="Cesáreo Gabarain" data-momento="Comunión" data-bib="-"><a href="canciones/todos_unidos.html">Todos
+        unidos</a></li>
+    <li data-author="Hakuna" data-momento="Comunión" data-bib="Mateo 26, 26-46"><a
+        href="canciones/tomad,_comed.html">Tomad, comed</a></li>
+    <li data-author="Rafael Espinosa" data-momento="Comunión" data-bib="Mateo 19, 21"><a
+        href="canciones/tomado_de_la_mano.html">Tomado de la mano</a></li>
+    <li data-author="Anónimo" data-momento="Ofertorio" data-bib="-"><a href="canciones/traemos_a_tu_altar.html">Traemos
+        a tu altar</a></li>
+    <li data-author="Gina Fernández" data-momento="Comunión" data-bib="-"><a href="canciones/tu_eres_capaz.html">Tú eres
+        capaz</a></li>
+    <li data-author="Juan Antonio Espinosa" data-momento="Comunión" data-bib="-"><a
+        href="canciones/tu_eres_el_dios_que_nos_salva.html">Tú eres el Dios que nos salva</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/tu_sei_sorgente_viva.html">Tú eres
+        fuente viva</a></li>
+    <li data-author="Cesáreo Gabarain" data-momento="Comunión" data-bib="-"><a
+        href="canciones/tu_nos_dijiste_que_la_muerte.html">Tú nos dijiste que la muerte</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Salmo 119, 105"><a
+        href="canciones/sanasi_on_lamppu.html">Tu palabra alumbra</a></li>
+    <li data-author="Juan Antonio Espinosa" data-momento="Antífonas" data-bib="-"><a
+        href="canciones/tu_palabra_me_da_vida.html">Tu Palabra me da vida</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib="Miguel de Unamuno"><a
+        href="canciones/tu_palabra,_señor.html">Tu palabra, Señor</a></li>
+    <li data-author="Miguel Manzano" data-momento="Antífonas" data-bib="-"><a href="canciones/tu_reino_es_vida.html">Tu
+        Reino es vida</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a href="canciones/crucem_tuam.html">Tu santa cruz</a>
+    </li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/tu_sei_sorgente_viva.html">Tu sei
+        sorgente viva</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Juan 8, 12"><a
+        href="canciones/christe,_lux_mundi.html">Tú, luz del mundo</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/tui_amoris.html">Tui amoris</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/ubi_caritas.html">Ubi caritas</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Salmo 96, 1"><a
+        href="canciones/cantate_domino_canticum_novum.html">Un canto nuevo</a></li>
+    <li data-author="Coro Parroquial San Miguel" data-momento="Ofertorio" data-bib="-"><a
+        href="canciones/un_dia_abri_los_ojos.html">Un día abrí los ojos</a></li>
+    <li data-author="Cesáreo Gabarain" data-momento="Ofertorio" data-bib="Mateo 14, 13-21"><a
+        href="canciones/un_niño_se_te_acerco.html">Un niño se te acercó</a></li>
+    <li data-author="Musical " El diluvio que viene"" data-momento="Entrada" data-bib="-"><a
+        href="canciones/un_nuevo_sitio_disponed.html">Un nuevo sitio disponed</a></li>
+    <li data-author="Carmelo Erdozáin" data-momento="Entrada" data-bib="-"><a
+        href="canciones/un_pueblo_que_camina_por_el_mundo.html">Un pueblo que camina por el mundo</a></li>
+    <li data-author="Cesáreo Gabarain" data-momento="Ofertorio" data-bib="-"><a
+        href="canciones/una_espiga_dorada.html">Una espiga dorada</a></li>
+    <li data-author="Cesáreo Gabarain" data-momento="Perdón - Agua" data-bib="-"><a
+        href="canciones/una_nueva_vida.html">Una nueva vida</a></li>
+    <li data-author="Luis Alfredo Díaz Britos" data-momento="Comunión" data-bib="San Agustín"><a
+        href="canciones/una_tarde_en_la_playa.html">Una tarde en la playa</a></li>
+    <li data-author="Oscar Palomares" data-momento="Entrada" data-bib="Isaías 40, 3-8"><a
+        href="canciones/una_voz_clama_en_el_desierto.html">Una voz clama en el desierto</a></li>
+    <li data-author="Juan Antonio Espinosa" data-momento="María" data-bib="-"><a
+        href="canciones/unidos_a_todos_los_pueblos.html">Unidos a todos los pueblos</a></li>
+    <li data-author="Joaquín Madurga" data-momento="Entrada" data-bib="-"><a
+        href="canciones/unidos_en_la_fiesta.html">Unidos en la fiesta</a></li>
+    <li data-author="Taizé" data-momento="TaizéORIG" data-bib=""><a href="canciones/v_tebi_je_izvir_življenja.html">V
+        tebi je izvir življenja</a></li>
+    <li data-author="Carmelo Erdozáin" data-momento="Entrada" data-bib="-"><a
+        href="canciones/vamos_a_preparar.html">Vamos a preparar</a></li>
+    <li data-author="Juan Antonio Espinosa" data-momento="Entrada" data-bib="-"><a
+        href="canciones/vamos_cantando_al_señor.html">Vamos cantando al Señor</a></li>
+    <li data-author="Misa salvadoreña" data-momento="Entrada" data-bib="-"><a
+        href="canciones/vamos_todos_al_banquete.html">Vamos todos al banquete</a></li>
+    <li data-author="Francisco Palazón" data-momento="Despedida" data-bib="-"><a href="canciones/vaso_nuevo.html">Vaso
+        nuevo</a></li>
+    <li data-author="Alborada" data-momento="Entrada" data-bib="-"><a href="canciones/ven_a_celebrar.html">Ven a
+        celebrar</a></li>
+    <li data-author="Toño Casado" data-momento="Entrada" data-bib="-"><a href="canciones/ven_a_la_fiesta.html">Ven a la
+        fiesta</a></li>
+    <li data-author="Josep Asunción" data-momento="Antífonas" data-bib="-"><a href="canciones/ven_y_descansate.html">Ven
+        y descánsate</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a
+        href="canciones/vieni_spirito_creatore_(canon).html">Ven, Espíritu (canon)</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="-"><a
+        href="canciones/ven,_espiritu_de_dios_(esprit_createur).html">Ven, Espíritu de Dios</a></li>
+    <li data-author="-" data-momento="Espíritu" data-bib="-"><a
+        href="canciones/ven,_espiritu_de_dios_(kairoi).html">Ven, Espíritu de Dios (Esprit createur)</a></li>
+    <li data-author="Kairoi" data-momento="Espíritu" data-bib="-"><a href="canciones/tui_amoris.html">Ven, Espíritu de
+        Dios (Kairoi)</a></li>
+    <li data-author="Grupo Nueva Vida" data-momento="Especiales" data-bib="-"><a
+        href="canciones/ven,_espiritu_divino_(secuencia_de_pentecostes).html">Ven, Espíritu divino (Secuencia de
+        Pentecostés)</a></li>
+    <li data-author="Brotes de Olivo" data-momento="Antífonas" data-bib="-"><a
+        href="canciones/ven,_no_apartes_de_mi_los_ojos.html">Ven, no apartes de mí los ojos</a></li>
+    <li data-author="Carmelo Erdozáin" data-momento="Entrada" data-bib="-"><a href="canciones/ven,_salvador.html">Ven,
+        Salvador</a></li>
+    <li data-author="Grupo Loyola Valladolid" data-momento="Antífonas" data-bib="-"><a
+        href="canciones/ven,_si_te_has_caido_levantate.html">Ven, si te has caído levántate</a></li>
+    <li data-author="-" data-momento="Navidad" data-bib="-"><a
+        href="canciones/venid,_fieles_todos_(adeste_fideles).html">Venid, fieles todos (Adeste fideles)</a></li>
+    <li data-author="Juanjo Elezkano" data-momento="Antífonas" data-bib="-"><a
+        href="canciones/venimos_a_escuchar_tu_voz.html">Venimos a escuchar tu voz</a></li>
+    <li data-author="André Losay" data-momento="Comunión" data-bib="-"><a
+        href="canciones/victoria,_tu_reinaras.html">Victoria, tú reinarás</a></li>
+    <li data-author="Cesáreo Gabarain" data-momento="Entrada" data-bib="-"><a
+        href="canciones/vienen_con_alegria.html">Vienen con alegría</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a
+        href="canciones/vieni_spirito_creatore_(canon).html">Vieni Spirito creatore (canon)</a></li>
+    <li data-author="-" data-momento="Despedida" data-bib="-"><a href="canciones/vive_tu_amor_en_mi.html">Vive tu amor
+        en mí</a></li>
+    <li data-author="Comunidad San Pedro" data-momento="Navidad" data-bib="-"><a
+        href="canciones/vivid_la_navidad.html">Vivid la Navidad</a></li>
+    <li data-author="Toño Casado" data-momento="Entrada" data-bib="-"><a
+        href="canciones/viviremos_firmes_en_la_fe.html">Viviremos firmes en la fe</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a
+        href="canciones/voici_dieu_qui_vient_à_mon_secours.html">Voici Dieu qui vient à mon secours</a></li>
+    <li data-author="-" data-momento="Comunión" data-bib="-"><a href="canciones/volar.html">Volar</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/wysławiajcie_pana.html">Wysławiajcie
+        Pana</a></li>
+    <li data-author="-" data-momento="Navidad" data-bib="-"><a href="canciones/ya_vienen_los_reyes_magos.html">Ya vienen
+        los Reyes Magos</a></li>
+    <li data-author="Migueli" data-momento="Antífonas" data-bib="-"><a href="canciones/yendo_contigo.html">Yendo
+        contigo</a></li>
+    <li data-author="Kairoi" data-momento="María" data-bib="Lucas 1, 48-56"><a
+        href="canciones/yo_cantare_(magnificat).html">Yo cantaré (Magnificat)</a></li>
+    <li data-author="Linda Duval" data-momento="Antífonas" data-bib="-"><a href="canciones/yo_celebrare.html">Yo
+        celebraré</a></li>
+    <li data-author="Suzanne Toolan" data-momento="Comunión" data-bib="Juan 6, 35"><a
+        href="canciones/yo_soy_el_pan_de_vida.html">Yo soy el Pan de Vida</a></li>
+    <li data-author="Al-Haraca" data-momento="Entrada" data-bib="Juan 8, 12"><a
+        href="canciones/yo_soy_la_luz_del_mundo.html">Yo soy la luz del mundo</a></li>
+    <li data-author="Alborada" data-momento="Ofertorio" data-bib="Juan 14, 6"><a
+        href="canciones/yo_soy_la_vida_y_la_verdad.html">Yo soy la Vida y la Verdad</a></li>
+    <li data-author="Taizé" data-momento="TaizéESP" data-bib="Salmo 27, 13"><a
+        href="canciones/i_am_sure_i_shall_see.html">Yo ya sé qué veré</a></li>
+    <li data-author="" data-momento="TaizéORIG" data-bib=""><a href="canciones/zu_wem_sollen_wir_gehen.html">Zu wem
+        sollen wir gehen</a></li>
+  </ul>
+  <script src="js/buscador.js"></script>
 </body>
+
 </html>

@@ -5,21 +5,86 @@ body {
     padding: 20px;
 }
 
-input#buscador {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    font-size: 1em;
+#buscador-container {
+    display: flex;
+    align-items: center;
+    /* centra verticalmente */
+    gap: 0;
+    /* sin espacio entre elementos */
+    margin-bottom: 1em;
 }
 
-ul#lista li {
-    margin: 5px 0;
+#filtro,
+#buscador {
+    height: 2.2em;
+    box-sizing: border-box;
+    font-size: 1em;
+    border: 1px solid #ccc;
+}
+
+/* Select ancho fijo, sin margen */
+#filtro {
+    flex: 0 0 100px;
+    border-right: 0;
+    /* quita borde derecho para “unir” con input */
+    padding: 0 0.3em;
+    border-radius: 4px 0 0 4px;
+    /* Redondea el select solo por la izquierda */
+}
+
+/* Input ocupa el resto, sin margen */
+#buscador {
+    flex: 1;
+    padding: 0 0.5em;
+    border-left: 0;
+    /* quita borde izquierdo para “unir” con select */
+    border-radius: 0 4px 4px 0;
+    /* redondea solo la derecha */
+}
+
+#lista {
+    list-style: none;
+    /* elimina los bullets */
+    padding: 0;
+    /* quita padding por defecto del <ul> */
+    margin: 0;
+    /* quita margen por defecto del <ul> */
+}
+
+#lista a {
+    display: block;
+    /* Hace que cada enlace ocupe toda la línea, clic fácil en móvil */
+    padding: 0.2em 1em;
+    /* Espacio interno: 0.2em arriba/abajo, 1em izquierda/derecha */
+    margin: 0.2em 0;
+    /* Separación entre enlaces: 0.2em arriba y abajo */
+    background-color: #f0f0f0;
+    /* Color de fondo gris claro */
+    text-decoration: none;
+    /* Quita el subrayado del enlace */
+    color: #000000;
+    /* Color del texto gris oscuro */
+    border-radius: 4px;
+    /* Esquinas ligeramente redondeadas */
+    transition: background 0.2s;
+    /* Transición suave de 0.2s al cambiar el fondo (hover) */
+}
+
+#lista a:hover {
+    background-color: #dce4f0;
+    /* Cambia el fondo al pasar el cursor */
 }
 
 hr {
     border: none;
-    border-top: 2px solid #ccc; /* línea horizontal para separar */
-    margin: 10px 0;             /* espacio arriba y abajo */
+    border-top: 2px solid #ccc;
+    /* línea horizontal para separar */
+    margin: 10px 0;
+    /* espacio arriba y abajo */
+    border-top: 2px solid #ccc;
+    /* línea horizontal para separar */
+    margin: 10px 0;
+    /* espacio arriba y abajo */
 }
 
 pre .estribillo {
@@ -28,6 +93,7 @@ pre .estribillo {
 }
 
 pre.original {
+    /*¿Por qué aquí un espacio lo rompe?*/
     font-style: italic;
     color: #000000;
 }
