@@ -19,6 +19,8 @@ function filtrar() {
         const autor = normalizar(li.dataset.author || "");
         const momentos = (li.dataset.momento || "").toLowerCase().split(",").map(normalizar);
         const bib = normalizar(li.dataset.bib || "");
+        const nold = li.dataset.nold || "";
+        const nnew = normalizar(li.dataset.nnew || "");
 
         let mostrar = false;
 
@@ -30,11 +32,17 @@ function filtrar() {
             mostrar = momentos.some(m => m.includes(texto));
         } else if(tipo === "bib") {
             mostrar = bib.includes(texto);
+        } else if(tipo === "nold") {
+            mostrar = nold.includes(texto);
+        } else if(tipo === "nnew") {
+            mostrar = nnew.includes(texto);
         } else if(tipo === "todos") {
             mostrar = titulo.includes(texto) ||
                       autor.includes(texto) ||
                       momentos.some(m => m.includes(texto)) ||
-                      bib.includes(texto);
+                      bib.includes(texto) ||
+                      nold.includes(texto) ||
+                      nnew.includes(texto);
         }
 
         li.style.display = mostrar ? "" : "none";

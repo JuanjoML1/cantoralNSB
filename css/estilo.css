@@ -87,15 +87,16 @@ hr {
     /* espacio arriba y abajo */
 }
 
+pre {
+    font-size: 1.2em;
+    /* un poquito más grande que el tamaño base */
+    line-height: 1.2;
+    /* interlineado*/
+}
+
 pre .estribillo {
     font-weight: bold;
     color: rgb(0, 2, 142);
-}
-
-pre.original {
-    /*¿Por qué aquí un espacio lo rompe?*/
-    font-style: italic;
-    color: #000000;
 }
 
 pre .gr {
@@ -107,4 +108,47 @@ pre .gr {
 pre .ag {
     color: rgb(106, 99, 0);
     text-decoration: overline;
+}
+
+pre.original {
+    /*Los pre que son original. Con punto es "los original que estén dentro de un pre"*/
+    font-style: italic;
+    color: #000000;
+}
+
+.cancion-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #ccc;
+    padding: 5px 0;
+}
+
+.cancion-header .numeros {
+    min-width: 80px;
+    /* ajusta según lo que ocupen los números */
+    font-size: 0.9em;
+    text-align: left;
+}
+
+span.antiguo::before {
+    content: "(";
+}
+
+span.antiguo::after {
+    content: ")";
+}
+
+.cancion-header .titulo {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 2em;
+}
+
+.cancion-header .tono {
+    min-width: 80px;
+    text-align: right;
+    font-size: 0.9em;
 }
