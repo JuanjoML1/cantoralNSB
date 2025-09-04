@@ -1,6 +1,6 @@
 const buscador = document.getElementById("buscador");
 const filtro = document.getElementById("filtro");
-const items = document.querySelectorAll("#lista li");
+const items = document.querySelectorAll("li");
 
 // Función para normalizar texto (quita tildes)
 function normalizar(texto) {
@@ -46,6 +46,21 @@ function filtrar() {
         }
 
         li.style.display = mostrar ? "" : "none";
+    });
+
+    document.querySelectorAll("ul.lista").forEach(ul => {
+        const visibles = ul.querySelectorAll("li:not([style*='display: none'])").length;
+        if (visibles === 0) {
+            ul.style.display = "none";
+            if (ul.previousElementSibling && ul.previousElementSibling.tagName === "H2") {
+                ul.previousElementSibling.style.display = "none";
+            }
+        } else {
+            ul.style.display = "";
+            if (ul.previousElementSibling && ul.previousElementSibling.tagName === "H2") {
+                ul.previousElementSibling.style.display = "";
+            }
+        }
     });
 }
 
