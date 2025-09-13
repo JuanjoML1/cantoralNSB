@@ -42,7 +42,7 @@ body {
     /* redondea solo la derecha */
 }
 
-#lista {
+.lista {
     list-style: none;
     /* elimina los bullets */
     padding: 0;
@@ -51,7 +51,7 @@ body {
     /* quita margen por defecto del <ul> */
 }
 
-#lista a {
+.lista a {
     display: block;
     /* Hace que cada enlace ocupe toda la línea, clic fácil en móvil */
     padding: 0.2em 1em;
@@ -70,7 +70,7 @@ body {
     /* Transición suave de 0.2s al cambiar el fondo (hover) */
 }
 
-#lista a:hover {
+.lista a:hover {
     background-color: #dce4f0;
     /* Cambia el fondo al pasar el cursor */
 }
