@@ -19,15 +19,15 @@ datos = {}
 with open(CSV, newline='', encoding='utf-8') as f:
     reader = csv.reader(f, delimiter=';')
     for row in reader:
-        if len(row) < 4:
-            continue
-        archivo_csv, antiguo, nuevo, tono = row
-        key = archivo_csv.strip().lower().replace(" ", "")
-        datos[key] = {
-            "antiguo": antiguo.strip(),
-            "nuevo": nuevo.strip(),
-            "tono": tono.strip()
-        }
+  if len(row) < 4:
+      continue
+  archivo_csv, antiguo, nuevo, tono = row
+  key = archivo_csv.strip().lower().replace(" ", "")
+  datos[key] = {
+      "antiguo": antiguo.strip(),
+      "nuevo": nuevo.strip(),
+      "tono": tono.strip()
+  }
 
 # Función para normalizar nombres de archivo
 def normalizar(nombre):
@@ -37,42 +37,42 @@ def normalizar(nombre):
 for archivo in archivos_html:
     ruta = os.path.join(CARPETA, archivo)
     with open(ruta, "r", encoding="utf-8") as f:
-        contenido = f.read()
+  contenido = f.read()
 
     # Normalizar nombre para buscar en CSV
     key = normalizar(archivo)
     d = datos.get(key)
 
     if not d:
-        print(f"⚠️ No hay datos en CSV para {archivo}. Se mantienen los valores actuales.")
-        continue
+  print(f"⚠️ No hay datos en CSV para {archivo}. Se mantienen los valores actuales.")
+  continue
 
     # Actualizar antiguo
     contenido = re.sub(
-        r'(<span class="antiguo">).*?(</span>)',
-        lambda m: f"{m.group(1)}{d['antiguo']}{m.group(2)}",
-        contenido,
-        flags=re.IGNORECASE
+  r'(<span class="antiguo">).*?(</span>)',
+  lambda m: f"{m.group(1)}{d['antiguo']}{m.group(2)}",
+  contenido,
+  flags=re.IGNORECASE
     )
 
     # Actualizar nuevo
     contenido = re.sub(
-        r'(<span class="nuevo">).*?(</span>)',
-        lambda m: f"{m.group(1)}{d['nuevo']}{m.group(2)}",
-        contenido,
-        flags=re.IGNORECASE
+  r'(<span class="nuevo">).*?(</span>)',
+  lambda m: f"{m.group(1)}{d['nuevo']}{m.group(2)}",
+  contenido,
+  flags=re.IGNORECASE
     )
 
     # Actualizar tono
     contenido = re.sub(
-        r'(<div class="tono">\s*<span>).*?(</span>\s*</div>)',
-        lambda m: f"{m.group(1)}{d['tono']}{m.group(2)}",
-        contenido,
-        flags=re.IGNORECASE
+  r'(<div class="tono">\s*<span>).*?(</span>\s*</div>)',
+  lambda m: f"{m.group(1)}{d['tono']}{m.group(2)}",
+  contenido,
+  flags=re.IGNORECASE
     )
 
     # Guardar archivo
     with open(ruta, "w", encoding="utf-8") as f:
-        f.write(contenido)
+  f.write(contenido)
 
     #print(f"Actualizado: {archivo}")

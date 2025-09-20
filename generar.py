@@ -31,7 +31,7 @@ Aquí irá la letra...
 
 # Creamos los archivos de cada canción
 for a in enlaces:
-    ruta = a['href']          # ej: "canciones/a_belen_se_va_y_se_viene.html"
+    ruta = a['href']    # ej: "canciones/a_belen_se_va_y_se_viene.html"
     titulo = a.text.strip()   # ej: "A Belén se va y se viene"
     
     # Nos aseguramos de que la carpeta exista
@@ -40,7 +40,7 @@ for a in enlaces:
     
     # Creamos el archivo HTML si no existe
     if not os.path.exists(ruta):
-        with open(ruta, "w", encoding="utf-8") as f:
-            f.write(plantilla.format(titulo=titulo))
+  with open(ruta, "w", encoding="utf-8") as f:
+      f.write(plantilla.format(titulo=titulo))
 
 print("Todos los HTMLs de canciones se han generado correctamente!")

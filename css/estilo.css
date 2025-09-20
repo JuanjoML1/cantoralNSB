@@ -1,5 +1,6 @@
 body {
     font-family: Arial, sans-serif;
+    font-size: 1.6em;
     max-width: 800px;
     margin: auto;
     padding: 20px;
@@ -88,7 +89,7 @@ hr {
 }
 
 pre {
-    font-size: 1.2em;
+    font-size: 1.6em;
     /* un poquito más grande que el tamaño base */
     line-height: 1.2;
     /* interlineado*/
