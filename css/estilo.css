@@ -1,6 +1,6 @@
 body {
     font-family: Arial, sans-serif;
-    font-size: 1.6em;
+    font-size: 1.2em;
     max-width: 800px;
     margin: auto;
     padding: 20px;
@@ -89,7 +89,7 @@ hr {
 }
 
 pre {
-    font-size: 2em;
+    font-size: 1.6em;
     /* un poquito más grande que el tamaño base */
     line-height: 1.2;
     /* interlineado*/
@@ -101,13 +101,13 @@ pre .estribillo {
 }
 
 pre .gr {
-    color: rgb(163, 0, 0);
+    color: #cc0000;
     text-decoration: underline;
     text-decoration-style: double;
 }
 
 pre .ag {
-    color: rgb(106, 99, 0);
+    color: #337733;
     text-decoration: overline;
 }
 
@@ -119,6 +119,7 @@ pre.original {
 
 .cancion-header {
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
@@ -128,8 +129,7 @@ pre.original {
 
 .cancion-header .numeros {
     min-width: 80px;
-    /* ajusta según lo que ocupen los números */
-    font-size: 0.9em;
+    font-size: 1em;
     text-align: left;
 }
 
@@ -145,11 +145,13 @@ span.antiguo::after {
     flex: 1;
     text-align: center;
     margin: 0;
-    font-size: 2em;
+    font-size: 1.8em;
 }
 
 .cancion-header .tono {
+    flex: 1 0 100%;
     min-width: 80px;
-    text-align: right;
-    font-size: 0.9em;
+    text-align: center;
+    font-size: 1.3em;
+    margin-top: 4px;
 }
