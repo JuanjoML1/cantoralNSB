@@ -24,25 +24,25 @@ function filtrar() {
 
         let mostrar = false;
 
-        if(tipo === "titulo") {
+        if (tipo === "titulo") {
             mostrar = titulo.includes(texto);
-        } else if(tipo === "autor") {
+        } else if (tipo === "autor") {
             mostrar = autor.includes(texto);
-        } else if(tipo === "momento") {
+        } else if (tipo === "momento") {
             mostrar = momentos.some(m => m.includes(texto));
-        } else if(tipo === "bib") {
+        } else if (tipo === "bib") {
             mostrar = bib.includes(texto);
-        } else if(tipo === "nold") {
+        } else if (tipo === "nold") {
             mostrar = nold.includes(texto);
-        } else if(tipo === "nnew") {
+        } else if (tipo === "nnew") {
             mostrar = nnew.includes(texto);
-        } else if(tipo === "todos") {
+        } else if (tipo === "todos") {
             mostrar = titulo.includes(texto) ||
-                      autor.includes(texto) ||
-                      momentos.some(m => m.includes(texto)) ||
-                      bib.includes(texto) ||
-                      nold.includes(texto) ||
-                      nnew.includes(texto);
+                autor.includes(texto) ||
+                momentos.some(m => m.includes(texto)) ||
+                bib.includes(texto) ||
+                nold.includes(texto) ||
+                nnew.includes(texto);
         }
 
         li.style.display = mostrar ? "" : "none";
@@ -50,17 +50,36 @@ function filtrar() {
 
     document.querySelectorAll("ul.lista").forEach(ul => {
         const visibles = ul.querySelectorAll("li:not([style*='display: none'])").length;
+        const header = ul.previousElementSibling;
+
+        // Ocultar o mostrar la lista y su cabecera (H3 normalmente)
         if (visibles === 0) {
             ul.style.display = "none";
-            if (ul.previousElementSibling && ul.previousElementSibling.tagName === "H2") {
-                ul.previousElementSibling.style.display = "none";
+            if (header && ["H2", "H3"].includes(header.tagName)) {
+                header.style.display = "none";
             }
         } else {
             ul.style.display = "";
-            if (ul.previousElementSibling && ul.previousElementSibling.tagName === "H2") {
-                ul.previousElementSibling.style.display = "";
+            if (header && ["H2", "H3"].includes(header.tagName)) {
+                header.style.display = "";
             }
         }
+    });
+
+    // Luego, ocultar H2 si todos sus H3/UL asociados están ocultos
+    document.querySelectorAll("h2").forEach(h2 => {
+        let next = h2.nextElementSibling;
+        let algunVisible = false;
+
+        while (next && next.tagName !== "H2") {
+            if (next.style.display !== "none") {
+                algunVisible = true;
+                break;
+            }
+            next = next.nextElementSibling;
+        }
+
+        h2.style.display = algunVisible ? "" : "none";
     });
 }
 
