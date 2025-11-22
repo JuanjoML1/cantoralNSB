@@ -155,3 +155,24 @@ span.antiguo::after {
     font-size: 1.3em;
     margin-top: 4px;
 }
+
+#indice {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.btn-indice {
+    padding: 8px 12px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+}
+
+.btn-indice:hover {
+    background-color: #ddd;
+}
