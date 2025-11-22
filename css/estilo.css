@@ -156,23 +156,48 @@ span.antiguo::after {
     margin-top: 4px;
 }
 
-#indice {
-    margin: 20px 0;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 10px;
+/* Botón del menú */
+#btn-menu {
+    position: fixed;
+    top: 10px;
+    left: 10px;
+    z-index: 1001;
+    padding: 10px 15px;
+    font-size: 18px;
+    cursor: pointer;
 }
 
-.btn-indice {
+/* Menú lateral */
+#menu-lateral {
+    position: fixed;
+    top: 0;
+    left: -280px; /* oculto por defecto */
+    width: 250px;
+    height: 100%;
+    background-color: #f9f9f9;
+    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    padding: 60px 20px 20px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    transition: left 0.3s ease;
+    z-index: 1000;
+}
+
+/* Enlaces dentro del menú */
+#menu-lateral .btn-indice {
     padding: 8px 12px;
     background-color: #eee;
-    border: 1px solid #ccc;
-    border-radius: 6px;
+    border-radius: 5px;
     text-decoration: none;
     color: #333;
     font-weight: bold;
 }
 
-.btn-indice:hover {
+#menu-lateral .btn-indice:hover {
     background-color: #ddd;
+}
+
+#menu-lateral.abierto {
+    left: 0;
 }
