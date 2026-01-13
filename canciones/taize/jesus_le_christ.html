@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Lam cej2</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 Lam      Rem      Sol     Do
 Cristo Jesús, oh, luz interior,
 Lam       Sol        Do    Fa     Mi
@@ -34,6 +43,7 @@ ne laisse pas mes ténèbres me parler.
 Jésus le Christ, lumière intérieure,
 donne moi d'accueillir ton amour.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

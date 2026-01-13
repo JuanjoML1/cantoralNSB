@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Do</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 <span class="estribillo">
   Do                       Fa      Do
 Jesús, nuestra Pascua, por todos murió,
@@ -49,6 +58,7 @@ al pueblo prisionero el Señor ya rescató. (bis)
 Pascua sagrada, ¡oh Pascua redentora!,
 Jesús es el Cordero que por todos se inmoló. (bis)
 </pre>
-<a href="../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

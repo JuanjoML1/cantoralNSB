@@ -19,6 +19,15 @@
             <span>Re</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 Mim  Sim   Mim       Lam                  Mim Sim
 <span class="gr">Cor</span>dero de Dios, que quitas el pe<span class="ag">ca</span>do del mundo,
@@ -28,7 +37,7 @@ ten piedad de nosotros. (bis)
 Cordero de Dios, que quitas el pecado del mundo,
 danos la paz.
 </pre>
-    <a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../../js/transponer.js"></script>
 
 </html>

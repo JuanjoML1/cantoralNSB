@@ -18,6 +18,15 @@
             <span>Sol</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
      Mim           Do          Re        Sol
 El Señor ha estado grande, a Jesús resucitó.
@@ -47,7 +56,7 @@ y escuchamos su Palabra, fuerza viva de su amor.
 Que disipa las tinieblas y aleja del temor.
 Se hacen fuertes nuestras manos con la Madre del Señor.
 </pre>
-    <a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../../js/transponer.js"></script>
 
 </html>

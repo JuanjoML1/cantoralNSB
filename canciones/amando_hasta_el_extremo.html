@@ -19,6 +19,15 @@
             <span>Lam cej4</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 Lam       Do                    Lam
 Déjame, Se<span class="gr">ñor</span>, mirarte bien por dentro,
@@ -65,7 +74,8 @@ en una toalla y un lebrillo, en un acariciar los pies,
 en un mirarlos hasta el fondo sin nada que reprochar,
 y sin nada que pedir y con tanto para dar (bis).
 </pre>
-    <a href="../index.html">Volver al índice</a>
+
 </body>
+<script src="../js/transponer.js"></script>
 
 </html>

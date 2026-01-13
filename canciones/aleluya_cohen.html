@@ -19,6 +19,15 @@
             <span>Sol</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 Sol          Mim         Sol        Mim
 Padre, yo te quiero amar y tocar tu corazón,
@@ -37,7 +46,8 @@ pues tú eres mi refugio, oh, Señor.
 No importa dónde pueda estar, en valles de dificultad,
 te adoraré cantando aleluya. 
 </pre>
-    <a href="../index.html">Volver al índice</a>
+
 </body>
+<script src="../js/transponer.js"></script>
 
 </html>

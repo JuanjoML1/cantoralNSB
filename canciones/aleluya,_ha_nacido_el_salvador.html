@@ -19,6 +19,15 @@
             <span>Mi</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 <span class="estribillo">
 Mi     La   Mi         La           Si7
@@ -37,7 +46,8 @@ Gloria en los cielos a Dios y en la tierra al hombre paz (bis).
 Escuchad, hermanos, una gran noticia,
 Dios a su Hijo envió, él es Jesús, el Salvador (bis).
 </pre>
-    <a href="../index.html">Volver al índice</a>
+
 </body>
+<script src="../js/transponer.js"></script>
 
 </html>

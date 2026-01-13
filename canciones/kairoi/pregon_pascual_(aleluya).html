@@ -19,6 +19,15 @@
             <span>La cej1</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 <span class="estribillo">
 Re La    Sol         La
@@ -65,7 +74,7 @@ Nos unimos a los gritos de esta tierra
 que recibe tu Evangelio
 que reclama a gritos la liberación.
 </pre>
-    <a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../../js/transponer.js"></script>
 
 </html>

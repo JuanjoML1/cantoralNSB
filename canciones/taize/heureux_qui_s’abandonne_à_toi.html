@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Sol cej5</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
   Sol Re    Sol            Do            Lam    Re     Sol
 Feliz quien se abandona en Ti, Señor, confiando de corazón.
 Mim   Lam  Si7    Mim     Lam     Si7     Mim   Do Re
@@ -28,6 +37,7 @@ La alegría tú nos das, la simplicidad, la misericordia.
 Heureux qui s’abandonne à toi, ô Dieu, dans la confiance du coeur.
 Tu nous gardes dans la joie, la simplicité, la misericorde.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

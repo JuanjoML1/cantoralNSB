@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Lam cej4</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 Lam                           Sol       Lam
 Gloria a Dios, gloria a Dios, gloria al Padre. (bis)
 <span class="estribillo">
@@ -30,6 +39,7 @@ Gloria a Dios, gloria a Dios, gloria al Hijo. (bis)
 
 Gloria a Dios, gloria a Dios, Espíritu Santo. (bis)
 </pre>
-<a href="../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

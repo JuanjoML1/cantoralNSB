@@ -19,6 +19,15 @@
             <span>Re</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 Re       Sol        Re          La7
 Cerca de ti, Señor, <span class="gr">yo</span> quiero estar.
@@ -44,7 +53,8 @@ en que yo habitaré cerca de ti.
 Mi voz alabará tu santo nombre allí,
 y mi alma gozará cerca de ti.
 </pre>
-    <a href="../index.html">Volver al índice</a>
+
 </body>
+<script src="../js/transponer.js"></script>
 
 </html>

@@ -19,6 +19,15 @@
             <span>Mi</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
       Mi
 Compartía y perdonaba y hacía el bien
@@ -37,7 +46,8 @@ de ser amigo, ser tu raíz,
 de ayudar siempre a hacerte feliz. (bis)
 </span>
 </pre>
-    <a href="../index.html">Volver al índice</a>
+
 </body>
+<script src="../js/transponer.js"></script>
 
 </html>

@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Fa cej5</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
   Fa        Mi   Lam                 Sol Do
 Espíritu de Dios Vivo, déjanos recibirte
    Fa  Do  Sol Lam Fa Mi
@@ -30,6 +39,7 @@ en nuestros corazones.
 Spiritus Jesu Christi, Spiritus caritatis,
 confirmet cor tuum, confirmet cor tuum.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

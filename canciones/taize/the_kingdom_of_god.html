@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Rem cej2</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
    Rem      Sib     Solm  Fa Do      Fa Do   Sib  Do
 El Reino de Dios es reino de paz, justicia y alegría.
 Fa   Sib     Solm Fa Do     Lam Rem Sib   Do Fa
@@ -29,6 +38,7 @@ The kingdom of God is justice and peace,
 and joy in the Holy Spirit.
 Come, Lord, and open in us the gates of your kingdom.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

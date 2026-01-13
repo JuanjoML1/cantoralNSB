@@ -16,8 +16,17 @@
   <div class="tono">
     <span>La cej4</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 La          Do#m   Re            Mi7
 Esto que te doy es vino y pan, Señor.
 Re          Do#m         Mi7
@@ -51,4 +60,6 @@ es un canto en comunidad.
 <p><a href="https://www.youtube.com/watch?v=whLQp8Pq58g">Escuchar en YouTube</a></p>
 <a href="../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

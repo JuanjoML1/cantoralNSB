@@ -18,6 +18,15 @@
             <span>Fa</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
       Rem                 Solm
 Ahí estás colgado de un madero,
@@ -58,7 +67,7 @@ Rem     Solm    Sib    La7         Rem
 Cristo, Cristo, hoy Tú mueres por amor.
 </span>
 </pre>
-    <a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../../js/transponer.js"></script>
 
 </html>

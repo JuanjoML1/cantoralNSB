@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Sim cej3</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 Sim        Fa#m Sim          Em      Fa#m
 Tú, luz del mundo, aquel que vive en Ti
 Re        Sol   La Mim       Sim La
@@ -28,6 +37,7 @@ tendrá la luz de vida, luz de vida.
 Christe lux mundi, qui sequitur te
 habebit lumen vitae, lumen vitae.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

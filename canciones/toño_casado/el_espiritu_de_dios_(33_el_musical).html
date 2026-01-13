@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Do</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
      Do        Fa           Do
 El Espíritu de Dios está dentro de mí
        Do          Fa              Mim
@@ -37,6 +46,7 @@ juega el niño con la cobra y el león,
 y la gente ya no muere, ya se terminó el dolor,
 ese es el reino que anuncio, ese es el reino de Dios.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Do</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 <span class="estribillo">
 Do          Lam     Rem       Sol7      Do
 Dios nos convoca, venid y escuchemos su voz.
@@ -41,6 +50,7 @@ Venid, celebrad la Victoria.
 Venid, renovad la amistad,
 y, en hermandad, cantad la Nueva Alianza.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

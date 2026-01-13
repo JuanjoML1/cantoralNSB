@@ -18,6 +18,15 @@
             <span>Sol</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 Sol         Re          Mim Do   Lam   Re           Sol  Re7
 Vamos hacia Ti, Señor Jesús, seducidos por tu fiel amor.
@@ -42,7 +51,7 @@ Nos inundarás con su presencia tu Espíritu, Señor.
 Crecerá en nosotros la esperanza, viviremos en fraternidad
 y proclamaremos por la tierra que Tú eres nuestro Dios.
     </pre>
-    <a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../../js/transponer.js"></script>
 
 </html>

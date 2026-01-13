@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Lam cej5</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 Lam    Rem    Lam      Rem
 Permaneced conmigo y velad,
   Lam Sol  Do Sol   Lam   Rem Mi7
@@ -31,6 +40,7 @@ velad esta noche, velad esta noche.
 Bleibet hier und wachet mit mir.
 Wachet und betet, wachet und betet.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

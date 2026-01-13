@@ -19,6 +19,15 @@
             <span>Do</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
         Mi                  La                       Mi
 <span class="gr">Los</span> que tienen y nunca se olvidan de que a otros les falta,
@@ -44,7 +53,8 @@ los que siempre trabajan pensando en un mundo mejor,
 los que están liberados de todas sus ambiciones,
 esa gente es feliz porque vive muy cerca de Dios.
 </pre>
-    <a href="../index.html">Volver al índice</a>
+
 </body>
+<script src="../js/transponer.js"></script>
 
 </html>

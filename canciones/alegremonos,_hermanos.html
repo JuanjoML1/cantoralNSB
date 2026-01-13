@@ -19,6 +19,15 @@
             <span>Do</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
    Do           Lam         Mim              Rem Sol
 <span class="gr">A</span>legrémonos, hermanos, el Señor resucitó ¡aleluya!
@@ -42,7 +51,8 @@ los intentos de quien busca una nueva humanidad ¡aleluya!
 Cristo es sombra que protege, Cristo es casa que cobija ¡aleluya!
 Cristo es agua que refresca, Cristo es pan que da la vida ¡aleluya!
 </pre>
-    <a href="../index.html">Volver al índice</a>
+
 </body>
+<script src="../js/transponer.js"></script>
 
 </html>

@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Re</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 <span class="estribillo">
   Re    La      Fa#      Sol
 Escucha tú la Palabra de Dios,
@@ -42,6 +51,7 @@ da tu pan al pobre, préstale tu voz.
 Ama a Dios, ámalo con tu caridad,
 oye su Palabra con sinceridad.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

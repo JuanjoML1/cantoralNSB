@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Do cej4</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 Do          Sol7  Lam      Sol       Do
 Dios, lleva todos mis pensamientos a ti.
    Fa      Mim   Rem         Mim
@@ -34,6 +43,7 @@ Bei dir ist das Licht, du vergißt mich nicht.
 Bei dir ist die Hilfe, bei dir ist die Geduld.
 Ich verstehe deine Wege nicht, aber du weißt den Weg für mich.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

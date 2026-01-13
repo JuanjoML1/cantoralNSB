@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Mim</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 Mim Sim   Do     Sim  Sol  Re   Sol  Sim Sol Re
 Oh, Dios, consolador, Es – pí – ri - tu de amor.
 Lam Sim  Lam Sol Lam   Sim Lam Re7  Mim
@@ -29,6 +38,7 @@ O______  O_____
 <pre class="original">
 Esprit consolateur, amour de tout amour.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

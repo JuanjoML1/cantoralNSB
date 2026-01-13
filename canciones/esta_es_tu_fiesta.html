@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Do</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
            Do
 Esta es tu fiesta, Señor, es nuestra fiesta.
            Fa           Rem       Sol
@@ -46,6 +55,7 @@ Esta es la casa de los hijos del Señor.
 Esta es tu casa, Señor, es nuestra casa.
 Esta es la casa que nos une en el amor.
 </pre>
-<a href="../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

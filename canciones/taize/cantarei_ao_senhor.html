@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Mim</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
      Mim     Re      Do      Re
 Cantaré al Señor con todo mi ser,
    Mim      Do        Sol      Lam
@@ -33,6 +42,7 @@ Cantarei ao Senhor, enquanto viver;
 louvarei o meu Deus enquanto existir.
 Nele encontro a minha alegria. Nele encontro a minha alegria.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

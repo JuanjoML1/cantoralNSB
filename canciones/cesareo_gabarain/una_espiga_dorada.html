@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Sol</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
       Sol    Do          Sol
 Una espiga dorada por el sol,
                            Re
@@ -42,6 +51,7 @@ como hijos, su pan comulgarán.
 Una misma esperanza, caminando, cantarán,
 en la vida como hermanos se amarán.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

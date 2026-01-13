@@ -18,6 +18,15 @@
             <span>Do cej2</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 Do                   Do7                    Fa              Do
 Cuando camino por la gran ciudad y veo a un niño allí estás Tú.
@@ -44,7 +53,7 @@ En el joven que ha robado tal vez y es drogadicto, allí estás Tú.
 En la muchacha de temprana edad que vende su cuerpo en un bar.
 En una cárcel o en un tribunal en todos, Señor, vives Tú.
 </pre>
-    <a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../../js/transponer.js"></script>
 
 </html>

@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Lam cej2</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
    Mim    Lam      Si7   Sol  Lam
 ¿A quién iremos, Señor?  O_______
       Do         Re       Sol
@@ -27,6 +36,7 @@ Tus palabras son de vida eterna. O__________
 <pre class="original">
 Zu wem, zu wem solln wir gehen? Du hast Worte des ewigen Lebens.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

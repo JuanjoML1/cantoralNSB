@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Sol cej2</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 <span class="estribillo">
 Sol                       Re              Sol
 Unidos en la fiesta la alegría se hace canción.
@@ -38,6 +47,7 @@ porque sabe perdonar y nos llena de eterna bondad.
 Cantaremos al Señor aleluyas al son de instrumentos,
 y será nuestra canción la alabanza que ensalza su amor.
 </pre>
-<a href="../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

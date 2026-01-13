@@ -18,6 +18,15 @@
             <span>Lam cej3</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 Lam          Sol         Lam          Sol
 Quien está pidiendo pan, ese es mi hermano.
@@ -47,7 +56,7 @@ Quien habla otro idioma es mi hermana.
 Quien no sabe ni quién es por la enfermedad
 es mi madre.
 </pre>
-    <a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../../js/transponer.js"></script>
 
 </html>

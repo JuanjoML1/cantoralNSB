@@ -18,6 +18,15 @@
             <span>Re</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 <span class="estribillo">
 Re    La    Sol     La               Re
@@ -39,7 +48,7 @@ cuando compraba aquel campo se llenó de tu alegría.
 Pon en juego tus talentos, no los guardes bajo tierra.
 El Señor cuanta contigo, para eso te hizo nuevo.
 </pre>
-    <a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../../js/transponer.js"></script>
 
 </html>

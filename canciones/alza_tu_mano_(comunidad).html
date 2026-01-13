@@ -19,6 +19,15 @@
             <span>Re cej2</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 Re              La
 <span class="gr">Al</span><span class="ag">za</span> tu mano, alza tu mano
@@ -53,7 +62,8 @@ Y en las huellas que otros dejaron
 vayamos hoy caminando
 y así buscando en ellas la unidad, ¡unidad!
 </pre>
-    <a href="../index.html">Volver al índice</a>
+
 </body>
+<script src="../js/transponer.js"></script>
 
 </html>

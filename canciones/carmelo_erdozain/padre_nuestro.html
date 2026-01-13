@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Lam</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 Lam          Do      Sol       Lam
 Padre nuestro, que estás en el cielo,
                    Sol                        Lam
@@ -39,6 +48,7 @@ no nos dejes, no nos dejes caer en la tentación,
        Sol     Lam  Sol          Lam
 y líbranos del mal, líbranos del mal.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

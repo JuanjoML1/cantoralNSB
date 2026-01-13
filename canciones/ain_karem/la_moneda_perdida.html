@@ -18,6 +18,15 @@
             <span>Re</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 <span class="estribillo">
    Re                Sol
@@ -48,7 +57,7 @@ con deseos de barrer mi hogar y, al fin,
 encontrar esa moneda que perdí por mi descuido,
 sé que es don que de tu mano recibí.
 </pre>
-    <a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../../js/transponer.js"></script>
 
 </html>

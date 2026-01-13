@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Lam</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 Lam Sol     Do  Sol  Do      Rem    Sol     Do       Lam
 Cristo es Espirítu y Dios. Espíritu Santo y Dios creador.
 Mim     Fa          Rem      Sol
@@ -28,6 +37,7 @@ Oh, Jesucristo, tú, Dios de amor.
 Dominus Spiritus est. Spiritus autem vivificat.
 Spiritus autem vivificat.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Solm cej2</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
   Solm     Rem        Solm           Rem
 Levanto mi alma, te invoco a ti, oh, Cristo.
 Solm    Rem           Solm   Rem
@@ -28,6 +37,7 @@ Eres la Salvación, en ti esperamos
 Ad te Jesu Christe levavi anima meam.
 Salvator mundi, in te speravi.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

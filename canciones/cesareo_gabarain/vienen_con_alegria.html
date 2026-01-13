@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Do</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 <span class="estribillo">
 Do            Sol     Do
 Vienen con alegría, Señor
@@ -43,6 +52,7 @@ esfuerzos de hermanos por la paz,
 deseos de un mundo más humano
 que nace del bien y la verdad.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

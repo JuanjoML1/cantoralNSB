@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Re</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 Re           La            Sim
 Para que mi amor no sea un sentimiento,
         Sol         Mim        La
@@ -63,6 +72,7 @@ por mis inseguridades y mis miedos,
 y para elegir tu querer y no el mío
 hazme en mi Getsemaní fiel y despierto.
 </pre>
-<a href="../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

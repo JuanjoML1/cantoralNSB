@@ -19,6 +19,15 @@
             <span>Do</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 <span class="estribillo">
 Do   Mim    Fa      Do  Fa   Do    Re7 Sol
@@ -32,7 +41,7 @@ Todas las cosas se te añadirán, Aleluya, Aleluya.
 Yo canto a Cristo que me liberará cuando vendrá en su Gloria,
 cuando la vida con el renacerá, aleluya, aleluya.
 </pre>
-    <a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../../js/transponer.js"></script>
 
 </html>

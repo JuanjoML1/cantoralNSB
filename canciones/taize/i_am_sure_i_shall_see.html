@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Re cej2</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 Re    Sol      Do    Lam         Re     Lam  Sol      Re
 Yo ya sé que veré la dicha del Señor en el país de la vida.
 Lam      Mim   Lam   Do    Sim    Mim      Lam         Re
@@ -30,6 +39,7 @@ in the land of the living.
 Yes, I shall see the goodness of our God,
 hold firm, trust in the Lord.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

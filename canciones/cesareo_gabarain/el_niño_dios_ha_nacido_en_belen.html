@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Sol</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 Sol Do  Sol  Do   Sol Do    Sol   Re       Sol Re Sol
 El Niño Dios ha nacido en Belén. ¡Aleluya! ¡Aleluya!
 Sol Do   Sol Do   Sol Do    Sol    Re             Sol
@@ -34,6 +43,7 @@ Solo el amor nos conduce hasta Él. ¡Aleluya! ¡Aleluya!
 Hay en los cielos mensajes de Paz. ¡Aleluya! ¡Aleluya!
 Para los hombres de fe y voluntad. ¡Aleluya! ¡Aleluya!
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

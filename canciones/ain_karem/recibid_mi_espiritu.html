@@ -18,6 +18,15 @@
             <span>Do</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 Do           Sol  Fa    Do  Fa    Sol   Do  Sol
 Te doy mi ternura, acógela, recíbela en ti.
@@ -40,7 +49,7 @@ Te doy mi luz, te doy mi paz,
 Do   Sol  Fa    Sol    Do
 acógelas, recíbelas en ti. (bis)
 </pre>
-    <a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../../js/transponer.js"></script>
 
 </html>

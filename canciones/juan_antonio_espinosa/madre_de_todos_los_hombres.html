@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Lam cej3</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 <span class="estribillo">
 Lam      Mi        Lam        Rem         Lam Sol Lam
 Madre de todos los hombres, enséñanos a decir "amén".
@@ -31,6 +40,7 @@ Cuando aparece la luz y nos sentimos felices.
 
 Cuando nos llegue la muerte y Tú nos lleves al cielo.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

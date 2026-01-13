@@ -19,6 +19,15 @@
             <span>Do cej2</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 Do            Sol      Lam Fa         Rem      Sol
 Junto a Ti, <span class="ag">Je</span>sús, re<span class="gr">za</span>ré. Tu Palabra quiero vivir.
@@ -34,7 +43,7 @@ Pones paz en mi corazón. Con tu amor feliz yo seré.
 Nunca dejaré de cantar que Tú eres la luz y el amor.
 Tu camino quiero seguir, no me dejes sólo, Señor.
 </pre>
-    <a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../../js/transponer.js"></script>
 
 </html>

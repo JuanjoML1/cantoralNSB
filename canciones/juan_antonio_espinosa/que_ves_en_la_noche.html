@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Mim</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 <span class="estribillo">
      Mim       Re     Do           Mim
 ¿Qué ves en la noche? dinos, centinela.
@@ -43,6 +52,7 @@ Vi los cielos nuevos y la tierra nueva.
 Cristo entre los vivos, y la muerte muerta.
 No durmáis al alba: ¡Cristo está ya cerca!
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

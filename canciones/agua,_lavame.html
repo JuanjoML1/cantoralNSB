@@ -19,13 +19,23 @@
             <span>Do</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 Do            Fa      Do
 <span class="gr">A</span>gua, lávame, purifí<span class="ag">ca</span>me.
 Fa               Do      Sol      Do
 Dame, agua, tu espíritu. Agua lávame.
 </pre>
-    <a href="../index.html">Volver al índice</a>
+
 </body>
+<script src="../js/transponer.js"></script>
 
 </html>

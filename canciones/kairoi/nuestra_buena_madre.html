@@ -18,6 +18,15 @@
             <span>Fa</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 Fa  Do Sib          Do           Fa        Sib Do
 Sí, yo quiero decir desde el corazón una palabra
@@ -39,7 +48,7 @@ Sí, yo quiero que aquí nazca una flor que hable de amor del Señor,
 y que seas, María, quien lo ha dado todo para germinar,
 y que seas, María, quien lo ha dado todo para germinar.
 </pre>
-    <a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../../js/transponer.js"></script>
 
 </html>

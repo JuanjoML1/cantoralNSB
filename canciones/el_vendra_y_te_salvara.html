@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Do</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 Do     Sol     Lam       Fa       Do Sol     Fa  Sol
 Dile a quien sufre en su soledad: no debes temer,
 Do        Sol     Lam      Fa
@@ -40,6 +49,7 @@ Dile a quien tiene herido el corazón: No pierdas la fe,
 Pues el Señor, tu Dios, con su gran amor,
 Cuando invoques su nombre, Él te salvará.
 </pre>
-<a href="../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

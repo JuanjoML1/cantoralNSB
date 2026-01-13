@@ -18,6 +18,15 @@
             <span>Lam cej6</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 Lam        Sol
 Encorvada, encerrada,
@@ -50,7 +59,7 @@ para decir tu palabra quedas libre, mujer.
 para ser escuchada quedas libre, mujer.
 </span>
 </pre>
-    <a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../../js/transponer.js"></script>
 
 </html>

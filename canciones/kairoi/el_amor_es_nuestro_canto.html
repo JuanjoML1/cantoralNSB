@@ -19,6 +19,15 @@
             <span>Re</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
     Re                                  Mim
 El amor es la palabra limpia que hace vivir
@@ -44,7 +53,7 @@ es la luz que inunda sombras en la oscuridad.
 Es la vida que nos brinda un tiempo de oportunidad.
 No dejes que pase tu tiempo sin más.
 </pre>
-    <a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../../js/transponer.js"></script>
 
 </html>

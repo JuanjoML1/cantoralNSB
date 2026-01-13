@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Mi</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 <span class="estribillo">
    Mi     La        Mi                 Si7
 La Virgen sueña caminos, está a la espera;
@@ -47,6 +56,7 @@ El sol le dice a la luna que no se duerma.
 A la ciudad de Belén, vendrá una estrella.
 Vendrá con todo el que quiera cruzar fronteras.
 </pre>
-<a href="../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

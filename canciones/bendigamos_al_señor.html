@@ -19,6 +19,15 @@
             <span>Mi cej1</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
      Mi                      Do#m
 Bendigamos al Señor, Dios de toda creación,
@@ -49,7 +58,8 @@ anunciamos: “llega ya la salvación”.
 Que ni el miedo ni el temor, ni la duda o la opresión
 borrarán la paz de nuestro corazón.
 </pre>
-    <a href="../index.html">Volver al índice</a>
+
 </body>
+<script src="../js/transponer.js"></script>
 
 </html>

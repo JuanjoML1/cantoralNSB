@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Lam cej3</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 <span class="estribillo">
       Lam     Sol    Lam
 Donde hay caridad y amor
@@ -44,6 +53,7 @@ nos reúne a los hermanos en el nombre de Jesús.
 Anunciamos su memoria, celebramos su pasión,
 el misterio de su muerte y de su resurrección.
 </pre>
-<a href="../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

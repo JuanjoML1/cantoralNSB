@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Sol cej2</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 Sol  Do    Sol   Sim          Mim  Lam        Re
 Dios es ternura, Dios vive en ti, atrévete a amar.
 Sol  Lam  Sol Re Mim    Lam Re    Sol
@@ -28,6 +37,7 @@ Dios es ternura, no hay por qué temer.
 Bóg jest miłością, miejcie odwagę żyć dla miłości, 
 Bóg jest miłością, nie lękajcie się.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

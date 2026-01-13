@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Sol</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
     Sol       Re          Do Sol
 Purifícame, Señor, con tu gracia.
     Do
@@ -47,6 +56,7 @@ en tu nombre anunciaré el mensaje de tu Reino.
 Quiero serte fiel. Tú vendrás, Señor, a mi lado,
 llevaré la buena nueva a mis hermanos.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

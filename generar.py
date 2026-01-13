@@ -24,8 +24,9 @@ plantilla = """<!DOCTYPE html>
 <pre>
 Aquí irá la letra...
 </pre>
-<a href="../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>
 """
 

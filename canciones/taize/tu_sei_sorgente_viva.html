@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Do cej3</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 Do Lam  Rem   Do Lam Fa   Solm Rem Do Rem
 Tú eres fuente viva, eres fuego y caridad.
 Lam    Sib Fa Solm Do Rem    Sib    Fa Do
@@ -28,6 +37,7 @@ Ven, Espíritu Santo.  Ven, Espíritu Santo.
 Tu sei sorgente viva, tu sei fuoco, sei carità.
 Vieni Spirito Santo, vieni Spirito Santo.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

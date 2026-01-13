@@ -18,6 +18,15 @@
             <span>Sol</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
    Sol    Re    Mim  Sim    Fa   Do    Re
 El don de la fraternidad, regalo del Señor,
@@ -28,7 +37,7 @@ que hay que cuidar día a día, hay que cuidar con amor,
     Sol        Re        Mim  Sim        Fa  Do   Re
 que hay que cuidar día a día, hay que cuidar con amor.
 </pre>
-    <a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../../js/transponer.js"></script>
 
 </html>

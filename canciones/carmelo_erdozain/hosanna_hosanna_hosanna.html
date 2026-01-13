@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Re cej1</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 <span class="estribillo">
  Re                La Re
 ¡Hosanna, hosanna, hosanna,
@@ -39,6 +48,7 @@ Con salmos y con palmas recibieron al Señor ¡hosanna!
 Vestido de esperanza acudió el Pueblo de Dios ¡hosanna!
 ¡Bendito el que viene en nombre del Señor, en nombre del Señor!
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

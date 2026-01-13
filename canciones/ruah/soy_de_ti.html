@@ -18,6 +18,15 @@
             <span>Sol</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 Mim          Lam  Re
 Cuando no te veo, cuando no me fío
@@ -39,7 +48,7 @@ Y cuando vuelvo hacia tu casa ya estás en medio del camino
         Do              Re Do       Re        Sol
 con los brazos extendidos, vuelvo a ser quién soy.
 </pre>
-    <a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../../js/transponer.js"></script>
 
 </html>

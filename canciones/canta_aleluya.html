@@ -19,13 +19,23 @@
             <span>Lam cej2</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 Lam      Mim       Lam Mim Lam      Mim       Lam Mi
 Canta aleluya al Se<span class="gr">ñor</span>,    canta aleluya al Señor,
 Fa       Sol   Fa       Do    Lam      Mim       Lam  (Mim)
 canta a<span class="ag">le</span>luya, canta aleluya, canta aleluya al Señor. (bis) 
 </pre>
-    <a href="../index.html">Volver al índice</a>
+
 </body>
+<script src="../js/transponer.js"></script>
 
 </html>

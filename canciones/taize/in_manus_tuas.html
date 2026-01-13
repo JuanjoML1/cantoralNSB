@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Do cej2</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
     Do       Mim    Rem Do      Fa           Mim
 Oh, Padre, entre tus manos mi espíritu hoy entrego.
     Lam      Rem     Lam Sol Do      Fa  Sol      Do
@@ -28,6 +37,7 @@ Oh, Padre, entre tus manos      mi espíritu hoy entrego.
 In manus tuas, Pater, commendo spiritum meum,
 in manus tuas, Pater, commendo spiritum meum.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

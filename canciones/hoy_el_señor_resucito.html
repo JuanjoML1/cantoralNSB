@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Do cej2</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
          Do                                 Sol
 Hoy el Señor resucitó y de la muerte nos salvó.
 <span class="estribillo">
@@ -34,6 +43,7 @@ Marchad a unir la tierra en paz con vuestro gozo y vuestro amor.
 
 Todos cantad: ¡Aleluya! Todos gritad: ¡Aleluya!
 </pre>
-<a href="../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

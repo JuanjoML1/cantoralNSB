@@ -171,11 +171,12 @@ span.antiguo::after {
 #menu-lateral {
     position: fixed;
     top: 0;
-    left: -280px; /* oculto por defecto */
+    left: -280px;
+    /* oculto por defecto */
     width: 250px;
     height: 100%;
     background-color: #f9f9f9;
-    box-shadow: 2px 0 5px rgba(0,0,0,0.2);
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
     padding: 60px 20px 20px 20px;
     display: flex;
     flex-direction: column;
@@ -200,4 +201,46 @@ span.antiguo::after {
 
 #menu-lateral.abierto {
     left: 0;
+}
+
+#main-controls {
+    display: flex;
+    justify-content: space-between;
+    /* izquierda / derecha */
+    align-items: center;
+    margin: 20px 0;
+}
+
+#back-button {
+    padding: 8px 14px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#back-button:hover {
+    background-color: #ddd;
+}
+
+#controls-container {
+    display: flex;
+    gap: 10px;
+    /* espacio entre botones */
+}
+
+#controls-container button {
+    padding: 8px 14px;
+    font-size: 1rem;
+    border-radius: 6px;
+    border: 1px solid #444;
+    background-color: #f0f0f0;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+#controls-container button:hover {
+    background-color: #ddd;
 }

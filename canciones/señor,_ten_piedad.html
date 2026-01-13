@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Do cej4</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 Do                Sol                  Lam
 Señor, a veces no soy como quieres que sea;
 Fa                Do                  Sol
@@ -37,6 +46,7 @@ Tú sabes que lo intento, pero no hay manera.
 Hay días que me enfado y no hago mi tarea.
 Tú sabes que lo intento, pero no hay manera.
 </pre>
-<a href="../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

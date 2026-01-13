@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Mim</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
   Mim     Re           Lam        Mim
 Jesús, mi vida, mi esperanza y mi paz,
    Sol   Lam    Do Re Mim  Lam
@@ -30,6 +39,7 @@ O________________________
 Jésus, ma joie, mon espérance et ma vie,
 ma joie, mon espérance et ma vie.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

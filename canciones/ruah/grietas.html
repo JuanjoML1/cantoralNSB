@@ -18,6 +18,15 @@
             <span>Sol</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 Sol                          Sim
 Se me ha roto un nuevo sueño en el que no estás conmigo,
@@ -39,7 +48,7 @@ Ahora mantendré el silencio, andaré solo de puntillas
 para no hacer ruido fuera, buscaré tu luz de nuevo.
 A tu ritmo susurraré, a tu tiempo me detendré.
 </pre>
-    <a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../../js/transponer.js"></script>
 
 </html>

@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Lam cej2</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 <span class="estribillo">
           Lam        Mi7           Lam
 Cuando el pobre nada tiene y aún reparte,
@@ -45,6 +54,7 @@ cuando un hombre donde hay guerra pone paz,
 cuando hermano le llamamos al extraño,
 va Dios mismo en nuestro mismo caminar (bis).
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

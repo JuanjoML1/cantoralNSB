@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Mi</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 (Mi – Fa#m – Si – Mi)
 Hay un corazón que late, que palpita en el Sagrario,
 un corazón solitario que se alimenta de amor.
@@ -44,6 +53,7 @@ que amando a sus enemigos hizo creer al ladrón.
 Es el corazón que salva por su fe a quien se le acerca,
 que mostró su herida abierta al apóstol que dudó.
 </pre>
-<a href="../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

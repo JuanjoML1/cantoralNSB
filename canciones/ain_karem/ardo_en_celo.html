@@ -18,6 +18,15 @@
             <span>Re cej2</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 Re               La        Sim
 Ardo en celo por ti y no estás,
@@ -30,7 +39,7 @@ y en el ruido de un silencio te oí,
      Re La Sim      Sol La Re
 mi Señor,      mi Señor.
 </pre>
-    <a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../../js/transponer.js"></script>
 
 </html>

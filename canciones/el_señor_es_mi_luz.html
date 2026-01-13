@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Re cej2</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 <span class="estribillo">
      Re              Sol     Re
 El Señor es mi luz y mi salvación.
@@ -39,6 +48,7 @@ Si mi padre y mi madre me abandonan el Señor me recogerá.
 Oh, Señor, enséñame el camino, guíame por la senda verdadera.
 Gozaré de la dicha del Señor en la tierra de la vida.
 </pre>
-<a href="../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>

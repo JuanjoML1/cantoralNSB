@@ -19,6 +19,15 @@
             <span>La</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
      La                        Mi           La
 Esta noche nace el Niño, yo no tengo que llevarle.
@@ -42,7 +51,7 @@ Los pastores lo han acostado, y ahora la Virgen lo acuna.
 Los querubines del cielo hoy han bajado una estrella,
 para que alumbre la gruta y Jesús juegue con ella.
 </pre>
-    <a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../../js/transponer.js"></script>
 
 </html>

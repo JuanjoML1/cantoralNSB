@@ -18,6 +18,15 @@
             <span>Lam cej2</span>
         </div>
     </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
     <pre>
 <span class="estribillo">
 Lam                     Rem       Mi       Lam
@@ -36,7 +45,7 @@ si los tristes y los enfermos me encontraron en su dolor.
 Aunque hablara miles de lenguas, si no tengo amor, nada soy,
 aunque realizara milagros, si no tengo amor, nada soy.
 </pre>
-    <a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../../js/transponer.js"></script>
 
 </html>

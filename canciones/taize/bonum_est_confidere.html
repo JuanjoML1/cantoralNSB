@@ -16,8 +16,17 @@
   <div class="tono">
     <span>Lam cej5</span>
   </div>
-</div>
-<pre>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
 Lam             Mi            Lam Sol Do
 Qué bueno es confiar en ti, Señor Jesús,
 Rem Sol   Do Sol Lam   Rem Mim Lam
@@ -27,6 +36,7 @@ bueno esperar en ti, Señor Jesús.
 <pre class="original">
 Bonum est confidere in Domino, bonum sperare in Domino.
 </pre>
-<a href="../../index.html">Volver al índice</a>
 </body>
+<script src="../js/transponer.js"></script>
+
 </html>
