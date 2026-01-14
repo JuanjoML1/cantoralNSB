@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aleluya, ha nacido el salvador</title>
+    <link rel="stylesheet" href="../../css/estilo.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">E10</span>
+        </div>
+        <h1 class="titulo">Aleluya, ha nacido el salvador</h1>
+        <div class="tono">
+            <span>Mi</span>
+        </div>
+    </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
+<span class="estribillo">
+Mi     La   Mi         La           Si7
+<span class="gr">Ale</span><span class="ag">lu</span>ya, aleluya, ha nacido el Salvador.
+   Mi  La   Mi         La    Si7  Mi
+Aleluya, aleluya, el Mesías, el Señor.
+</span>
+    Mi       Si7 Mi     La       Si7
+<span class="gr">Escu</span>chad, hermanos, una <span class="ag">gran</span> noticia,
+La                Mi         Si7          Mi  (Mi7)
+Hoy en Belén de Judá os ha nacido el Salvador (bis).
+
+Escuchad, hermanos, una gran noticia,
+Gloria en los cielos a Dios y en la tierra al hombre paz (bis).
+
+Escuchad, hermanos, una gran noticia,
+Dios a su Hijo envió, él es Jesús, el Salvador (bis).
+</pre>
+
+</body>
+<script src="../../js/transponer.js"></script>
+
+</html>

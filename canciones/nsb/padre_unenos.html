@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Padre, únenos</title>
+<link rel="stylesheet" href="../../css/estilo.css">
+</head>
+<body>
+
+<div class="cancion-header">
+  <div class="numeros">
+    <span class="antiguo">195</span>
+    <span class="nuevo">I05</span>
+  </div>
+  <h1 class="titulo">Padre, únenos</h1>
+  <div class="tono">
+    <span>Sol</span>
+  </div>
+    </div>
+        <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
+Sol   Mim Re   Sol   Mim Re
+Padre, únenos. Padre, únenos.
+       Mim   Re           Sol     Re
+Que el mundo crea que enviaste al Hijo.
+Mim    Re Sol
+Padre, únenos.
+
+Padre, únenos. Padre, únenos.
+Que el mundo crea en tu amor.
+Padre, únenos.
+
+Padre, únenos. Padre, únenos.
+Que seamos uno en tu amor.
+Padre, únenos.
+</pre>
+</body>
+<script src="../../js/transponer.js"></script>
+
+</html>

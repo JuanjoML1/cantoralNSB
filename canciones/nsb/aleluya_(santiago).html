@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aleluya (Santiago)</title>
+    <link rel="stylesheet" href="../../css/estilo.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">403</span>
+            <span class="nuevo">E03</span>
+        </div>
+        <h1 class="titulo">Aleluya (Santiago)</h1>
+        <div class="tono">
+            <span>Mi</span>
+        </div>
+    </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
+<span class="estribillo">
+Mi Si    Sol#m Do#m  La    Mi   Si7   Mi
+Aleluya, ale<span class="ag">lu</span>ya, alelu-alelu<span class="gr">ya</span>, aleluya.
+</span>
+   Mi          Si           Sol#m  Do#m
+<span class="gr">Si</span> sientes que Cristo en ti vi<span class="ag">vo es</span>tá
+      La           Mi   Si7    Mi
+grita fuerte en tu alma: ¡aleluya!
+
+Si piensas que el mundo aún puede cambiar
+grita fuerte en tu alma: ¡aleluya!
+</pre>
+
+</body>
+<script src="../../js/transponer.js"></script>
+
+</html>

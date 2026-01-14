@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Cantemos todos la Navidad</title>
+    <link rel="stylesheet" href="../../css/estilo.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">50</span>
+            <span class="nuevo">O05</span>
+        </div>
+        <h1 class="titulo">Cantemos todos la Navidad</h1>
+        <div class="tono">
+            <span>Re</span>
+        </div>
+    </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
+<span class="estribillo">
+         Re           Sol            Re          La
+Cantemos todos la Navidad, Dios ha na<span class="gr">ci</span>do, ¡aleluya!
+          Re           Sol               Re    La     Re
+Su luz venció la oscuri<span class="ag">dad: Dios se hace</span> hombre ¡aleluya!
+</span>
+         Sol            Re           Mi            La
+Sobre la <span class="ag">noche se</span> ve brillar una esperanza: es Navidad
+           Re               Sol            Re    La      Re
+La luz del Padre <span class="gr">quie</span>re anunciar paz a los hombres ¡aleluya!
+
+Junto a nosotros el Hijo está. Nada tememos: es Navidad.
+Con un mensaje de libertad viene a los hombre ¡aleluya!
+
+Junto a nosotros quiere habitar un Dios eterno: es Navidad.
+En nuestra mesa, con nuestro pan, Dios se hace hombre ¡aleluya!
+</pre>
+
+</body>
+<script src="../../js/transponer.js"></script>
+
+</html>

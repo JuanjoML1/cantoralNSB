@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>A ti acudo</title>
+    <link rel="stylesheet" href="../../css/estilo.css">
+</head>
+
+<body>
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">28</span>
+            <span class="nuevo">D03</span>
+        </div>
+        <h1 class="titulo">A ti acudo</h1>
+        <div class="tono">
+            <span>Sim</span>
+        </div>
+    </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+
+    <pre>
+<span class="estribillo">
+Sim  Mim Sim          Mim Sim
+<span class="gr">A</span> ti acudo, Señor Dios mío
+  Mim     La          Re         Fa#
+A ti, que siempre me acoges con amor.
+Sim  Mim Sim          Mim Sim
+A ti acudo, Señor Dios mío
+  Mim     La          Fa#        Sim
+A ti, que <span class="ag">siem</span>pre me acoges con amor.
+</span>
+Sim         Mim  La         Re
+Jesús es <span class="ag">tu</span> luz, Él tu libertad,
+Sim         La      Fa#7      Sim
+Él es tu perdón, te <span class="gr">a</span>ma de verdad.
+
+Él es tu pastor, nada temerás,
+junto a ti está, Él no te dejará.
+
+Tú eres mi refugio, nada temeré,
+me cobijarás y a ti salmodiaré.
+
+Aunque me abandonen todos mis hermanos,
+ante ti, oh, Padre, sereno viviré.
+</pre>
+
+</body>
+<script src="../../js/transponer.js"></script>
+
+</html>

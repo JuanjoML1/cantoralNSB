@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Aquí tienes el Pan</title>
+    <link rel="stylesheet" href="../../css/estilo.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">F04</span>
+        </div>
+        <h1 class="titulo">Aquí tienes el Pan</h1>
+        <div class="tono">
+            <span>Sol</span>
+        </div>
+    </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
+Sol            Sim  Do                 Re 
+<span class="gr">Aquí tie</span>nes el pan, fruto de nuestro sudor,
+Sol            Sim  Do                   Re
+aquí tienes el vino de nuestros campos me<span class="ag">jor</span>.
+<span class="estribillo">
+     Sol   Sim     Do       Re
+<span class="gr">Pa</span>ra ti, Señor, el pan <span class="ag">y el vi</span>no, 
+     Sol   Sim        Do      Re       Sol
+para ti, Señor, el trabajo de los campesinos.
+</span>
+Te ofrecemos el pan, fruto de nuestro sudor,
+te ofrecemos el vino de nuestros campos mejor.
+</pre>
+
+</body>
+<script src="../../js/transponer.js"></script>
+
+</html>

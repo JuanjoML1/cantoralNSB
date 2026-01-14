@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Andando por el camino</title>
+    <link rel="stylesheet" href="../../css/estilo.css">
+</head>
+
+<body>
+
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">26</span>
+            <span class="nuevo">F02</span>
+        </div>
+        <h1 class="titulo">Andando por el camino</h1>
+        <div class="tono">
+            <span>Lam cej2</span>
+        </div>
+    </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
+  Lam   Mi       Lam  Mi               Lam
+<span class="gr">An</span>dando por el camino te tropezamos, Señor.
+              Mi      Lam   Rem       Sol     Do
+Te hiciste el encontradizo, nos diste conversación.
+  Rem  Sol   Do     Sol               Do
+Te<span class="ag">ní</span>an tus palabras fuerza de vida y amor,
+  Rem  Mi  Lam   Mi                La
+ponían esperanza y fuego en el corazón.
+<span class="estribillo">
+La     Mi       La         Re     La
+Te conocimos, Señor, al partir el pan;
+Re                La         Mi     La
+<span class="ag">Tú</span> nos conoces, Señor, al partir <span class="gr">el</span> pan.
+</span>
+Llegando a la encrucijada, Tú proseguías, Señor.
+Te dimos nuestra posada, techo, comida y calor.
+Sentados como amigos a compartir el cenar,
+allí te conocimos al repartirnos el pan.
+
+Andando por los caminos te tropezamos, Señor,
+en todos los peregrinos que necesitan amor;
+esclavos y oprimidos que buscan la libertad,
+hambrientos, desvalidos, a quienes damos el pan.
+</pre>
+
+</body>
+<script src="../../js/transponer.js"></script>
+
+</html>
