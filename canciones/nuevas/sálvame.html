@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Sálvame</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+</head>
+
+<body>
+    <div class="cancion-header">
+        <div class="numeros">
+            <span class="antiguo">-</span>
+            <span class="nuevo">-</span>
+        </div>
+        <h1 class="titulo">Sálvame</h1>
+        <div class="tono">
+            <span>Do</span>
+        </div>
+    </div>
+    <div id="main-controls">
+        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+        <div id="controls-container">
+            <button onclick="bajarTono()">−</button>
+            <button onclick="subirTono()">+</button>
+            <button onclick="resetTono()">Reset</button>
+            <button onclick="toggleCifrado()">Do → C</button>
+        </div>
+    </div>
+    <pre>
+Do Sol lam Sol Do        Sol7
+Sálva--me. Hoy Señor, sálvame.
+       Fa          Do
+Que me cures las heridas,
+       Mi7           lam
+que me des toda tu vida.
+       Fa (Sol)Sol Sol7 (Do)
+Hoy, Señor, sál-va-me.
+</pre>
+<p><a href="https://www.youtube.com/watch?v=88t9_VW5z6o">Escuchar en YouTube</a></p>
+</body>
+<script src="../../js/transponer.js"></script>
+
+</html>
