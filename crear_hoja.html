@@ -40,13 +40,19 @@
             <label style="margin-left:20px">
                 <input type="radio" name="mode" value="lyrics">Sólo letra
             </label>
+            <label style="margin-left:20px">
+                Formato:
+                <select id="format">
+                    <option value="doc">Word (.doc)</option>
+                    <option value="txt">Texto (.txt)</option>
+                </select>
+            </label>
         </div>
 
-        <button id="generate-btn">Generar DOCX</button>
+        <button id="generate-btn">Generar archivo</button>
         <datalist id="songlist"></datalist>
 
-        <!-- Docx UMD global y FileSaver -->
-        <script src="https://unpkg.com/docx@8.5.0/build/docx.umd.js"></script>
+        <!-- FileSaver.js -->
         <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
 
         <script>
@@ -97,66 +103,69 @@
                 );
             }
 
-            async function generateDoc() {
-                const { Document, Packer, Paragraph, TextRun } = window.docx;
+            async function generateFile() {
                 const rows = document.querySelectorAll(".song-row input");
                 const mode = document.querySelector("input[name=mode]:checked").value;
+                const format = document.getElementById("format").value;
 
-                const doc = new Document();
-                const children = [];
+                if (format === "txt") {
+                    let content = "";
+                    for (const input of rows) {
+                        const title = input.value.trim();
+                        if (!title) continue;
+                        const song = findSong(title);
+                        if (!song) {
+                            alert("No encontrada: " + title);
+                            return;
+                        }
+                        const res = await fetch(song.href);
+                        const html = await res.text();
+                        const parser = new DOMParser();
+                        const sdoc = parser.parseFromString(html, "text/html");
+                        const h1 = sdoc.querySelector("h1.titulo");
+                        const pre = sdoc.querySelector("pre");
+                        if (!h1 || !pre) continue;
 
-                for (const input of rows) {
-                    const title = input.value.trim();
-                    if (!title) continue;
-
-                    const song = findSong(title);
-                    if (!song) {
-                        alert("No encontrada: " + title);
-                        return;
+                        content += h1.textContent + "\n";
+                        let text = pre.textContent;
+                        if (mode === "lyrics") text = removeChords(text);
+                        content += text + "\n\n";
                     }
 
-                    const res = await fetch(song.href);
-                    const html = await res.text();
-                    const parser = new DOMParser();
-                    const sdoc = parser.parseFromString(html, "text/html");
-                    const h1 = sdoc.querySelector("h1.titulo");
-                    const pre = sdoc.querySelector("pre");
-                    if (!h1 || !pre) continue;
+                    const blob = new Blob([content], { type: "text/plain;charset=utf-8" });
+                    saveAs(blob, "cantoral.txt");
+                } else { // formato Word
+                    let html = "<html><head><meta charset='UTF-8'></head><body>";
+                    for (const input of rows) {
+                        const title = input.value.trim();
+                        if (!title) continue;
+                        const song = findSong(title);
+                        if (!song) {
+                            alert("No encontrada: " + title);
+                            return;
+                        }
+                        const res = await fetch(song.href);
+                        const htmlText = await res.text();
+                        const parser = new DOMParser();
+                        const sdoc = parser.parseFromString(htmlText, "text/html");
+                        const h1 = sdoc.querySelector("h1.titulo");
+                        const pre = sdoc.querySelector("pre");
+                        if (!h1 || !pre) continue;
 
-                    // Título (Heading1 simulado)
-                    children.push(new Paragraph({
-                        children: [new TextRun({
-                            text: h1.textContent,
-                            bold: true,
-                            size: 32
-                        })]
-                    }));
-
-                    // Texto
-                    let text = pre.textContent;
-                    if (mode === "lyrics") text = removeChords(text);
-
-                    text.split("\n").forEach(line => {
-                        children.push(new Paragraph({
-                            children: [new TextRun({
-                                text: line,
-                                font: "Courier New",
-                                size: 24
-                            })]
-                        }));
-                    });
-
-                    children.push(new Paragraph({ text: "" })); // espacio
+                        html += `<h1>${h1.textContent}</h1>`;
+                        let text = pre.textContent;
+                        if (mode === "lyrics") text = removeChords(text);
+                        html += `<pre>${text}</pre>`;
+                    }
+                    html += "</body></html>";
+                    const blob = new Blob([html], { type: "application/msword" });
+                    saveAs(blob, "cantoral.doc");
                 }
-
-                doc.addSection({ children });
-                const blob = await Packer.toBlob(doc);
-                window.saveAs(blob, "cantoral.docx");
             }
 
             window.addRow = addRow;
             window.removeRow = removeRow;
-            document.getElementById("generate-btn").addEventListener("click", generateDoc);
+            document.getElementById("generate-btn").addEventListener("click", generateFile);
 
             loadIndex();
         </script>
