@@ -45,8 +45,8 @@
         <button id="generate-btn">Generar DOCX</button>
         <datalist id="songlist"></datalist>
 
-        <!-- Docx + FileSaver globales -->
-        <script src="https://unpkg.com/docx@8.5.0/build/index.js"></script>
+        <!-- Docx UMD global y FileSaver -->
+        <script src="https://unpkg.com/docx@8.5.0/build/docx.umd.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
 
         <script>
@@ -151,7 +151,7 @@
 
                 doc.addSection({ children });
                 const blob = await Packer.toBlob(doc);
-                saveAs(blob, "cantoral.docx");
+                window.saveAs(blob, "cantoral.docx");
             }
 
             window.addRow = addRow;
