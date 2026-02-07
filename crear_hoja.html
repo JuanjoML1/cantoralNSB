@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Hoja de cantos</title>
+
+        <script src="https://unpkg.com/docx@8.5.0/build/index.js"></script>
+        <script src="https://unpkg.com/file-saver@2.0.5/dist/FileSaver.min.js"></script>
+
+        <link rel="stylesheet" href="css/estilo.css">
+        <style>
+            .song-row {
+                display: flex;
+                gap: 10px;
+                margin-bottom: 10px;
+            }
+
+            input {
+                flex: 1;
+                padding: 6px;
+            }
+
+            button {
+                padding: 6px 12px;
+            }
+
+            .controls {
+                margin: 20px 0;
+            }
+        </style>
+    </head>
+
+    <body>
+        <h1>Crea tu hoja de cantos</h1>
+        <div id="songs"></div>
+        <button onclick="addRow()">+ Más</button>
+        <div class="controls">
+            <label>
+                <input type="radio" name="mode" value="full" checked>Letra + acordes
+            </label>
+            <label style="margin-left:20px">
+                <input type="radio" name="mode" value="lyrics">Sólo letra
+            </label>
+        </div>
+        <button onclick="generateDoc()">Generar DOCX</button>
+        <datalist id="songlist"></datalist>
+        <script src="js/crear_hoja.js"></script>
+    </body>
+</html>

@@ -157,36 +157,56 @@ span.antiguo::after {
 }
 
 /* Botón del menú */
-#btn-menu {
+#btn-menu,
+#btn-tools {
     position: fixed;
-    top: 10px;
     left: 10px;
     z-index: 1001;
-    padding: 10px 15px;
+    padding: 10px 0px;
     font-size: 18px;
     cursor: pointer;
+    width: 50px;
+    text-align: center;
+}
+
+#btn-menu {
+    top: 0px;
+}
+
+#btn-tools {
+    top: 50px;
 }
 
 /* Menú lateral */
-#menu-lateral {
+#menu-lateral,
+#tools-lateral {
     position: fixed;
     top: 0;
     left: -280px;
     /* oculto por defecto */
     width: 250px;
     height: 100%;
-    background-color: #f9f9f9;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
-    padding: 60px 20px 20px 20px;
+    padding: 20px 20px 20px 20px;
     display: flex;
     flex-direction: column;
     gap: 10px;
+    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
     transition: left 0.3s ease;
     z-index: 1000;
+    /* debajo de los botones */
+}
+
+#menu-lateral {
+    background-color: #f9f9f9;
+}
+
+#tools-lateral {
+    background-color: #f2f2f2;
 }
 
 /* Enlaces dentro del menú */
-#menu-lateral .btn-indice {
+#menu-lateral .btn-indice,
+#tools-lateral .btn-indice {
     padding: 8px 12px;
     background-color: #eee;
     border-radius: 5px;
@@ -195,12 +215,14 @@ span.antiguo::after {
     font-weight: bold;
 }
 
-#menu-lateral .btn-indice:hover {
+#menu-lateral .btn-indice:hover,
+#tools-lateral .btn-indice:hover {
     background-color: #ddd;
 }
 
-#menu-lateral.abierto {
-    left: 0;
+#menu-lateral.abierto,
+#tools-lateral.abierto {
+    left: 60px;
 }
 
 #main-controls {
