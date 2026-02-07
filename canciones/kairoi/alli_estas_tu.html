@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Allí estás tú</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Allí estás tú</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Allí estás tú</h1>
+            <div class="tono">
+                <span>Do cej2</span>
+            </div>
         </div>
-        <h1 class="titulo">Allí estás tú</h1>
-        <div class="tono">
-            <span>Do cej2</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 Do                   Do7                    Fa              Do
-Cuando camino por la gran ciudad y veo a un niño allí estás Tú.
-                       Do7                   Fa               Do
+Cuando camino por la gran ciudad y veo a un niño allí estás Tú.    Do7                   Fa               Do
 Cuando una madre llora pidiendo pan para sus hijos allí estás Tú.
 Fa                   Mim                Rem             Do
 En el que es torpe y no puede andar, en el que rebosa felicidad,
@@ -53,7 +52,7 @@ En el joven que ha robado tal vez y es drogadicto, allí estás Tú.
 En la muchacha de temprana edad que vende su cuerpo en un bar.
 En una cárcel o en un tribunal en todos, Señor, vives Tú.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

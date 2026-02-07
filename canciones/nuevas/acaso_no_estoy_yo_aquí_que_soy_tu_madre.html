@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>¿Acaso no estoy yo aquí que soy tu madre?</title>
-    <link rel="stylesheet" href="../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>¿Acaso no estoy yo aquí que soy tu madre?</title>
+        <link rel="stylesheet" href="../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">¿Acaso no estoy yo aquí que soy tu madre?</h1>
+            <div class="tono">
+                <span>La</span>
+            </div>
         </div>
-        <h1 class="titulo">¿Acaso no estoy yo aquí que soy tu madre?</h1>
-        <div class="tono">
-            <span>La</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 Sol                             Mim
-Hijo mío, lo que te aflige y te asusta
-                             Do / Sol
+Hijo mío, lo que te aflige y te asusta          Do / Sol
 se encuentra en las manos de Dios. (bis)
 Sol                       Mim
 Hijo mío, no temas ninguna angustia.
@@ -49,8 +48,7 @@ Toma mi mano y hacia mi Hijo te llevaré.
 </span>
 
 Hijo mío, lo que te aflige y te asusta
-se encuentra en las manos de Dios. (bis)
-                               Sol
+se encuentra en las manos de Dios. (bis)            Sol
 Nada es imposible para nuestro Dios.
 
 Hijo mío, no temas ninguna angustia.
@@ -65,8 +63,8 @@ Déjame ser tu madre. (bis)
 
 <span class="estribillo">¿Acaso...</span>
 </pre>
-<p><a href="https://www.youtube.com/watch?v=yiRuZloI6d0">Escuchar en YouTube</a></p>
-</body>
-<script src="../../js/transponer.js"></script>
+        <p><a href="https://www.youtube.com/watch?v=yiRuZloI6d0">Escuchar en YouTube</a></p>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Descansa en ti su mirada</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Descansa en ti su mirada</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Descansa en ti su mirada</h1>
+            <div class="tono">
+                <span>Mi cej3</span>
+            </div>
         </div>
-        <h1 class="titulo">Descansa en ti su mirada</h1>
-        <div class="tono">
-            <span>Mi cej3</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 <span class="estribillo">
 Mi          La Si7  Mi
 Descansa en ti su mirada,
@@ -39,8 +39,7 @@ Descansa en ti su mirada,
 ¿quién te ha querido alguna vez así? (bis)
 </span>
 Mi
-Él es el Santo, Él es el Fuerte,
-                               Si7
+Él es el Santo, Él es el Fuerte,            Si7
 pero ha querido abajarse hasta ti.
         Mi            La Si7 Mi
 A su proyecto respóndele que sí
@@ -52,7 +51,7 @@ Sólo Dios salva, sólo Dios alza,
 Que su Palabra de liberación
 encuentre en ti a su mejor cantor.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

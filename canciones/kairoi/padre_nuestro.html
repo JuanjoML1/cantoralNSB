@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Padre nuestro</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Padre nuestro</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Padre nuestro</h1>
+            <div class="tono">
+                <span>La</span>
+            </div>
         </div>
-        <h1 class="titulo">Padre nuestro</h1>
-        <div class="tono">
-            <span>La</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 La                     Mi
 Padre que estas en los cielos
        Fa#m        Do#m   Re
-santificado sea tu nombre,
-                    La    Mi
+santificado sea tu nombre, La    Mi
 venga a nosotros tu reino.
 La             Mi
 Hágase tu voluntad
@@ -57,7 +56,7 @@ Y no nos dejes caer en tentación,
                  Mi    La
 mas líbranos del mal, Amén.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

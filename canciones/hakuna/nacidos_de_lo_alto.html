@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Nacidos de lo alto</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Nacidos de lo alto</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Nacidos de lo alto</h1>
+            <div class="tono">
+                <span>Sol cej2</span>
+            </div>
         </div>
-        <h1 class="titulo">Nacidos de lo alto</h1>
-        <div class="tono">
-            <span>Sol cej2</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 Mim         Sol            Re
 Qué enfermo corazón que te dice que no,
        Lam           Sim
@@ -35,8 +35,7 @@ que da hasta dos mil vueltas
       Do
 sobre la razón, sufre la fricción
          Re
-entre el mundo y tu amor.
-                      Mim
+entre el mundo y tu amor.   Mim
 Qué humano y vacío se queda el dolor
      Do          Re          Sol
 al sobrevivir, y no vivir contigo.
@@ -89,7 +88,7 @@ En alianza a su pueblo, alianza conmigo,
      Do
 eres fiel a mí.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

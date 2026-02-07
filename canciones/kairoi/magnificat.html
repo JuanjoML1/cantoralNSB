@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Magnificat</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Magnificat</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Magnificat</h1>
+            <div class="tono">
+                <span>Do</span>
+            </div>
         </div>
-        <h1 class="titulo">Magnificat</h1>
-        <div class="tono">
-            <span>Do</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 Do
-Proclama mi alma la grandeza de Dios,
-                         Fa            Do
-se alegra mi espíritu en Dios, mi Salvador.
-                                   Lam
+Proclama mi alma la grandeza de Dios,      Fa            Do
+se alegra mi espíritu en Dios, mi Salvador.                Lam
 Porque ha mirado la humildad de su sierva.
       Sol      Fa      Do
 Desde ahora me felicitarán
@@ -56,7 +54,7 @@ ensalza a los humildes, llena de bienes a los pobres.
 Su promesa por siempre durará,
 como dijo a nuestros padres.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Cántico de Daniel</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Cántico de Daniel</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Cántico de Daniel</h1>
+            <div class="tono">
+                <span>Sol</span>
+            </div>
         </div>
-        <h1 class="titulo">Cántico de Daniel</h1>
-        <div class="tono">
-            <span>Sol</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
                 Sol       Do       Sol
 Criaturas del Señor, bendecid al Señor;
      Do        Re             Sol
-ensalzadlo con himnos por los siglos.
-                      Do       Sol
+ensalzadlo con himnos por los siglos.   Do       Sol
 Ángeles de Dios, bendecid al Señor,
              Do  Re   Sol
 cielos, bendecid al Señor.
@@ -72,7 +71,7 @@ bendiga Israel a su Señor.
 Sacerdotes del Señor, bendecid al Señor,
 siervos del Señor, bendecid al Señor
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

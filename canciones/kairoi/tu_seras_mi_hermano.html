@@ -1,36 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Tú serás mi hermano</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tú serás mi hermano</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Tú serás mi hermano</h1>
+            <div class="tono">
+                <span>Sol</span>
+            </div>
         </div>
-        <h1 class="titulo">Tú serás mi hermano</h1>
-        <div class="tono">
-            <span>Sol</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 Sol         Do                Sol
-Cuando tuve hambre me diste comida,
-                              Re
+Cuando tuve hambre me diste comida,           Re
 cuando tuve sed me diste de beber,
 Mim                 Sim                Do
 cuando estaba intranquilo calmaste mis penas,
@@ -61,7 +60,7 @@ fui herido en combate, vendaste mis heridas.
 Yo buscaba bondad, me tendiste la mano,
 fuera negro o blanco, eso nunca importó.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

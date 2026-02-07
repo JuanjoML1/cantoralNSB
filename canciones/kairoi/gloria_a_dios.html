@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Gloria a Dios</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Gloria a Dios</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Gloria a Dios</h1>
+            <div class="tono">
+                <span>Mi</span>
+            </div>
         </div>
-        <h1 class="titulo">Gloria a Dios</h1>
-        <div class="tono">
-            <span>Mi</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 Mi       Si7        La
 Gloria a Dios en el cielo,
      Si7       Do#m        Sol#m    La  Si7
@@ -47,12 +47,10 @@ Mi         Si7        La
 siempre cercano, buen Dios.
 </span>
 Mi
-Dios del cielo y la tierra,
-                               La    Mi
+Dios del cielo y la tierra,            La    Mi
 que amas a las personas con justicia y paz.
 Mi
-Dios nuestro universal,
-                               La    Mi
+Dios nuestro universal,            La    Mi
 luz para quienes buscan signos de verdad.
      Do#m                       Sol#m
 Buen Dios, grande y cercano, sencillo y solidario,
@@ -63,7 +61,7 @@ Escucha la oración en la debilidad,
     Fa#m                   Si7
 oh, Dios de confianza, oh, Dios de gran bondad.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>La mujer cananea</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>La mujer cananea</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">La mujer cananea</h1>
+            <div class="tono">
+                <span>Sol cej5</span>
+            </div>
         </div>
-        <h1 class="titulo">La mujer cananea</h1>
-        <div class="tono">
-            <span>Sol cej5</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
   Mim           Sol       Mim
 Saliste de tu espacio conocido,
           Do                  Si7
@@ -51,8 +51,7 @@ en el Dios de los vivos.
 Sol                    Re
 Tú nos das el pan y la vida.
 Do                     Sol
-Tú, la salud y la salvación,
-                             Re
+Tú, la salud y la salvación,          Re
 Tú nos sientas a todos en tu mesa,
 Do                   Sol
 para ti no hay distinción (bis).
@@ -68,7 +67,7 @@ también comen las migajas".
 “Grande es tu fe, mujer", dijiste
 y mi hija quedó sana.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

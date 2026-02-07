@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Dame una palabra (Pronuncias mi nombre)</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dame una palabra (Pronuncias mi nombre)</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Dame una palabra (Pronuncias mi nombre)</h1>
+            <div class="tono">
+                <span>Do</span>
+            </div>
         </div>
-        <h1 class="titulo">Dame una palabra (Pronuncias mi nombre)</h1>
-        <div class="tono">
-            <span>Do</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
       Do
 Una palabra, dame una palabra,
                  Fa            Sol
 con la que pueda darte gracias hoy.
       Do
-Una palabra, dame una palabra
-                      Fa  Sol Do
+Una palabra, dame una palabra   Fa  Sol Do
 con la que pueda dar aliento hoy.
 <span class="estribillo">
 Do
@@ -56,7 +55,7 @@ con las que pueda acogerte hoy.
 Unas entrañas, dame unas entrañas
 con las que pueda dar cariño hoy.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

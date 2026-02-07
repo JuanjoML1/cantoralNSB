@@ -1,38 +1,37 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>En parábolas</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>En parábolas</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">En parábolas</h1>
+            <div class="tono">
+                <span>La</span>
+            </div>
         </div>
-        <h1 class="titulo">En parábolas</h1>
-        <div class="tono">
-            <span>La</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
    La                   Mi
 Me dejas marcharme, me acoges al volver,
 Re                        La
-dejas noventa y nueve por mí una y otra vez.
-                        Mi
+dejas noventa y nueve por mí una y otra vez.     Mi
 Amigo inoportuno, anda, ven,
      Re                           La
 preparado está ya tu sitio para comer.
@@ -42,7 +41,7 @@ barres toda la casa, me quieres encontrar.
 Amigo inoportuno, anda, ven,
 preparado está ya tu sitio para comer.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Soy libre (Pasión XV)</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Soy libre (Pasión XV)</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Soy libre (Pasión XV)</h1>
+            <div class="tono">
+                <span>La</span>
+            </div>
         </div>
-        <h1 class="titulo">Soy libre (Pasión XV)</h1>
-        <div class="tono">
-            <span>La</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 La        Fa#m Re                Mi
 Mi mejor amigo decidió morir por mí,
 La              Fa#m Re                    Mi
@@ -56,20 +56,17 @@ Todos mis pecados arden en el fuego de tu amor.
 Y siempre que yo me caiga Tú me levantarás.
 </span>
 La                       Re
-Quiero volver a nacer en ti,
-                         Fa#m
-quiero volver a nacer en ti,
-                         Mi
+Quiero volver a nacer en ti,      Fa#m
+quiero volver a nacer en ti,      Mi
 quiero volver a nacer en ti.
 La             Re               Fa#m
-Ahora soy libre, ahora soy libre
-                        Mi
+Ahora soy libre, ahora soy libre     Mi
 porque tú me haces libre.
 <span class="estribillo">
 Todos mis pecados arden en el fuego de tu amor.
 </span>
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

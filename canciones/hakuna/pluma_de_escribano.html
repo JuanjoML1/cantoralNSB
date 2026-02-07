@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Pluma de escribano</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pluma de escribano</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Pluma de escribano</h1>
+            <div class="tono">
+                <span>Re cej5</span>
+            </div>
         </div>
-        <h1 class="titulo">Pluma de escribano</h1>
-        <div class="tono">
-            <span>Re cej5</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
    Re                Fa#m     Sim
 Me brota del corazón un poema bello,
   Sol                  La
@@ -44,8 +44,7 @@ Cíñete al flanco la espada, valiente:
       Re                 Sim
 es tu gala y tu orgullo.
   Sol                                    La
-Cabalga victorioso por la verdad y la justicia,
-                                   Re
+Cabalga victorioso por la verdad y la justicia,                Re
 tu diestra te enseñe a realizar proezas.
 
     La           Sol
@@ -108,11 +107,10 @@ Quiero hacer memorable tu nombre
 Sol              La
 por generaciones y generaciones,
       Re          La  Sol  Solm
-y los pueblos te alabarán
-                      Re     Fa#m Sim Sol La Re
+y los pueblos te alabarán   Re     Fa#m Sim Sol La Re
 por los siglos de los siglos.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

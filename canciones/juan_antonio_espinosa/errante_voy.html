@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Errante voy</title>
-<link rel="stylesheet" href="../../css/estilo.css">
-</head>
-<body>
 
-<div class="cancion-header">
-  <div class="numeros">
-    <span class="antiguo">108</span>
-    <span class="nuevo">-</span>
-  </div>
-  <h1 class="titulo">Errante voy</h1>
-  <div class="tono">
-    <span>lam</span>
-  </div>
-    </div>
-        <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+    <head>
+        <meta charset="UTF-8">
+        <title>Errante voy</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">108</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Errante voy</h1>
+            <div class="tono">
+                <span>lam</span>
+            </div>
         </div>
-    </div>
-    <pre>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
 Cejilla 5º traste
 
 lam              rem lam
@@ -43,8 +45,7 @@ consuelo y paz en mi do--lor.
         Do       Fa        Do     Mi
 	el nuevo Pueblo en marcha va.
                   lam rem           lam
-	Luchando aquí    con la esperanza
-                    rem   Fa  Sol lam
+	Luchando aquí    con la esperanza rem   Fa  Sol lam
 	de un mundo nuevo que ven-drá.
 </span>
 Recorro el fin de mi camino,
@@ -52,7 +53,7 @@ voy a mi patria, Jerusalén.
 Nada me inquieta ya mi destino
 porque el Señor guarda mi  fe.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

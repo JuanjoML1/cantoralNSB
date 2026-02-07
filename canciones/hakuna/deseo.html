@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Deseo</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Deseo</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Deseo</h1>
+            <div class="tono">
+                <span>La cej2</span>
+            </div>
         </div>
-        <h1 class="titulo">Deseo</h1>
-        <div class="tono">
-            <span>La cej2</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
   La         Mi         Re   Mi
 Deseo ser la luz que ilumine,
   La         Mi           Re  Mi
@@ -55,19 +55,16 @@ y que no se pierda nadie.
   La                            Mi
 Deseo la fiesta del pecador que se convierte,
                 Fa#m
-ser pescador de hombres,
-                           Re
+ser pescador de hombres,        Re
 prender fuego, que arda el mundo,
          Mi         La
-dar de comer a multitudes.
-                    Mi
+dar de comer a multitudes. Mi
 Deseo ir al mundo entero
                   Re    Mi
 y anunciar el Evangelio.
 <span class="estribillo">
   La                         Mi
-Deseo ser el compás de tus latidos,
-                          Fa#m
+Deseo ser el compás de tus latidos,       Fa#m
 cantar, volar, asaltar el cielo,
                Re        Mi
 hasta desear como deseas Tú. (bis)
@@ -99,7 +96,7 @@ cantar, volar, asaltar el cielo,
 hasta desear como deseas Tú. (bis)
 </span>
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

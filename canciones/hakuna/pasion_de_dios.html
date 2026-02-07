@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Pasión de Dios</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Pasión de Dios</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Pasión de Dios</h1>
+            <div class="tono">
+                <span>Sol</span>
+            </div>
         </div>
-        <h1 class="titulo">Pasión de Dios</h1>
-        <div class="tono">
-            <span>Sol</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
  Sol           Sim         Mim
 ¿Por qué tengo miedo de mí mismo?
  Do            Lam          Re
@@ -83,8 +83,7 @@ Con la furia del mar, y la solidez de la roca,
        Lam                       Re
 con el ímpetu de la tormenta, la fuerza del vendaval:
 Do      Re          Sol          Do Mim Lam
-con esa misma contundencia tú me dices:
-                     Re
+con esa misma contundencia tú me dices:  Re
 Tú eres mío, tú eres mío.
 <span class="estribillo">
 Hazme oír lo que te gusto,
@@ -97,7 +96,7 @@ Que a nadie quieres tanto como a mí,
 soy Pasión de Dios.
 </span>
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

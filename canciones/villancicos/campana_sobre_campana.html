@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Campana sobre campana</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Campana sobre campana</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">40</span>
-            <span class="nuevo">O04</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">40</span>
+                <span class="nuevo">O04</span>
+            </div>
+            <h1 class="titulo">Campana sobre campana</h1>
+            <div class="tono">
+                <span>Do</span>
+            </div>
         </div>
-        <h1 class="titulo">Campana sobre campana</h1>
-        <div class="tono">
-            <span>Do</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 Do               Sol  Sol7            Do
 Campana sobre campana y sobre campana una,
 Sol                  Sol7                Do
@@ -40,8 +40,7 @@ Belén, campanas de Belén, que los ángeles tocan,
 ¿qué nuevas me traéis?
 </span>
 Do                     Re7   Sol        Do
-Recogido tu rebaño, ¿a dónde vas, pastorcillo?
-                            Re7     Sol    Do
+Recogido tu rebaño, ¿a dónde vas, pastorcillo?         Re7     Sol    Do
 Voy a llevar al portal requesón, manteca y vino.
 <span class="estribillo">
 Belén, campanas de Belén…
@@ -59,7 +58,7 @@ Belén, campanas de Belén…
 Campana sobre campana y sobre campana tres,
 asómate a la ventana verás al niño nacer.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

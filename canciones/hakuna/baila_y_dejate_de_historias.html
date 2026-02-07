@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Baila y déjate de historias</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Baila y déjate de historias</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Baila y déjate de historias</h1>
+            <div class="tono">
+                <span>Sol</span>
+            </div>
         </div>
-        <h1 class="titulo">Baila y déjate de historias</h1>
-        <div class="tono">
-            <span>Sol</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 Sol
 Que ni una ni mil piedras en el camino te hagan tropezar.
              Re
@@ -46,10 +46,8 @@ Que esta no es nuestra liga, entonces
 Re          Sol                  Sim
 Simplemente baila y déjate de historias,
           Do           Re
-aunque no tengas el control.
-                         Mim
-Cualquiera que sea la canción,
-                      Sim
+aunque no tengas el control.      Mim
+Cualquiera que sea la canción,   Sim
 déjate llevar en el salón.
          Do
 Déjate hacer, que trace tu camino,
@@ -79,10 +77,8 @@ es la mejor forma de firmar.
 Re          Sol                  Sim
 Simplemente baila y déjate de historias,
           Do           Re
-aunque no tengas el control.
-                         Mim
-Cualquiera que sea la canción,
-                      Sim
+aunque no tengas el control.      Mim
+Cualquiera que sea la canción,   Sim
 déjate llevar en el salón.
          Do
 Déjate hacer, que trace tu camino,
@@ -103,10 +99,8 @@ aunque no tengas el control.
             Sol                Sim
 Simplemente baila, pase lo que pase,
            Do           Re
-pon en sus manos tu corazón.
-                         Mim
-Cualquiera que sea la canción,
-                      Sim
+pon en sus manos tu corazón.      Mim
+Cualquiera que sea la canción,   Sim
 déjate llevar en el salón.
          Do
 Déjate hacer, que trace tu camino.
@@ -114,10 +108,8 @@ Déjate hacer, que trace tu camino.
 Re          Sol                  Sim
 Simplemente baila y déjate de historias,
           Do           Re
-aunque no tengas el control.
-                         Mim
-Cualquiera que sea la canción,
-                      Sim
+aunque no tengas el control.      Mim
+Cualquiera que sea la canción,   Sim
 déjate llevar en el salón.
          Do
 Déjate hacer, que trace tu camino,
@@ -125,7 +117,7 @@ Re
 Él también quiere bailar contigo.
 </span>
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

@@ -1,39 +1,38 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Todo mi ser (Alabo tu bondad)</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Todo mi ser (Alabo tu bondad)</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">C08</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">C08</span>
+            </div>
+            <h1 class="titulo">Todo mi ser (Alabo tu bondad)</h1>
+            <div class="tono">
+                <span>Do</span>
+            </div>
         </div>
-        <h1 class="titulo">Todo mi ser (Alabo tu bondad)</h1>
-        <div class="tono">
-            <span>Do</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 Do                Sol
 Todo mi ser canta hoy
         Fa               Do
-por las cosas que hay en mí.
-                     Sol
+por las cosas que hay en mí.  Sol
 Gracias te doy, mi Señor,
       Fa          Do
 Tú me haces tan feliz.
@@ -62,7 +61,7 @@ Fa           Do Rem  Sol Do
 siempre cantaré tu fidelidad.
 </span>
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

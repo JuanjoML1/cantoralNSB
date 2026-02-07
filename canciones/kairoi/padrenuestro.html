@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Padrenuestro</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Padrenuestro</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Padrenuestro</h1>
+            <div class="tono">
+                <span>Sol</span>
+            </div>
         </div>
-        <h1 class="titulo">Padrenuestro</h1>
-        <div class="tono">
-            <span>Sol</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 Mim                            Sim
 Padre nuestro que estás en los cielos,
 Re                  Mim
@@ -47,16 +47,14 @@ Do      Re          Mim
 con sus voces tu bondad. (bis)
 </span>
 Sol     Re     Lam
-Y danos hoy el pan
-                      Mim
+Y danos hoy el pan   Mim
 ganado con nuestro trabajo,
   Re                 Do
 ganado con nuestro sudor,
   Re                 Sol    Re7
 ganado con estas mis manos.
 Sol     Re     Lam
-Y danos hoy el pan
-                      Mim
+Y danos hoy el pan   Mim
 ganado con nuestro trabajo,
   Re                 Do
 ganado con nuestro sudor,
@@ -83,7 +81,7 @@ mas líbranos del mal, amén,
     Lam         Mim           Re Mim
 mas líbranos de cualquier mal, amén.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

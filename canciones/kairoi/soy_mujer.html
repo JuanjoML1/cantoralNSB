@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Nos marca el caminar</title>
-    <link rel="stylesheet" href="../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Nos marca el caminar</title>
+        <link rel="stylesheet" href="../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Nos marca el caminar</h1>
+            <div class="tono">
+                <span>Sol</span>
+            </div>
         </div>
-        <h1 class="titulo">Nos marca el caminar</h1>
-        <div class="tono">
-            <span>Sol</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 Mim                  Sim7  Do     Re      Sol
 Muy temprano en la mañana, apenas sí amaneció,
 Lam             Mim                   Si7
@@ -49,8 +49,7 @@ Tú, tú que bendices mi ser recuerda mi dignidad
 a quien la quiera robar.
 <span class="estribillo">
 Re
-Soy mujer, me siento fuerte,
-                           La
+Soy mujer, me siento fuerte,        La
 quiero vivir desde mi libertad.
 Sol                Sim
 Abro mis brazos al mundo
@@ -58,8 +57,7 @@ Abro mis brazos al mundo
 y sueño que un día todo cambiará.
 
 Re
-Mientras no llega el momento
-                          La
+Mientras no llega el momento       La
 quiero ser fiel a mi realidad
 Sol                Sim
 de mujer firme que lucha
@@ -78,7 +76,7 @@ Tú, tú que bendices mi ser recuerda mi dignidad
 a quien la quiera robar.
 </pre>
 
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

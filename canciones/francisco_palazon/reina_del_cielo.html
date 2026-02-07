@@ -1,43 +1,42 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Reina del Cielo</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Reina del Cielo</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">227</span>
-            <span class="nuevo">M19</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">227</span>
+                <span class="nuevo">M19</span>
+            </div>
+            <h1 class="titulo">Reina del Cielo</h1>
+            <div class="tono">
+                <span>La</span>
+            </div>
         </div>
-        <h1 class="titulo">Reina del Cielo</h1>
-        <div class="tono">
-            <span>La</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
           Do      Fa   Do
-Reina del Cielo, alégrate, aleluya,
-                             Fa       Do        Sol
+Reina del Cielo, alégrate, aleluya,          Fa       Do        Sol
 porque el Señor, a quien mereciste llevar, aleluya,
       Do    Fa       Do      Sol Do Do7
 resucitó, según su palabra, aleluya.
 Fa                   Do       Sol Do
 Ruega al Señor por nosotros, aleluya.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>No sé qué viste en mí (Pasión I)</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>No sé qué viste en mí (Pasión I)</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">No sé qué viste en mí (Pasión I)</h1>
+            <div class="tono">
+                <span>Do cej5</span>
+            </div>
         </div>
-        <h1 class="titulo">No sé qué viste en mí (Pasión I)</h1>
-        <div class="tono">
-            <span>Do cej5</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
           Do                              Lam
-Ahí estás Tú, esperando la sentencia en silencio.
-                                        Fa
-Se alza un grito entre la gente, que prefiere
-                          Sol
+Ahí estás Tú, esperando la sentencia en silencio.                     Fa
+Se alza un grito entre la gente, que prefiere       Sol
 a un criminal antes que a ti.
 
 Y allí estás Tú, tan llagado que cuesta reconocerte,
@@ -76,7 +74,7 @@ y aun así dices que me amas,
                    Do
 no sé que viste en mí.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

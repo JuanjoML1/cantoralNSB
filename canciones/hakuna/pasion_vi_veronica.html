@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Verónica (Pasión VI)</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Verónica (Pasión VI)</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Verónica (Pasión VI)</h1>
+            <div class="tono">
+                <span>Mi cej1</span>
+            </div>
         </div>
-        <h1 class="titulo">Verónica (Pasión VI)</h1>
-        <div class="tono">
-            <span>Mi cej1</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 Mi               La
 No hay en Él parecer,
                   Mi
 no hay en Él hermosura,
                  La
-no hay belleza alguna
-                          Mi
+no hay belleza alguna       Mi
 capaz de atraer nuestra mirada.
 
 No hay un rostro que agrade,
@@ -43,12 +42,10 @@ conocedor de quebrantos,
 menospreciado, estimado en nada.
 <span class="estribillo">
                    Do#m
-Éste es el Hijo de Dios,
-                       Mi
+Éste es el Hijo de Dios,    Mi
 que carga con nuestras culpas.
                   Do#m
-Misericordia encarnada,
-                    Mi
+Misericordia encarnada, Mi
 limpia mi pobre interior.
                  Fa#m
 Yo sólo quiero vivirte,
@@ -101,7 +98,7 @@ Que sea yo tu paño, es mi íntimo deseo,
 tengo sed de cada gota.
 </span>
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

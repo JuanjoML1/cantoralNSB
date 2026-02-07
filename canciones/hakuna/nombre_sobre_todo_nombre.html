@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Nombre sobre todo nombre</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Nombre sobre todo nombre</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Nombre sobre todo nombre</h1>
+            <div class="tono">
+                <span>Do cej3</span>
+            </div>
         </div>
-        <h1 class="titulo">Nombre sobre todo nombre</h1>
-        <div class="tono">
-            <span>Do cej3</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 Lam                   Sol
 La verdad en la que vivimos:
 Lam                       Sol
@@ -35,8 +35,7 @@ Cristo a pesar de su condición divina,
 Lam         Sol              Do
 por amor se desprendió de su rango
         Re         Fa
-pasando por uno de tantos,
-                      Sol
+pasando por uno de tantos,   Sol
 y tomó condición de esclavo.
 <span class="estribillo">
    Lam     Mi           Fa         Do      Sol
@@ -94,7 +93,7 @@ Nombre sobre todo nombre, mi Redentor.
 Rem               Sol           Do           Lam
 Nombre sobre todo nombre, sobre todo te levanto.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

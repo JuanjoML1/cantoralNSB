@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Fueron valientes</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Fueron valientes</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Fueron valientes</h1>
+            <div class="tono">
+                <span>Mi</span>
+            </div>
         </div>
-        <h1 class="titulo">Fueron valientes</h1>
-        <div class="tono">
-            <span>Mi</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 <span class="estribillo">
 Mi                               La
 Fueron valientes, lo fueron con amor.
@@ -41,8 +41,7 @@ hasta el fin su amistad perduró.
       Mi                 Si7
 Arriesgaron hasta lo más hondo,
 Do#m                    La         Mi
-nada improvisaron, todo fue muy sencillo,
-                         Si7
+nada improvisaron, todo fue muy sencillo,      Si7
 que esta es la lógica de Dios,
           Mi Do#m                  La
 servir al pobre y al que enfermo está
@@ -55,7 +54,7 @@ en compromiso con la historia,
 como semilla sembrada al azar,
 que centuplica su fruto al morir.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

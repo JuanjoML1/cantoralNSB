@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Madre de los creyentes</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Madre de los creyentes</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Madre de los creyentes</h1>
+            <div class="tono">
+                <span>Do</span>
+            </div>
         </div>
-        <h1 class="titulo">Madre de los creyentes</h1>
-        <div class="tono">
-            <span>Do</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 <span class="estribillo">
 Do
 Madre de los creyentes
@@ -48,8 +48,7 @@ sintiendo cada día la espada del silencio,
 a oscuras padeciste el riesgo de creer.
 
                Do       Sol7          Do
-La fe por el desierto a lomos de un asnillo,
-                    Lam     Fa              Sol7
+La fe por el desierto a lomos de un asnillo, Lam     Fa              Sol7
 la fe cuando en las bodas Jesús se hizo esperar,
    Lam          Mim          Fa          Do
 la fe cuando pensaron que el Hijo estaba loco,
@@ -65,7 +64,7 @@ Debajo de tu pecho de amor inagotable
       Lam           Do     Sol7         Do
 la historia se escribía de nuestra redención.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

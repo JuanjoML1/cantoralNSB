@@ -1,40 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Ocúpate tú de todo</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ocúpate tú de todo</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Ocúpate tú de todo</h1>
+            <div class="tono">
+                <span>Do cej1</span>
+            </div>
         </div>
-        <h1 class="titulo">Ocúpate tú de todo</h1>
-        <div class="tono">
-            <span>Do cej1</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
         Do                                Fa
 Si el sudor me come vivo y me cuesta sonreír,
                   Sol                  Do  Do7
 si se suman mis caídas a propósito sin fin,
                    Fa Sol                  Lam
-si me arden en los ojos mil millones de porqués,
-                    Fa
+si me arden en los ojos mil millones de porqués, Fa
 si me ahogan muchos pocos...
 <span class="estribillo">
  Sol          Do    (Sol)
@@ -60,7 +59,7 @@ naufragios sin voz ni voto.
 Ocúpate Tú de todo.
 </span>
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

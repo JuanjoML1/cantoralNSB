@@ -1,42 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Alegría, alegría, alegría</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Alegría, alegría, alegría</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">O02</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">O02</span>
+            </div>
+            <h1 class="titulo">Alegría, alegría, alegría</h1>
+            <div class="tono">
+                <span>La</span>
+            </div>
         </div>
-        <h1 class="titulo">Alegría, alegría, alegría</h1>
-        <div class="tono">
-            <span>La</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
      La                        Mi           La
-Esta noche nace el Niño, yo no tengo que llevarle.
-                           Mi         La    La7
+Esta noche nace el Niño, yo no tengo que llevarle.        Mi         La    La7
 Le llevo mi corazón que le sirva de pañales.
 <span class="estribillo">
    Re                La       Re                  La
-Alegría, alegría, alegría. Alegría, alegría, y placer.
-                                  Mi          La   (La7)
+Alegría, alegría, alegría. Alegría, alegría, y placer.               Mi          La   (La7)
 Que esta noche nace el niño en el portal de Belén. (bis)
 </span>
 En el Portal de Belén hay estrellas, Sol y Luna.
@@ -51,7 +49,7 @@ Los pastores lo han acostado, y ahora la Virgen lo acuna.
 Los querubines del cielo hoy han bajado una estrella,
 para que alumbre la gruta y Jesús juegue con ella.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

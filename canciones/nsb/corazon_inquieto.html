@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Corazón inquieto</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Corazón inquieto</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">414</span>
-            <span class="nuevo">K18</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">414</span>
+                <span class="nuevo">K18</span>
+            </div>
+            <h1 class="titulo">Corazón inquieto</h1>
+            <div class="tono">
+                <span>Do</span>
+            </div>
         </div>
-        <h1 class="titulo">Corazón inquieto</h1>
-        <div class="tono">
-            <span>Do</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
     Do               Mim                Fa           Sol Do
-Corazón inquieto que buscas <span class="ag">la</span> paz tanteando en la oscuridad,
-                      Sol      Fa        Sol Do
+Corazón inquieto que buscas <span class="ag">la</span> paz tanteando en la oscuridad,   Sol      Fa        Sol Do
 quieres encontrar una luz que alumbre <span class="gr">tu</span> caminar.
 Fa            Sol          Do    Mim    Lam
 Tu alma busca donde puedas descansar en paz,
@@ -57,7 +56,7 @@ Y Dios que habita en tu corazón te da fuerzas para luchar.
 Tu alma busca donde puedas descansar en paz.
 </pre>
 
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

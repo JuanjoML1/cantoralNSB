@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Conciénciame</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Conciénciame</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Conciénciame</h1>
+            <div class="tono">
+                <span>Sol cej7</span>
+            </div>
         </div>
-        <h1 class="titulo">Conciénciame</h1>
-        <div class="tono">
-            <span>Sol cej7</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 Sol                    Lam  Re        Sol
 Vengo a gritarte los deseos de mi corazón
 Mim                    Lam
@@ -51,8 +51,7 @@ de ser no sólo deseado sino imprescindible para ti.
 Lam                     Re                     Sol
 De ser persona de tu confianza a pesar de mi pasado,
    Re         Mim                        Do
-mendigo de tu vida de tu humanidad necesitado,
-                              Re                Sol
+mendigo de tu vida de tu humanidad necesitado,           Re                Sol
 de ser yo templo en que estás vivo con infinita fuerza,
    Re                Mim                    Do     Re
 de ser motivo de que Dios se recree en mi belleza.
@@ -87,7 +86,7 @@ Conciénciame de ser
 el único que puede saciar tu sed de mí.
 </span>
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

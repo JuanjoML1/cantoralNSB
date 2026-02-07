@@ -1,58 +1,53 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Aprendiendo</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Aprendiendo</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Aprendiendo</h1>
+            <div class="tono">
+                <span>Do</span>
+            </div>
         </div>
-        <h1 class="titulo">Aprendiendo</h1>
-        <div class="tono">
-            <span>Do</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 Lam                                          Sol
-Va enseñándome la historia con tropiezos y caídas
-                                                           Lam
+Va enseñándome la historia con tropiezos y caídas                                        Lam
 que me pierdo y Tú me encuentras, que me entrego estando vacío.
 
 Va enseñándome la historia las heridas de sueños rotos,
 el cansancio, los fracasos, soledad en tu silencio.
 <span class="estribillo">
   Do
-Y Tú sigues a mi lado,
-                               Sol
+Y Tú sigues a mi lado,            Sol
 construyendo con lo débil mi camino,
 
-yo queriendo controlar tus regalos
-                              Lam
-y Tú dejándome ver que así no vivo,
-                                           Sol
-que en amar y en confiar ponga empeño cada día,
-                                                Lam
+yo queriendo controlar tus regalos           Lam
+y Tú dejándome ver que así no vivo,                        Sol
+que en amar y en confiar ponga empeño cada día,                             Lam
 coge aire, suelta pesos, no te corte la vida el miedo.
 </span>
 Que tus sueños y los míos no están cerca todavía,
 paso a paso, día a día, a tu tiempo, en tu compañía.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

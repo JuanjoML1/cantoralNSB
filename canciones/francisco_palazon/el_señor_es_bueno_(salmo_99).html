@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>El Señor es bueno (Salmo 99)</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>El Señor es bueno (Salmo 99)</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">El Señor es bueno (Salmo 99)</h1>
+            <div class="tono">
+                <span>Do</span>
+            </div>
         </div>
-        <h1 class="titulo">El Señor es bueno (Salmo 99)</h1>
-        <div class="tono">
-            <span>Do</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 <span class="estribillo">
 Do          Sol7
-El Señor es bueno,
-                    Do
+El Señor es bueno, Do
 su misericordia es eterna.
      Do7    Fa
 El Señor es bueno,
@@ -41,8 +40,7 @@ Fa       Do      Sol7       Do
 su fidelidad por todas las edades.
 </span>
     Do                    Sol7
-Aclamad al Señor tierra entera,
-                       Do
+Aclamad al Señor tierra entera,    Do
 servid al Señor con alegría.
   Fa                     Do
 Entrad en sus atrios con himnos
@@ -50,15 +48,14 @@ Sol7           Do
 bendiciendo su nombre.
 
   Do                  Sol7
-Sabed que el Señor es Dios,
-                        Do
+Sabed que el Señor es Dios,     Do
 que Él nos hizo y suyos somos,
    La7               Rem
 el pueblo que Él escogió
    Sol7          Do
 y ovejas de su rebaño.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

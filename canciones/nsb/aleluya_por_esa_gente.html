@@ -1,37 +1,36 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Aleluya por esa gente</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Aleluya por esa gente</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">406</span>
-            <span class="nuevo">E05</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">406</span>
+                <span class="nuevo">E05</span>
+            </div>
+            <h1 class="titulo">Aleluya por esa gente</h1>
+            <div class="tono">
+                <span>Do</span>
+            </div>
         </div>
-        <h1 class="titulo">Aleluya por esa gente</h1>
-        <div class="tono">
-            <span>Do</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
         Mi                  La                       Mi
-<span class="gr">Los</span> que tienen y nunca se olvidan de que a otros les falta,
-                        La               Si
+<span class="gr">Los</span> que tienen y nunca se olvidan de que a otros les falta,     La               Si
 los que nunca usaron la fuerza sino la razón,
         Mi              Mi7                   La
 los que <span class="ag">dan una ma</span>no y ayudan a los que han caído,
@@ -54,7 +53,7 @@ los que están liberados de todas sus ambiciones,
 esa gente es feliz porque vive muy cerca de Dios.
 </pre>
 
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

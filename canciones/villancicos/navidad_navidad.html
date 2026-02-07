@@ -1,41 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Navidad, Navidad</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Navidad, Navidad</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">O13</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">O13</span>
+            </div>
+            <h1 class="titulo">Navidad, Navidad</h1>
+            <div class="tono">
+                <span>Do</span>
+            </div>
         </div>
-        <h1 class="titulo">Navidad, Navidad</h1>
-        <div class="tono">
-            <span>Do</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
          Re                   La7    Re
-Mientras haya en la tierra un niño feliz,
-                    Sim              La7
+Mientras haya en la tierra un niño feliz, Sim              La7
 mientras haya una hoguera para compartir,
          Re        La7          Sol      Re
-mientras haya unas manos que trabajen en paz,
-                             La7     Re
+mientras haya unas manos que trabajen en paz,          La7     Re
 mientras haya una estrella habrá Navidad.
 <span class="estribillo">
     Re       La7       Re          La7
@@ -53,7 +51,7 @@ mientras haya un caído a quien levantar,
 mientras haya una guerra y se duerma un cañón,
 mientras cure un herido habrá Navidad.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Dijiste sí</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dijiste sí</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Dijiste sí</h1>
+            <div class="tono">
+                <span>Do</span>
+            </div>
         </div>
-        <h1 class="titulo">Dijiste sí</h1>
-        <div class="tono">
-            <span>Do</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
         Do                           Fa
 Dijiste sí y la tierra estalló de alegría
         Sol                        Do           Sol
@@ -38,8 +38,7 @@ Hágase en mí de corazón la voluntad de mi Señor.
 que se cumplan en mí cada día los sueños de Dios.
 <span class="estribillo">
   Do                               Lam
-María, las tinieblas se harán mediodía
-                       Fa
+María, las tinieblas se harán mediodía    Fa
 a una sola palabra que digas,
        Rem                  Sol
 en tus labios alumbra ya el Sol.
@@ -58,8 +57,7 @@ Hágase en mí de corazón la voluntad de mi Señor.
 que se cumplan en mí cada día los sueños de Dios.
 <span class="estribillo">
   Re                               Sim
-María, las tinieblas se harán mediodía
-                       Sol
+María, las tinieblas se harán mediodía    Sol
 a una sola palabra que digas,
        Mim                  La7
 en tus labios alumbra ya el Sol.
@@ -73,7 +71,7 @@ primavera de Dios Redentor.
 ( primavera de Dios Redentor. )
 </span>
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

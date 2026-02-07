@@ -1,41 +1,40 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Dime, Padre</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Dime, Padre</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Dime, Padre</h1>
+            <div class="tono">
+                <span>Do cej2</span>
+            </div>
         </div>
-        <h1 class="titulo">Dime, Padre</h1>
-        <div class="tono">
-            <span>Do cej2</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
       Lam                  Rem7
 Dime, Padre, qué podemos hacer.
              Sol          Mi7          Lam  Sol
 Tus hijos se pierden y no entiendo por qué.
       Lam                 Rem7
-Dime, Padre, cada día se alejan más
-                            Sol
+Dime, Padre, cada día se alejan más         Sol
 y de verdad que no he hecho nada mal,
 Mi7              Lam
 pero curan sus heridas
@@ -43,20 +42,15 @@ pero curan sus heridas
 con lo que no les curará.
 <span class="estribillo">
 Fa                         Lam
-Les di el mandamiento del Amor,
-                          Sol
-me crucificaría mil veces más,
-                           Do
+Les di el mandamiento del Amor,       Sol
+me crucificaría mil veces más,        Do
 pero ellos huyen de su Creador
          Mi7         Fa
 y de su eterna felicidad.
 Fa                           Rem7
-Y es que los hemos hecho tan libres
-                        Sol
-que a veces me duele pensar
-                      Mi7
-que este don y este regalo
-                    Lam
+Y es que los hemos hecho tan libres     Sol
+que a veces me duele pensar   Mi7
+que este don y este regalo Lam
 lo utilicen para el mal.
 </span>
       Lam                       Rem7
@@ -88,8 +82,7 @@ Dime, Padre, cómo les explicamos, que son
 Sol    Mi7    Lam  Sol
 lo que más amamos.
       Lam                Rem7
-Dime, Padre, cómo les guiamos
-                     Sol
+Dime, Padre, cómo les guiamos  Sol
 a aquello que les completa
           Mi7         Lam
 si es que se refugian en falsas metas.
@@ -110,19 +103,15 @@ Les miro con mis ojos,
 Sol            Do
 llenos de compasión
 Lam               Rem
-y te aseguro que acepto
-                     Do
+y te aseguro que acepto  Do
 cualquier tipo de perdón.
 
                    Rem7
-Solo nos queda esperar
-                       Lam
-a que escuchen nuestra voz,
-                      Do
+Solo nos queda esperar    Lam
+a que escuchen nuestra voz,   Do
 que vean las puertas abiertas
                    Sol
-de este Cielo acogedor.
-                        Rem7
+de este Cielo acogedor.     Rem7
 Que siempre serán bienvenidos
                 Lam
 a los brazos de este Corazón,
@@ -132,8 +121,7 @@ que sólo quiere verlos unidos
 en la tierra con su Salvador.
 
           Lam
-Y me hago Pan pero no me ven,
-                     Rem7
+Y me hago Pan pero no me ven,  Rem7
 me cuelo en sus pensamientos pero no me ven,
                  Sol                   Mi7
 me meto en sus entrañas una y otra vez,
@@ -165,7 +153,7 @@ ya la ha pisado mi Madre,
                   Sol         Do
 Sólo tienen que mirarme y vivirán.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

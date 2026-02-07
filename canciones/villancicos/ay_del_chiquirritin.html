@@ -1,53 +1,51 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Ay, del chiquirritín</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Ay, del chiquirritín</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">O03</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">O03</span>
+            </div>
+            <h1 class="titulo">Ay, del chiquirritín</h1>
+            <div class="tono">
+                <span>Mi</span>
+            </div>
         </div>
-        <h1 class="titulo">Ay, del chiquirritín</h1>
-        <div class="tono">
-            <span>Mi</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 <span class="estribillo">
 Mi
 Ay, del chiquirritín, chiquirriquitín,
                Si7
 metidito entre pajas.
 
-Ay, del chiquirritín, chiquirriquitín,
-                        Mi
+Ay, del chiquirritín, chiquirriquitín,     Mi
 queridín, queridito del alma.
 </span>
 Mi    La       Mi            Si7
-Por debajo del arco del portalito
-                               Mi
+Por debajo del arco del portalito            Mi
 se descubre a María, José y al niño.
 
 Entre un buey y una mula Dios ha nacido
 y en un pobre pesebre le han recogido.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

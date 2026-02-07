@@ -1,48 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Silencio</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Silencio</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Silencio</h1>
+            <div class="tono">
+                <span>Do</span>
+            </div>
         </div>
-        <h1 class="titulo">Silencio</h1>
-        <div class="tono">
-            <span>Do</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
       Lam                                   Sol
-Ya no tengo que decirte, las palabras se agotaron,
-                     Fa
+Ya no tengo que decirte, las palabras se agotaron,  Fa
 ya no quiero volver atrás.
 
 Todo sal se ha ido quedando, el vacío no llena el silencio,
 ya no quiero volver atrás.
 <span class="estribillo">
       Rem
-No me sueltes de la mano,
-                                  Do
+No me sueltes de la mano,               Do
 ahora que no estoy sintiendo tu latido dentro de mí.
          Rem
-Me he quedado sin arados,
-                                    Do
+Me he quedado sin arados,                 Do
 sin herencia y sin frontera, da los pasos junto a mí.
 </span>
 Ya no tengo qué decirte, el silencio es nuestro encuentro.
@@ -53,7 +50,7 @@ Ya no tengo qué decirte.
 Fa
 Llévame junto a ti.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>
