@@ -1,46 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Boga mar adentro</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Boga mar adentro</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Boga mar adentro</h1>
+            <div class="tono">
+                <span>Do cej2</span>
+            </div>
         </div>
-        <h1 class="titulo">Boga mar adentro</h1>
-        <div class="tono">
-            <span>La cej2</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 <span class="estribillo">
-La   Mi   Fa#m   Re                 Mi
+Do   Sol  Lam    Fa                 Sol
 Boga mar adentro y echa tu red a pescar,
-La   Mi   Fa#m   Re        Mi       La
+Do   Sol  Lam    Fa        Sol      Do
 Boga mar adentro y echa tu red a pescar. (bis)
 </span>
-La       Mi      Fa#m
+Do       Sol     Lam
 Maestro, toda la noche,
-Re         Sim     Sol      Mi
+Fa         Rem     Sib      Sol
 bregando estuve en la oscuridad
-La       Mi      Fa#m
+Do       Sol     Lam
 y la red sigue vacía,
-Re                   Mi                  La
+Fa                   Sol                 Do
 mas en tu nombre, de nuevo, la echaré al mar.
 
 Abre tu luz mi horizonte,
@@ -48,7 +48,7 @@ cuando contigo regreso a la mar.
 Con nombre nuevo me marcas
 y así en tu nombre, Maestro, vuelvo a bregar.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>
