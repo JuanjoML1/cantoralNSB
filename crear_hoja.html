@@ -45,10 +45,11 @@
         <button id="generate-btn">Generar DOCX</button>
         <datalist id="songlist"></datalist>
 
-        <script type="module">
-            import { Document, Packer, Paragraph, TextRun } from "https://jspm.dev/docx";
-            import { saveAs } from "https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js";
+        <!-- Docx + FileSaver globales -->
+        <script src="https://unpkg.com/docx@8.5.0/build/index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
 
+        <script>
             const SONG_DB = [];
 
             async function loadIndex() {
@@ -97,6 +98,7 @@
             }
 
             async function generateDoc() {
+                const { Document, Packer, Paragraph, TextRun } = window.docx;
                 const rows = document.querySelectorAll(".song-row input");
                 const mode = document.querySelector("input[name=mode]:checked").value;
 
@@ -106,6 +108,7 @@
                 for (const input of rows) {
                     const title = input.value.trim();
                     if (!title) continue;
+
                     const song = findSong(title);
                     if (!song) {
                         alert("No encontrada: " + title);
@@ -121,34 +124,26 @@
                     if (!h1 || !pre) continue;
 
                     // Título (Heading1 simulado)
-                    children.push(
-                        new Paragraph({
-                            children: [
-                                new TextRun({
-                                    text: h1.textContent,
-                                    bold: true,
-                                    size: 32
-                                })
-                            ]
-                        })
-                    );
+                    children.push(new Paragraph({
+                        children: [new TextRun({
+                            text: h1.textContent,
+                            bold: true,
+                            size: 32
+                        })]
+                    }));
 
                     // Texto
                     let text = pre.textContent;
                     if (mode === "lyrics") text = removeChords(text);
 
                     text.split("\n").forEach(line => {
-                        children.push(
-                            new Paragraph({
-                                children: [
-                                    new TextRun({
-                                        text: line,
-                                        font: "Courier New",
-                                        size: 24
-                                    })
-                                ]
-                            })
-                        );
+                        children.push(new Paragraph({
+                            children: [new TextRun({
+                                text: line,
+                                font: "Courier New",
+                                size: 24
+                            })]
+                        }));
                     });
 
                     children.push(new Paragraph({ text: "" })); // espacio
