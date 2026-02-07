@@ -1,11 +1,15 @@
+// ========================================
+// crear_hoja.js
+// Generador de DOCX para cantoral
+// Compatible con docx 8.5.0
+// ========================================
+
 const SONG_DB = [];
 
-/* Cargar index */
+/* Cargar index.html */
 async function loadIndex() {
-
     const res = await fetch("index.html");
     const html = await res.text();
-
     const parser = new DOMParser();
     const doc = parser.parseFromString(html, "text/html");
 
@@ -25,13 +29,13 @@ async function loadIndex() {
     addRow();
 }
 
-/* Añadir fila */
+/* Añadir fila de canción */
 function addRow() {
     const div = document.createElement("div");
     div.className = "song-row";
     div.innerHTML = `
-        <input list="songlist" placeholder="Título canción">
-        <button onclick="removeRow(this)">✕</button>
+        <input list="songlist" name="song-title" placeholder="Título canción">
+        <button type="button" onclick="removeRow(this)">✕</button>
     `;
     document.getElementById("songs").appendChild(div);
 }
@@ -41,14 +45,21 @@ function removeRow(btn) {
     btn.parentElement.remove();
 }
 
-/* Buscar canción */
+/* Buscar canción por título */
 function findSong(title) {
     return SONG_DB.find(s => s.title === title);
 }
 
+/* Quitar acordes de una línea */
+function removeChords(text) {
+    return text.replace(
+        /\b(Do#|Re#|Fa#|Sol#|La#|Reb|Mib|Solb|Lab|Sib|Do|Re|Mi|Fa|Sol|La|Si|C#|D#|F#|G#|A#|Db|Eb|Gb|Ab|Bb|C|D|E|F|G|A|B)(m|maj7|7|sus4|sus2|dim|aug)?\b/g,
+        ""
+    );
+}
+
 /* Generar Word */
 async function generateDoc() {
-
     const rows = document.querySelectorAll(".song-row input");
     const mode = document.querySelector("input[name=mode]:checked").value;
 
@@ -65,52 +76,36 @@ async function generateDoc() {
             return;
         }
 
-        /* Cargar html */
+        /* Cargar html de la canción */
         const res = await fetch(song.href);
         const html = await res.text();
-
         const parser = new DOMParser();
         const sdoc = parser.parseFromString(html, "text/html");
 
         const h1 = sdoc.querySelector("h1.titulo");
         const pre = sdoc.querySelector("pre");
-
         if (!h1 || !pre) continue;
 
-        /* Título (simulando Heading1) */
-        children.push(
-            new docx.Paragraph({
-                children: [
-                    new docx.TextRun({
-                        text: h1.textContent,
-                        bold: true,
-                        size: 32
-                    })
-                ]
-            })
-        );
+        /* Título */
+        children.push(new docx.Paragraph({
+            children: [
+                new docx.TextRun({ text: h1.textContent, bold: true, size: 32 })
+            ]
+        }));
 
-        /* Texto */
+        /* Contenido */
         let text = pre.textContent;
-        if (mode === "lyrics") {
-            text = removeChords(text);
-        }
+        if (mode === "lyrics") text = removeChords(text);
 
         text.split("\n").forEach(line => {
-            children.push(
-                new docx.Paragraph({
-                    children: [
-                        new docx.TextRun({
-                            text: line,
-                            font: "Courier New",
-                            size: 24
-                        })
-                    ]
-                })
-            );
+            children.push(new docx.Paragraph({
+                children: [
+                    new docx.TextRun({ text: line, font: "Courier New", size: 24 })
+                ]
+            }));
         });
 
-        children.push(new docx.Paragraph({ text: "" })); // espacio
+        children.push(new docx.Paragraph({ text: "" })); // espacio extra
     }
 
     doc.addSection({ children });
@@ -119,13 +114,5 @@ async function generateDoc() {
     saveAs(blob, "cantoral.docx");
 }
 
-/* Quitar acordes */
-function removeChords(text) {
-    return text.replace(
-        /\b(Do#|Re#|Fa#|Sol#|La#|Reb|Mib|Solb|Lab|Sib|Do|Re|Mi|Fa|Sol|La|Si|C#|D#|F#|G#|A#|Db|Eb|Gb|Ab|Bb|C|D|E|F|G|A|B)(m|maj7|7|sus4|sus2|dim|aug)?\b/g,
-        ""
-    );
-}
-
-/* Init */
+/* Inicialización */
 loadIndex();
