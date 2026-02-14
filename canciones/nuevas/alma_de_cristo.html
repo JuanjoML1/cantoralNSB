@@ -1,33 +1,33 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Alma de Cristo</title>
-    <link rel="stylesheet" href="../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Alma de Cristo</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Alma de Cristo</h1>
+            <div class="tono">
+                <span>Re</span>
+            </div>
         </div>
-        <h1 class="titulo">Alma de Cristo</h1>
-        <div class="tono">
-            <span>Re</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 Re      Sim     Sol      Re  La        Sim     Sol  Re
 Alma de Cristo, santifícame, cuerpo de Cristo, sálvame,
 La        Sim     La      Sol  Re         La      Re      La
@@ -45,8 +45,8 @@ por los siglos de los siglos
 Re
 Amén.
 </pre>
-<p><a href="https://www.youtube.com/watch?v=k8ibpJ4NKTU">Escuchar en YouTube</a></p>
-</body>
-<script src="../../js/transponer.js"></script>
+        <p><a href="https://www.youtube.com/watch?v=k8ibpJ4NKTU">Escuchar en YouTube</a></p>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>
