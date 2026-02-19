@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Bendigamos al Señor</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Bendigamos al Señor</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">411</span>
-            <span class="nuevo">N01</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">411</span>
+                <span class="nuevo">N01</span>
+            </div>
+            <h1 class="titulo">Bendigamos al Señor</h1>
+            <div class="tono">
+                <span>Mi cej1</span>
+            </div>
         </div>
-        <h1 class="titulo">Bendigamos al Señor</h1>
-        <div class="tono">
-            <span>Mi cej1</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
      Mi                      Do#m
 Bendigamos al Señor, Dios de toda creación,
       La         Fa#m      Si
@@ -59,7 +60,7 @@ Que ni el miedo ni el temor, ni la duda o la opresión
 borrarán la paz de nuestro corazón.
 </pre>
 
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

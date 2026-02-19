@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Aleluya, es la fiesta del Señor</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Aleluya, es la fiesta del Señor</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">13</span>
-            <span class="nuevo">E08</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">13</span>
+                <span class="nuevo">E08</span>
+            </div>
+            <h1 class="titulo">Aleluya, es la fiesta del Señor</h1>
+            <div class="tono">
+                <span>Re cej2</span>
+            </div>
         </div>
-        <h1 class="titulo">Aleluya, es la fiesta del Señor</h1>
-        <div class="tono">
-            <span>Re cej2</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 <span class="estribillo">
    Fa       Do          Sib          Do
 Aleluya, <span class="ag">a</span>leluya, es la fiesta del Señor.
@@ -46,7 +47,7 @@ que en tus obras él descubra que Jesús es quien la da.
 Si delante de los hombres, encendemos nuestra luz,
 abriremos mil caminos para la resurrección.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

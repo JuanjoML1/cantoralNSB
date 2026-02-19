@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Resucitó, aleluya</title>
-<link rel="stylesheet" href="../../css/estilo.css">
-</head>
-<body>
 
-<div class="cancion-header">
-  <div class="numeros">
-    <span class="antiguo">225</span>
-    <span class="nuevo">K64</span>
-  </div>
-  <h1 class="titulo">Resucitó, aleluya</h1>
-  <div class="tono">
-    <span>Mim</span>
-  </div>
-    </div>
-        <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+    <head>
+        <meta charset="UTF-8">
+        <title>Resucitó, aleluya</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">225</span>
+                <span class="nuevo">K64</span>
+            </div>
+            <h1 class="titulo">Resucitó, aleluya</h1>
+            <div class="tono">
+                <span>Mim</span>
+            </div>
         </div>
-    </div>
-    <pre>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
 <span class="estribillo">
       Mim       Re        Do       Si7
 Resucitó, resucitó, resucitó, aleluya. 
@@ -47,7 +50,7 @@ que si hoy nos queremos es que resucitó.
 Si con Él morimos con Él vivimos,
 con Él cantamos: aleluya.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

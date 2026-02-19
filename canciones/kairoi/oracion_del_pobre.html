@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Oración del pobre</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Oración del pobre</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">443</span>
-            <span class="nuevo">K52</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">443</span>
+                <span class="nuevo">K52</span>
+            </div>
+            <h1 class="titulo">Oración del pobre</h1>
+            <div class="tono">
+                <span>Lam cej2</span>
+            </div>
         </div>
-        <h1 class="titulo">Oración del pobre</h1>
-        <div class="tono">
-            <span>Lam cej2</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 Lam                 Do   Sol   Lam       Mi7 Lam
 Vengo ante Ti, mi Señor, reconociendo mi culpa
 Fa        Sol           Do  Rem       Lam           Mi7 Lam
@@ -50,7 +51,7 @@ Mas Tú me quieres así. Yo te bendigo y te alabo.
 Padre, en mi debilidad, Tú me das la fortaleza.
 Amas al hombre sencillo, le das tu paz y perdón.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Levanto mi alma (Taizé)</title>
-<link rel="stylesheet" href="../../css/estilo.css">
-</head>
-<body>
 
-<div class="cancion-header">
-  <div class="numeros">
-    <span class="antiguo">-</span>
-    <span class="nuevo">Q03</span>
-  </div>
-  <h1 class="titulo">Levanto mi alma (Taizé)</h1>
-  <div class="tono">
-    <span>Solm cej2</span>
-  </div>
-    </div>
-        <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+    <head>
+        <meta charset="UTF-8">
+        <title>Levanto mi alma (Taizé)</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">Q03</span>
+            </div>
+            <h1 class="titulo">Levanto mi alma (Taizé)</h1>
+            <div class="tono">
+                <span>Solm cej2</span>
+            </div>
         </div>
-    </div>
-    <pre>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
   Solm     Rem        Solm           Rem
 Levanto mi alma, te invoco a ti, oh, Cristo.
 Solm    Rem           Solm   Rem
 Eres la Salvación, en ti esperamos
 </pre>
-<hr>
-<pre class="original">
+        <hr>
+        <pre class="original">
 Ad te Jesu Christe levavi anima meam.
 Salvator mundi, in te speravi.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

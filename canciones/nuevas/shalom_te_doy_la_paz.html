@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Shalom, te doy la paz</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Shalom, te doy la paz</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">-</span>
-            <span class="nuevo">-</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Shalom, te doy la paz</h1>
+            <div class="tono">
+                <span>Rem</span>
+            </div>
         </div>
-        <h1 class="titulo">Shalom, te doy la paz</h1>
-        <div class="tono">
-            <span>Rem</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
            Rem           La
 Esta es la paz que yo te doy.
            La7           Rem
@@ -55,9 +56,9 @@ es la alegría que el Señor me da.
 Y yo te doy mi corazón, (3 veces)
 el corazón que el Señor me da.
 </pre>
-    <p><a href="https://www.youtube.com/watch?v=Kpyl0DDOr1M">Escuchar en YouTube</a></p>
+        <p><a href="https://www.youtube.com/watch?v=Kpyl0DDOr1M">Escuchar en YouTube</a></p>
 
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Tu palabra, Señor (Taizé)</title>
-<link rel="stylesheet" href="../../css/estilo.css">
-</head>
-<body>
 
-<div class="cancion-header">
-  <div class="numeros">
-    <span class="antiguo">-</span>
-    <span class="nuevo">Q75</span>
-  </div>
-  <h1 class="titulo">Tu palabra, Señor (Taizé)</h1>
-  <div class="tono">
-    <span>Fa</span>
-  </div>
-    </div>
-        <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tu palabra, Señor (Taizé)</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">Q75</span>
+            </div>
+            <h1 class="titulo">Tu palabra, Señor (Taizé)</h1>
+            <div class="tono">
+                <span>Fa</span>
+            </div>
         </div>
-    </div>
-    <pre>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
 Fa   Lam      Rem  Sol Lam
 Tu palabra, Señor, no muere,
       Rem       Fa        Do   Mi
@@ -36,7 +39,7 @@ y la vida, Señor, no sólo vive,
    Lam  Rem      Fa       Mi
 no sólo vive, la vida vivifica.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

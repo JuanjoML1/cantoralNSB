@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Permaneced conmigo (Taizé)</title>
-<link rel="stylesheet" href="../../css/estilo.css">
-</head>
-<body>
 
-<div class="cancion-header">
-  <div class="numeros">
-    <span class="antiguo">-</span>
-    <span class="nuevo">Q14</span>
-  </div>
-  <h1 class="titulo">Permaneced conmigo (Taizé)</h1>
-  <div class="tono">
-    <span>Lam cej5</span>
-  </div>
-    </div>
-        <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+    <head>
+        <meta charset="UTF-8">
+        <title>Permaneced conmigo (Taizé)</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">Q14</span>
+            </div>
+            <h1 class="titulo">Permaneced conmigo (Taizé)</h1>
+            <div class="tono">
+                <span>Lam cej5</span>
+            </div>
         </div>
-    </div>
-    <pre>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
 Lam    Rem    Lam      Rem
 Permaneced conmigo y velad,
   Lam Sol  Do Sol   Lam   Rem Mi7
@@ -35,12 +38,12 @@ velad esta noche, velad esta noche.
 ( Velaré contigo, Señor,              )
 ( mientras yo viva, mientras yo viva. )
 </pre>
-<hr>
-<pre class="original">
+        <hr>
+        <pre class="original">
 Bleibet hier und wachet mit mir.
 Wachet und betet, wachet und betet.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

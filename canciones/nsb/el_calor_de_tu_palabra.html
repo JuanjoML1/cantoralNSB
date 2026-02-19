@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>El calor de tu palabra</title>
-<link rel="stylesheet" href="../../css/estilo.css">
-</head>
-<body>
 
-<div class="cancion-header">
-  <div class="numeros">
-    <span class="antiguo">419</span>
-    <span class="nuevo">K25</span>
-  </div>
-  <h1 class="titulo">El calor de tu palabra</h1>
-  <div class="tono">
-    <span>Re</span>
-  </div>
-    </div>
-        <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+    <head>
+        <meta charset="UTF-8">
+        <title>El calor de tu palabra</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">419</span>
+                <span class="nuevo">K25</span>
+            </div>
+            <h1 class="titulo">El calor de tu palabra</h1>
+            <div class="tono">
+                <span>Re</span>
+            </div>
         </div>
-    </div>
-    <pre>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
             Re Sol              Re
 Cerca del hogar que calienta mi alma,
             Sim                                   La
@@ -53,7 +56,7 @@ que me hacen dudar de si mi camino se orienta hacia Ti.
 Comienza a faltar la paz en mi alma.
 Y sin esperarlo apareces Tú haciéndome ver que a nada he de temer
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

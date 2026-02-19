@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Santo zaireño</title>
-<link rel="stylesheet" href="../../css/estilo.css">
-</head>
-<body>
 
-<div class="cancion-header">
-  <div class="numeros">
-    <span class="antiguo">459</span>
-    <span class="nuevo">G13</span>
-  </div>
-  <h1 class="titulo">Santo zaireño</h1>
-  <div class="tono">
-    <span>Re cej2</span>
-  </div>
-    </div>
-        <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+    <head>
+        <meta charset="UTF-8">
+        <title>Santo zaireño</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">459</span>
+                <span class="nuevo">G13</span>
+            </div>
+            <h1 class="titulo">Santo zaireño</h1>
+            <div class="tono">
+                <span>Re cej2</span>
+            </div>
         </div>
-    </div>
-    <pre>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
 Re     Re7 Sol      Re-La-Re (Sol-La-Re)
 Santo, oh, Santo, Hosanna. (bis)
 <span class="estribillo">
@@ -39,7 +42,7 @@ El Cielo y la Tierra están llenos de tu Gloria, Señor. (bis)
 
 Bendito el que viene en el nombre, en el nombre del Señor. (bis)
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

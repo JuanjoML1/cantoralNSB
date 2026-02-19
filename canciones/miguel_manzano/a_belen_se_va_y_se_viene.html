@@ -1,33 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>A Belén se va y se viene</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>A Belén se va y se viene</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">1</span>
-            <span class="nuevo">O01</span>
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">1</span>
+                <span class="nuevo">O01</span>
+            </div>
+            <h1 class="titulo">A Belén se va y se viene</h1>
+            <div class="tono">
+                <span>Fa</span>
+            </div>
         </div>
-        <h1 class="titulo">A Belén se va y se viene</h1>
-        <div class="tono">
-            <span>Fa</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 <span class="estribillo">
     Fa             Do          Sol         Do
 <span class="gr">A</span> Belén se va y se viene por caminos de alegría,
@@ -62,7 +64,7 @@ que alumbrar el extravío del que olvida a los demás.
 Navidad es el milagro de llegar a la evidencia
 de que Dios sigue naciendo en quien vive sin hogar.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

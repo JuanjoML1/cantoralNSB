@@ -1,43 +1,46 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="UTF-8">
-<title>Tú eres fuente viva (Taizé)</title>
-<link rel="stylesheet" href="../../css/estilo.css">
-</head>
-<body>
 
-<div class="cancion-header">
-  <div class="numeros">
-    <span class="antiguo">-</span>
-    <span class="nuevo">Q76</span>
-  </div>
-  <h1 class="titulo">Tú eres fuente viva (Taizé)</h1>
-  <div class="tono">
-    <span>Do cej3</span>
-  </div>
-    </div>
-        <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
+    <head>
+        <meta charset="UTF-8">
+        <title>Tú eres fuente viva (Taizé)</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">Q76</span>
+            </div>
+            <h1 class="titulo">Tú eres fuente viva (Taizé)</h1>
+            <div class="tono">
+                <span>Do cej3</span>
+            </div>
         </div>
-    </div>
-    <pre>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
 Do Lam  Rem   Do Lam Fa   Solm Rem Do Rem
 Tú eres fuente viva, eres fuego y caridad.
 Lam    Sib Fa Solm Do Rem    Sib    Fa Do
 Ven, Espíritu Santo.  Ven, Espíritu Santo.
 </pre>
-<hr>
-<pre class="original">
+        <hr>
+        <pre class="original">
 Tu sei sorgente viva, tu sei fuoco, sei carità.
 Vieni Spirito Santo, vieni Spirito Santo.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

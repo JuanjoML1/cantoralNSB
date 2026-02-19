@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Alza tu mano (Comunidad)</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Alza tu mano (Comunidad)</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">23</span>
-            <span class="nuevo">K07</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">23</span>
+                <span class="nuevo">K07</span>
+            </div>
+            <h1 class="titulo">Alza tu mano (Comunidad)</h1>
+            <div class="tono">
+                <span>Re cej2</span>
+            </div>
         </div>
-        <h1 class="titulo">Alza tu mano (Comunidad)</h1>
-        <div class="tono">
-            <span>Re cej2</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 Re              La
 <span class="gr">Al</span><span class="ag">za</span> tu mano, alza tu mano
   Sim              Fa#m
@@ -63,7 +64,7 @@ vayamos hoy caminando
 y así buscando en ellas la unidad, ¡unidad!
 </pre>
 
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

@@ -1,34 +1,35 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Venid, fieles todos (Adeste fideles)</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Venid, fieles todos (Adeste fideles)</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
+    <body>
 
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">289</span>
-            <span class="nuevo">O19</span>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">289</span>
+                <span class="nuevo">O19</span>
+            </div>
+            <h1 class="titulo">Venid, fieles todos (Adeste fideles)</h1>
+            <div class="tono">
+                <span>Do</span>
+            </div>
         </div>
-        <h1 class="titulo">Venid, fieles todos (Adeste fideles)</h1>
-        <div class="tono">
-            <span>Do</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
   Mi          Si     Mi  La    Mi Si
 Venid, fieles todos, entonando himnos.
   Do#m     Si         Fa#7  Si
@@ -55,8 +56,8 @@ Su cuerpo de niño, desvalido y pobre,
 oculta la gloria del mismo Dios.
 Niño divino, esplendor del Padre.
 </pre>
-    <hr>
-    <pre class="original">
+        <hr>
+        <pre class="original">
 Adeste, fideles, laeti triumphantes,
 Venite, venite, in Bethlehem.
 Natum videte regem angelorum.
@@ -72,7 +73,7 @@ Aeterni Parentis splendorem aeternum.
 Velatum sub carne videbimus:
 Deum infantem, panis in volutum.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

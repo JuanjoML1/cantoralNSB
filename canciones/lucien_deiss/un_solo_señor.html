@@ -1,32 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Un solo Señor</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">268</span>
-            <span class="nuevo">-</span>
+    <head>
+        <meta charset="UTF-8">
+        <title>Un solo Señor</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">268</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Un solo Señor</h1>
+            <div class="tono">
+                <span>Sol Cej 3</span>
+            </div>
         </div>
-        <h1 class="titulo">Un solo Señor</h1>
-        <div class="tono">
-            <span>Sol Cej 3</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 <span class="estribillo">
     Sol    Mim  Sol      Mim
 ¡Un solo Señor, una sola fe,
@@ -52,9 +54,9 @@ Llamados a compartir una misma
 esperanza en Cristo,
 cantamos y proclamamos: 
 </pre>
-    <p><a href="https://www.youtube.com/watch?v=V86NBrzhSAo">Escuchar en YouTube</a></p>
+        <p><a href="https://www.youtube.com/watch?v=V86NBrzhSAo">Escuchar en YouTube</a></p>
 
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>

@@ -1,33 +1,34 @@
 <!DOCTYPE html>
 <html lang="es">
 
-<head>
-    <meta charset="UTF-8">
-    <title>Alrededor de tu mesa</title>
-    <link rel="stylesheet" href="../../css/estilo.css">
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <title>Alrededor de tu mesa</title>
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
 
-<body>
-    <div class="cancion-header">
-        <div class="numeros">
-            <span class="antiguo">21</span>
-            <span class="nuevo">A07</span>
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">21</span>
+                <span class="nuevo">A07</span>
+            </div>
+            <h1 class="titulo">Alrededor de tu mesa</h1>
+            <div class="tono">
+                <span>Re cej2</span>
+            </div>
         </div>
-        <h1 class="titulo">Alrededor de tu mesa</h1>
-        <div class="tono">
-            <span>Re cej2</span>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
         </div>
-    </div>
-    <div id="main-controls">
-        <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-        <div id="controls-container">
-            <button onclick="bajarTono()">−</button>
-            <button onclick="subirTono()">+</button>
-            <button onclick="resetTono()">Reset</button>
-            <button onclick="toggleCifrado()">Do → C</button>
-        </div>
-    </div>
-    <pre>
+        <pre>
 <span class="estribillo">
 Re    Sol       Re     Sol     La   Re
 <span class="gr">Alre</span>dedor de tu mesa ve<span class="ag">ni</span>mos a recordar (bis)
@@ -44,7 +45,7 @@ con nuestras manos manchadas arrepentidos <span class="ag">bus</span>camos tu pe
 Juntos y a veces sin vernos celebramos tu presencia sin sentir 
 que se interrumpe el camino si no vamos como hermanos hacia Ti.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
 
 </html>
