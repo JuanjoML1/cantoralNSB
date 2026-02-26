@@ -44,10 +44,22 @@ function findSong(title) {
 
 // Quitar acordes
 function removeChords(text) {
-    return text.replace(
-        /\b(Do#|Re#|Fa#|Sol#|La#|Reb|Mib|Solb|Lab|Sib|Do|Re|Mi|Fa|Sol|La|Si|C#|D#|F#|G#|A#|Db|Eb|Gb|Ab|Bb|C|D|E|F|G|A|B)(m|maj7|7|sus4|sus2|dim|aug)?\b/g,
-        ""
-    );
+    const chordRegex = /\b(Do#|Re#|Fa#|Sol#|La#|Reb|Mib|Solb|Lab|Sib|Do|Re|Mi|Fa|Sol|La|Si|C#|D#|F#|G#|A#|Db|Eb|Gb|Ab|Bb|C|D|E|F|G|A|B)(m|maj7|7|sus4|sus2|dim|aug)?\b/g;
+
+    return text
+        .split("\n")
+        .map(line => {
+            const sinAcordes = line.replace(chordRegex, "").trim();
+
+            // Si la línea tenía texto pero ahora está vacía → eliminarla
+            if (line.trim() !== "" && sinAcordes === "") {
+                return null;
+            }
+
+            return sinAcordes;
+        })
+        .filter(line => line !== null)
+        .join("\n");
 }
 
 // Generar archivo TXT o DOC

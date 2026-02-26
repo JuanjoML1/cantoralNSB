@@ -5,9 +5,12 @@ const items = document.querySelectorAll("li");
 // Función para normalizar texto (quita tildes)
 function normalizar(texto) {
     return texto
-        .toLowerCase()
-        .normalize("NFD")          // separa letras de los acentos
-        .replace(/[\u0300-\u036f]/g, ""); // elimina los acentos
+        .toLowerCase()                        // todo en minúsculas
+        .normalize("NFD")                     // separa letras y acentos
+        .replace(/[\u0300-\u036f]/g, "")      // elimina los acentos
+        .replace(/[^\w\s]/g, "")              // elimina toda la puntuación
+        //.replace(/\s+/g, "")                  // elimina todos los espacios
+        .trim();                              // elimina espacios al inicio y final
 }
 
 function filtrar() {
