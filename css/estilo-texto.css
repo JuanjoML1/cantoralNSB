@@ -18,15 +18,17 @@ body {
 .lista a {
     display: block;
     /* Hace que cada enlace ocupe toda la línea, clic fácil en móvil */
+    text-align: center;
+    /* Centra el texto */
     padding: 0.2em 1em;
     /* Espacio interno: 0.2em arriba/abajo, 1em izquierda/derecha */
     margin: 0.2em 0;
     /* Separación entre enlaces: 0.2em arriba y abajo */
-    background-color: #f0f0f0;
+    background-color: var(--bg-listas);
     /* Color de fondo gris claro */
     text-decoration: none;
     /* Quita el subrayado del enlace */
-    color: #000000;
+    color: var(--texto);
     /* Color del texto gris oscuro */
     border-radius: 4px;
     /* Esquinas ligeramente redondeadas */
@@ -35,20 +37,8 @@ body {
 }
 
 .lista a:hover {
-    background-color: #dce4f0;
+    background-color: var(--hover-lista);
     /* Cambia el fondo al pasar el cursor */
-}
-
-hr {
-    border: none;
-    border-top: 2px solid #ccc;
-    /* línea horizontal para separar */
-    margin: 10px 0;
-    /* espacio arriba y abajo */
-    border-top: 2px solid #ccc;
-    /* línea horizontal para separar */
-    margin: 10px 0;
-    /* espacio arriba y abajo */
 }
 
 pre {
@@ -60,24 +50,24 @@ pre {
 
 pre .estribillo {
     font-weight: bold;
-    color: rgb(0, 2, 142);
+    color: var(--estribillo);
 }
 
 pre .gr {
-    color: #cc0000;
+    color: var(--acorde-gr);
     text-decoration: underline;
     text-decoration-style: double;
 }
 
 pre .ag {
-    color: #337733;
+    color: var(--acorde-ag);
     text-decoration: overline;
 }
 
 pre.original {
     /*Los pre que son original. Con punto es "los original que estén dentro de un pre"*/
     font-style: italic;
-    color: #000000;
+    color: var(--texto);
 }
 
 .cancion-header .numeros {

@@ -1,3 +1,8 @@
+body {
+    background-color: var(--bg);
+    color: var(--texto);
+}
+
 #buscador-container {
     display: flex;
     align-items: center;
@@ -12,7 +17,7 @@
     height: 2.2em;
     box-sizing: border-box;
     font-size: 1em;
-    border: 1px solid #ccc;
+    border: 1px solid var(--linea-clara);
 }
 
 /* Select ancho fijo, sin margen */
@@ -41,7 +46,7 @@
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--linea-clara);
     padding: 5px 0;
 }
 
@@ -55,7 +60,8 @@ span.antiguo::after {
 
 /* Botón del menú */
 #btn-menu,
-#btn-tools {
+#btn-tools,
+#btn-theme {
     position: fixed;
     left: 10px;
     z-index: 1001;
@@ -74,52 +80,53 @@ span.antiguo::after {
     top: 50px;
 }
 
+#btn-theme {
+    top: 100px;
+}
+
 /* Menú lateral */
 #menu-lateral,
 #tools-lateral {
     position: fixed;
     top: 0;
-    left: -280px;
+    left: -360px;
     /* oculto por defecto */
     width: 250px;
     height: 100%;
-    padding: 20px 20px 20px 20px;
+    padding: 20px 20px 20px 80px;
     display: flex;
     flex-direction: column;
     gap: 10px;
-    box-shadow: 2px 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 0 5px var(--sombra);
     transition: left 0.3s ease;
     z-index: 1000;
     /* debajo de los botones */
 }
 
-#menu-lateral {
-    background-color: #f9f9f9;
-}
-
+#menu-lateral,
 #tools-lateral {
-    background-color: #f2f2f2;
+    background-color: var(--bg-lateral);
 }
 
 /* Enlaces dentro del menú */
 #menu-lateral .btn-indice,
 #tools-lateral .btn-indice {
     padding: 8px 12px;
-    background-color: #eee;
+    background-color: var(--bg-listas);
     border-radius: 5px;
     text-decoration: none;
-    color: #333;
+    color: var(--texto);
     font-weight: bold;
 }
 
 #menu-lateral .btn-indice:hover,
 #tools-lateral .btn-indice:hover {
-    background-color: #ddd;
+    background-color: var(--hover-lista);
 }
 
 #menu-lateral.abierto,
 #tools-lateral.abierto {
-    left: 60px;
+    left: 0px;
 }
 
 #main-controls {
@@ -130,36 +137,37 @@ span.antiguo::after {
     margin: 20px 0;
 }
 
-#back-button {
-    padding: 8px 14px;
-    font-size: 1rem;
-    border-radius: 6px;
-    border: 1px solid #444;
-    background-color: #f0f0f0;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-#back-button:hover {
-    background-color: #ddd;
-}
-
 #controls-container {
     display: flex;
     gap: 10px;
     /* espacio entre botones */
 }
 
+#back-button,
 #controls-container button {
     padding: 8px 14px;
     font-size: 1rem;
     border-radius: 6px;
-    border: 1px solid #444;
-    background-color: #f0f0f0;
+    border: none;
+    background-color: var(--bg-listas);
+    color: var(--texto);
     cursor: pointer;
     transition: background-color 0.2s;
 }
 
+#back-button:hover,
 #controls-container button:hover {
-    background-color: #ddd;
+    background-color: var(--hover-lista);
+}
+
+hr {
+    border: none;
+    border-top: 2px solid var(--linea-clara);
+    /* línea horizontal para separar */
+    margin: 10px 0;
+    /* espacio arriba y abajo */
+    border-top: 2px solid var(--linea-clara);
+    /* línea horizontal para separar */
+    margin: 10px 0;
+    /* espacio arriba y abajo */
 }

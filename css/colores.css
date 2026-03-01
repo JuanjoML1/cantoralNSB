@@ -1,0 +1,52 @@
+/* =========================
+   MODO CLARO
+========================= */
+
+:root {
+    --bg: #ffffff;
+    --bg-lateral: #e0e0e0;
+    --bg-listas: #f0f0f0;
+
+    --texto: #000000;
+    --texto-alt: #333333;
+
+    --linea-clara: #cccccc;
+    --linea-oscura: #222222;
+
+    --hover-bg: #ddd;
+    --hover-lista: #d8d8d8;
+
+    --sombra: rgba(0, 0, 0, 0.2);
+
+    /* Colores musicales */
+    --estribillo: #00028e;
+    --acorde-gr: #cc0000;
+    --acorde-ag: #337733;
+}
+
+
+/* =========================
+   MODO OSCURO
+========================= */
+
+body.dark {
+    --bg: #121212;
+    --bg-lateral: #1e1e1e;
+    --bg-listas: #2a2a2a;
+
+    --texto: #f0f0f0;
+    --texto-alt: #cccccc;
+
+    --linea-clara: #dddddd;
+    --linea-oscura: #000000;
+
+    --hover-bg: #333333;
+    --hover-lista: #3d3d3d;
+
+    --sombra: rgba(0, 0, 0, 0.7);
+
+    /* Colores musicales */
+    --estribillo: #4da6ff;
+    --acorde-gr: #ff6666;
+    --acorde-ag: #66cc66;
+}
