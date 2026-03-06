@@ -24,7 +24,7 @@
         </div>
 
         <button id="btn-menu">☰</button>
-        <div id="menu-lateral">
+        <div id="secciones-lateral">
             <a href="#nsb" class="btn-indice">Cancionero NSB</a>
             <a href="#taiz_org" class="btn-indice">Taizé Orig</a>
             <a href="#taiz_esp" class="btn-indice">Taizé Esp</a>
@@ -956,25 +956,7 @@
         <h2 style="display:none"></h2>
 
         <script src="js/buscador.js"></script>
+        <script src="js/barra_lateral.js"></script>
         <script src="js/cambiar_tema.js"></script>
-        <script>
-            const btnMenu = document.getElementById("btn-menu");
-            const menu = document.getElementById("menu-lateral");
-
-            const btnTools = document.getElementById("btn-tools");
-            const tools = document.getElementById("tools-lateral");
-
-
-            btnMenu.addEventListener("click", () => {
-                menu.classList.toggle("abierto");
-                tools.classList.remove("abierto");
-            });
-
-            btnTools.addEventListener("click", () => {
-                tools.classList.toggle("abierto");
-                menu.classList.remove("abierto");
-            });
-        </script>
     </body>
-
 </html>

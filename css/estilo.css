@@ -1,8 +1,14 @@
+/* --------------------- */
+/* Estilos globales      */
+/* --------------------- */
 body {
     background-color: var(--bg);
     color: var(--texto);
 }
 
+/* --------------------- */
+/* Buscador              */
+/* --------------------- */
 #buscador-container {
     display: flex;
     align-items: center;
@@ -20,14 +26,14 @@ body {
     border: 1px solid var(--linea-clara);
 }
 
-/* Select ancho fijo, sin margen */
+/* Select con ancho fijo, sin margen */
 #filtro {
     flex: 0 0 100px;
     border-right: 0;
-    /* quita borde derecho para “unir” con input */
+    /* unir con input */
     padding: 0 0.3em;
     border-radius: 4px 0 0 4px;
-    /* Redondea el select solo por la izquierda */
+    /* redondea solo izquierda */
 }
 
 /* Input ocupa el resto, sin margen */
@@ -35,19 +41,22 @@ body {
     flex: 1;
     padding: 0 0.5em;
     border-left: 0;
-    /* quita borde izquierdo para “unir” con select */
+    /* unir con select */
     border-radius: 0 4px 4px 0;
-    /* redondea solo la derecha */
+    /* redondea solo derecha */
 }
 
+/* --------------------- */
+/* Cabecera de canción    */
+/* --------------------- */
 .cancion-header {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
-    border-bottom: 1px solid var(--linea-clara);
     padding: 5px 0;
+    border-bottom: 1px solid var(--linea-clara);
 }
 
 span.antiguo::before {
@@ -58,34 +67,39 @@ span.antiguo::after {
     content: ")";
 }
 
-/* Botón del menú */
+/* --------------------- */
+/* Botones fijos         */
+/* --------------------- */
 #btn-menu,
 #btn-tools,
 #btn-theme {
     position: fixed;
     left: 10px;
     z-index: 1001;
-    padding: 10px 0px;
+    width: 55px;
+    height: 55px;
+    padding: 10px 0;
     font-size: 18px;
     cursor: pointer;
-    width: 50px;
     text-align: center;
 }
 
+/* --------------------- */
+/* Menú lateral          */
+/* --------------------- */
 #btn-menu {
-    top: 0px;
+    top: 10px;
 }
 
 #btn-tools {
-    top: 50px;
+    top: 70px;
 }
 
 #btn-theme {
-    top: 100px;
+    top: 130px;
 }
 
-/* Menú lateral */
-#menu-lateral,
+#secciones-lateral,
 #tools-lateral {
     position: fixed;
     top: 0;
@@ -98,41 +112,40 @@ span.antiguo::after {
     flex-direction: column;
     gap: 10px;
     box-shadow: 2px 0 5px var(--sombra);
+    background-color: var(--bg-lateral);
     transition: left 0.3s ease;
     z-index: 1000;
     /* debajo de los botones */
 }
 
-#menu-lateral,
-#tools-lateral {
-    background-color: var(--bg-lateral);
+#secciones-lateral.abierto,
+#tools-lateral.abierto {
+    left: 0;
 }
 
 /* Enlaces dentro del menú */
-#menu-lateral .btn-indice,
+#secciones-lateral .btn-indice,
 #tools-lateral .btn-indice {
     padding: 8px 12px;
     background-color: var(--bg-listas);
     border-radius: 5px;
-    text-decoration: none;
     color: var(--texto);
     font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.2s;
 }
 
-#menu-lateral .btn-indice:hover,
+#secciones-lateral .btn-indice:hover,
 #tools-lateral .btn-indice:hover {
     background-color: var(--hover-lista);
 }
 
-#menu-lateral.abierto,
-#tools-lateral.abierto {
-    left: 0px;
-}
-
+/* --------------------- */
+/* Controles principales  */
+/* --------------------- */
 #main-controls {
     display: flex;
     justify-content: space-between;
-    /* izquierda / derecha */
     align-items: center;
     margin: 20px 0;
 }
@@ -140,7 +153,6 @@ span.antiguo::after {
 #controls-container {
     display: flex;
     gap: 10px;
-    /* espacio entre botones */
 }
 
 #back-button,
@@ -160,14 +172,11 @@ span.antiguo::after {
     background-color: var(--hover-lista);
 }
 
+/* --------------------- */
+/* Línea horizontal       */
+/* --------------------- */
 hr {
     border: none;
     border-top: 2px solid var(--linea-clara);
-    /* línea horizontal para separar */
     margin: 10px 0;
-    /* espacio arriba y abajo */
-    border-top: 2px solid var(--linea-clara);
-    /* línea horizontal para separar */
-    margin: 10px 0;
-    /* espacio arriba y abajo */
 }
