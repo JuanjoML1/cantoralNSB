@@ -101,12 +101,15 @@ span.antiguo::after {
 
 #secciones-lateral,
 #tools-lateral {
+    overflow-y: auto;
+    overflow-x: hidden;
+    overscroll-behavior: contain;
     position: fixed;
     top: 0;
     left: -360px;
     /* oculto por defecto */
     width: 250px;
-    height: 100%;
+    height: 100vh;
     padding: 20px 20px 20px 80px;
     display: flex;
     flex-direction: column;
@@ -116,6 +119,13 @@ span.antiguo::after {
     transition: left 0.3s ease;
     z-index: 1000;
     /* debajo de los botones */
+}
+
+#secciones-lateral::after,
+#tools-lateral::after {
+    content: "";
+    height: 40px;
+    flex-shrink: 0;
 }
 
 #secciones-lateral.abierto,
