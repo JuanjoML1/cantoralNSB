@@ -27,7 +27,7 @@ const NOTE_INDEX = {
 
 /* Regex acorde */
 const CHORD_REGEX =
-    /\b(Do#|Re#|Fa#|Sol#|La#|Reb|Mib|Solb|Lab|Sib|Do|Re|Mi|Fa|Sol|La|Si|C#|D#|F#|G#|A#|Db|Eb|Gb|Ab|Bb|C|D|E|F|G|A|B)(m|maj7|7|sus4|sus2|º7|º|+|m7b5)?\b/g;
+    /\b(Do#|Re#|Fa#|Sol#|La#|Reb|Mib|Solb|Lab|Sib|Do|Re|Mi|Fa|Sol|La|Si|C#|D#|F#|G#|A#|Db|Eb|Gb|Ab|Bb|C|D|E|F|G|A|B)(m|maj7|7|sus4|sus2|º7|º|\+|m7b5)?\b/g;
 
 /* Guardar originales */
 const PRE_ORIGINALS = [];
