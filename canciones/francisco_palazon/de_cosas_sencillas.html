@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>De cosas sencillas</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">De cosas sencillas</h1>
+            <div class="tono">
+                <span>Do</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+   Do                        Fa              Do
+El hombre que teme a Dios es firme como el camino
+  Sol7           Do      Sol7 Do  Do7
+y sabe que su destino es confiar.
+   Fa                Rem Sol             Do
+El hombre que teme a Dios es como la levadura,
+       Lam          Rem Sol7       Do
+que contagia con su fuerza a los demás.
+<span class="estribillo">
+Do                 Lam         Do
+De cosas sencillas Jesús les hablaba,
+   Lam       Sol7                Do  Do7
+de trigo y cizaña, de oveja y pastor.
+            Fam               Dom
+Jesús hoy repite las mismas palabras,
+                       Fa         Sol7
+de cosas sencillas nos habla el Señor.
+</span>
+El hombre que teme a Dios es como inquieta semilla
+que frutos de paz reparte alrededor.
+El hombre que teme a Dios es como la luz que alumbra,
+su fuerza arrastra y deslumbra, su fuerza es Dios.
+<span class="estribillo">
+De cosas sencillas Jesús les hablaba,
+de trigo y cizaña, de oveja y pastor.
+Jesús hoy repite las mismas palabras,
+de cosas sencillas nos habla el Señor.
+</span>
+El hombre que teme a Dios es cual tesoro escondido,
+el temor es un camino del Amor.
+El hombre que teme a Dios es sal que salva y sazona
+y entrega en cuerpo y persona su corazón.
+<span class="estribillo">
+De cosas sencillas Jesús les hablaba,
+de trigo y cizaña, de oveja y pastor.
+Jesús hoy repite las mismas palabras,
+de cosas sencillas nos habla el Señor.
+</span>
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

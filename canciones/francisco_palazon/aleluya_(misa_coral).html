@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Aleluya (misa coral)</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Aleluya (misa coral)</h1>
+            <div class="tono">
+                <span>Re</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="estribillo">
+Sol Mim  Re Si7   Do Sol Re Sol
+Aleluya, aleluya, aleluya.
+</span>
+Sol           Sim Mi7 Lam      Re
+Muéstranos, Señor,    tu misericordia,
+  Do Lam        Re
+y danos tu salvación.
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

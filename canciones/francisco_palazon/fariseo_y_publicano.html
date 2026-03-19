@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Fariseo y Publicano</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Fariseo y Publicano</h1>
+            <div class="tono">
+                <span>Re</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+  Re            La7   Sim       La7               Re
+Salió un hombre de su casa y se fue al templo a rezar.
+      Fa#m La7   Sim       Mim        La7      Re
+Se creía justo y bueno y a Dios se lo fue a contar,
+      Sim  La7   Re        Sim        La7      Re
+se creía justo y bueno y a Dios se lo fue a contar.
+   Rem                             Do7         Fa
+Un hombre a la misma hora y tras ganarse el jornal
+   Solm        Rem    La7              Rem
+creyéndose pecador al templo se fue llorar,
+   Solm        Rem    La7              Re
+creyéndose pecador al templo se fue llorar.
+<span class="estribillo">
+Re         Re7       Sol            La7                 Re
+Un fariseo y un publicano fueron al templo a hablar con Dios,
+       Sol           Re              Fa#m Sim        La7
+el fariseo perdió su tiempo, el publicano ganó el perdón.
+</span>
+    Re       La7 Sim  La7             Re
+Orgulloso el fariseo así le dijo al Señor:
+       Sol            Re           Sim        La7
+"Yo no soy como otros hombres ni como ese pecador."
+        Rem La7 Rem    Do7             Fa
+El publicano rezaba sintiendo temor de Dios:
+    Solm          Rem      La7           Rem
+"protege mi pobre vida, perdóname tanto error,
+   Solm          Rem      La7           Re
+protege mi pobre vida, perdóname tanto error."
+<span class="estribillo">
+Re         Re7       Sol            La7                 Re
+Un fariseo y un publicano fueron al templo a hablar con Dios,
+       Sol           Re              Fa#m Sim        La7
+el fariseo perdió su tiempo, el publicano ganó el perdón.
+</span>
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

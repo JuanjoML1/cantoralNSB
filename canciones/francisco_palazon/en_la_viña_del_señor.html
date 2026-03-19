@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>En la viña del Señor</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">En la viña del Señor</h1>
+            <div class="tono">
+                <span>Re</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+     Re    La      Re       Mim    La7  Re
+Este mundo que camina entre prisas y tropiezos
+       Sim   Mim   Fa#m Sol  Sim  Mi7  La
+bien pudiera ser un día primavera del Amor.
+     Re       Sim    Fa#m        Sol      Mi7  La
+Este mundo en que conviven la opulencia y la miseria
+      Sim      Mim   Fa#m   Sim   Sol  La7   Re
+tiene nombre y tiene dueño: es la viña del Señor.
+<span class="estribillo">
+      Rem                Do         Do7  Fa
+En la viña del Señor, el hombre que pisa fuerte
+        Solm       Rem       Solm      Sol#º La
+nunca espera de la suerte el fruto que no sembró.
+La7   Rem  La7   Rem         Do      Do7 Fa
+En la viña del Señor, el que no está vigilante
+   Sib              La             Solm  La7  Rem  La7
+es igual que el caminante que el camino equivocó.
+</span>
+Del Señor es este mundo y a los hombres nos lo arrienda,
+el trabajo es una renta que nos pone el Creador.
+Es la fe nuestra moneda, el amor es la fianza
+y con fe y amor se avanza por la viña del Señor.
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

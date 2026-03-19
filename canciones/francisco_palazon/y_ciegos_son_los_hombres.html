@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Y ciegos son los hombres</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Y ciegos son los hombres</h1>
+            <div class="tono">
+                <span>Sol</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Sol            Lam Re7              Sol
+Un ciego pretendía ser guía de otro ciego
+                  Lam   Re7            Sol
+y en la primera esquina tropezaron los dos,
+                 Sol7                     Do
+y ciegos son los hombres que inician el camino
+     La7                                Re7
+de hacer feliz al mundo no contando con Dios.
+<span class="estribillo">
+    Sol                     Mi7           Lam
+Solamente Dios es luz, sólo Dios es la verdad,
+        Lam            Mim7        Lam        Re7 Sol
+y en la noche no hay caminos, Dios es nuestro caminar,
+        Dom6           Sol         Lam        Re7 Sol
+y en la noche no hay caminos, Dios es nuestro caminar.
+</span>
+Un hombre que quería hacer una gran torre,
+al no tener dinero se quedó en la mitad.
+Aquellos que confían tan sólo en sus recursos
+al fin ven derrumbarse la fuerza de su afán.
+<span class="estribillo">
+Solamente Dios es luz, sólo Dios es la verdad,
+y en la noche no hay camino, Dios es nuestro caminar,
+y en la noche no hay camino, Dios es nuestro caminar.
+</span>
+Un pueblo quiso un día hacer una gran guerra
+y al no medir sus fuerzas no la pudo ganar.
+Aquél que no conoce su propio rendimiento
+avanza por la vida ajeno a la verdad.
+<span class="estribillo">
+Solamente Dios es luz, sólo Dios es la verdad,
+y en la noche no hay camino, Dios es nuestro caminar,
+y en la noche no hay camino, Dios es nuestro caminar.
+</span>
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

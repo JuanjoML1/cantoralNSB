@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Padre nuestro I</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Padre nuestro I</h1>
+            <div class="tono">
+                <span>La</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+La                     Mi
+Padre que estas en los cielos
+       Fa#m        Do#m   Re
+santificado sea tu nombre,
+ La    Mi
+venga a nosotros tu reino.
+La             Mi
+Hágase tu voluntad
+          Fa#m              Do#m  Re
+así en la tierra como en el cielo,
+          La  Mi Re         La Mi
+así en la tierra como en el cielo.
+
+   La        Mi
+El pan danos hoy,
+        Fa#m        Re
+nuestro pan de cada día.
+   La            Mi
+perdona nuestras deudas
+ Fa#m      Re          Mi
+así como nosotros perdonamos.
+
+La               Mi Fa#m    Do#m
+Y no nos dejes caer en tentación.
+La               Mi Fa#m    Re
+Y no nos dejes caer en tentación,
+                 Mi    La
+mas líbranos del mal, Amén.
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

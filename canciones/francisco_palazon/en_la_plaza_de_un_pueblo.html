@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>En la plaza de un pueblo</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">En la plaza de un pueblo</h1>
+            <div class="tono">
+                <span>Do</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Lam                           Sol7     Do
+En la plaza de un pueblo y cruzados de brazos
+   Lam   La7      Rem   Mi7             Lam
+buscaban los jornaleros cómo ganarse el pan.
+                      Fa                      Do
+Fue un hombre a contratarlos y los trajo a su tierra
+                      Rem          Mi7
+les dio el ciento por uno y su amistad.
+<span class="estribillo">
+     La                      Mi7         La
+Unos van de madrugada, otros llegan al final.
+     La                      Mi7         La
+Unos van de madrugada, otros llegan al final,
+     Re     Mi7   La         Fa#m   Sim   La   Mi7  La
+pero Dios a todos paga, pero Dios a todos paga por igual.
+</span>
+Lam                             Sol7        Do
+Hubo un hombre envidioso que al dueño pidió cuentas
+Lam La7        Rem   Mi7               Lam
+por recibir lo mismo que quien llegó detrás.
+                    Fa                  Do
+Y el dueño fue y le dijo "amigo, ten en cuenta
+                 Rem           Mi7
+que te di lo acordado y mi amistad".
+<span class="estribillo">
+     La                      Mi7         La
+Unos van de madrugada, otros llegan al final.
+                             Mi7         La
+Unos van de madrugada, otros llegan al final,
+     Re     Mi7   La         Fa#m   Sim   La   Mi7  La
+pero Dios a todos paga, pero Dios a todos paga por igual.
+</span>
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

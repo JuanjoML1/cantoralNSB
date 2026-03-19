@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Invitación</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Invitación</h1>
+            <div class="tono">
+                <span>Sol</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+   Sol                        Lam    La7   Re7
+Un hombre hizo una fiesta, llamó a muchos amigos,
+   Sol                     Do    La7    Re
+la mesa estaba puesta y al fin nadie acudió.
+   Sol                     Si7           Mim
+Le dieron mil disculpas, cada uno a su manera,
+Do    Do#º         Sol    Do       Re7 Sol
+despreciando en el fondo aquella invitación.
+<span class="estribillo">
+ Si7                Mim       Si7              Mim
+Así es el eterna historia del hombre con su Dios.
+ Si7                Mim       Si7           Mim
+Así es el eterna historia del hombre con su Dios,
+   Lam                            Mim
+llamados a su mesa y dándonos su amor,
+              Si7                   Mim
+inventamos disculpas para decir que no,
+              Si7                   Mim
+inventamos disculpas para decir que no.
+</span>
+Entonces aquel hombre les dijo a sus criados
+que fueran por las calles y barrios del lugar,
+y a todo el que encontraran dispuesto a ser su amigo
+le ofrecieran su mesa y dieran de cenar.
+<span class="estribillo">
+Así es el eterna historia del hombre con su Dios.
+Así es el eterna historia del hombre con su Dios,
+llamados a su mesa y dándonos su amor,
+inventamos disculpas para decir que no,
+inventamos disculpas para decir que no.
+</span>
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

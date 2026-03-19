@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Después de la medianoche</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Después de la medianoche</h1>
+            <div class="tono">
+                <span>Sib</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+   Solm       Re7  Solm     Re7               Solm
+Después de la medianoche un hombre llamó a la puerta:
+    Solm   Dom    Solm      Dom     Re7     Solm
+un amigo había llegado y en casa faltaba el pan.
+    Dom                                            Solm
+Le abrió enseguida el vecino y le dio el pan que pedía,
+Dom                   Solm Re           Re7       Solm
+más por quitarlo de encima que porque hubiera amistad.
+<span class="estribillo">
+              Sol                 Sol7 Do
+Pedid y recibiréis, llamad y se os abrirá:
+       Lam   Re7   Sol           Re   Re7   Sol Sol7
+al que llama se le abre y al que pide se le da,
+Do           Dom6     Sol              Mim  Re7   Sol
+porque en la casa del padre siempre es hora de llamar.
+</span>
+En un pueblo una mujer a un juez justicia pedía,
+era viuda y era pobre y siempre le iba a implorar.
+El juez que ni a Dios temía ni a los hombres respetaba,
+esta vez hizo justicia porque le dejara en paz.
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

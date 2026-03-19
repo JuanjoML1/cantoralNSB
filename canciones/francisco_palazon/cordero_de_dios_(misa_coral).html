@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Cordero de Dios (misa coral)</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Cordero de Dios (misa coral)</h1>
+            <div class="tono">
+                <span>Re</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+  Re La Sim Sol      Re La  Sim  Mim Re Sol Re La Re
+Cordero de Dios, que quitas el pecado   del mundo,
+                La Re
+ten piedad de nosotros.
+
+  Re La Sim Sol      Re La  Sim  Mim Re Sol Re La Re
+Cordero de Dios, que quitas el pecado del mundo,
+                Mi7 La
+ten piedad de nosotros.
+
+  Re La Sim Sol      Re La  Sim  Mim Re Sol Re La
+Cordero de Dios, que quitas el pecado del mundo,
+     Sol Re  Sol Re La Re
+danos la paz, danos la paz.
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>
