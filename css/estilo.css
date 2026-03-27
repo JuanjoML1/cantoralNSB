@@ -26,6 +26,21 @@ body {
     border: 1px solid var(--linea-clara);
 }
 
+#barra-fija {
+    position: sticky;
+    top: 0;
+    background: var(--bg);
+    padding: 10px;
+    z-index: 1000;
+    border-bottom: 1px solid #ccc;
+}
+
+h2,
+h3 {
+    scroll-margin-top: 220px;
+    /* ajusta a la altura de tu barra */
+}
+
 /* Select con ancho fijo, sin margen */
 #filtro {
     flex: 0 0 100px;
