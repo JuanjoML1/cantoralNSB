@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>Aleluya, demos gracias</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Aleluya, demos gracias</h1>
+            <div class="tono">
+                <span>Re</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="estribillo">
+  Re        sim
+¡Aleluya! ¡Aleluya!
+     mim         La7
+Demos gracias, resucitó.
+  Re        sim
+¡Aleluya! ¡Aleluya!
+    mim    La7     Re
+Jesucristo es Salvador.
+</span>
+  Re     Sol    mim    La7
+Él es el Rey de la creación.
+Re      sim          mim       La7
+Él es Jesús, nuestro dueño y Señor.
+
+Por obediencia al Padre Creador,
+lleno de amor, en la cruz expiró.
+</pre>
+<p><a href="https://www.youtube.com/watch?v=KwQwKNU8Q1I">Escuchar en YouTube</a></p>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>
