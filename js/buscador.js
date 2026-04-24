@@ -20,9 +20,10 @@ function filtrar() {
     items.forEach(li => {
         const titulo = normalizar(li.querySelector("a").textContent);
         const autor = normalizar(li.dataset.author || "");
-        const momentos = (li.dataset.momento || "").toLowerCase().split(",").map(normalizar);
+        const momentos = (li.dataset.momento || "").split(",").map(normalizar);
         const bib = normalizar(li.dataset.bib || "");
-        const nold = li.dataset.nold || "";
+        const nold = normalizar(li.dataset.nold || "");
+        const nrcc = normalizar(li.dataset.rcc || "");
         const nnew = normalizar(li.dataset.nnew || "");
 
         let mostrar = false;
@@ -39,13 +40,16 @@ function filtrar() {
             mostrar = nold.includes(texto);
         } else if (tipo === "nnew") {
             mostrar = nnew.includes(texto);
+        } else if (tipo === "nrcc") {
+            mostrar = nrcc.includes(texto);
         } else if (tipo === "todos") {
             mostrar = titulo.includes(texto) ||
                 autor.includes(texto) ||
                 momentos.some(m => m.includes(texto)) ||
                 bib.includes(texto) ||
                 nold.includes(texto) ||
-                nnew.includes(texto);
+                nnew.includes(texto) ||
+                nrcc.includes(texto);
         }
 
         li.style.display = mostrar ? "" : "none";
