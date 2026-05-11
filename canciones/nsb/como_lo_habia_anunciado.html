@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Como lo había anunciado</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">54</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Como lo había anunciado</h1>
+            <div class="tono">
+                <span>Lam (Cej 1)</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+(Cej 1)
+        <pre>
+Lam                               Fa  Mi
+Como lo había anunciado, Cristo resucitó.
+Lam                Rem                      Mi
+Porque pasó por la cruz, llegó también a la luz.
+
+<span class="estribillo">
+La                                 Mi
+Alégrate, María, con este canto pascual.
+Re          La        Mi       La (Lam)
+Alégrate, María, aleluya, aleluya.
+</span>
+
+Como lo había anunciado, Cristo resucitó.
+Tú que sufriste con Él, ahora alégrate.
+</pre>
+
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>
