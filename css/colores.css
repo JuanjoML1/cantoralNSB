@@ -20,6 +20,7 @@
 
     /* Colores musicales */
     --estribillo: #00028e;
+    --puente: #aa8844;
     --acorde-gr: #cc0000;
     --acorde-ag: #337733;
 }
@@ -47,6 +48,7 @@ body.dark {
 
     /* Colores musicales */
     --estribillo: #4da6ff;
+    --puente: #aa8844;
     --acorde-gr: #ff6666;
     --acorde-ag: #66cc66;
 }
