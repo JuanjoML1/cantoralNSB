@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Acuérdate, Señor</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Acuérdate, Señor</h1>
+            <div class="tono">
+                <span>Sib</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="estribillo">
+ Solm                 Mib      Sib       Rem Solm
+Acuérdate, Señor, que tu misericordia es eterna.
+</span>
+Mib                       Solm      Sib          Fa
+Ten piedad, Señor, de mis pecados y limpia mi maldad.
+
+Contra Ti, Señor, hemos pecado, perdona nuestro error.
+
+Crea en mí, Señor, un nuevo corazón, que sea fiel a Ti.
+
+Mostraré a los hombres tus caminos y volverán a Ti.
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

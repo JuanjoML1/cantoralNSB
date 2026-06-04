@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Pidamos al Señor</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Pidamos al Señor</h1>
+            <div class="tono">
+                <span>Do</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="estribillo">
+  Do         Sol7        Do
+Pidamos al Señor y nos dará,
+   Lam         Rem        Sol
+busquemos y en Él encontraremos,
+   Do         Rem           Do
+llamemos y su puerta se abrirá.
+</span>
+Do              Fa                          Sol Do
+La paz para los pueblos que habitan nuestra tierra,
+   Lam         Mim         Fa        Sol
+la fe para los hombres que viven en error.
+
+Por todos los que sufren y todos los que esperan,
+por todos los que buscan al Dios Consolador.
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

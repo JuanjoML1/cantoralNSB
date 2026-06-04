@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Yo volveré a cantar</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">295</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Yo volveré a cantar</h1>
+            <div class="tono">
+                <span>Do cej2</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="estribillo">
+Sol     Do      Sol     Do           Sol
+Yo volveré a cantar al amor y la esperanza,
+              Lam       Re          Sol
+yo volveré cantar los caminos de la paz.
+</span>
+Mim        Si7       Mim                   Si7 Mim
+Cuando los fríos se acerquen las flores se morirán,
+     Re          Do      Lam         Si7
+pero con la primavera de nuevo renacerán.
+Mim       Si7     Mim            Si7     Mim
+Quizás me veas llorar cuando un amigo se va,
+             Re          Do         Lam         Si7
+la muerte me lleva a los míos, pero sé que volverán.
+     Do         Mim       Lam  Si7  Mim  Re
+El dolor es pasajero y la vida vencerá.
+
+Quizás me veas sufriendo por amor a los demás,
+quizás me veas gritando que el pobre no tiene pan.
+La cárcel no es mi morada, las rejas se romperán,
+si fuertes son las cadenas, más fuerte es nuestro luchar.
+
+Quizás me veas morir, quizás me veas marchar,
+no llores si eres mi amigo, me volverás a encontrar.
+No sé ni cómo ni cuándo, pero será en un lugar
+en donde no haya cadenas y en donde pueda cantar. 
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>
