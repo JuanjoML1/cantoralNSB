@@ -11,10 +11,22 @@
 
     <body>
         <div class="cancion-header">
-            <div class="numeros"> <span class="antiguo">81</span> <span class="nuevo">-</span>
+            <div class="numeros">
+                <span class="antiguo">81</span>
+                <span class="nuevo">-</span>
             </div>
             <h1 class="titulo">De Jerusalén (Parábola del buen gitano)</h1>
-            <div class="tono"> <span>Sol</span>
+            <div class="tono">
+                <span>Sol</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
             </div>
         </div>
         <pre>
@@ -44,8 +56,8 @@ Paternoster, réquiem, requiem.
 Dios le guarde en su gloria para siempre".
 <span class="estribillo">
 De Jerusalén bajaba a Jericó
-en blanco deportivo 
-un devoto cautivo del Cristo del Perdón.
+en blanco deportivo un devoto cautivo
+del Cristo del Perdón.
 </span>
 Besa siete veces un medallón de oro
 y pide con fervor a San Cristobalón
@@ -56,8 +68,8 @@ Y promete cuatro velas a San Vito y Santa Marta
 por librarle de pecados y desgracias.
 <span class="estribillo">
 De Jerusalén bajaba a Jericó
-un borriquillo al trote
-y un inmigrante pobre silbando una canción.
+un borriquillo al trote y un inmigrante pobre
+silbando una canción.
 </span>
 Se frotó los ojos al ver tanta tragedia. 
 Rasgando la camisa le cubre las heridas

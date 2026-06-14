@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Trueno</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Trueno</h1>
+            <div class="tono">
+                <span>Do cej3</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+             Fa Sol               Do
+He visto una luz que ha cegado el cielo.
+              Fa Sol           Do
+Me he visto morir atada a este suelo.
+                Fa Sol           Do
+Y he vuelto a nacer con tu dulce sueño.
+            Fa Sol           Do
+Sólo para morir por seguir viviendo.
+
+           Lam            Do
+Y en tu costado late un recuerdo,
+         Lam  Fa      Sol    Do
+que sea abrigo con el frío invierno.
+<span class="estribillo">
+            Fa                           Do
+Y se oye un trueno en la noche detrás de mí.
+             Fa                      Do
+Me empuja el eco y me arrastra hacia Ti.
+            Lam   Fa              Do
+Tranquila y quieta, hoy me dejo vivir.
+            Lam   Fa Sol Do
+Tranquila y quieta, por Ti.
+</span>
+Rem  Mim  Sol  Mi  Lam  Do  Re
+
+           Do Re                  Sol
+Me tienes aquí, antes que hubiera tiempo.
+            Do Re                Sol
+Y aquí seguiré, muriendo por tus huesos.
+                 Do   Re                Sol
+Y deseando que escuches lo mucho que te quiero.
+                Do Re              Sol
+Y si me dejas verás lo que solo yo puedo.
+
+           Mim             Sol
+Y en mi costado mueren tus miedos.
+         Mim  Do  Re    Sol
+Y en ese frío arde este fuego.
+<span class="estribillo">
+            Do                           Sol
+Y se oye un trueno en la noche detrás de ti.
+             Do                      Sol
+Te empuja el eco y te arrastra hacia mí.
+            Mim   Do               Sol
+Tranquila y quieta, hoy te dejas vivir.
+            Mim   Do Re Sol
+Tranquila y quieta, por mí.
+</span>
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

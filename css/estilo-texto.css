@@ -53,11 +53,6 @@ pre .estribillo {
     color: var(--estribillo);
 }
 
-pre .estribillo {
-    font-weight: bold;
-    color: var(--estribillo);
-}
-
 pre .puente {
     font-weight: bold;
     color: var(--puente);
