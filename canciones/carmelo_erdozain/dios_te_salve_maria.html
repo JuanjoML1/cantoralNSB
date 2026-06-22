@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Dios te salve, María</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">82</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Dios te salve, María</h1>
+            <div class="tono">
+                <span>Sol</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Sol            Do Sol               Re7 Sol
+Dios te salve, María, llena eres de gracia,
+               Do Sol          Re7 Sol
+el Señor es contigo, bendita Tú eres
+            Mim   Re7
+entre todas las mujeres
+    Lam  Re7   Mim Do                  Re7
+y bendito es el fruto de tu vientre, Jesús.
+
+Sol     Do   Re7      Sol
+Santa María, Madre de Dios,
+            Do      Re7   Sol
+ruega por nosotros, pecadores,
+ Sol  Mim     Re7             Sol
+ahora y en la hora de nuestra muerte.
+ Sol  Mim     Re7     Sol     Re7      Sol
+Ahora y en la hora de nuestra muerte, amén.
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>
