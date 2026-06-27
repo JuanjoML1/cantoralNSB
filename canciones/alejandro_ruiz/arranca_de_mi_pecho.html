@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Arranca de mi pecho</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Arranca de mi pecho</h1>
+            <div class="tono">
+                <span>Sol</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="estribillo">
+ Sol          Do
+Arranca de mi pecho
+   Sol        Re
+el corazón de piedra. (bis)
+
+  Mim         Do
+Y pon en su lugar
+   Sol        Re
+un corazón de carne
+    Mim        Do
+que te sepa alabar,
+    Sol         Re
+que sea para adorarte.
+ 
+ Mim                       Do
+Arranca de mi pecho el corazón de piedra,
+ Sol                       Re
+arranca de mi pecho el corazón de piedra. (bis)
+</pre>
+
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Feliz el hombre</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">125</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Feliz el hombre</h1>
+            <div class="tono">
+                <span>Fa</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+  Rem    Sib  Fa
+Feliz el hombre
+          Solm                        Rem
+que no ha puesto su esperanza en el dinero,
+         Solm                         Rem
+ni se instala entre las cosas de esta vida,
+      Do                       Rem
+ni se deja corromper aunque le cueste.
+<span class="estribillo">
+Rem Sib Do Rem   Sib Do Rem   Sib Do Rem
+Feliz   será,  feliz será,  feliz será.
+</span>
+Feliz el hombre
+que no inclina su frente al poderoso,
+ni traiciona al compañero de trabajo,
+ni renuncia a la lucha del presente.
+
+Feliz el hombre
+que no sigue los caprichos de la moda,
+ni hace caso de anuncios engañosos,
+ni se deja llevar por charlatanes.
+
+Feliz el hombre
+que no vende su inquietud ante amenazas,
+ni claudica de su rumbo ya trazado,
+ni se hunde en el silencio de los cómplices.
+
+Feliz el hombre
+que encamina sus pasos por tus sendas;
+él será como un árbol grande y fuerte,
+que da sombra y alegría al caminante.
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>
