@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Abbá, padre (escúchame)</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Abbá, padre (escúchame)</h1>
+            <div class="tono">
+                <span>Do</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Do        Rem  Fam           Do
+Mírame, Señor, lee en mi corazón.
+          Fa    Rem    Mi7
+Yo soy tu hijo, escúchame.
+<span class="estribillo">
+ Lam  Fa      Do   Fa
+Abbá, Padre. Abbá, Padre.
+ Do    Rem Fam Do
+Abbá, Abbá, Abbá.
+</span>
+Ya sola no estaré, en ti me apoyaré.
+Yo soy tu hija, abrázame.
+
+En medio del dolor la paz invocaré.
+Yo soy tu hijo, ven, sáname.
+
+Gracias, oh, Señor, por este inmenso amor.
+Somos tus hijos, aleluya.
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

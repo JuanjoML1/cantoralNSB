@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Gloria</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Gloria</h1>
+            <div class="tono">
+                <span>Do</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+       Do             Sol   Lam
+Por pintar amaneceres en el mar
+                         Sol Do
+al Creador del universo, Gloria.
+       Do                 Sol Lam
+Por la música y el tiempo diseñar,
+                           Sol Do
+Amor bueno, Padre nuestro, Gloria.
+<span class="estribillo">
+Lam Mim Fa Do  
+Gloria, Gloria.
+Fa Do   Sib Do
+Gloria, Gloria (bis).
+</span>
+Al Espíritu que es fuego, paz y luz,
+quien nos guía hacia lo bueno, Gloria.
+Al más sabio consejero canta tú,
+quien nos cura y da consuelo, Gloria.
+
+A quien salva de las sombras con su cruz,
+a Jesús, Hijo del Hombre, Gloria.
+Al que vive para siempre, nuestro Rey,
+al buen hijo de Maria, Gloria.
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Vía Crucis (Introducción)</title>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Vía Crucis (Introducción)</h1>
+            <div class="tono">
+                <span>Re</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+       Re           Mim        Re
+Te acompaño en el camino de la Cruz.
+                    Mim            Sim
+No sé si tendré las fuerzas para estar
+       Sol          Re
+a la altura del que dijo
+      Sol          Re
+que daría todo por mí.
+       Do           Sol        Re
+Te acompaño en el camino de la Cruz.
+
+Mim             La          Fa#m   Sim
+Dime que esta angustia acabará por fin.
+Mim            La         Sim
+Dime que el Viacrucis pasará.
+Mim        La           Fa#m Sim
+No puedo beber tu cáliz de dolor
+Do            Sol        Do
+pero que se haga tu voluntad.
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+
+</html>
