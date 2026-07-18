@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Padre nuestro</title>
+        <script id="nsb-metadata" type="application/json">
+    {
+        "metadata_version": 1,
+
+        "numeracion": {
+            "antiguo": null,
+            "nuevo": null,
+            "rcce": null
+        },
+
+        "musica": {
+            "tono": null
+        },
+
+        "origen":{
+            "autor": null,
+            "album": null,
+            "num": null
+        },
+
+        "analisis": {
+            "temas": [],
+            "citas_biblicas": {
+                "explicitas": [],
+                "relacionadas": []
+            },
+            "tiempo_liturgico": [],
+            "momento_misa": []
+        },
+
+        "revision": {
+            "ia": false,
+            "excel": false,
+            "revisado": false
+        }
+    }
+    </script>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Padre nuestro</h1>
+            <div class="tono">
+                <span>Do</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Do                              Do7
+Padre nuestro, que estás en los cielos,
+       Fa          Do
+santificado sea tu nombre.
+          Sol
+Venga a nosotros tu reino.
+    Do         Do7           Fa                Sol7
+Hágase tu voluntad así en la tierra como en el cielo. (bis)
+
+       Do              Do7          Fa
+El pan nuestro de cada día, dánosle hoy,
+                    Do
+perdónanos nuestras deudas,
+             Sol                   Do
+así como nosotros perdonamos al deudor.
+               Sol           Do
+No nos dejes caer en la tentación,
+                 Fa
+mas líbranos del mal,
+                 Sol   Do
+mas líbranos del mal, amén.
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

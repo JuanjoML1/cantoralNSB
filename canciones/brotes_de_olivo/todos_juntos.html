@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Todos juntos</title>
+        <script id="nsb-metadata" type="application/json">
+    {
+        "metadata_version": 1,
+
+        "numeracion": {
+            "antiguo": null,
+            "nuevo": null,
+            "rcce": null
+        },
+
+        "musica": {
+            "tono": null
+        },
+
+        "origen":{
+            "autor": null,
+            "album": null,
+            "num": null
+        },
+
+        "analisis": {
+            "temas": [],
+            "citas_biblicas": {
+                "explicitas": [],
+                "relacionadas": []
+            },
+            "tiempo_liturgico": [],
+            "momento_misa": []
+        },
+
+        "revision": {
+            "ia": false,
+            "excel": false,
+            "revisado": false
+        }
+    }
+    </script>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Todos juntos</h1>
+            <div class="tono">
+                <span>Do</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+    Lam
+Que todos sonriamos juntos, todos nos sintamos uno.
+Rem
+Todos andando senderos, llanos y desfiladeros,
+Sol                      Sol7
+todos en el mismo barco, con los gozos y fracasos...
+ Do        Mi7
+Así, qué feliz.
+
+Tu alegría, mi alegría. Tu amargura, mi amargura.
+Tu pobreza, mi pobreza. Tu riqueza, mi riqueza.
+Tu camino, mi camino. Tu destino, mi destino,
+he de sentir...
+<span class="estribillo">
+Rem        Mi7            Lam
+En mi alma siento, ésa es la felicidad.
+Rem                           Lam          La7
+Pierdo hasta el aliento al pensar lo que será.
+Rem          Sol7 Do         Lam
+Ven, sabor a mí, no huyas de mí.
+Mi7         Sim7b5 Mi7       Lam  La7
+Hasta no sentirte, no seré feliz.
+Rem           Sol7 Do            Fa
+Que tú seas de mí, que yo sea de ti,
+Sim7b5      Mi7           Lam
+que todos vivamos siempre así.
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

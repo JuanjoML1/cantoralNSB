@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Tras las huellas del Padre</title>
+        <script id="nsb-metadata" type="application/json">
+    {
+        "metadata_version": 1,
+
+        "numeracion": {
+            "antiguo": null,
+            "nuevo": null,
+            "rcce": null
+        },
+
+        "musica": {
+            "tono": null
+        },
+
+        "origen":{
+            "autor": null,
+            "album": null,
+            "num": null
+        },
+
+        "analisis": {
+            "temas": [],
+            "citas_biblicas": {
+                "explicitas": [],
+                "relacionadas": []
+            },
+            "tiempo_liturgico": [],
+            "momento_misa": []
+        },
+
+        "revision": {
+            "ia": false,
+            "excel": false,
+            "revisado": false
+        }
+    }
+    </script>
+        <link rel="stylesheet" href="../../css/colores.css">
+        <link rel="stylesheet" href="../../css/estilo.css">
+        <link rel="stylesheet" href="../../css/estilo-texto.css">
+    </head>
+
+    <body>
+
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo">-</span>
+                <span class="nuevo">-</span>
+            </div>
+            <h1 class="titulo">Tras las huellas del Padre</h1>
+            <div class="tono">
+                <span>Lam cej5</span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+     Lam       Sol      Lam        Fa   Sol    Do
+Me hicieron de barro un día, de la nada me sacaron.
+     Lam    Sol     Lam     Fa       Sol       Lam
+Me pusieron en el camino, camino que se hace andando.
+     Lam   Sol     Lam      Fa        Sol      Do
+Me fijaron norte y guía, de clara luz y muy cercano
+          Lam Sol       Lam          Fa     Sol       Lam
+pero al pisar mal en la senda, lo perdí, se me ha olvidado.
+<span class="estribillo">
+ Do           Fa          Sol    Lam
+¿Dónde estás, Padre? Te estoy buscando.
+Do             Fa           Do   Sol
+Pronto he de hallarte o moriré andando.
+ Do           Fa          Sol    Lam
+¿Dónde estás, Padre? Te estoy buscando.
+               Fa           Sol  Lam
+Pronto he de hallarte o moriré andando.
+</span>
+Pero antes de morir quiero pasear junto a tu lado;
+cegar mis ojos de luz viva y tras cegarlos, ver claro.
+Porque el camino que he tomado, tu senda, la he desviado.
+Voy tras ti cerrando los ojos y, tras ti, iré andando.
+</pre>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>
