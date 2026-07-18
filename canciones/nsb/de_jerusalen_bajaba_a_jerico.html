@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>De Jerusalén (Parábola del buen gitano)</title>
-<script id="nsb-metadata" type="application/json">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
 {
     "metadata_version": 1,
     "titulo": "De Jerusalén bajaba a Jericó",
@@ -14,7 +15,8 @@
         "rcce": null
     },
     "musica": {
-        "tono": null
+        "tono": "Sol",
+        "cejilla": null
     },
     "origen": {
         "autor": "Cantos S Cateq",
@@ -31,37 +33,36 @@
         "momento_misa": []
     },
     "revision": {
-        "ia": false,
         "excel": true,
+        "ia": false,
         "revisado": false
     }
 }
 </script>
-<link href="../../css/colores.css" rel="stylesheet"/>
-<link href="../../css/estilo.css" rel="stylesheet"/>
-<link href="../../css/estilo-texto.css" rel="stylesheet"/>
-</head>
-<body>
-<div class="cancion-header">
-<div class="numeros">
-<span class="antiguo" data-md="numeracion.antiguo">81</span>
-<span class="nuevo">-</span>
-</div>
-<h1 class="titulo">De Jerusalén bajaba a Jericó</h1>
-<div class="tono">
-<span></span>
-</div>
-</div>
-<div id="main-controls">
-<button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-<div id="controls-container">
-<button onclick="bajarTono()">−</button>
-<button onclick="subirTono()">+</button>
-<button onclick="resetTono()">Reset</button>
-<button onclick="toggleCifrado()">Do → C</button>
-</div>
-</div>
-<pre>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono" data-md="musica.tono"></div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
 <span class="estribillo">
 Sol                       Re
 De Jerusalén bajaba a Jericó
@@ -109,8 +110,8 @@ y lo sube a la grupa de su asnillo.
 Un rumor se oyó en el cielo y un aplauso como un trueno,
 y en la tierra la canción de un hombre bueno.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
-<script src="../../js/metadata.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
 </html>

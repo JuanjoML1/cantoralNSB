@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>No hay cosa más bonita que mirar</title>
-<script id="nsb-metadata" type="application/json">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
 {
     "metadata_version": 1,
+    "titulo": "No hay cosa más bonita que mirar",
     "numeracion": {
         "antiguo": 176,
         "nuevo": null,
         "rcce": null
     },
     "musica": {
-        "tono": null
+        "tono": null,
+        "cejilla": null
     },
     "origen": {
         "autor": "Misa nicaragüense",
@@ -30,38 +33,36 @@
         "momento_misa": []
     },
     "revision": {
-        "ia": false,
         "excel": true,
+        "ia": false,
         "revisado": false
-    },
-    "titulo": "No hay cosa más bonita que mirar"
+    }
 }
 </script>
-<link href="../../css/colores.css" rel="stylesheet"/>
-<link href="../../css/estilo.css" rel="stylesheet"/>
-<link href="../../css/estilo-texto.css" rel="stylesheet"/>
-</head>
-<body>
-<div class="cancion-header">
-<div class="numeros">
-<span class="antiguo">176</span>
-<span class="nuevo">-</span>
-</div>
-<h1 class="titulo">No hay cosa más bonita que mirar</h1>
-<div class="tono">
-<span></span>
-</div>
-</div>
-<div id="main-controls">
-<button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-<div id="controls-container">
-<button onclick="bajarTono()">−</button>
-<button onclick="subirTono()">+</button>
-<button onclick="resetTono()">Reset</button>
-<button onclick="toggleCifrado()">Do → C</button>
-</div>
-</div>
-<pre>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono" data-md="musica.tono"></div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
 La                                              Mi7
 No hay cosa más bonita que mirar a un pueblo reunido,
                                                 La
@@ -90,8 +91,8 @@ en este enorme lazo de hermandad, de amor que nos envuelve.
 Juntemos nuestras manos para hacer una muralla fuerte
 que defienda por siempre la Comunidad.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
-<script src="../../js/metadata.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
 </html>

@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Magnificat (canon)</title>
-<script id="nsb-metadata" type="application/json">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
 {
     "metadata_version": 1,
+    "titulo": "Magnificat (canon)",
     "numeracion": {
         "antiguo": null,
         "nuevo": "Q61",
         "rcce": 68
     },
     "musica": {
-        "tono": "Sol"
+        "tono": "Sol",
+        "cejilla": null
     },
     "origen": {
         "autor": "Taizé original",
@@ -30,36 +33,34 @@
         "momento_misa": []
     },
     "revision": {
-        "ia": false,
         "excel": true,
+        "ia": false,
         "revisado": false
-    },
-    "titulo": "Magnificat (canon)"
+    }
 }
 </script>
-<link href="../../css/colores.css" rel="stylesheet"/>
-<link href="../../css/estilo.css" rel="stylesheet"/>
-<link href="../../css/estilo-texto.css" rel="stylesheet"/>
-</head>
-<body>
-<div class="cancion-header">
-<div class="numeros">
-<span class="antiguo">-</span>
-<span class="nuevo">Q61</span>
-</div>
-<h1 class="titulo">Magnificat (canon)</h1>
-<div class="tono">
-<span>Sol</span>
-</div>
-</div>
-<pre class="original">
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono" data-md="musica.tono"></div>
+        </div>
+        <pre class="original">
 Sol    Do   Re     Sol         Do        Re  Sol
 Magnificat, magnificat, magnificat anima mea Dominum.
        Do   Re     Sol         Do        Re  Sol
 Magnificat, magnificat, magnificat anima mea.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
-<script src="../../js/metadata.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
 </html>

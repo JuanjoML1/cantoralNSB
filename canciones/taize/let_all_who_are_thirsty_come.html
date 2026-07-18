@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Que venga a ti</title>
-<script id="nsb-metadata" type="application/json">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
 {
     "metadata_version": 1,
+    "titulo": "Que venga a ti",
     "numeracion": {
         "antiguo": null,
         "nuevo": "Q60",
         "rcce": null
     },
     "musica": {
-        "tono": "Do cej2"
+        "tono": "Do cej2",
+        "cejilla": null
     },
     "origen": {
         "autor": "Taizé en español",
@@ -30,38 +33,36 @@
         "momento_misa": []
     },
     "revision": {
-        "ia": false,
         "excel": true,
+        "ia": false,
         "revisado": false
-    },
-    "titulo": "Que venga a ti"
+    }
 }
 </script>
-<link href="../../css/colores.css" rel="stylesheet"/>
-<link href="../../css/estilo.css" rel="stylesheet"/>
-<link href="../../css/estilo-texto.css" rel="stylesheet"/>
-</head>
-<body>
-<div class="cancion-header">
-<div class="numeros">
-<span class="antiguo">-</span>
-<span class="nuevo">Q60</span>
-</div>
-<h1 class="titulo">Que venga a ti</h1>
-<div class="tono">
-<span>Do cej2</span>
-</div>
-</div>
-<div id="main-controls">
-<button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-<div id="controls-container">
-<button onclick="bajarTono()">−</button>
-<button onclick="subirTono()">+</button>
-<button onclick="resetTono()">Reset</button>
-<button onclick="toggleCifrado()">Do → C</button>
-</div>
-</div>
-<pre>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono" data-md="musica.tono"></div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
     Do                  Fa Sol
 Que venga a ti quien tenga sed,
       Do     Sol Lam    Do      Fa
@@ -69,8 +70,8 @@ quien quiera recibir el agua de vida eterna.
 Do Fa         Do      Fa          Do Sol
 Amén, ven Jesucristo. Amén, ven Jesucristo.
 </pre>
-<hr/>
-<pre class="original">
+        <hr />
+        <pre class="original">
     Do               Fa Sol
 Let all who are thirsty come,
     Do      Sol    Lam       Do       Fa
@@ -78,8 +79,8 @@ let all who wish receive the water of life freely.
 Do Fa           Do     Fa         Do   Sol
 Amen, come Lord Jesus. Amen, come Lord Jesus.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
-<script src="../../js/metadata.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
 </html>

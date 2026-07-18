@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Mi corazón te anhela</title>
-<script id="nsb-metadata" type="application/json">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
 {
     "metadata_version": 1,
+    "titulo": "Mi corazón te anhela",
     "numeracion": {
         "antiguo": null,
         "nuevo": "Q43",
         "rcce": null
     },
     "musica": {
-        "tono": "Rem cej2"
+        "tono": "Rem cej2",
+        "cejilla": null
     },
     "origen": {
         "autor": "Taizé en español",
@@ -30,38 +33,36 @@
         "momento_misa": []
     },
     "revision": {
-        "ia": false,
         "excel": true,
+        "ia": false,
         "revisado": false
-    },
-    "titulo": "Mi corazón te anhela"
+    }
 }
 </script>
-<link href="../../css/colores.css" rel="stylesheet"/>
-<link href="../../css/estilo.css" rel="stylesheet"/>
-<link href="../../css/estilo-texto.css" rel="stylesheet"/>
-</head>
-<body>
-<div class="cancion-header">
-<div class="numeros">
-<span class="antiguo">-</span>
-<span class="nuevo">Q43</span>
-</div>
-<h1 class="titulo">Mi corazón te anhela</h1>
-<div class="tono">
-<span>Rem cej2</span>
-</div>
-</div>
-<div id="main-controls">
-<button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-<div id="controls-container">
-<button onclick="bajarTono()">−</button>
-<button onclick="subirTono()">+</button>
-<button onclick="resetTono()">Reset</button>
-<button onclick="toggleCifrado()">Do → C</button>
-</div>
-</div>
-<pre>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono" data-md="musica.tono"></div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
        Rem      Solm La    Rem Do     Fa
 Mi corazón te anhela en la noche, oh, Dios,
    Solm    Rem          Lam
@@ -71,8 +72,8 @@ Mi corazón te anhela en la noche, oh, Dios,
    La      Do           Rem
 mi alma te busca sólo a ti.
 </pre>
-<hr/>
-<pre class="original">
+        <hr />
+        <pre class="original">
        Rem      Solm La     Rem Do Fa
 Iedere nacht verlang ik naar u, o God,
    Solm        Rem             Lam
@@ -82,8 +83,8 @@ Iedere nacht verlang ik naar u, o God,
    La          Do              Rem
 ik hunker naar u met heel mijn ziel.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
-<script src="../../js/metadata.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
 </html>

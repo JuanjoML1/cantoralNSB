@@ -1,19 +1,22 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1" name="viewport"/>
-<title>Te ofrecemos</title>
-<script id="nsb-metadata" type="application/json">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
 {
     "metadata_version": 1,
+    "titulo": "Te ofrecemos",
     "numeracion": {
         "antiguo": null,
         "nuevo": "F15",
         "rcce": null
     },
     "musica": {
-        "tono": "Do"
+        "tono": "Do",
+        "cejilla": null
     },
     "origen": {
         "autor": "Toño Casado",
@@ -30,38 +33,36 @@
         "momento_misa": []
     },
     "revision": {
-        "ia": false,
         "excel": true,
+        "ia": false,
         "revisado": false
-    },
-    "titulo": "Te ofrecemos"
+    }
 }
 </script>
-<link href="../../css/colores.css" rel="stylesheet"/>
-<link href="../../css/estilo.css" rel="stylesheet"/>
-<link href="../../css/estilo-texto.css" rel="stylesheet"/>
-</head>
-<body>
-<div class="cancion-header">
-<div class="numeros">
-<span class="antiguo">-</span>
-<span class="nuevo">F15</span>
-</div>
-<h1 class="titulo">Te ofrecemos</h1>
-<div class="tono">
-<span>Do</span>
-</div>
-</div>
-<div id="main-controls">
-<button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-<div id="controls-container">
-<button onclick="bajarTono()">−</button>
-<button onclick="subirTono()">+</button>
-<button onclick="resetTono()">Reset</button>
-<button onclick="toggleCifrado()">Do → C</button>
-</div>
-</div>
-<pre>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono" data-md="musica.tono"></div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
 <span class="estribillo">
        Fa          Do           Fa            Do
 Te ofrecemos pan y vino, te ofrecemos nuestro ser,
@@ -86,8 +87,8 @@ que apaga nuestra sed, nuestras heridas.
 Con risas borrará el mal que nos dañó,
 vino que nos donó la Salvación.
 </pre>
-</body>
-<script src="../../js/transponer.js"></script>
-<script src="../../js/cambiar_tema.js"></script>
-<script src="../../js/metadata.js"></script>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
 </html>

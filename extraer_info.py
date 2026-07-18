@@ -4,25 +4,35 @@ import csv
 import re
 
 # Carpeta raíz donde están las canciones
-CARPETA_RAIZ = Path(r"./")
+CARPETA_RAIZ = Path("./")
 
 # Archivo de salida
-CSV_SALIDA = "canciones.csv"
+CSV_SALIDA = "canciones_tono.csv"
+
+# Patrón para reconocer acordes
+PATRON_ACORDES = re.compile(
+    r'\b(?:Do|Re|Mi|Fa|Sol|La|Si|[A-G])'
+    r'(?:#|b)?'
+    r'(?:maj7|maj9|maj|min|m|sus2|sus4|sus|dim|aug|add9|6|7|9|11|13)?'
+    r'(?:/[A-G](?:#|b)?)?\b'
+)
 
 
-def extraer_primera_linea_acordes(pre_texto):
+def extraer_acordes(pre_texto):
     """
-    Devuelve la primera línea no vacía dentro del <pre>.
+    Devuelve todos los acordes distintos encontrados en el <pre>,
+    manteniendo el orden de aparición.
     """
-    lineas = pre_texto.splitlines()
 
-    for linea in lineas:
-        limpia = linea.strip()
+    encontrados = PATRON_ACORDES.findall(pre_texto)
 
-        if limpia:
-            return limpia
+    acordes = []
 
-    return ""
+    for acorde in encontrados:
+        if acorde not in acordes:
+            acordes.append(acorde)
+
+    return " ".join(acordes)
 
 
 datos = []
@@ -52,21 +62,23 @@ for archivo in CARPETA_RAIZ.rglob("*.html"):
         numero_nuevo = span_nuevo.get_text(strip=True) if span_nuevo else ""
 
         # <div class="tono"><span>
-        tono_div = soup.find("div", class_="tono")
         tono = ""
+
+        tono_div = soup.find("div", class_="tono")
 
         if tono_div:
             span = tono_div.find("span")
             if span:
                 tono = span.get_text(strip=True)
 
-        # Primera línea dentro del <pre>
+        # Todos los acordes del <pre>
+        acordes = ""
+
         pre = soup.find("pre")
-        primera_linea = ""
 
         if pre:
             texto_pre = pre.get_text("\n")
-            primera_linea = extraer_primera_linea_acordes(texto_pre)
+            acordes = extraer_acordes(texto_pre)
 
         datos.append({
             "archivo": str(archivo),
@@ -75,7 +87,7 @@ for archivo in CARPETA_RAIZ.rglob("*.html"):
             "numero_antiguo": numero_antiguo,
             "numero_nuevo": numero_nuevo,
             "tono": tono,
-            "primera_linea_acordes": primera_linea
+            "acordes": acordes
         })
 
     except Exception as e:
@@ -91,10 +103,14 @@ with open(CSV_SALIDA, "w", newline="", encoding="utf-8-sig") as csvfile:
         "numero_antiguo",
         "numero_nuevo",
         "tono",
-        "primera_linea_acordes"
+        "acordes"
     ]
 
-    writer = csv.DictWriter(csvfile, fieldnames=campos, delimiter=";")
+    writer = csv.DictWriter(
+        csvfile,
+        fieldnames=campos,
+        delimiter=";"
+    )
 
     writer.writeheader()
     writer.writerows(datos)
