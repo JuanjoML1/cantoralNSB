@@ -1,88 +1,81 @@
 <!DOCTYPE html>
 <html lang="es">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Cristo está vivo</title>
-        <script id="nsb-metadata" type="application/json">
-    {
-        "metadata_version": 1,
-
-        "numeracion": {
-            "antiguo": null,
-            "nuevo": null,
-            "rcce": null
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Cristo está vivo</title>
+<script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": "Q72",
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Do cej2"
+    },
+    "origen": {
+        "autor": "Taizé original",
+        "album": null,
+        "num": null
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
         },
-
-        "musica": {
-            "tono": null
-        },
-
-        "origen":{
-            "autor": null,
-            "album": null,
-            "num": null
-        },
-
-        "analisis": {
-            "temas": [],
-            "citas_biblicas": {
-                "explicitas": [],
-                "relacionadas": []
-            },
-            "tiempo_liturgico": [],
-            "momento_misa": []
-        },
-
-        "revision": {
-            "ia": false,
-            "excel": false,
-            "revisado": false
-        }
-    }
-    </script>
-        <link rel="stylesheet" href="../../css/colores.css">
-        <link rel="stylesheet" href="../../css/estilo.css">
-        <link rel="stylesheet" href="../../css/estilo-texto.css">
-    </head>
-
-    <body>
-
-        <div class="cancion-header">
-            <div class="numeros">
-                <span class="antiguo">-</span>
-                <span class="nuevo">Q72</span>
-            </div>
-            <h1 class="titulo">Surrexit Christus<br>Cristo está vivo</h1>
-            <div class="tono">
-                <span>Do cej2</span>
-            </div>
-        </div>
-        <div id="main-controls">
-            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-            <div id="controls-container">
-                <button onclick="bajarTono()">−</button>
-                <button onclick="subirTono()">+</button>
-                <button onclick="resetTono()">Reset</button>
-                <button onclick="toggleCifrado()">Do → C</button>
-            </div>
-        </div>
-        <pre>
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "ia": false,
+        "excel": true,
+        "revisado": false
+    },
+    "titulo": "Surrexit Christus"
+}
+</script>
+<link href="../../css/colores.css" rel="stylesheet"/>
+<link href="../../css/estilo.css" rel="stylesheet"/>
+<link href="../../css/estilo-texto.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="cancion-header">
+<div class="numeros">
+<span class="antiguo">-</span>
+<span class="nuevo">Q72</span>
+</div>
+<h1 class="titulo">Surrexit Christus</h1>
+<div class="tono">
+<span>Do cej2</span>
+</div>
+</div>
+<div id="main-controls">
+<button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+<div id="controls-container">
+<button onclick="bajarTono()">−</button>
+<button onclick="subirTono()">+</button>
+<button onclick="resetTono()">Reset</button>
+<button onclick="toggleCifrado()">Do → C</button>
+</div>
+</div>
+<pre>
 Do Sol Lam Mim      Fa      Do    Rem7 Sol
 O_____________  Cristo está vivo, aleluya.
 Do Sol Lam Mim     Fa   Sol    Do Rem7 Sol Do
 O_____________  Cantad alegres la Resurrección.
 </pre>
-        <hr>
-        <pre class="original">
+<hr/>
+<pre class="original">
 Do Sol Lam Mim   Fa     Do        Rem7 Sol
 O_____________ Surrexit Christus, alleluia!
 Do Sol Lam Mim    Fa Sol Do      Rem7 Sol Do
 O_____________ Cantate   Domino, alleluia!
 </pre>
-    </body>
-    <script src="../../js/transponer.js"></script>
-    <script src="../../js/cambiar_tema.js"></script>
-    <script src="../../js/metadata.js"></script>
+</body>
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+<script src="../../js/metadata.js"></script>
 </html>

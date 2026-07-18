@@ -1,74 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Algo nuevo</title>
-        <script id="nsb-metadata" type="application/json">
-    {
-        "metadata_version": 1,
-
-        "numeracion": {
-            "antiguo": null,
-            "nuevo": null,
-            "rcce": null
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Algo nuevo</title>
+<script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": "D04",
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Lam cej3"
+    },
+    "origen": {
+        "autor": "TSNC",
+        "album": null,
+        "num": null
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
         },
-
-        "musica": {
-            "tono": null
-        },
-
-        "origen":{
-            "autor": null,
-            "album": null,
-            "num": null
-        },
-
-        "analisis": {
-            "temas": [],
-            "citas_biblicas": {
-                "explicitas": [],
-                "relacionadas": []
-            },
-            "tiempo_liturgico": [],
-            "momento_misa": []
-        },
-
-        "revision": {
-            "ia": false,
-            "excel": false,
-            "revisado": false
-        }
-    }
-    </script>
-        <link rel="stylesheet" href="../../css/colores.css">
-        <link rel="stylesheet" href="../../css/estilo.css">
-        <link rel="stylesheet" href="../../css/estilo-texto.css">
-    </head>
-
-    <body>
-
-        <div class="cancion-header">
-            <div class="numeros">
-                <span class="antiguo">-</span>
-                <span class="nuevo">D04</span>
-            </div>
-            <h1 class="titulo">Algo nuevo</h1>
-            <div class="tono">
-                <span>Lam cej3</span>
-            </div>
-        </div>
-        <div id="main-controls">
-            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-            <div id="controls-container">
-                <button onclick="bajarTono()">−</button>
-                <button onclick="subirTono()">+</button>
-                <button onclick="resetTono()">Reset</button>
-                <button onclick="toggleCifrado()">Do → C</button>
-            </div>
-        </div>
-        <pre>
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "ia": false,
+        "excel": true,
+        "revisado": false
+    },
+    "titulo": "Algo nuevo"
+}
+</script>
+<link href="../../css/colores.css" rel="stylesheet"/>
+<link href="../../css/estilo.css" rel="stylesheet"/>
+<link href="../../css/estilo-texto.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="cancion-header">
+<div class="numeros">
+<span class="antiguo">-</span>
+<span class="nuevo">D04</span>
+</div>
+<h1 class="titulo">Algo nuevo</h1>
+<div class="tono">
+<span>Lam cej3</span>
+</div>
+</div>
+<div id="main-controls">
+<button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+<div id="controls-container">
+<button onclick="bajarTono()">−</button>
+<button onclick="subirTono()">+</button>
+<button onclick="resetTono()">Reset</button>
+<button onclick="toggleCifrado()">Do → C</button>
+</div>
+</div>
+<pre>
 <span class="estribillo">
 Lam         Fa        Do
 Mira, yo realizo al<span class="ag">go</span> nue<span class="gr">vo</span>.
@@ -78,9 +71,8 @@ Ya está brotando, ¿no lo notáis? (bis)
 Fa   Do           Lam         Fa              Mi7
 <span class="ag">Como a</span>gua en el desier<span class="gr">to a</span>pagaré la sed de mi pueblo.
 </pre>
-
-    </body>
-    <script src="../../js/transponer.js"></script>
-    <script src="../../js/cambiar_tema.js"></script>
-    <script src="../../js/metadata.js"></script>
+</body>
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+<script src="../../js/metadata.js"></script>
 </html>

@@ -1,74 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Aclama al Señor, tierra entera</title>
-        <script id="nsb-metadata" type="application/json">
-    {
-        "metadata_version": 1,
-
-        "numeracion": {
-            "antiguo": null,
-            "nuevo": null,
-            "rcce": null
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Aclama al Señor, tierra entera</title>
+<script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "numeracion": {
+        "antiguo": 11,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": null
+    },
+    "origen": {
+        "autor": "Miguel Manzano",
+        "album": null,
+        "num": null
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
         },
-
-        "musica": {
-            "tono": null
-        },
-
-        "origen":{
-            "autor": null,
-            "album": null,
-            "num": null
-        },
-
-        "analisis": {
-            "temas": [],
-            "citas_biblicas": {
-                "explicitas": [],
-                "relacionadas": []
-            },
-            "tiempo_liturgico": [],
-            "momento_misa": []
-        },
-
-        "revision": {
-            "ia": false,
-            "excel": false,
-            "revisado": false
-        }
-    }
-    </script>
-        <link rel="stylesheet" href="../../css/colores.css">
-        <link rel="stylesheet" href="../../css/estilo.css">
-        <link rel="stylesheet" href="../../css/estilo-texto.css">
-
-    </head>
-
-    <body>
-        <div class="cancion-header">
-            <div class="numeros">
-                <span class="antiguo">11</span>
-                <span class="nuevo">-</span>
-            </div>
-            <h1 class="titulo">Aclama al Señor, tierra entera</h1>
-            <div class="tono">
-                <span>Fa</span>
-            </div>
-        </div>
-        <div id="main-controls">
-            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-            <div id="controls-container">
-                <button onclick="bajarTono()">−</button>
-                <button onclick="subirTono()">+</button>
-                <button onclick="resetTono()">Reset</button>
-                <button onclick="toggleCifrado()">Do → C</button>
-            </div>
-        </div>
-        <pre>
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "ia": false,
+        "excel": true,
+        "revisado": false
+    },
+    "titulo": "Aclama al Señor, tierra entera"
+}
+</script>
+<link href="../../css/colores.css" rel="stylesheet"/>
+<link href="../../css/estilo.css" rel="stylesheet"/>
+<link href="../../css/estilo-texto.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="cancion-header">
+<div class="numeros">
+<span class="antiguo">11</span>
+<span class="nuevo">-</span>
+</div>
+<h1 class="titulo">Aclama al Señor, tierra entera</h1>
+<div class="tono">
+<span></span>
+</div>
+</div>
+<div id="main-controls">
+<button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+<div id="controls-container">
+<button onclick="bajarTono()">−</button>
+<button onclick="subirTono()">+</button>
+<button onclick="resetTono()">Reset</button>
+<button onclick="toggleCifrado()">Do → C</button>
+</div>
+</div>
+<pre>
 <span>
 Fa          Rem  Do7      Fa    Do Rem Do
 Aclama al Señor, tierra entera, aleluya.
@@ -88,9 +81,9 @@ dándole gracias y bendiciendo su nombre, aleluya.
 El Señor es bueno, aleluya,
 su misericordia es eterna, aleluya,
 su fidelidad por todas las edades, aleluya.
-</pre>
-    </body>
-    <script src="../../js/transponer.js"></script>
-    <script src="../../js/cambiar_tema.js"></script>
-    <script src="../../js/metadata.js"></script>
+</span></pre>
+</body>
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+<script src="../../js/metadata.js"></script>
 </html>

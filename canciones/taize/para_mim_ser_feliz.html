@@ -1,74 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Para mí ser feliz</title>
-        <script id="nsb-metadata" type="application/json">
-    {
-        "metadata_version": 1,
-
-        "numeracion": {
-            "antiguo": null,
-            "nuevo": null,
-            "rcce": null
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Para mí ser feliz</title>
+<script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": "Q65",
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Do"
+    },
+    "origen": {
+        "autor": "Taizé original",
+        "album": null,
+        "num": null
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
         },
-
-        "musica": {
-            "tono": null
-        },
-
-        "origen":{
-            "autor": null,
-            "album": null,
-            "num": null
-        },
-
-        "analisis": {
-            "temas": [],
-            "citas_biblicas": {
-                "explicitas": [],
-                "relacionadas": []
-            },
-            "tiempo_liturgico": [],
-            "momento_misa": []
-        },
-
-        "revision": {
-            "ia": false,
-            "excel": false,
-            "revisado": false
-        }
-    }
-    </script>
-        <link rel="stylesheet" href="../../css/colores.css">
-        <link rel="stylesheet" href="../../css/estilo.css">
-        <link rel="stylesheet" href="../../css/estilo-texto.css">
-    </head>
-
-    <body>
-
-        <div class="cancion-header">
-            <div class="numeros">
-                <span class="antiguo">-</span>
-                <span class="nuevo">Q65</span>
-            </div>
-            <h1 class="titulo">Para mim ser feliz<br>Para mí ser feliz</h1>
-            <div class="tono">
-                <span>Do</span>
-            </div>
-        </div>
-        <div id="main-controls">
-            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-            <div id="controls-container">
-                <button onclick="bajarTono()">−</button>
-                <button onclick="subirTono()">+</button>
-                <button onclick="resetTono()">Reset</button>
-                <button onclick="toggleCifrado()">Do → C</button>
-            </div>
-        </div>
-        <pre>
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "ia": false,
+        "excel": true,
+        "revisado": false
+    },
+    "titulo": "Para mim, ser feliz"
+}
+</script>
+<link href="../../css/colores.css" rel="stylesheet"/>
+<link href="../../css/estilo.css" rel="stylesheet"/>
+<link href="../../css/estilo-texto.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="cancion-header">
+<div class="numeros">
+<span class="antiguo">-</span>
+<span class="nuevo">Q65</span>
+</div>
+<h1 class="titulo">Para mim, ser feliz</h1>
+<div class="tono">
+<span>Do</span>
+</div>
+</div>
+<div id="main-controls">
+<button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+<div id="controls-container">
+<button onclick="bajarTono()">−</button>
+<button onclick="subirTono()">+</button>
+<button onclick="resetTono()">Reset</button>
+<button onclick="toggleCifrado()">Do → C</button>
+</div>
+</div>
+<pre>
      Do                Fa          Lam
 Para mí ser feliz es estar junto a Dios.
          Do         Rem    Sol
@@ -78,8 +71,8 @@ Para mí ser feliz es estar junto a Dios.
          Fa         Sol    Do
 En Ti, Señor, pongo mi esperanza.
 </pre>
-        <hr>
-        <pre class="original">
+<hr/>
+<pre class="original">
      Do                    Fa       Lam
 Para mim ser feliz é estar junto de Deus.
          Do          Rem       Sol
@@ -89,8 +82,8 @@ Para mim ser feliz é estar junto de Deus.
          Fa          Sol       Do
 Em Ti, Senhor, pus a minha esperança.
 </pre>
-    </body>
-    <script src="../../js/transponer.js"></script>
-    <script src="../../js/cambiar_tema.js"></script>
-    <script src="../../js/metadata.js"></script>
+</body>
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+<script src="../../js/metadata.js"></script>
 </html>

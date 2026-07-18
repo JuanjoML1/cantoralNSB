@@ -1,74 +1,67 @@
 <!DOCTYPE html>
 <html lang="es">
-
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Qué te puedo dar</title>
-        <script id="nsb-metadata" type="application/json">
-    {
-        "metadata_version": 1,
-
-        "numeracion": {
-            "antiguo": null,
-            "nuevo": null,
-            "rcce": null
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title>Qué te puedo dar</title>
+<script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "numeracion": {
+        "antiguo": 450,
+        "nuevo": "F13",
+        "rcce": 401
+    },
+    "musica": {
+        "tono": "Sol"
+    },
+    "origen": {
+        "autor": "Luis Alfredo Díaz",
+        "album": null,
+        "num": null
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
         },
-
-        "musica": {
-            "tono": null
-        },
-
-        "origen":{
-            "autor": null,
-            "album": null,
-            "num": null
-        },
-
-        "analisis": {
-            "temas": [],
-            "citas_biblicas": {
-                "explicitas": [],
-                "relacionadas": []
-            },
-            "tiempo_liturgico": [],
-            "momento_misa": []
-        },
-
-        "revision": {
-            "ia": false,
-            "excel": false,
-            "revisado": false
-        }
-    }
-    </script>
-        <link rel="stylesheet" href="../../css/colores.css">
-        <link rel="stylesheet" href="../../css/estilo.css">
-        <link rel="stylesheet" href="../../css/estilo-texto.css">
-    </head>
-
-    <body>
-
-        <div class="cancion-header">
-            <div class="numeros">
-                <span class="antiguo">450</span>
-                <span class="nuevo">F13</span>
-            </div>
-            <h1 class="titulo">Qué te puedo dar</h1>
-            <div class="tono">
-                <span>Sol</span>
-            </div>
-        </div>
-        <div id="main-controls">
-            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-            <div id="controls-container">
-                <button onclick="bajarTono()">−</button>
-                <button onclick="subirTono()">+</button>
-                <button onclick="resetTono()">Reset</button>
-                <button onclick="toggleCifrado()">Do → C</button>
-            </div>
-        </div>
-        <pre>
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "ia": false,
+        "excel": true,
+        "revisado": false
+    },
+    "titulo": "Qué te puedo dar"
+}
+</script>
+<link href="../../css/colores.css" rel="stylesheet"/>
+<link href="../../css/estilo.css" rel="stylesheet"/>
+<link href="../../css/estilo-texto.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="cancion-header">
+<div class="numeros">
+<span class="antiguo">450</span>
+<span class="nuevo">F13</span>
+</div>
+<h1 class="titulo">Qué te puedo dar</h1>
+<div class="tono">
+<span>Sol</span>
+</div>
+</div>
+<div id="main-controls">
+<button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+<div id="controls-container">
+<button onclick="bajarTono()">−</button>
+<button onclick="subirTono()">+</button>
+<button onclick="resetTono()">Reset</button>
+<button onclick="toggleCifrado()">Do → C</button>
+</div>
+</div>
+<pre>
  Sol          Re         Do            Sol
 ¿Qué te puedo dar que no me hayas dado Tú?
                 Re         Do             Re
@@ -87,8 +80,8 @@ Todo lo qué sé, todo lo que soy,
 Do          Re       Do Sol
 todo lo que tengo es tuyo.
 </pre>
-    </body>
-    <script src="../../js/transponer.js"></script>
-    <script src="../../js/cambiar_tema.js"></script>
-    <script src="../../js/metadata.js"></script>
+</body>
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+<script src="../../js/metadata.js"></script>
 </html>
