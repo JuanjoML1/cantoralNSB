@@ -16,7 +16,7 @@
     },
     "musica": {
         "tono": "Do",
-        "cejilla": null
+        "cejilla": ""
     },
     "origen": {
         "autor": "Cesáreo Gabarain",
@@ -51,7 +51,10 @@
                 <span class="nuevo" data-md="numeracion.nuevo"></span>
             </div>
             <h1 class="titulo" data-md="titulo"></h1>
-            <div class="tono" data-md="musica.tono"></div>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
         </div>
         <div id="main-controls">
             <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
@@ -64,7 +67,8 @@
         </div>
         <pre>
 Do                         Sol7
-Dios es amor, la Biblia lo dice.          Do
+Dios es amor, la Biblia lo dice.
+                             Do
 Dios es amor, San Pablo lo repite.
               Do7         Fa
 Dios es amor, búscalo y verás

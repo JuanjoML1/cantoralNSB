@@ -16,7 +16,7 @@
     },
     "musica": {
         "tono": null,
-        "cejilla": null
+        "cejilla": ""
     },
     "origen": {
         "autor": "Emilio Vicente Mateu",
@@ -46,10 +46,23 @@
 
     <body>
         <div class="cancion-header">
-            <div class="numeros"> <span class="antiguo">260</span> <span class="nuevo">-</span>
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
             </div>
             <h1 class="titulo" data-md="titulo"></h1>
-            <div class="tono" data-md="musica.tono"> <span></span>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
             </div>
         </div>
         <pre>
@@ -67,12 +80,10 @@ Es el Señor el que llega.
 Tú que sueñas otros días,
       Lam          Mim
 otros cielos, otra tierra.
-          Do    Do/Mi  Fa#
+          Do           Fa#
 ¡Se ha cumplido ya los tiempos,
-      Fa#m7/5º   Si7
+      Fa#m7b5   Si7
 es la hora del Señor!
-
-Puente: Mim Lam Si7
 
 Tú que luchas por un mundo
 de justicia verdadera.
