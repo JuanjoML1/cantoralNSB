@@ -15,8 +15,8 @@
         "rcce": null
     },
     "musica": {
-        "tono": "Re cej3",
-        "cejilla": ""
+        "tono": "Re",
+        "cejilla": "cej3"
     },
     "origen": {
         "autor": "Ain Karem",
@@ -36,6 +36,9 @@
         "excel": true,
         "ia": false,
         "revisado": false
+    },
+    "enlaces": {
+        "youtube": null
     }
 }
 </script>
@@ -47,10 +50,10 @@
     <body>
         <div class="cancion-header">
             <div class="numeros">
-                <span class="antiguo" data-md="numeracion.antiguo"></span>
-                <span class="nuevo" data-md="numeracion.nuevo"></span>
+                <span class="antiguo" data-md="numeracion.antiguo">-</span>
+                <span class="nuevo" data-md="numeracion.nuevo">-</span>
             </div>
-            <h1 class="titulo" data-md="titulo"></h1>
+            <h1 class="titulo" data-md="titulo">Atraviesas</h1>
             <div class="tono">
                 <span data-md="musica.tono"> </span>
                 <span data-md="musica.cejilla"></span>
@@ -95,6 +98,14 @@ que se acerca y se compadece,
 y tú mismo curas nuestras heridas,
 y eres tú quien permanece a nuestro lado.
 </pre>
+        <div class="youtube">
+            <a class="youtube-button"
+                data-md-href="enlaces.youtube"
+                target="_blank"
+                title="Escuchar esta canción"
+                aria-label="Escuchar esta canción">
+            </a>
+        </div>
     </body>
     <script src="../../js/transponer.js"></script>
     <script src="../../js/cambiar_tema.js"></script>

@@ -15,8 +15,8 @@
         "rcce": null
     },
     "musica": {
-        "tono": null,
-        "cejilla": ""
+        "tono": "Do",
+        "cejilla": null
     },
     "origen": {
         "autor": "Ramón Capilla",
@@ -36,6 +36,9 @@
         "excel": true,
         "ia": false,
         "revisado": false
+    },
+    "enlaces": {
+        "youtube": null
     }
 }
 </script>
@@ -47,10 +50,10 @@
     <body>
         <div class="cancion-header">
             <div class="numeros">
-                <span class="antiguo" data-md="numeracion.antiguo"></span>
-                <span class="nuevo" data-md="numeracion.nuevo"></span>
+                <span class="antiguo" data-md="numeracion.antiguo">54</span>
+                <span class="nuevo" data-md="numeracion.nuevo">-</span>
             </div>
-            <h1 class="titulo" data-md="titulo"></h1>
+            <h1 class="titulo" data-md="titulo">Como lo había anunciado</h1>
             <div class="tono">
                 <span data-md="musica.tono"> </span>
                 <span data-md="musica.cejilla"></span>
@@ -79,6 +82,14 @@ Alégrate, María, aleluya, aleluya.
 Como lo había anunciado, Cristo resucitó.
 Tú que sufriste con Él, ahora alégrate.
 </pre>
+        <div class="youtube">
+            <a class="youtube-button"
+                data-md-href="enlaces.youtube"
+                target="_blank"
+                title="Escuchar esta canción"
+                aria-label="Escuchar esta canción">
+            </a>
+        </div>
     </body>
     <script src="../../js/transponer.js"></script>
     <script src="../../js/cambiar_tema.js"></script>

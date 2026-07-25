@@ -16,7 +16,7 @@
     },
     "musica": {
         "tono": "Re",
-        "cejilla": ""
+        "cejilla": null
     },
     "origen": {
         "autor": "Ruah",
@@ -36,6 +36,9 @@
         "excel": true,
         "ia": false,
         "revisado": false
+    },
+    "enlaces": {
+        "youtube": null
     }
 }
 </script>
@@ -47,10 +50,10 @@
     <body>
         <div class="cancion-header">
             <div class="numeros">
-                <span class="antiguo" data-md="numeracion.antiguo"></span>
-                <span class="nuevo" data-md="numeracion.nuevo"></span>
+                <span class="antiguo" data-md="numeracion.antiguo">-</span>
+                <span class="nuevo" data-md="numeracion.nuevo">-</span>
             </div>
-            <h1 class="titulo" data-md="titulo"></h1>
+            <h1 class="titulo" data-md="titulo">Envíanos sin miedo</h1>
             <div class="tono">
                 <span data-md="musica.tono"> </span>
                 <span data-md="musica.cejilla"></span>
@@ -75,6 +78,14 @@ Y envíanos sin miedo
          Sol                           La
 a ser tu voz en esta tierra, danos tu aliento.
 </pre>
+        <div class="youtube">
+            <a class="youtube-button"
+                data-md-href="enlaces.youtube"
+                target="_blank"
+                title="Escuchar esta canción"
+                aria-label="Escuchar esta canción">
+            </a>
+        </div>
     </body>
     <script src="../../js/transponer.js"></script>
     <script src="../../js/cambiar_tema.js"></script>

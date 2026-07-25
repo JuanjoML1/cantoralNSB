@@ -15,8 +15,8 @@
         "rcce": null
     },
     "musica": {
-        "tono": null,
-        "cejilla": ""
+        "tono": "Sib",
+        "cejilla": null
     },
     "origen": {
         "autor": "Francisco Palazón",
@@ -36,6 +36,9 @@
         "excel": true,
         "ia": false,
         "revisado": false
+    },
+    "enlaces": {
+        "youtube": null
     }
 }
 </script>
@@ -47,10 +50,10 @@
     <body>
         <div class="cancion-header">
             <div class="numeros">
-                <span class="antiguo" data-md="numeracion.antiguo"></span>
-                <span class="nuevo" data-md="numeracion.nuevo"></span>
+                <span class="antiguo" data-md="numeracion.antiguo">-</span>
+                <span class="nuevo" data-md="numeracion.nuevo">-</span>
             </div>
-            <h1 class="titulo" data-md="titulo"></h1>
+            <h1 class="titulo" data-md="titulo">Después de la medianoche</h1>
             <div class="tono">
                 <span data-md="musica.tono"> </span>
                 <span data-md="musica.cejilla"></span>
@@ -87,6 +90,14 @@ era viuda y era pobre y siempre le iba a implorar.
 El juez que ni a Dios temía ni a los hombres respetaba,
 esta vez hizo justicia porque le dejara en paz.
 </pre>
+        <div class="youtube">
+            <a class="youtube-button"
+                data-md-href="enlaces.youtube"
+                target="_blank"
+                title="Escuchar esta canción"
+                aria-label="Escuchar esta canción">
+            </a>
+        </div>
     </body>
     <script src="../../js/transponer.js"></script>
     <script src="../../js/cambiar_tema.js"></script>

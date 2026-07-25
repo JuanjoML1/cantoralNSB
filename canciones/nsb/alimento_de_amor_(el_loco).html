@@ -15,8 +15,8 @@
         "rcce": null
     },
     "musica": {
-        "tono": "Lam",
-        "cejilla": ""
+        "tono": "Do",
+        "cejilla": null
     },
     "origen": {
         "autor": "Grupo Gente Nueva",
@@ -36,6 +36,9 @@
         "excel": true,
         "ia": false,
         "revisado": false
+    },
+    "enlaces": {
+        "youtube": null
     }
 }
 </script>
@@ -47,10 +50,10 @@
     <body>
         <div class="cancion-header">
             <div class="numeros">
-                <span class="antiguo" data-md="numeracion.antiguo"></span>
-                <span class="nuevo" data-md="numeracion.nuevo"></span>
+                <span class="antiguo" data-md="numeracion.antiguo">-</span>
+                <span class="nuevo" data-md="numeracion.nuevo">F01</span>
             </div>
-            <h1 class="titulo" data-md="titulo"></h1>
+            <h1 class="titulo" data-md="titulo">Alimento de amor (El loco)</h1>
             <div class="tono">
                 <span data-md="musica.tono"> </span>
                 <span data-md="musica.cejilla"></span>
@@ -89,6 +92,14 @@ para alimentar con el trigo de tu amor.
 Yo quisiera, Cristo, seguirte y amarte,
 que es mejor vivir contigo hasta el final.
 </pre>
+        <div class="youtube">
+            <a class="youtube-button"
+                data-md-href="enlaces.youtube"
+                target="_blank"
+                title="Escuchar esta canción"
+                aria-label="Escuchar esta canción">
+            </a>
+        </div>
     </body>
     <script src="../../js/transponer.js"></script>
     <script src="../../js/cambiar_tema.js"></script>

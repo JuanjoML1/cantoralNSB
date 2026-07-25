@@ -15,13 +15,13 @@
         "rcce": null
     },
     "musica": {
-        "tono": null,
-        "cejilla": ""
+        "tono": "Do",
+        "cejilla": "cej3"
     },
     "origen": {
         "autor": "Hakuna",
         "album": "Tú",
-        "num": null
+        "num": 1
     },
     "analisis": {
         "temas": [],
@@ -36,6 +36,9 @@
         "excel": true,
         "ia": false,
         "revisado": false
+    },
+    "enlaces": {
+        "youtube": null
     }
 }
 </script>
@@ -47,10 +50,10 @@
     <body>
         <div class="cancion-header">
             <div class="numeros">
-                <span class="antiguo" data-md="numeracion.antiguo"></span>
-                <span class="nuevo" data-md="numeracion.nuevo"></span>
+                <span class="antiguo" data-md="numeracion.antiguo">-</span>
+                <span class="nuevo" data-md="numeracion.nuevo">-</span>
             </div>
-            <h1 class="titulo" data-md="titulo"></h1>
+            <h1 class="titulo" data-md="titulo">A ti te alabo</h1>
             <div class="tono">
                 <span data-md="musica.tono"> </span>
                 <span data-md="musica.cejilla"></span>
@@ -138,6 +141,14 @@ A ti te alabo (x3)
          Fa  Sol  Lam  Do  Fa
 A ti te alabo
 </pre>
+        <div class="youtube">
+            <a class="youtube-button"
+                data-md-href="enlaces.youtube"
+                target="_blank"
+                title="Escuchar esta canción"
+                aria-label="Escuchar esta canción">
+            </a>
+        </div>
     </body>
     <script src="../../js/transponer.js"></script>
     <script src="../../js/cambiar_tema.js"></script>

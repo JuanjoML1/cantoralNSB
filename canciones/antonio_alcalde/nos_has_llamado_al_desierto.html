@@ -16,7 +16,7 @@
     },
     "musica": {
         "tono": "Sol",
-        "cejilla": ""
+        "cejilla": null
     },
     "origen": {
         "autor": "Antonio Alcalde",
@@ -36,6 +36,9 @@
         "excel": true,
         "ia": false,
         "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=QOoULjmeZ_0"
     }
 }
 </script>
@@ -47,10 +50,10 @@
     <body>
         <div class="cancion-header">
             <div class="numeros">
-                <span class="antiguo" data-md="numeracion.antiguo"></span>
-                <span class="nuevo" data-md="numeracion.nuevo"></span>
+                <span class="antiguo" data-md="numeracion.antiguo">181</span>
+                <span class="nuevo" data-md="numeracion.nuevo">-</span>
             </div>
-            <h1 class="titulo" data-md="titulo"></h1>
+            <h1 class="titulo" data-md="titulo">Nos has llamado al desierto</h1>
             <div class="tono">
                 <span data-md="musica.tono"> </span>
                 <span data-md="musica.cejilla"></span>
@@ -92,8 +95,15 @@ a tu Pascua se encamina y te sigue paso a paso.
 Señor, te reconocemos y tu Palabra escuchamos,
 tus caminos seguiremos y tu ley de amor cantamos.
 </pre>
-        <p><a href="https://www.youtube.com/watch?v=QOoULjmeZ_0">Escuchar en YouTube</a></p>
         <a href="../index.html">Volver al índice</a>
+        <div class="youtube">
+            <a class="youtube-button"
+                data-md-href="enlaces.youtube"
+                target="_blank"
+                title="Escuchar esta canción"
+                aria-label="Escuchar esta canción">
+            </a>
+        </div>
     </body>
     <script src="../../js/transponer.js"></script>
     <script src="../../js/cambiar_tema.js"></script>

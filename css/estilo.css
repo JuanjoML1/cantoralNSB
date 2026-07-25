@@ -198,10 +198,53 @@ span.antiguo::after {
 }
 
 /* --------------------- */
-/* Línea horizontal       */
+/* Línea horizontal      */
 /* --------------------- */
 hr {
     border: none;
     border-top: 2px solid var(--linea-clara);
     margin: 10px 0;
+}
+
+/* --------------------- */
+/*   Botón YouTube       */
+/* --------------------- */
+
+.youtube {
+    display: flex;
+    justify-content: center;
+}
+
+.youtube-button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 46px;
+    margin-left: 12px;
+    border-radius: 50%;
+    background: #c4302b;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, .18);
+    transition: all .2s ease;
+}
+
+.youtube-button::before {
+    content: "";
+    width: 0;
+    height: 0;
+    margin-left: 3px;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 14px solid white;
+}
+
+.youtube-button:hover {
+    background: #e53935;
+    transform: translateY(-2px) scale(1.08);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, .25);
+}
+
+.youtube-button:active {
+    transform: scale(.95);
 }

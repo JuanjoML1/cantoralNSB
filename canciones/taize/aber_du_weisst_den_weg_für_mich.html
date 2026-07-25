@@ -8,18 +8,18 @@
         <script id="nsb-metadata" type="application/json">
 {
     "metadata_version": 1,
-    "titulo": "Mas tú sabes que senda es para mí",
+    "titulo": "Aber du weisst den Weg für mich",
     "numeracion": {
         "antiguo": null,
         "nuevo": "Q01",
         "rcce": null
     },
     "musica": {
-        "tono": "Do cej4",
-        "cejilla": ""
+        "tono": "Do",
+        "cejilla": "cej4"
     },
     "origen": {
-        "autor": "Taizé en español",
+        "autor": "Taizé original",
         "album": null,
         "num": null
     },
@@ -36,6 +36,9 @@
         "excel": true,
         "ia": false,
         "revisado": false
+    },
+    "enlaces": {
+        "youtube": null
     }
 }
 </script>
@@ -47,10 +50,10 @@
     <body>
         <div class="cancion-header">
             <div class="numeros">
-                <span class="antiguo" data-md="numeracion.antiguo"></span>
-                <span class="nuevo" data-md="numeracion.nuevo"></span>
+                <span class="antiguo" data-md="numeracion.antiguo">-</span>
+                <span class="nuevo" data-md="numeracion.nuevo">Q01</span>
             </div>
-            <h1 class="titulo" data-md="titulo"></h1>
+            <h1 class="titulo" data-md="titulo">Aber du weisst den Weg für mich</h1>
             <div class="tono">
                 <span data-md="musica.tono"> </span>
                 <span data-md="musica.cejilla"></span>
@@ -86,6 +89,14 @@ Bei dir ist die Hilfe, bei dir ist die Geduld.
 Lam     Rem  Mim   Fa   Sol    Do   Re           Fa      Do
 Ich verstehe deine Wege nicht, aber du weißt den Weg für mich.
 </pre>
+        <div class="youtube">
+            <a class="youtube-button"
+                data-md-href="enlaces.youtube"
+                target="_blank"
+                title="Escuchar esta canción"
+                aria-label="Escuchar esta canción">
+            </a>
+        </div>
     </body>
     <script src="../../js/transponer.js"></script>
     <script src="../../js/cambiar_tema.js"></script>

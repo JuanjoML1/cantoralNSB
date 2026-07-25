@@ -16,7 +16,7 @@
     },
     "musica": {
         "tono": "Do",
-        "cejilla": ""
+        "cejilla": null
     },
     "origen": {
         "autor": "Misioneros de la Esperanza",
@@ -36,6 +36,9 @@
         "excel": true,
         "ia": false,
         "revisado": false
+    },
+    "enlaces": {
+        "youtube": null
     }
 }
 </script>
@@ -47,10 +50,10 @@
     <body>
         <div class="cancion-header">
             <div class="numeros">
-                <span class="antiguo" data-md="numeracion.antiguo"></span>
-                <span class="nuevo" data-md="numeracion.nuevo"></span>
+                <span class="antiguo" data-md="numeracion.antiguo">-</span>
+                <span class="nuevo" data-md="numeracion.nuevo">J06</span>
             </div>
-            <h1 class="titulo" data-md="titulo"></h1>
+            <h1 class="titulo" data-md="titulo">Cordero de Dios (MiEs)</h1>
             <div class="tono">
                 <span data-md="musica.tono"> </span>
                 <span data-md="musica.cejilla"></span>
@@ -73,6 +76,14 @@ Cordero de Dios, tú que quitas el pecado del mundo, ten piedad.
            Mim          Fa                   Sol7           Fa Do
 Corde<span class="ag">ro</span> de Dios, tú que quitas el pecado del mundo, <span class="gr">da</span>nos la paz.
 </pre>
+        <div class="youtube">
+            <a class="youtube-button"
+                data-md-href="enlaces.youtube"
+                target="_blank"
+                title="Escuchar esta canción"
+                aria-label="Escuchar esta canción">
+            </a>
+        </div>
     </body>
     <script src="../../js/transponer.js"></script>
     <script src="../../js/cambiar_tema.js"></script>

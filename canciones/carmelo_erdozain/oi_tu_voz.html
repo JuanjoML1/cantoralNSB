@@ -15,8 +15,8 @@
         "rcce": null
     },
     "musica": {
-        "tono": null,
-        "cejilla": ""
+        "tono": "Sol",
+        "cejilla": null
     },
     "origen": {
         "autor": "Carmelo Erdozáin",
@@ -36,6 +36,9 @@
         "excel": true,
         "ia": false,
         "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=xIjwlEoqkTc"
     }
 }
 </script>
@@ -47,10 +50,10 @@
     <body>
         <div class="cancion-header">
             <div class="numeros">
-                <span class="antiguo" data-md="numeracion.antiguo"></span>
-                <span class="nuevo" data-md="numeracion.nuevo"></span>
+                <span class="antiguo" data-md="numeracion.antiguo">184</span>
+                <span class="nuevo" data-md="numeracion.nuevo">-</span>
             </div>
-            <h1 class="titulo" data-md="titulo"></h1>
+            <h1 class="titulo" data-md="titulo">Oí tu voz</h1>
             <div class="tono">
                 <span data-md="musica.tono"> </span>
                 <span data-md="musica.cejilla"></span>
@@ -86,7 +89,14 @@ Oí tu voz, en los ghettos del hambre
                 Re7     Si7 Mim       Do    Re
 oí tu voz: llevaré tu mensaje de la liberación.
 </pre>
-        <p><a href="https://www.youtube.com/watch?v=xIjwlEoqkTc">Escuchar en YouTube</a></p>
+        <div class="youtube">
+            <a class="youtube-button"
+                data-md-href="enlaces.youtube"
+                target="_blank"
+                title="Escuchar esta canción"
+                aria-label="Escuchar esta canción">
+            </a>
+        </div>
     </body>
     <script src="../../js/transponer.js"></script>
     <script src="../../js/cambiar_tema.js"></script>
