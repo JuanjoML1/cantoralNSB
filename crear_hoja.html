@@ -32,12 +32,16 @@
     <body>
         <h1>Crea tu hoja de cantos</h1>
 
-        <div id="main-controls">
-            <button id="back-button" onclick="window.location.href='index.html'">← Volver</button>
+        <div id="lateral-controles">
+            <button id="btn-theme">🌙</button>
+            <button id="btn-home">🏠</button>
+            <button id="btn-menu" class="oculto">☰</button>
+            <button id="btn-tools" class="oculto">⚙️</button>
+            <button id="btn-acerca" class="oculto">❓</button>
         </div>
 
         <div id="songs"></div>
-        <button onclick="addRow()">+ Más</button>
+        <button onclick="addRow()">Añade una canción</button>
 
         <div class="controls">
             <label>
@@ -60,6 +64,7 @@
 
         <script src="https://cdn.jsdelivr.net/npm/file-saver@2.0.5/dist/FileSaver.min.js"></script>
         <script src="js/crear_hoja.js"></script>
+        <script src="js/barra_lateral.js"></script>
         <script src="js/cambiar_tema.js"></script>
     </body>
 </html>

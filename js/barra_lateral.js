@@ -28,3 +28,13 @@ document.addEventListener("click", (e) => {
         tools.classList.remove("abierto");
     }
 });
+
+//Botón "home"
+document.getElementById("btn-home").addEventListener("click", () => {
+    window.location.href = "index.html";
+});
+
+//Botón "acerca de"
+document.getElementById("btn-acerca").addEventListener("click", () => {
+    window.location.href = "acerca.html";
+});
