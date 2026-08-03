@@ -20,7 +20,7 @@ body {
     /* Hace que cada enlace ocupe toda la línea, clic fácil en móvil */
     text-align: center;
     /* Centra el texto */
-    padding: 0.2em 1em;
+    padding: 0.5em 1em;
     /* Espacio interno: 0.2em arriba/abajo, 1em izquierda/derecha */
     margin: 0.2em 0;
     /* Separación entre enlaces: 0.2em arriba y abajo */
@@ -42,10 +42,8 @@ body {
 }
 
 pre {
-    font-size: 1.6em;
-    /* un poquito más grande que el tamaño base */
+    font-size: auto;
     line-height: 1.2;
-    /* interlineado*/
 }
 
 pre .estribillo {

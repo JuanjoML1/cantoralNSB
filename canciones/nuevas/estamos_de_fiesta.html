@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Estamos de fiesta",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": 8
+    },
+    "musica": {
+        "tono": "Re",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": null,
+        "album": null,
+        "num": null
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=XtUWmCv3dNs"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+  Re       Sol          Re
+Estamos de fiesta con Jesús,
+                  Mim  La7
+al cielo queremos ir.
+  Mim                  La7
+Estamos reunidos en la mesa
+     Mim          La7     Re
+y es Cristo quien va a servir.
+<span class="estribillo">
+Re                  La
+Poderoso es nuestro Dios,
+    La7             Re
+poderoso es nuestro Dios. (bis)
+</span>
+   Re       Sol
+Él sana, él salva,
+    La              Re
+poderoso es nuestro Dios.
+   Re     Sol
+Bautiza y viene,
+    La              Re
+poderoso es nuestro Dios.
+<span class="estribillo">
+Re                  La
+Poderoso es nuestro Dios,
+    La7             Re
+poderoso es nuestro Dios. (bis)
+</span>
+El Padre, el Hijo,
+poderoso es nuestro Dios.
+Espíritu Santo,
+poderoso es nuestro Dios.
+<span class="estribillo">
+Re                  La
+Poderoso es nuestro Dios,
+    La7             Re
+poderoso es nuestro Dios. (bis)
+</span>
+Poderoso, poderoso,
+poderoso es nuestro Dios.
+Poderoso, poderoso,
+poderoso es nuestro Dios.
+</pre>
+        <div class="youtube">
+            <a class="youtube-button"
+                data-md-href="enlaces.youtube"
+                target="_blank"
+                title="Escuchar esta canción"
+                aria-label="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>
