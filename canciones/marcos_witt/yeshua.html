@@ -8,18 +8,18 @@
         <script id="nsb-metadata" type="application/json">
 {
     "metadata_version": 1,
-    "titulo": "El tren del Evangelio",
+    "titulo": "Yeshua",
     "numeracion": {
-        "antiguo": 314,
+        "antiguo": null,
         "nuevo": null,
-        "rcce": null
+        "rcce": 16
     },
     "musica": {
         "tono": "Do",
         "cejilla": ""
     },
     "origen": {
-        "autor": "-",
+        "autor": "Marcos Witt",
         "album": null,
         "num": null
     },
@@ -38,7 +38,7 @@
         "revisado": false
     },
     "enlaces": {
-        "youtube": null
+        "youtube": "https://www.youtube.com/watch?v=UruH6CJIS6M"
     }
 }
 </script>
@@ -49,33 +49,58 @@
 
     <body>
         <div class="cancion-header">
-            <div class="numeros"> <span class="antiguo"></span>
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
             </div>
             <h1 class="titulo" data-md="titulo"></h1>
-            <div class="tono" data-md="musica.tono"> <span></span>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
             </div>
         </div>
         <pre>
-Do
-Ya viene, compañeros, ya viene nuestro tren,
-                                         Sol     Do
-es el tren del Evangelio, ¡todo el mundo cabe en él!
 <span class="estribillo">
-            Fa                       Do
-Oh, sube al tren, compañero, sube al tren,
-                   Fa
-compañero, sube al tren, compañero...
-         Do    Sol     Do
-¡todo el mundo cabe en él!
+Lam            Mim
+En espíritu te cantaré,
+Lam             Mim
+en espíritu te adoraré,
+  Sol Lam Sol Lam
+Yeshua, Yeshua.
+   Fa      Sol  Lam
+Tú eres mi Salvador,
+   Fa      Sol  Lam
+Tú eres mi Redentor. (bis)
 </span>
-El tren del Evangelio es el tren del amor,
-quien odia o quien desprecia que no entre en el vagón.
-
-El tren del Evangelio ríe y canta por la vida,
-no os montéis si os molesta nuestra fiesta y alegría.
-
-El tren del Evangelio no puede descarrilar,
-si Jesús va con nosotros nuestro Padre está al final.
+Fa   Sol           Re
+El Señor te ha exaltado
+Fa   Sol          Lam
+a su diestra para siempre.
+Fa   Sol            Re
+El Señor te ha levantado
+Fa   Sol           Lam
+como Príncipe Salvador.
+<span class="estribillo">
+Lam            Mim
+En espíritu te cantaré,
+Lam             Mim
+en espíritu te adoraré,
+  Sol Lam Sol Lam
+Yeshua, Yeshua.
+   Fa      Sol  Lam
+Tú eres mi Salvador,
+   Fa      Sol  Lam
+Tú eres mi Redentor. (bis)
+</span>
 </pre>
         <div class="youtube">
             <a class="youtube-button"

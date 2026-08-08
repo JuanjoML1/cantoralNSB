@@ -8,9 +8,9 @@
         <script id="nsb-metadata" type="application/json">
 {
     "metadata_version": 1,
-    "titulo": "El tren del Evangelio",
+    "titulo": "Esta es la noche de la luz",
     "numeracion": {
-        "antiguo": 314,
+        "antiguo": 118,
         "nuevo": null,
         "rcce": null
     },
@@ -19,7 +19,7 @@
         "cejilla": ""
     },
     "origen": {
-        "autor": "-",
+        "autor": null,
         "album": null,
         "num": null
     },
@@ -49,33 +49,32 @@
 
     <body>
         <div class="cancion-header">
-            <div class="numeros"> <span class="antiguo"></span>
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
             </div>
             <h1 class="titulo" data-md="titulo"></h1>
-            <div class="tono" data-md="musica.tono"> <span></span>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
             </div>
         </div>
         <pre>
-Do
-Ya viene, compañeros, ya viene nuestro tren,
-                                         Sol     Do
-es el tren del Evangelio, ¡todo el mundo cabe en él!
-<span class="estribillo">
-            Fa                       Do
-Oh, sube al tren, compañero, sube al tren,
-                   Fa
-compañero, sube al tren, compañero...
-         Do    Sol     Do
-¡todo el mundo cabe en él!
-</span>
-El tren del Evangelio es el tren del amor,
-quien odia o quien desprecia que no entre en el vagón.
-
-El tren del Evangelio ríe y canta por la vida,
-no os montéis si os molesta nuestra fiesta y alegría.
-
-El tren del Evangelio no puede descarrilar,
-si Jesús va con nosotros nuestro Padre está al final.
+Do Sol Do    Fa    Sol   Do
+Esta   es la noche de la luz,
+   Sol Do    Fa          Sol7
+Esta   es la noche de la luz,
+   Lam Mim Lam Sol7 Do
+aleluya,   aleluya.
 </pre>
         <div class="youtube">
             <a class="youtube-button"
