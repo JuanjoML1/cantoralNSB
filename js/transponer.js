@@ -120,3 +120,58 @@ function resetTono() {
 /* API */
 function subirTono() { transposeAll(1); }
 function bajarTono() { transposeAll(-1); }
+
+/*
+AJUSTAR TAMAÑO DE LETRA
+*/
+function ajustarTamanoCancion(pre) {
+
+    const ancho = pre.clientWidth;
+
+    const tamañoBase = 16;
+    const tamañoMinimo = 8;
+    const tamañoMaximo = 36;
+
+    // Buscar la línea más larga
+    const lineas = pre.textContent.split("\n");
+
+    let maxCaracteres = 0;
+
+    lineas.forEach(linea => {
+        maxCaracteres = Math.max(maxCaracteres, linea.length);
+    });
+
+    if (maxCaracteres === 0) return;
+
+    // Medimos cuánto ocupa un carácter monospace
+    const estilo = getComputedStyle(pre);
+
+    const canvas = document.createElement("canvas");
+    const ctx = canvas.getContext("2d");
+
+    ctx.font = estilo.font;
+
+    const anchoCaracter = ctx.measureText("M").width;
+
+    // Ancho actual de la línea más larga
+    const anchoLinea = maxCaracteres * anchoCaracter;
+
+    // Ajustar proporcionalmente
+    let nuevoTamaño =
+        tamañoBase * (ancho / anchoLinea);
+
+    // Limitar para evitar tamaños absurdos
+    nuevoTamaño = Math.max(
+        tamañoMinimo,
+        Math.min(tamañoMaximo, nuevoTamaño)
+    );
+
+    pre.style.fontSize = nuevoTamaño + "px";
+}
+
+function ajustarTodasLasCanciones() {
+    document.querySelectorAll("pre").forEach(ajustarTamanoCancion);
+}
+
+window.addEventListener("load", ajustarTodasLasCanciones);
+window.addEventListener("resize", ajustarTodasLasCanciones);
