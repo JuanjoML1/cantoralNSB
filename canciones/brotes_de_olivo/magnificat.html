@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Magnificat",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Sol",
+        "cejilla": "cej1"
+    },
+    "origen": {
+        "autor": "Brotes de Olivo",
+        "album": "Por la senda de Nazaret",
+        "num": 3
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=EVlne-7YycA"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="estribillo">
+   Mim          Re                 Do                 Si7
+En la casa de José se preparan las cosas para ir de viaje.
+  Mim         Re            Do                Si7
+María deja su casa para visitar a su prima Isabel.
+Sol                             Do                 Re
+Atravesando montañas, camina buscando a su prima encinta;
+   Mim         Re            Do                 Si7
+en casa de Zacarías, María saluda a su prima Isabel.
+
+   Mim               Re                Do                      Si7
+El seno de aquella anciana saltó de alegría, se hizo grande en él:
+    Sol                Do          Sol
+"Bendita tú eres entre todas las mujeres
+     Do                     Lam        Si7
+y bendito es el fruto de tu vientre, Señor".
+
+Si7                            Do                  Lam        Si7
+Y dice María con suave rubor, abriendo su boca, cantando al Señor:
+
+    Si7                 Mim
+"Mi alma glorifica al Señor
+       Sol
+y mi espíritu se goza en Dios, mi Salvador,
+            Si7                             Mim
+porque ha mirado la humilde condición de su sierva.
+         Si7                        Mim  Si7             Mim
+Y desde ahora me llamarán bienaventurada todas las generaciones.
+
+                 Si7            Mim
+Haciendo grandes cosas el Omnipotente,
+      Sol
+Santo es su nombre en toda generación.
+        Si7                          Mim
+Ha derribado de sus tronos a los poderosos,
+            Si7                              Mim
+poniendo en ellos a los humildes, dándoles riquezas,
+        Si7               Mim
+y a los ricos las manos vacías.
+Do             Sol        Si7                     Mim
+Gloria a los humildes por todos los siglos de los siglos".
+</span></pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>
