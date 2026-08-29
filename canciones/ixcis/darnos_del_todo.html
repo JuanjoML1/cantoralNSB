@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Darnos del todo",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "La",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Ixcís",
+        "album": "Ixcis XXV",
+        "num": 2
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=lfe-rUzz-7o"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+La                Mi
+Miro a la cruz y allí te encuentro
+      Fa#m7     Mi
+entre llagas, Señor.
+La                    Mi
+Miro en mi adentro y allí te encuentro.
+Fa#m7            Mi
+Soy tu morada, Señor.
+
+Re                 Mi
+Asombrado en tu bondad,
+Re                Sol
+tu pobreza y humildad,
+          Fa#m   Mi     La
+me hago espaldas de tu amor.
+<span class="estribillo">
+     La                   Re       La
+Me entrego libremente, me doy totalmente.
+     Sim7    Mi7 La       Fa#m7
+Me entrego a Ti, me doy a Ti,
+     Sim7      Mi     La     La7
+Me entrego del todo a ti, mi Dios.
+     Sim7    Mi7 La       Fa#m7
+Me entrego a Ti, me doy a Ti,
+     Sim7    Mi7   La
+Me entrego a Ti, Señor.
+</span>
+Miro entre pucheros y allí te encuentro.
+Tú me acompañas siempre, Señor.
+Miro en todas partes y allí te encuentro.
+Tú eres la fuente de mi amor.
+
+Y andar en tu verdad,
+caminar en humildad,
+tratar de amistad contigo, Señor.
+<span class="estribillo">
+     La                   Re       La
+Me entrego libremente, me doy totalmente.
+     Sim7    Mi7 La       Fa#m7
+Me entrego a Ti, me doy a Ti,
+     Sim7      Mi     La     La7
+Me entrego del todo a ti, mi Dios.
+     Sim7    Mi7 La       Fa#m7
+Me entrego a Ti, me doy a Ti,
+     Sim7    Mi7   La
+Me entrego a Ti, Señor.
+</span>
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

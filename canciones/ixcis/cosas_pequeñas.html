@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Cosas pequeñas",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Sol",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Ixcís",
+        "album": "Beber los vientos",
+        "num": 11
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=i4vFy-8xpb4"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Sol               Mim
+Destellos en la oscuridad,
+       Do                Re
+cada pequeña semilla al amor,
+Mim        Do
+como gotas en el mar,
+             Lam                Re
+como a un hambriento un poco de pan.
+
+Destellos en la oscuridad,
+esa chispa que puede despertar
+a un pueblo sin fuerzas para luchar,
+esa esperanza que te hace soñar.
+<span class="estribillo">
+Do             Re            Sol  Sim7    Mim
+En las cosas pequeñas puedes encontrar lo grande.
+Lam            Re        Sol
+No esperes a mañana para verlas.
+Do          Re          Sol Sim7    Mim
+Sólo el corazón te hará ver lo importante:
+   Lam          Re         Sol
+la vida es un regalo de tu Dios
+        Do          Mim            Re7      Sol  Re
+que hay que vivir a fondo, que hay que entregar.
+</span><span class="puente">
+Sol               Re
+Desde el corazón, sólo hay amor.
+Do                Mim  Re   Sol
+Desde el corazón, sólo hay amor. (bis)
+</span>
+Destellos en la oscuridad,
+unas manos que ofrecen perdón,
+cercanas a quien sufre más,
+empujando este mundo a cambiar.
+
+Destellos en la oscuridad,
+cada gesto de fraternidad,
+miradas que alejan la soledad,
+palabras para levantar.
+<span class="estribillo">
+Esto os servirá de senal: un pequeño panal,
+un niño en una cueva sin más.
+Esto os servirá de señal: un hombre en el monte está
+colgado de un madero como un criminal.
+Por Ti y por mí, por Ti y por mí.
+</span>
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

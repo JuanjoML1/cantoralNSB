@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Sólo tu espíritu",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Sol",
+        "cejilla": "cej1"
+    },
+    "origen": {
+        "autor": "Ixcís",
+        "album": "En espíritu y en verdad",
+        "num": 4
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=6RfgXYqhDcg"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+       Sol   Re
+Perdóname, Señor,
+Do            Re     Sol
+ando disperso en mis cosas,
+Mim              Sim
+me perdí en la mediocridad,
+Do     Lam           Re
+mi existencia está vacía.
+
+Perdóname, Señor,
+ni siquiera hoy he orado.
+Lo he dejado por comodidad,
+de mi vida no eres centro.
+<span class="estribillo">
+          Do     Re          Sol
+Sólo tu Espíritu me mantiene vivo
+       Do     Lam         Re
+cuando todo parece que va mal.
+        Sol  Si7       Mim  Do
+Si tu Espíritu está conmigo
+    Sol       Lam7     Re
+soy fuerte en mi debilidad.
+
+          Do     Re          Sol
+Sólo tu Espíritu me mantiene vivo
+       Do     Lam         Re
+cuando todo parece que va mal.
+        Sol  Si7       Mim  Do
+Si tu Espíritu está conmigo
+    Sol       Lam7 Re  Sol
+soy fuerte en mi debilidad.
+</span>
+Perdóname, Señor,
+vuelvo los ojos a los pobres,
+me da miedo poder perder mi paz,
+que trabaje otro con ellos.
+
+Perdóname, Señor,
+en palabras yo me quedo.
+He vivido en la apariencia
+escondido en mil caretas.
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

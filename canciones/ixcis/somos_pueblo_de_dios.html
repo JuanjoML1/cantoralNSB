@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Somos Pueblo de Dios",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Do",
+        "cejilla": "cej5"
+    },
+    "origen": {
+        "autor": "Ixcís",
+        "album": "En espíritu y en verdad",
+        "num": 6
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": null
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Do   Fa       Do    Fa
+No hagáis del templo
+      Lam  Fa      Lam  Fa
+un mercado bien montado.
+Do    Fa      Do    Fa
+No pongáis el sábado
+      Lam  Fa        Lam  Fa
+por encima del ser humano.
+Do   Fa   Do Fa      Do   Fa
+No domestiquéis la Palabra
+    Do Lam Fa
+que os he dado.
+<span class="estribillo">
+        Fa       Mim     Lam
+Raza de víboras, raza de víboras,
+        Fa       Mim            Lam
+el vino nuevo se pudre en odres viejos.
+        Fa       Mim     Lam
+Raza de víboras, raza de víboras,
+        Fa         Mim        Lam    Lam/Sol Re Lam/Sol
+el vino fresco necesita odres nuevos.
+</span>
+¿Cuándo el sexo no será el único pecado?
+¿Y cuándo la justicia habitará el corazón humano?.
+¿Cuándo empezaremos a cambiar, dar nuevos pasos?.
+<span class="estribillo">
+Raza de víboras, raza de víboras,
+hace frío este invierno, hace falta aire nuevo.
+Raza de víboras, raza de víboras,
+hace frío aquí dentro, hace falta algo nuevo.
+</span>
+¿Cuándo nuestros curas serán célibes o casados?
+¿Y cuándo la mujer llegará al ministerio ordenado
+y no habrá problema alguno en ser gay y a la vez cristiano?
+<span class="estribillo">
+Raza de víboras, raza de víboras,
+hace frío este invierno, hace falta aire nuevo.
+Raza de víboras, raza de víboras, escúchenos,
+que nosotros también, que nosotros también,
+que nosotros también somos Pueblo de Dios.
+</span>
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

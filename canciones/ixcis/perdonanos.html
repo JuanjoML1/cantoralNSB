@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Perdónanos",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Re",
+        "cejilla": "cej1"
+    },
+    "origen": {
+        "autor": "Ixcís",
+        "album": "Padrenuestro - Un nuevo modo de ser",
+        "num": 11
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=pSw3U2ArGPc"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+          La   Sol      Re
+Perdón, Señor, por rechazar
+              La   Sol     Re
+a nuestro hermano, no perdonar.
+          La   Sol     Re
+Perdón, Señor, por olvidar
+            La       Sol       Re
+que al perdonarme yo debo perdonar.
+<span class="estribillo">
+       Sol         Re            La                Re
+Perdónanos, perdónanos, no somos uno con tanta división.
+       Sol         Re            La                 Re
+Perdónanos, perdónanos, haz de nosotros un solo corazón.
+</span><span class="puente">
+Re        Sol         Re
+Perdón, Señor, perdónanos.
+Re        Sol         Re
+Perdón, Señor, perdónanos.
+</span>
+Perdón, Señor, por distanciar
+de nuestra vida a los que sufren más.
+Perdón, Señor, por criticar,
+por tantas quejas, omisiones, tanto mal.
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

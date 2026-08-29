@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Sueño una iglesia",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Do",
+        "cejilla": "cej2"
+    },
+    "origen": {
+        "autor": "Ixcís",
+        "album": "En espíritu y en verdad",
+        "num": 5
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=joBW-HwXH6o"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Lam   Sol  Lam          Rem   Sol7  Do Mim
+Sueño una Iglesia que reparte sus riquezas,
+        Lam   Sol    Lam   Lam/Sol Lam7/Fa# Lam/Fa Mi7
+en la alforja el Evangelio y nada más,      y nada más.
+
+Sueño una Iglesia que a la historia se acerca
+descalza sin equipajes para andar en libertad, en libertad.
+<span class="estribillo">
+Fa Mim Lam Fa              Mim          Lam
+Sueño,     sueño que es verdad que llegará. (bis)
+</span>
+Sueño una Iglesia que abandona su grandeza
+como sierva que se encarna entre los pobres de cada lugar.
+
+Sueño una Iglesia donde el número no cuenta
+y aunque sea minoría, no importará si está forjando una nueva humanidad.
+<span class="estribillo">
+Fa Mim Lam Fa              Mim          Lam
+Sueño,     sueño que es verdad que llegará. (bis)
+</span>
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

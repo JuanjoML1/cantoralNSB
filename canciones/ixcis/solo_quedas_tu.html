@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Sólo quedas Tú",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Sol",
+        "cejilla": "cej4"
+    },
+    "origen": {
+        "autor": "Ixcís",
+        "album": "Teselas de luz y barro",
+        "num": 3
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=-0kTT9jMB_g"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Sol                 Sim7
+Cuando me siento hundida y desnuda,
+Mim                    Sim7
+cuando un abrazo tarda tanto en llegar,
+Sol                  Sim7
+cuando las sendas se vuelven oscuras,
+Mim              Sim7
+cuando los besos pierden su verdad.
+<span class="estribillo">
+Sol Sim7 Mim Mim7        Do Mim7      Lam7 Re
+Tú, solo Tú,      quedas Tú,     sólo Tú.     (bis)
+</span>
+Cuando la calma se marcha muy lejos,
+cuando me toca tiempo de llorar,
+cuando mis pasos se hacen más lentos,
+cuando las sombras ocultan el mar.
+<span class="estribillo">
+Sol Sim7 Mim Mim7        Do Mim7      Lam7 Re
+Tú, solo Tú,      quedas Tú,     sólo Tú.     (bis)
+</span>
+Cambio de tono: 13 14 Do#m Sol#m
+                13 14 Do#m Sol#
+
+La                 Re          Mi
+Cuando no queda un sueño en el alma,
+La               Re     Mi
+cuando me atrapa la soledad,
+La                 Re       Mi
+cuando me siento como una veleta
+La                  Re        Mi
+que va sin vida de aquí para allá.
+<span class="estribillo">
+La Do#m7 Fa#m7 Mi     La Do#m7 Fa#m7 Mi
+Tú, solo Tú,   quedas Tú,      sólo Tú. (bis)
+</span>
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

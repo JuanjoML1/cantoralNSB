@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Danos hoy",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "La",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Ixcís",
+        "album": "Padrenuestro - Un nuevo modo de ser",
+        "num": 10
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=FvpSXPoIZVU"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+      La
+Danos hoy el pan de cada día
+                            Mi
+porque mañana es pronto todavía.
+    Re          Mi          La     Do#m  Fa#m
+Que quite tanta hambre, que traiga nueva vida.
+      Re          Mi          La
+Danos hoy nuestro pan de cada día.
+<span class="estribillo">
+       Re     Mi          La Mi  Fa#m
+Que me deje comer, que me deje beber.
+  Sim         Mi         La    La7
+Hacerme pan y vino yo también.
+       Re     Mi          La Mi  Fa#m
+Que me deje comer, que me deje beber.
+  Sim         Mi         La   (Fa#7)
+Hacerme pan y vino yo también.
+</span>
+      Si
+Danos hoy el pan de cada día,
+                                Fa#
+que nuestra vida contagie la alegría,
+   Mi            Fa#       Si          Sol#m
+la luz de la esperanza, contigo Eucaristía.
+      Mi          Fa#         Si
+Danos hoy nuestro pan de cada día.
+<span class="estribillo">
+       Mi     Fa#         Si Fa# Sol#m
+Que me deje comer, que me deje beber.
+  Do#m        Fa#        Si    Si7
+Hacerme pan y vino yo también.
+       Mi     Fa#         Si Fa# Sol#m
+Que me deje comer, que me deje beber.
+  Do#m        Fa#        Si   (Sol  La)
+Hacerme pan y vino yo también.
+</span>
+      Re
+Danos hoy el pan de cada día
+                             La
+compartiendo la herencia recibida.
+          Mim         La       Re         Sim
+Que a los pobres y hambrientos cure las heridas.
+      Sol         La          Re
+Danos hoy nuestro pan de cada día.
+<span class="estribillo">
+       Sol    La         Re Fa#m Sim
+Que me deje comer, que me deje beber.
+  Mim         La         Re   Re7
+Hacerme pan y vino yo también.
+       Sol    La         Re Fa#m Sim
+Que me deje comer, que me deje beber.
+  Mim         La         Sol  Solm  Re
+Hacerme pan y vino yo también.
+</span>
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

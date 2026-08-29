@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Gentes con derecho",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Do",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Ixcís",
+        "album": "Beber los vientos",
+        "num": 7
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=-ZE5Juln7YI"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Lam          Sol   Fa    Lam               Sol   Fa
+Odio, muerte y ambición, guerras, hambre y destrucción.
+ Lam                 Do         Re     Lam
+¿Dónde está, dónde está dónde está el amor?
+Lam                   Do       Re  Lam
+Ven, ven, Señor, Salvador, resucítanos
+Sib     Do         Fa        Sol     Fa   Mi
+que los sueños del hombre no son el Amor.
+
+Niños rotos de dolor, viejos solos en un rincón.
+Dónde está, dónde está, dónde está el amor
+si en esta Tierra la muerte y el dolor
+son el rostro de muchos que también...
+<span class="estribillo">
+Lam   Sol    Fa   Sol
+Son hijos de Dios,
+Lam      Sol       Fa
+son como tú y como yo,
+Rem7         Mim       Fa
+gentes con derecho al Amor,
+Rem7         Mim       Fa
+gentes con derecho a mirar
+         Sol         Do    Sol
+al mundo con un poco de ilusión
+     Fa               Lam    Sol   Do     Sol
+de saber que no es la muerte la única solución
+       Fa           Lam             Sol    Lam
+que la vida en este mundo no es tan sólo dolor.
+
+Fa Sol Lam    Do         Sol      Fa Sol Lam
+Derrumbar ese muro que separa una realidad
+       Do              Sol          Fa Sol Lam
+de dos tercios de este mundo que se morirá
+      Do      Sol         Lam
+si no somos capaces de saltar.
+Fa Sol Lam   Do           Sol        Fa Sol  Lam
+Escuchar ese llanto de un hombre que perdido va
+     Do           Sol          Fa Sol Lam
+arruinado por sus propias manos y que va
+       Do      Sol       Fa Mim Lam
+poco a poco perdiendo su dignidad.
+</span>
+Lam          Sol  Fa   Lam       Sol     Fa
+Todos sueñan con amar, todo es vivir sin más.
+Lam                  Do               Sol      Fa
+Y el mundo, así, morirá sin saber que Dios nos creó
+       Do        Sol Fa                 Sol
+con su mismo corazón para que al vivir, para que al vivir
+   Rem7    Mim      Lam
+gritáramos al ser feliz.
+<span class="puente">
+Rem                  Lam         Fa    Mim    Lam
+Haznos fuertes en creer que es posible dar un cambio
+Rem                Lam       Fa     Mim        Lam
+a este mundo harto ya de esperanzas siempre en vano.
+       Rem            Lam       Rem              Lam
+Haznos ser, Señor, la luz que demuestre a mis hermanos
+       Rem             Fa
+el que Tú estás aquí y siempre estarás
+     Rem        Mi
+a mi lado de la mano.
+
+Que mi vida sea, Señor, un reflejo de esperanza,
+luz de muros, sal de mar, aguardando tu llamada,
+fin de vida que al llegar todo el mal de mf no salga
+y vivir feliz por Ti y por los demás,
+Tú, el sueño de mi alma.
+</span>
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

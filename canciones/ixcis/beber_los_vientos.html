@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Beber los vientos",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Do",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Ixcís",
+        "album": "Beber los vientos",
+        "num": 12
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=t4L3EjWruZs"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+      Lam          Fa          Sol         Lam
+¿Para qué sirve la sal si no está donde se cuece la vida?
+      Lam          Fa             Sol             Lam
+¿Para qué sirve creer que hay que denunciar la mentira
+   Rem         Mim        Lam       Rem       Mim          Lam
+si luego nos callamos por miedo escogiendo el más fácil sendero
+       Sol             Lam                 Sol            Mim7          Lam
+porque no sabemos, por lo que sea, si no estamos donde se cuecen los problemas,
+       Sol             Lam                 Sol            Mim7          Lam
+porque no sabemos, por lo que sea, si no estamos donde se cuecen los problemas?
+<span class="estribillo">
+   Lam           Fa                 Do    Rem7      Lam
+Sentir tu Reino aquí en mi pecho forjando sueños de libertad
+    Fa             Do   Rem7      Fa            Rem7 Mim Lam
+con alas blancas para volar de la Tierra que me da seguridad
+       Fa          Rem7           Lam    Mi  Lam  Fa  Rem7  Mi
+a otra Tierra para todos: tiempos nuevos nacerán.
+
+Lam     Fa     Rem7       Mi
+Vientos nuevos a un mundo viejo,
+Lam     Fa     Rem7       Mi
+vientos libres a un mundo preso. (bis)
+</span>
+      Lam          Fa          Sol             Lam
+¿Para qué sirve la luz si la escondo en mi trinchera?
+      Lam         Fa       Sol                Lam
+¿Para qué sirve rezar si escurro el hombro en la tarea
+   Rem          Mim           Lam      Rem   Mim         Lam
+si luego no soy libre como el viento y del poder me hago siervo
+       Sol             Lam                 Sol            Mim7          Lam
+porque no sabemos, por lo que sea, si no estamos donde se cuecen los problemas,
+       Sol             Lam                 Sol            Mim7          Lam
+porque no sabemos, por lo que sea, si no estamos donde se cuecen los problemas?
+<span class="estribillo">
+   Lam           Fa                 Do    Rem7      Lam
+Sentir tu Reino aquí en mi pecho forjando sueños de libertad
+    Fa             Do   Rem7      Fa            Rem7 Mim Lam
+con alas blancas para volar de la Tierra que me da seguridad
+       Fa          Rem7           Lam    Mi  Lam  Fa  Rem7  Mi
+a otra Tierra para todos: tiempos nuevos nacerán.
+
+Lam     Fa     Rem7       Mi
+Vientos nuevos a un mundo viejo,
+Lam     Fa     Rem7       Mi
+vientos libres a un mundo preso. (bis)
+</span>
+  Lam                 Fa                Do      Rem7
+Beber los Vientos, cantar al Viento, sentir los Vientos, (4 veces)
+       Fa      Rem7   Mim  Lam
+que me hacen vivir en libertad.
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

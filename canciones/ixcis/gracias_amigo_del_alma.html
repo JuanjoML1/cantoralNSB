@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Gracias, amigo del alma",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "La",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Ixcís",
+        "album": "Teselas de luz y barro",
+        "num": 11
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=lciYx6rqUZI"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+La
+Sin ti me falta el aire,
+Sim7b5
+la brisa de los mares
+    Re      La
+sin ti, sin ti.
+La
+Sin ti no encuentro estrellas.
+Do
+Me pierdo en mis tormentas.
+Re                       La
+Amanece cuando te veo en mí.
+<span class="estribillo">
+Re              Mi7
+Por eso, te agradezco
+Do#m            Fa#m
+tu presencia continua
+Sim                Mi       La    La7
+que me alienta a seguir caminando.
+Re           Mi7
+Tú eres, sin duda,
+Do#m         Fa#m
+lo mejor que tengo.
+Sim          Mi           La   Sim7b5 La
+Tú das nuevo brillo a mis ojos.
+</span>
+Contigo todo es nuevo,
+oasis los desiertos,
+contigo, Señor.
+Contigo en lo profundo,
+contigo salgo al mundo
+y en mi alma tu Palabra, Señor.
+<span class="estribillo">
+Por eso, te agradezco
+que me levantes tantas veces
+y me impulses
+con tu Espíritu de nuevo.
+Tú haces que mi vida
+recobre el sentido.
+</span>
+Re             Mi             La
+Gracias, amigo mío, amigo del alma.
+Re             Mi             Fa#m
+Gracias, amigo mío, amigo del alma.
+Re             Mi             La   Sim7b5 La
+Gracias, amigo mío, amigo del alma.
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

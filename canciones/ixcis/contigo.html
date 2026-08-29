@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Contigo",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Do",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Ixcís",
+        "album": "Teselas de luz y barro",
+        "num": 13
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=0XZyqu1FssQ"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="estribillo">
+Do
+Déjame volver a beber.
+                             Sol
+Déjame volver a vivir contigo.
+Do
+Déjame volver a comer.
+                             Sol
+Déjame volver a soñar contigo
+         Lam Re                   Sol
+en comunidad, contigo en el centro.
+</span>
+   Do
+Yo sé que juntos somos mucho más que dos,
+                       Sol
+ritmos unidos en una sola canción.
+
+Que tú completas mi corazón,
+
+que yo completo tu corazón.
+Do
+Vivir así, sin duda, hoy es lo alternativo.
+
+Querer ser uno en el amor será definitivo.
+Sol
+Saberse hermanos, darnos sin medida,
+                               Do
+volver a la esencia en nuestra vida.
+
+Todos juntos poniendo nuestra vida y los talentos en común,
+siendo Evangelio cada día para hacer real
+lo de ser Pueblo santo de Dios
+y se pregunten por nuestro amor.
+Y no olvidarnos que en lo esencial, Unidad.
+Tener presente que en lo relativo, Libertad.
+Sólo una forma fundamental:
+en todo Amor.
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

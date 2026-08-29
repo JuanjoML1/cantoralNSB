@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Adonde vayas",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Re",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Ixcís",
+        "album": "Teselas de luz y barro",
+        "num": 12
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=43DKYGoyxIc"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Re                   La
+Sólo será posible cambiar
+Sol                Re  Do
+si me enamoro otra vez.
+Re                     La
+No quiero servir nunca más
+Sol                Re
+a dos señores a la vez
+Sim       La  Sim
+porque el corazón
+     La              Sol
+se reparte entre los dos
+                   Re           La
+y no me quiero dividir, no, no, no.
+<span class="estribillo">
+       Re
+Adonde vayas contigo iré,
+         La
+donde Tú quieras yo estaré,
+       Sol           Re  La
+adonde vivas, yo viviré.
+         Re
+Quiero vivir sólo por ti,
+          La
+darte mis días y sentir
+        Sol                      Re
+que mis pasos se van llenando de ti.
+
+   Sim     Sol       Re   La
+Tú eres mi perla especial.
+      Sim           Sol       La
+Mucho más de lo que pude imaginar.
+   Sim     Sol         Re  La
+Tú eres mi sueño más real.
+      Mim        Sol        Re
+Mucho más, mucho más, mucho más.
+</span>
+A tientas o volando me da igual.
+Con tal de no perderte
+de todo soy capaz.
+Que ya nadie me puede engañar.
+Contigo aprendí lo que es amar.
+Porque el corazón te lo entrego yo
+y no me importa
+lo que digan de mí, no, no, no.
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

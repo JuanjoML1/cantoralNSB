@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Regalada",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "La",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Ixcís",
+        "album": "Ixcis XXV",
+        "num": 1
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=v5F_I3x7w3E"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+   La       Mi               Fa#m
+Te hablo, Señor, de lo mucho que he buscado
+      Re            La          Sim          Mi7
+tu presencia y tu legado, y del precio que pagué.
+   La        Mi               Fa#m
+Me hablas, Señor, de una vida confiada,
+      Re          La            Sim      Mi
+donde ya no lleve cargas, donde nada necesite.
+<span class="puente">
+Re        Do#7       Fa#m      Fa#m7       Re
+Hoy en tu busca descubrí que todo lo que viví
+      Sim         Mi
+fue regalo de tu Amor inesperado.
+Re        Do#7       Fa#m    Fa#m7      Re
+Hoy me descubro ante Ti despojada de mi nada
+     Sim   Mi7
+para ser regalo.
+</span><span class="estribillo">
+    La        Re       La
+Regalada, una vida regalada,
+   Re            La
+si pongo en tu mirada
+    Fa#m        Mi7
+el afán de cada día.
+
+    La        Re       La
+Regalada, una vida regalada,
+      Re        La
+si mi corazón camina
+       Fa#m          Mi7
+por el Reino y su justicia.
+</span>
+Te hablo, Señor, de los miedos del pasado,
+de las dudas del futuro, y no veo mi presente.
+Me hablas, Señor, de vivir el día a día,
+acoger el nuevo amanecer y su afán con alegría.
+<span class="puente">
+Hoy en tu busca descubrí que no hay miedo
+si tu mano me sostiene confiada.
+Hoy me descubro ante Ti preparada para ser,
+una vez más de nuevo amada.
+</span></pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

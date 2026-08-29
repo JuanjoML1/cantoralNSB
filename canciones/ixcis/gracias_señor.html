@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Gracias, Señor",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Re",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Ixcís",
+        "album": "Beber los vientos",
+        "num": 6
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=ZD_cVvRBK_M"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Sim Sol    La Fa#     Sol Mim
+Gracias, Señor, por estar
+       Re                La  Fa#           Sol
+por cantar tan dentro de mí, por hacerme feliz.
+Mim          La          Sol
+Por sentirte cerca aún sabiendo que
+Mim            La       Sol
+no siempre mis pasos te siguen,
+   Sim      Re         Sol
+te hacen presente al andar,
+                 Sim                Mim  Sim
+por darme la esperanza con la que mirar
+     Re            Sol                 Sim
+al mañana con algo más que un simple volar
+        Re            Sol
+con las alas de humanidad.
+  Sim        Re               La           Fa#
+Notar que Tú vivo siempre estarás en todo aquel
+       Sol  Re        Mim     Fa#        Sim
+que su vida pone a tu única y sabia voluntad.
+
+Partiré a cantar tu verdad
+que siento en mí adonde digas Tú,
+Dios de mis mayores, que sigues en mí
+esa fantasía de vida,
+de ganas, de fuerzas y de afán
+de dar muerte a la muerte y vida allí
+donde no se sienta tu paz,
+hacer estallar la grandeza de tu amar.
+Obrar como es justo que siendo tu hijo te haga
+siempre presente sin sentirme nunca alguien especial.
+
+Sim      Sol      La      Sim
+Sea así, cúmplase tu voluntad,
+Sol          La     Sim
+haz de mí un ser eficaz.
+                     Re
+Que viva, así en mis días,
+        Fa#      Sim
+a quien yo digo amar,
+                     Re
+que viva, así en mis días,
+           Fa#       Sim
+a quien me hizo respirar,
+                     Re
+que viva, así en mis días,
+            Fa#      Sim
+al que sólo he de adorar.
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

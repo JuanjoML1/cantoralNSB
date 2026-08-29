@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Llega el día",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Do",
+        "cejilla": "cej3"
+    },
+    "origen": {
+        "autor": "Ixcís",
+        "album": "En espíritu y en verdad",
+        "num": 8
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=2__R8jUljLo"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Lam                  Mim
+Sangre, imperios y cañones
+Lam                        Mim
+desolan la historia de los hombres.
+Lam          Mim
+Explotación, injusticia,
+Lam         Mim
+marginación y codicia.
+ Fa                          Sol
+¿Cuándo llegará el corazón a la razón?
+ Rem              Sol             Mim        Lam
+¿Cuándo el dinero no estará por encima de la paz?
+<span class="estribillo">
+   Do                          Sol       Fa
+Me niego a creer que esta situación sea eterna.
+   Mim                Lam  Sol               Fa
+Me niego a pensar que esto no hay quien lo detenga.
+      Sol            Lam
+Es contrario a mi conciencia,
+   Fa       Sol  Lam
+al Dios que me subleva,
+          Sol                 Fa
+que ha inscrito en cada ser humano
+       Sol   Mim         Lam
+entrañas de una justicia nueva.
+
+Lam             Mim
+Llega el día de la revolución:
+          Fa          Do                 Mim
+los que están abajo, arriba los pone Dios.
+Lam             Mim
+Llega el día de la gran revelación:
+        Fa                 Do              Mim
+los que son pisoteados vivirán resurrección.
+</span>
+Lam             Mim
+Bombas antipersonales,
+Lam            Mim
+crueles multinacionales,
+Lam                      Mim
+riqueza del Norte que al Sur condena a muerte,
+Lam               Mim
+deuda externa que mata a tanta gente.
+ Fa                       Sol
+¿Cuándo nos pondremos de acuerdo?
+ Rem                    Sol Mim      Lam
+¿Cuándo empezaremos a crear un mundo nuevo?
+<span class="estribillo">
+   Do                          Sol       Fa
+Me niego a creer que esta situación sea eterna.
+   Mim                Lam  Sol               Fa
+Me niego a pensar que esto no hay quien lo detenga.
+      Sol            Lam
+Es contrario a mi conciencia,
+   Fa       Sol  Lam
+al Dios que me subleva,
+          Sol                 Fa
+que ha inscrito en cada ser humano
+       Sol   Mim         Lam
+entrañas de una justicia nueva.
+
+Lam             Mim
+Llega el día de la revolución:
+          Fa          Do                 Mim
+los que están abajo, arriba los pone Dios.
+Lam             Mim
+Llega el día de la gran revelación:
+        Fa                 Do              Mim
+los que son pisoteados vivirán resurrección.
+</span>
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>
