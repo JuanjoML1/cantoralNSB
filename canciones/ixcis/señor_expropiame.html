@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title data-md="titulo"></title>
+<script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Señor, exprópiame",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Mi",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Ixcís",
+        "album": "Como uno de tantos",
+        "num": 16
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://ixcis.org/images/discografia/como-uno-de-tantos/16-Se%C3%B1or_expropiame.mp3"
+    }
+}
+</script>
+<link href="../../css/colores.css" rel="stylesheet"/>
+<link href="../../css/estilo.css" rel="stylesheet"/>
+<link href="../../css/estilo-texto.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="cancion-header">
+<div class="numeros">
+<span class="antiguo" data-md="numeracion.antiguo"></span>
+<span class="nuevo" data-md="numeracion.nuevo"></span>
+</div>
+<h1 class="titulo" data-md="titulo"></h1>
+<div class="tono">
+<span data-md="musica.tono"> </span>
+<span data-md="musica.cejilla"></span>
+</div>
+</div>
+<div id="main-controls">
+<button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+<div id="controls-container">
+<button onclick="bajarTono()">−</button>
+<button onclick="subirTono()">+</button>
+<button onclick="resetTono()">Reset</button>
+<button onclick="toggleCifrado()">Do → C</button>
+</div>
+</div>
+<pre>
+  Mi           La
+Señor, exprópiame,
+       Mi               La
+tómalo todo, no olvides nada
+   Mi         La
+y así yo sentiré
+            Mi              La
+que todo es tuyo, que Tú me amas.
+</pre>
+<div class="youtube">
+<a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+</a>
+</div>
+</body>
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+<script src="../../js/metadata.js"></script>
+</html>

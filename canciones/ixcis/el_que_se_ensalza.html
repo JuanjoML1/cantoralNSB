@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "El que se ensalza",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Do",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Ixcís",
+        "album": "Como uno de tantos",
+        "num": 4
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://ixcis.org/images/discografia/como-uno-de-tantos/04-El_que_se_ensalza.mp3"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Lam         Do             Rem               Lam
+Busco los mejores puestos, siempre soy el primero.
+Sol       Lam          Rem        Mi
+Me coloco en el centro criticando tus defectos.
+Rem       Sol7           Do          Mim7    Lam
+Hago todo lo que quiero, tengo a mis pies el mundo entero
+  Rem                  Sol7             Lam          Mi
+y ya no me acuerdo de aquellas palabras que hablaban de tu Reino:
+<span class="estribillo">
+Lam                 Do
+El que se ensalza será humillado,
+Rem              Lam
+que se humilla será ensalzado.
+                Do
+Mira la cruz si has triunfado,
+ Rem                  Mi
+allí hay un hombre crucificado.
+</span>
+Exijo todos mis derechos cada vez que puedo.
+Mi verdad es la que he impuesto y condeno tus proyectos.
+El prestigio bien deseo, la fama también anhelo
+y ya no me acuerdo de aquellas palabras que hablaban de tu Reino:
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

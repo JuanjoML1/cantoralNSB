@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Como uno de tantos",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Do",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Ixcís",
+        "album": "Como uno de tantos",
+        "num": 11
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://ixcis.org/images/discografia/como-uno-de-tantos/11-Como_uno_de_tantos.mp3"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Lam                  Sol     Mi                  Lam
+No has llamado a los sabios, únicamente a los sencillos.
+                   Sol     Mi                Lam
+Lo que el mundo desprecia, Señor, Tú has escogido
+Do                   Sol Rem              Lam
+para que nadie se gloríe delante de otros hombres,
+Do               Sol    Rem                Mi
+para que todos conozcan que viviste siendo pobre.
+<span class="estribillo">
+   La      Mi        Re                Fa#m
+Llevamos este tesoro en recipientes de barro
+Re             Rem       Re      Mi
+para que todos sepan que Dios es nuestra fuerza.
+</span>
+Fuiste uno de tantos siendo de rango divino
+renunciaste a tu grandeza: una cruz como testigo.
+Y mataste a la muerte quitándole el poderío.
+Ahora juntos proclamamos al Señor enaltecido.
+
+La                Re       La
+Con los pobres cantamos Aleluya,
+Re   La     Sim      Mi
+al Señor cantamos Aleluya.
+La                Re       La
+Con los pobres cantamos Aleluya,
+Re   La     Mi       La
+al Señor cantamos Aleluya.
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>
