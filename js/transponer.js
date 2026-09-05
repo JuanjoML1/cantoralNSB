@@ -121,17 +121,16 @@ function resetTono() {
 function subirTono() { transposeAll(1); }
 function bajarTono() { transposeAll(-1); }
 
-/*
-AJUSTAR TAMAÑO DE LETRA
-*/
+/* =========================================================
+   AJUSTAR TAMAÑO DE LETRA
+   ========================================================= */
 function ajustarTamanoCancion(pre) {
-
     const ancho = pre.clientWidth;
-
     const tamañoBase = 16;
     const tamañoMinimo = 8;
     const tamañoMaximo = 36;
 
+    if (ancho <= 0) return;
     // Buscar la línea más larga
     const lineas = pre.textContent.split("\n");
 
@@ -143,35 +142,67 @@ function ajustarTamanoCancion(pre) {
 
     if (maxCaracteres === 0) return;
 
-    // Medimos cuánto ocupa un carácter monospace
-    const estilo = getComputedStyle(pre);
-
+    // Medir usando SIEMPRE el tamaño base
     const canvas = document.createElement("canvas");
     const ctx = canvas.getContext("2d");
 
-    ctx.font = estilo.font;
+    const estilo = getComputedStyle(pre);
+
+    ctx.font = `${tamañoBase}px ${estilo.fontFamily}`;
 
     const anchoCaracter = ctx.measureText("M").width;
 
-    // Ancho actual de la línea más larga
     const anchoLinea = maxCaracteres * anchoCaracter;
 
-    // Ajustar proporcionalmente
+    // Calcular nuevo tamaño
     let nuevoTamaño =
         tamañoBase * (ancho / anchoLinea);
 
-    // Limitar para evitar tamaños absurdos
+    // Aplicar límites
     nuevoTamaño = Math.max(
         tamañoMinimo,
         Math.min(tamañoMaximo, nuevoTamaño)
     );
-
     pre.style.fontSize = nuevoTamaño + "px";
 }
 
+/* =========================================================
+   INICIALIZACIÓN
+   ========================================================= */
 function ajustarTodasLasCanciones() {
-    document.querySelectorAll("pre").forEach(ajustarTamanoCancion);
+    const canciones = document.querySelectorAll("pre");
+
+    canciones.forEach(pre => {
+        ajustarTamanoCancion(pre);
+    });
 }
 
-window.addEventListener("load", ajustarTodasLasCanciones);
-window.addEventListener("resize", ajustarTodasLasCanciones);
+/* =========================================================
+   CARGA INICIAL
+   ========================================================= */
+if (document.readyState === "loading") {
+    document.addEventListener("DOMContentLoaded", () => {
+        ajustarTodasLasCanciones();
+    });
+} else {
+    ajustarTodasLasCanciones();
+}
+
+/* =========================================================
+   OBSERVAR CAMBIOS REALES DE TAMAÑO
+   ========================================================= */
+const observer = new ResizeObserver(entries => {
+    entries.forEach(entry => {
+        const pre = entry.target;
+        // Evitar recalcular mientras el navegador
+        // todavía está haciendo cambios de layout
+        clearTimeout(pre._ajusteTimeout);
+        pre._ajusteTimeout = setTimeout(() => {
+            ajustarTamanoCancion(pre);
+        }, 100);
+    });
+});
+
+document.querySelectorAll("pre").forEach(pre => {
+    observer.observe(pre);
+});
