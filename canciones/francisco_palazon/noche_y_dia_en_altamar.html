@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Noche y día en altamar",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Re",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Francisco Palazón",
+        "album": "Parábolas I",
+        "num": 6
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=FFzeyL8gSpE"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="estribillo">
+    Re          Sol Re         La     La7  Re
+Marinero que te afanas noche y día en alta mar,
+Sol     La7      Re
+echa la red barredera,
+Sim              La   Sol     Re
+echa la red barredera para pescar.
+</span>
+      Rem                     Solm   Do   Rem
+En la red está la pesca que lograste capturar,
+    Solm      Rem   La7    Rem
+y comienza la tarea de separar (bis).
+<span class="estribillo">
+   Re                  Sol                 Re
+En este mar de la vida rigen las leyes del mar:
+   La      La7   Re       La7           Re
+la pesca mala se tira, se deja la de verdad,
+   La      La7   Re       La7           Re
+la pesca mala se tira, se deja la de verdad.
+</span>
+Rem                           Solm      Do   Rem
+Cuando lleguemos a puerto y empiece la eternidad,
+  Solm             Rem     La7              Rem
+importan las obras buenas, sobra la mediocridad (bis).
+<span class="estribillo">
+    Re          Sol Re         La     La7  Re
+Marinero que te afanas noche y día en alta mar,
+Sol     La7      Re
+echa la red barredera,
+Sim              La   Sol     Re
+echa la red barredera para pescar.
+</span>
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Administradores del amor",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Do",
+        "cejilla": "cej3"
+    },
+    "origen": {
+        "autor": "Francisco Palazón",
+        "album": "Parábolas I",
+        "num": 4
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=HUt_S2UOKUc"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Lam                 Mi7         Lam
+Un hombre se marchó a tierras lejanas
+                Rem     Lam   Mi7    Lam
+y dejó a sus criados cuidando su heredad.
+               Rem      Mi7         Lam
+Les dejó en usufructo dinero y confianza
+                 Rem    Mi7       Lam
+y dijo que algún día pensaba regresar.
+<span class="estribillo">
+La
+Somos administradores
+      Re           La
+de la tierra del Señor.
+Re              La    Mi7
+Somos administradores
+       La Mi7      La
+de su amor, de su amor.
+</span>                                                                 
+          Lam Mi7            Lam  Rem
+Escrito está que el Señor vendrá.
+                    Sim7b5 Sol7  Do  Lam
+Escrito está que el Señor pedirá cuentas.
+       Mi7
+¿Qué hicimos con el amor?
+                      Lam
+¿Qué hicimos con la pobreza?
+     Fa  Rem7         Do#m La7
+¿Por qué vamos por la vida
+  Rem   Mi7      Lam
+matando tanta inocencia?
+
+  Lam     Miaug        Do     Rem
+Algunos esconden los talentos
+             Rem7   Sol7 Do  Mi7
+y viven de espaldas al dolor.
+               Rem7 Mi7             Lam7
+Ignoran al que sufre, acallan su conciencia,
+   Miaug         Do La7   Rem7     Mi7   Lam
+y avanzan por la vida sin riesgo y sin sudor.
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>
