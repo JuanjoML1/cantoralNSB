@@ -16,15 +16,18 @@
     },
     "musica": {
         "tono": "Sol",
-        "cejilla": "3"
+        "cejilla": "cej3"
     },
     "origen": {
         "autor": "Kiko Argüello",
-        "album": "Hacia ti, morada santa",
-        "num": 0
+        "album": null,
+        "num": null,
+        "año": null
     },
     "analisis": {
-        "temas": ["exequias"],
+        "temas": [
+            "exequias"
+        ],
         "citas_biblicas": {
             "explicitas": [],
             "relacionadas": []
@@ -70,33 +73,51 @@
         </div>
         <pre>
 <span class="estribillo">
-Solm             Re7
+Mim              Si7
 Hacia ti, morada santa.
-                          Solm
+                          Mim
 Hacia ti, tierra del salvador.
-    Fa          Mib
+    Re          Do
 Peregrinos, caminantes,
-            Re7
+            Si7
 vamos hacia ti.
 </span>
-             Solm                Fa
+             Mim                 Re
 Venimos a tu mesa, sellaremos tu Pacto,
-             Mib                        Re7
+             Do                         Si7
 comeremos tu carne, tu Sangre nos limpiará.
-              Solm              Fa
+              Mim               Re
 Reinaremos contigo en tu morada santa,
-             Mib                    Re7
+             Do                     Si7
 beberemos tu sangre, tu fe nos salvará.
 
-Somos tu pueblo santo, que hoy camina unido.
+Somos tu pueblo santo que hoy camina unido.
 Tú vas entre nosotros, tu amor nos guiará.
 Tú eres el camino, tú eres la esperanza,
-hermano de los pobres, ¡Amén, Aleluya!
+hermano de los pobres, amén, aleluya.
 </pre>
         <div class="youtube">
             <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
             </a>
         </div>
+        <table class="cancion-info">
+            <tr>
+                <th>Autor</th>
+                <td data-md="origen.autor"></td>
+            </tr>
+            <tr>
+                <th>Álbum</th>
+                <td data-md="origen.album"></td>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <td data-md="origen.num"></td>
+            </tr>
+            <tr>
+                <th>Año</th>
+                <td data-md="origen.año"></td>
+            </tr>
+        </table>
     </body>
     <script src="../../js/transponer.js"></script>
     <script src="../../js/cambiar_tema.js"></script>

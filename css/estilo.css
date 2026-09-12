@@ -207,6 +207,7 @@ hr {
 .youtube {
     display: flex;
     justify-content: center;
+    margin-top: 16px;
 }
 
 .youtube-button {
@@ -215,7 +216,7 @@ hr {
     align-items: center;
     width: 46px;
     height: 46px;
-    margin-left: 12px;
+    margin-left: 0;
     border-radius: 50%;
     background: #c4302b;
     text-decoration: none;

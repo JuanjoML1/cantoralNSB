@@ -1,11 +1,10 @@
 <!DOCTYPE html>
 <html lang="es">
-
-    <head>
-        <meta charset="utf-8" />
-        <meta content="width=device-width, initial-scale=1" name="viewport" />
-        <title data-md="titulo"></title>
-        <script id="nsb-metadata" type="application/json">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1" name="viewport"/>
+<title data-md="titulo"></title>
+<script id="nsb-metadata" type="application/json">
 {
     "metadata_version": 1,
     "titulo": "Desde lo hondo",
@@ -21,7 +20,8 @@
     "origen": {
         "autor": "Miguel Manzano",
         "album": null,
-        "num": null
+        "num": null,
+        "año": null
     },
     "analisis": {
         "temas": [],
@@ -42,33 +42,32 @@
     }
 }
 </script>
-        <link href="../../css/colores.css" rel="stylesheet" />
-        <link href="../../css/estilo.css" rel="stylesheet" />
-        <link href="../../css/estilo-texto.css" rel="stylesheet" />
-    </head>
-
-    <body>
-        <div class="cancion-header">
-            <div class="numeros">
-                <span class="antiguo" data-md="numeracion.antiguo"></span>
-                <span class="nuevo" data-md="numeracion.nuevo"></span>
-            </div>
-            <h1 class="titulo" data-md="titulo"></h1>
-            <div class="tono">
-                <span data-md="musica.tono"> </span>
-                <span data-md="musica.cejilla"></span>
-            </div>
-        </div>
-        <div id="main-controls">
-            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
-            <div id="controls-container">
-                <button onclick="bajarTono()">−</button>
-                <button onclick="subirTono()">+</button>
-                <button onclick="resetTono()">Reset</button>
-                <button onclick="toggleCifrado()">Do → C</button>
-            </div>
-        </div>
-        <pre>
+<link href="../../css/colores.css" rel="stylesheet"/>
+<link href="../../css/estilo.css" rel="stylesheet"/>
+<link href="../../css/estilo-texto.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="cancion-header">
+<div class="numeros">
+<span class="antiguo" data-md="numeracion.antiguo"></span>
+<span class="nuevo" data-md="numeracion.nuevo"></span>
+</div>
+<h1 class="titulo" data-md="titulo"></h1>
+<div class="tono">
+<span data-md="musica.tono"> </span>
+<span data-md="musica.cejilla"></span>
+</div>
+</div>
+<div id="main-controls">
+<button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+<div id="controls-container">
+<button onclick="bajarTono()">−</button>
+<button onclick="subirTono()">+</button>
+<button onclick="resetTono()">Reset</button>
+<button onclick="toggleCifrado()">Do → C</button>
+</div>
+</div>
+<pre>
 Rem                 Sib      Rem Re7
 <span class="gr">Des</span>de lo hondo a ti grito, Señor:
   Rem    Do       Fa
@@ -94,13 +93,13 @@ Si llevas cuenta de los delitos, Señor
 Pero de ti procede el perdón,
 y así infundes respeto.
 </pre>
-        <a href="https://www.youtube.com/watch?v=9QuPt_Dqp5Y">Escuchar en YouTube</a>
-        <div class="youtube">
-            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
-            </a>
-        </div>
-    </body>
-    <script src="../../js/transponer.js"></script>
-    <script src="../../js/cambiar_tema.js"></script>
-    <script src="../../js/metadata.js"></script>
+<a href="https://www.youtube.com/watch?v=9QuPt_Dqp5Y">Escuchar en YouTube</a>
+<div class="youtube">
+<a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+</a>
+</div>
+</body>
+<script src="../../js/transponer.js"></script>
+<script src="../../js/cambiar_tema.js"></script>
+<script src="../../js/metadata.js"></script>
 </html>
