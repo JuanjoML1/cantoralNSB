@@ -19,6 +19,7 @@ async function loadIndex() {
     });
 
     addRow();
+    console.log(SONG_DB);
 }
 
 // Añadir fila de canción
