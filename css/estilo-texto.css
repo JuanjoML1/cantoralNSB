@@ -99,7 +99,7 @@ pre.original {
     flex: 1;
     text-align: center;
     margin: 0;
-    font-size: clamp(24px, 5vw, 32px);
+    font-size: clamp(16px, 4vw, 32px);
 }
 
 .cancion-header .tono {
