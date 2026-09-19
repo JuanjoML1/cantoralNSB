@@ -177,7 +177,7 @@ span.antiguo::after {
 #back-button,
 #controls-container button {
     padding: 8px 11px;
-    font-size: 0.9rem;
+    font-size: clamp(13px, 1.2vw, 18px);
     border-radius: 6px;
     border: none;
     background-color: var(--bg-listas);

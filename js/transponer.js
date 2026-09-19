@@ -123,7 +123,7 @@ function bajarTono() { transposeAll(-1); }
 
 /* =========================================================
    AJUSTAR TAMAÑO DE LETRA
-   ========================================================= */
+   =========================================================
 function ajustarTamanoCancion(pre) {
     const ancho = pre.clientWidth;
     const tamañoBase = 16;
@@ -164,7 +164,7 @@ function ajustarTamanoCancion(pre) {
         Math.min(tamañoMaximo, nuevoTamaño)
     );
     pre.style.fontSize = nuevoTamaño + "px";
-}
+}*/
 
 /* =========================================================
    INICIALIZACIÓN
