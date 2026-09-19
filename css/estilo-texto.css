@@ -93,7 +93,7 @@ pre.original {
 
 .cancion-header .numeros {
     min-width: 80px;
-    font-size: clamp(1rem, 2vw, 24px);
+    font-size: clamp(0.75rem, 1.5vw, 1.5rem);
     text-align: left;
 }
 
@@ -108,7 +108,7 @@ pre.original {
     flex: 1 0 100%;
     min-width: 80px;
     text-align: center;
-    font-size: clamp(0.9rem, 1.8vw, 1.75rem);
+    font-size: clamp(0.85rem, 1.8vw, 1.75rem);
     margin-top: 4px;
 }
 
