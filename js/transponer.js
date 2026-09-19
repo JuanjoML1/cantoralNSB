@@ -128,7 +128,7 @@ function ajustarTamanoCancion(pre) {
     const ancho = pre.clientWidth;
     const tamañoBase = 16;
     const tamañoMinimo = 8;
-    const tamañoMaximo = 36;
+    const tamañoMaximo = 22;
 
     if (ancho <= 0) return;
     // Buscar la línea más larga
