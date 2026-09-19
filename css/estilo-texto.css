@@ -52,7 +52,7 @@ pre {
     box-sizing: border-box;
 }
 
-/* PC */
+/* PC
 @media (hover: hover) and (pointer: fine) and (min-width: 1200px) {
     pre {
         max-width: 2000px;
@@ -60,7 +60,7 @@ pre {
         column-gap: 20px;
         white-space: pre-wrap;
     }
-}
+}*/
 
 pre .estribillo {
     font-weight: bold;
