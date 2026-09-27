@@ -45,7 +45,7 @@ body {
 }
 
 pre {
-    font-size: clamp(0.75rem, 1.2vw, 1.5rem);
+    font-size: clamp(0.75rem, 1.5vw, 1.5rem);
     line-height: 1.2;
     width: fit-content;
     max-width: 100%;
