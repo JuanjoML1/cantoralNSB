@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Depende de ti",
+    "numeracion": {
+        "antiguo": 80,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Re",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Mercedes González",
+        "album": "Un mundo para Dios",
+        "num": null,
+        "año": null
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": false,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": null
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+  Re
+<span class="gr">De</span>pende de ti y de mí
+Sol
+que el mundo sea mejor,
+                  La
+crear esta tierra nueva
+                  Re
+de libertad y de amor.
+  Re            Sol
+De<span class="ag">pen</span>de de cada hombre
+                   Re
+el crear lazos de unión,
+Sol                       Re
+no hay más que una gran familia,
+La                          Re
+no hay más que un Pueblo de Dios.
+<span class="estribillo">
+  Re       Sol         Re
+Hagamos un mundo fraternal,
+       Re           Sol
+un mundo en que podamos
+      La
+todos compartir
+      Sol                    Re	
+sin racismo, sin odio, sin temor;
+       La      La7        Re
+donde unidos sepamos convivir.
+  Re
+Hagamos un mundo de igualdad,
+   Re7                    Sol
+un mundo que despier<span class="ag">te al</span> amor,
+                            Re
+donde nadie se sienta extranjero.
+                      La7
+Hagamos un mundo verdadero,
+                      Re
+hagamos un mundo para <span class="gr">Dios</span>.
+</span>
+
+Al hombre que está sufriendo
+le muestras la salvación,
+rompiendo las estructuras
+de injusticia y opresión.
+Ve y grita a los cuatro vientos
+que es hora de despertar;
+se abre un canto de esperanza,
+un canto de libertad.
+
+   Sol   La7  Re
+Un mundo para Dios
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tr>
+                <th>Autor</th>
+                <td data-md="origen.autor"></td>
+            </tr>
+            <tr>
+                <th>Álbum</th>
+                <td data-md="origen.album"></td>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <td data-md="origen.num"></td>
+            </tr>
+            <tr>
+                <th>Año</th>
+                <td data-md="origen.año"></td>
+            </tr>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>
