@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Habrá un día (Canto a la libertad)",
+    "numeracion": {
+        "antiguo": 131,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Mi",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "José Antonio Labordeta",
+        "album": null,
+        "num": null,
+        "año": null
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": false,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=c-2WEnB1gkA"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="estribillo">
+Habrá un día en que todos,
+al levantar la vista,
+veremos una tierra que ponga libertad.
+</span>
+Hermano, aquí mi mano, será tuya mi frente
+y tu gesto de siempre caerá sin levantar
+huracanes de miedo ante la libertad.
+Haremos el camino en un mismo trazado,
+uniendo nuestros hombre para así levantar
+a aquellos que cayeron gritando libertad.
+
+Sonarán las campanas desde los campanarios,
+y los campos desiertos volverán a granar
+unas espigas altas dispuestas para el pan.
+Para un pan que, en los siglos, nunca fue repartido
+entre todos aquellos que hicieron lo posible
+por empujar la historia hacia la libertad.
+
+También será posible que esa hermosa mañana,
+ni tú, ni yo, ni el otro, la lleguemos a ver
+pero habrá que forzarla para que pueda ser.
+Que sea como un viento que arranque los matojos,
+surgiendo la verdad y limpie los caminos
+de siglos de destrozos contra la libertad.
+</span>
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tr>
+                <th>Autor</th>
+                <td data-md="origen.autor"></td>
+            </tr>
+            <tr>
+                <th>Álbum</th>
+                <td data-md="origen.album"></td>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <td data-md="origen.num"></td>
+            </tr>
+            <tr>
+                <th>Año</th>
+                <td data-md="origen.año"></td>
+            </tr>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>
