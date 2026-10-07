@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Juventud de todos los países (Canto a los jóvenes del mundo)",
+    "numeracion": {
+        "antiguo": 147,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Sol",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Juanjo Elezkano",
+        "album": "Que hable la verdad",
+        "num": null,
+        "año": null
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": false,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=-fYxJtrHbLI"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Juventud de todos los países,
+que queréis vivir en libertad,
+que soñáis con un mundo distinto
+y con una nueva sociedad.
+
+Juventud de todos los países,
+que creéis en una nueva paz,
+levantada sobre la justicia:
+ánimo que hay mucho por andar.
+<span class="estribillo">
+Será posible un mundo nuevo,
+si cambia mucho nuestro corazón,
+si se reparten con más justicia
+los bienes que a todos dio el Señor. (bis)
+</span>
+Juventud de todos los países,
+que sentís vacío y soledad,
+que sufrís por no tener trabajo,
+por tanta mentira y falsedad.
+
+Juventud de todos los países,
+que os dejáis llevar sin más ni más,
+despertad que hay lobos que no esperan
+y peligra vuestra libertad.
+
+
+Juventud de todos los países,
+no volváis de nuevo a repetir
+los errores de la antigua historia,
+que tanto nos hacen hoy sufrir.
+
+Juventud de todos los países,
+que heredáis un mundo de dolor,
+guerras y hambre, odios e injusticias,
+que todo lo hagáis mucho mejor.
+
+
+Juventud de todos los países,
+que tenéis un noble corazón,
+donde cabe un mundo diferente,
+donde cabe un hombre y vive Dios.
+
+Juventud de todos los países,
+descubrid cuál es vuestra misión;
+más allá de todas estas sombras
+se oyen cantos de liberación.
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tr>
+                <th>Autor</th>
+                <td data-md="origen.autor"></td>
+            </tr>
+            <tr>
+                <th>Álbum</th>
+                <td data-md="origen.album"></td>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <td data-md="origen.num"></td>
+            </tr>
+            <tr>
+                <th>Año</th>
+                <td data-md="origen.año"></td>
+            </tr>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>
