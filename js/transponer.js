@@ -168,29 +168,29 @@ function ajustarTamanoCancion(pre) {
 
 /* =========================================================
    INICIALIZACIÓN
-   ========================================================= */
+   =========================================================
 function ajustarTodasLasCanciones() {
     const canciones = document.querySelectorAll("pre");
 
     canciones.forEach(pre => {
         ajustarTamanoCancion(pre);
     });
-}
+}*/
 
 /* =========================================================
    CARGA INICIAL
-   ========================================================= */
+   ========================================================= 
 if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", () => {
         ajustarTodasLasCanciones();
     });
 } else {
     ajustarTodasLasCanciones();
-}
+}*/
 
 /* =========================================================
    OBSERVAR CAMBIOS REALES DE TAMAÑO
-   ========================================================= */
+   ========================================================= 
 const observer = new ResizeObserver(entries => {
     entries.forEach(entry => {
         const pre = entry.target;
@@ -201,7 +201,7 @@ const observer = new ResizeObserver(entries => {
             ajustarTamanoCancion(pre);
         }, 100);
     });
-});
+});*/
 
 document.querySelectorAll("pre").forEach(pre => {
     observer.observe(pre);
