@@ -86,7 +86,15 @@ document.addEventListener("DOMContentLoaded", () => {
         document.querySelectorAll("pre").forEach((pre) => {
             const html = pre.innerHTML;
             const lineas = html.split("\n");
-            const filtradas = lineas.filter((l) => !esLineaAcordes(l));
+
+            const filtradas = lineas.filter((linea) => {
+                // Conservar líneas vacías o que solo contienen espacios.
+                if (linea.trim() === "") return true;
+
+                // Eliminar únicamente las líneas de acordes.
+                return !esLineaAcordes(linea);
+            });
+
             if (filtradas.length !== lineas.length) {
                 pre.innerHTML = filtradas.join("\n");
             }
