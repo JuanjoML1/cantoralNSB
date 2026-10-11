@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "No he de morir, viviré",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Fa",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Cesáreo Gabarain",
+        "album": "Al atardecer de la vida",
+        "num": 6,
+        "año": 1991
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.mercaba.org/Musica/Cesareo%20Gabarain/Al%20Atardecer%20de%20la%20Vida/06%20-%20No%20he%20de%20morir,vivir%C3%A9.mp3"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="estribillo">
+Rem             Fa  Rem
+No he de morir, viviré
+Solm                  Rem La7 Rem
+por los siglos de los siglos.
+</span>
+Rem                  Fa        Rem
+Dad gracias al Señor porque es bueno,
+           Do    Sib      Rem
+porque es eterna su misericordia.
+Solm    La7         Rem
+Diga la casa de Israel:
+ Mim7b5   La7      Rem
+eterna es su misericordia.
+
+Escuchad: hay cantos de victoria
+en las tiendas de los justos:
+la diestra del Señor es excelsa,
+la diestra del Señor es poderosa.
+
+No he de morir, viviré
+para cantar las hazañas del Señor.
+Me castigó, me castigó el Señor,
+pero no me entregó a la muerte.
+
+Abridme las puertas del triunfo
+y entraré para dar gracias al Señor.
+Esta es la puerta del Señor:
+los vencedores entrarán por ella.
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tr>
+                <th>Autor</th>
+                <td data-md="origen.autor"></td>
+            </tr>
+            <tr>
+                <th>Álbum</th>
+                <td data-md="origen.album"></td>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <td data-md="origen.num"></td>
+            </tr>
+            <tr>
+                <th>Año</th>
+                <td data-md="origen.año"></td>
+            </tr>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

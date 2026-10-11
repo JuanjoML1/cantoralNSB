@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Una roca inmóvil",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Sol",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Cesáreo Gabarain",
+        "album": "Dios, hombre, mundo",
+        "num": 6,
+        "año": 1985
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.mercaba.org/Musica/Cesareo%20Gabarain/Dios%20Hombre%20Mundo/06%20-%20Una%20roca%20inm%C3%B3vil.mp3"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+    Sol
+Una roca inmóvil en su soledad,
+                       Re
+una flor o el pájaro feliz que ves
+
+no podrán vivir, no podrán gozar
+                               Sol
+esa vida singular que Dios nos da.
+<span class="estribillo">
+Sol                   Do
+Oh, yo quiero que esa luz
+       Lam           Re
+que un día en mí prendió
+                        Sol   Re    Sol
+jamás se esconda ni se apague su fulgor.
+                      Do
+Oh, yo quiero que mi amor
+ Lam          Re
+ayude a los demás
+                   Sol   Re   Sol
+a caminar por este valle de dolor.
+</span>
+En mi alma henchida de divinidad,
+palpitando el mismo palpitar de Dios,
+hay un resplandor, hay un cielo azul,
+hay un hondo respirar de eternidad.
+
+Cuando soy un sol que va estallando en luz
+y mi cuerpo es templo donde habita Dios,
+todo el cielo está en mi corazón
+empapándome de vida y de calor.
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tr>
+                <th>Autor</th>
+                <td data-md="origen.autor"></td>
+            </tr>
+            <tr>
+                <th>Álbum</th>
+                <td data-md="origen.album"></td>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <td data-md="origen.num"></td>
+            </tr>
+            <tr>
+                <th>Año</th>
+                <td data-md="origen.año"></td>
+            </tr>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

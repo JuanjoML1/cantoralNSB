@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Padre bueno, Dios alegre",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Re",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Cesáreo Gabarain",
+        "album": "Dios, hombre, mundo",
+        "num": 10,
+        "año": 1985
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.mercaba.org/Musica/Cesareo%20Gabarain/Dios%20Hombre%20Mundo/10%20-%20Padre%20bueno,%20Dios%20alegre.mp3"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+      Re
+Tú, Señor, que enciendes las estrellas,
+          Sol                  Re
+tú que al sol le das su resplandor,
+       Mim        La        Re
+tú que cuidas del pájaro perdido
+    Sim            Mim     Mi7         La
+que va buscando un nido guiado por tu amor.
+
+        Re
+Tu que siembras rosas y trigales,
+           Sol                   Re
+Tu que al lirio vistes de esplendor,
+       Mim      La            Re  
+nos proteges Señor con mas cariño,
+     Sim              Mim         La          Re
+pues quieres mas a un niño que al pájaro y la flor.
+<span class="estribillo">
+      Sol          Re          La          Re
+Padre bueno, Dios alegre, primavera y manantial,
+        Sol         Re          Mim    La    Re
+Dios hermano, Dios amigo, Padre nuestro Celestial. (bis)
+</span>
+Tú, Señor, que velas por el pobre,
+y al humilde das tu protección,
+al que amas le ofreces un tesoro
+que vale mas que el oro, le das tu corazón.
+
+Tú, Señor, que alumbras mi camino,
+tú que escuchas siempre mi oración,
+en tu amor pongo yo mi confianza,
+renace mi esperanza se acuna mi canción.
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tr>
+                <th>Autor</th>
+                <td data-md="origen.autor"></td>
+            </tr>
+            <tr>
+                <th>Álbum</th>
+                <td data-md="origen.album"></td>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <td data-md="origen.num"></td>
+            </tr>
+            <tr>
+                <th>Año</th>
+                <td data-md="origen.año"></td>
+            </tr>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

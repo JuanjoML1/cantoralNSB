@@ -17,6 +17,19 @@ btnTools.addEventListener("click", (e) => {
     e.stopPropagation(); // evita que el clic se propague al document
 });
 
+// Cerrar menús al pinchar en un enlace interno (ej. btn-indice a un h2)
+menu.querySelectorAll("a").forEach((a) => {
+    a.addEventListener("click", () => {
+        menu.classList.remove("abierto");
+    });
+});
+
+tools.querySelectorAll("a").forEach((a) => {
+    a.addEventListener("click", () => {
+        tools.classList.remove("abierto");
+    });
+});
+
 // Cerrar menús al hacer click fuera
 document.addEventListener("click", (e) => {
     // si el clic NO es dentro de los menús ni en los botones

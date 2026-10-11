@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Muy de mañana",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Do",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Cesáreo Gabarain",
+        "album": "Eres tú, María",
+        "num": 7,
+        "año": 1978
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.mercaba.org/Musica/Cesareo%20Gabarain/Eres%20Tu%20Maria/07%20-%20Muy%20de%20ma%C3%B1ana.mp3"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Do                  Fa           Do
+Muy de mañana María abandonó Nazaret,
+Fa               Do    Fa                  Sol
+un trotecillo contento la llevará hasta Isabel.
+Do                      Fa                   Do
+Nadie en el mundo sabía que ya llegó nuestro bien,
+Fa                   Do Sol                 Do
+que un borriquito traía al que esperaba Israel.
+<span class="estribillo">
+Do                  Fa   Sol          Do
+Por los caminos del alba amanecer de abril
+                  Fa     Sol            Do
+blandas orejas al viento y un caminar feliz.
+Sol7            Do         Sol7           Do
+Dime ¿por qué caminas así, tú, borriquito gris?
+                     Fa   Sol7            Do
+Porque jamás tuve un peso tan dulce sobre mí (bis).
+</span>
+Un pensamiento de cielo, ojos que miran sin ver,
+guarda un tesoro María en sus entrañas de miel.
+Qué silenciosa va el arca hecha de rosa y clavel,
+dentro sonríe escondido el que espera Israel.
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tr>
+                <th>Autor</th>
+                <td data-md="origen.autor"></td>
+            </tr>
+            <tr>
+                <th>Álbum</th>
+                <td data-md="origen.album"></td>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <td data-md="origen.num"></td>
+            </tr>
+            <tr>
+                <th>Año</th>
+                <td data-md="origen.año"></td>
+            </tr>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

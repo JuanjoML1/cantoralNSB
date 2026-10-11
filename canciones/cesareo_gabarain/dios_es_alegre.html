@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Dios es alegre",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Mi",
+        "cejilla": "cej1"
+    },
+    "origen": {
+        "autor": "Cesáreo Gabarain",
+        "album": "Dios, hombre, mundo",
+        "num": 3,
+        "año": 1985
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.mercaba.org/Musica/Cesareo%20Gabarain/Dios%20Hombre%20Mundo/03%20-%20Dios%20es%20alegre.mp3"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+   Mi
+Si Dios es alegre y joven
+      Si7     La        Si7
+si es bueno y sabe sonreír,
+     Mi    Mi7     La
+¿por qué rezar tan triste?
+          Mi          Si7       Mi
+¿por que vivir sin cantar, ni reír?
+          Si7            Mi
+Todas las flores y las estrellas,
+         Si7              Mi
+las cosa bellas, las hizo Dios,
+La    Si7           Mi
+el temblor de una mirada
+       Fa#m  Si7 Mi
+en una niña enamorada,
+La    Si7         Mi
+la ternura de una madre,
+           Fa#m Si7 Mi
+todo es sonrisa de Dios.
+<span class="estribillo">
+         Mi              La     Si7      Mi
+Dios es alegre, Dios es alegre, Dios es amor. (bis)
+</span>
+Si Dios busca mi alegría,
+si Dios me quiere hacer feliz,
+¿por qué callar mi canto?
+si es oración mi canción juvenil.
+El dio al arroyo su melodía
+y al nuevo día un ruiseñor;
+Dios alegre, Dios amigo,
+el Dios que siempre va conmigo,
+compartiendo mi esperanza,
+brindando vida y amor.
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tr>
+                <th>Autor</th>
+                <td data-md="origen.autor"></td>
+            </tr>
+            <tr>
+                <th>Álbum</th>
+                <td data-md="origen.album"></td>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <td data-md="origen.num"></td>
+            </tr>
+            <tr>
+                <th>Año</th>
+                <td data-md="origen.año"></td>
+            </tr>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>
