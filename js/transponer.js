@@ -122,87 +122,44 @@ function subirTono() { transposeAll(1); }
 function bajarTono() { transposeAll(-1); }
 
 /* =========================================================
-   AJUSTAR TAMAÑO DE LETRA
-   =========================================================
-function ajustarTamanoCancion(pre) {
-    const ancho = pre.clientWidth;
-    const tamañoBase = 16;
-    const tamañoMinimo = 8;
-    const tamañoMaximo = 22;
+   AJUSTAR TAMAÑO DE LETRA (shrink-to-fit)
+   - El CSS manda: pre { font-size: clamp(0.75rem, 1.5vw, 1.5rem); }
+   - Esto solo recorta si el pre desborda (scroll horizontal).
+   - Nunca agranda: parte del tamaño que dé el clamp.
+   - Mínimo 11px para no hacerlo ilegible.
+   ========================================================= */
+const FONT_MIN_PX = 11;
 
-    if (ancho <= 0) return;
-    // Buscar la línea más larga
-    const lineas = pre.textContent.split("\n");
+function ajustarPre(pre) {
+    // Volver al clamp antes de medir
+    pre.style.fontSize = "";
+    const disponible = pre.clientWidth;
+    if (disponible <= 0) return;
 
-    let maxCaracteres = 0;
+    let size = parseFloat(getComputedStyle(pre).fontSize);
+    if (isNaN(size)) return;
 
-    lineas.forEach(linea => {
-        maxCaracteres = Math.max(maxCaracteres, linea.length);
-    });
+    let guard = 40; // máx. 40 pasos de 0.5px = hasta -20px
+    while (guard-- > 0 && size > FONT_MIN_PX && pre.scrollWidth > disponible) {
+        size -= 0.5;
+        pre.style.fontSize = size + "px";
+    }
+}
 
-    if (maxCaracteres === 0) return;
-
-    // Medir usando SIEMPRE el tamaño base
-    const canvas = document.createElement("canvas");
-    const ctx = canvas.getContext("2d");
-
-    const estilo = getComputedStyle(pre);
-
-    ctx.font = `${tamañoBase}px ${estilo.fontFamily}`;
-
-    const anchoCaracter = ctx.measureText("M").width;
-
-    const anchoLinea = maxCaracteres * anchoCaracter;
-
-    // Calcular nuevo tamaño
-    let nuevoTamaño =
-        tamañoBase * (ancho / anchoLinea);
-
-    // Aplicar límites
-    nuevoTamaño = Math.max(
-        tamañoMinimo,
-        Math.min(tamañoMaximo, nuevoTamaño)
-    );
-    pre.style.fontSize = nuevoTamaño + "px";
-}*/
-
-/* =========================================================
-   INICIALIZACIÓN
-   =========================================================
 function ajustarTodasLasCanciones() {
-    const canciones = document.querySelectorAll("pre");
+    document.querySelectorAll("pre").forEach(ajustarPre);
+}
 
-    canciones.forEach(pre => {
-        ajustarTamanoCancion(pre);
-    });
-}*/
-
-/* =========================================================
-   CARGA INICIAL
-   ========================================================= 
+/* Carga inicial */
 if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", () => {
-        ajustarTodasLasCanciones();
-    });
+    document.addEventListener("DOMContentLoaded", ajustarTodasLasCanciones);
 } else {
     ajustarTodasLasCanciones();
-}*/
+}
 
-/* =========================================================
-   OBSERVAR CAMBIOS REALES DE TAMAÑO
-   ========================================================= 
-const observer = new ResizeObserver(entries => {
-    entries.forEach(entry => {
-        const pre = entry.target;
-        // Evitar recalcular mientras el navegador
-        // todavía está haciendo cambios de layout
-        clearTimeout(pre._ajusteTimeout);
-        pre._ajusteTimeout = setTimeout(() => {
-            ajustarTamanoCancion(pre);
-        }, 100);
-    });
-});*/
-
-document.querySelectorAll("pre").forEach(pre => {
-    observer.observe(pre);
+/* Resize global con debounce (no un observer por pre) */
+let _ajusteT = null;
+window.addEventListener("resize", () => {
+    clearTimeout(_ajusteT);
+    _ajusteT = setTimeout(ajustarTodasLasCanciones, 150);
 });

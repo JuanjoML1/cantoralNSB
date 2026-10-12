@@ -12,10 +12,11 @@ body {
 #buscador-container {
     display: flex;
     align-items: center;
-    /* centra verticalmente */
     gap: 0;
-    /* sin espacio entre elementos */
     margin-bottom: 1em;
+    border: 1px solid var(--linea-clara);
+    border-radius: 4px;
+    overflow: hidden;
 }
 
 #filtro,
@@ -23,7 +24,9 @@ body {
     height: 2.2em;
     box-sizing: border-box;
     font-size: 1em;
-    border: 1px solid var(--linea-clara);
+    border: 0;
+    background: var(--bg);
+    color: var(--texto);
 }
 
 #barra-fija {
@@ -32,33 +35,35 @@ body {
     background: var(--bg);
     padding: 10px;
     z-index: 1000;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid var(--linea-clara);
 }
 
 h2,
 h3 {
-    scroll-margin-top: 220px;
+    scroll-margin-top: calc(var(--barra-h) + 12px);
     /* ajusta a la altura de tu barra */
+}
+
+/* H2 de sección siempre visible al hacer scroll en index */
+body>h2 {
+    position: sticky;
+    top: var(--barra-h);
+    background: var(--bg);
+    z-index: 900;
+    padding: 10px 0 8px;
+    margin: 0;
 }
 
 /* Select con ancho fijo, sin margen */
 #filtro {
     flex: 0 0 100px;
-    border-right: 0;
-    /* unir con input */
     padding: 0 0.3em;
-    border-radius: 4px 0 0 4px;
-    /* redondea solo izquierda */
 }
 
 /* Input ocupa el resto, sin margen */
 #buscador {
     flex: 1;
     padding: 0 0.5em;
-    border-left: 0;
-    /* unir con select */
-    border-radius: 0 4px 4px 0;
-    /* redondea solo derecha */
 }
 
 /* --------------------- */
@@ -115,7 +120,7 @@ span.antiguo::after {
     /* oculto por defecto */
     width: 250px;
     height: 100vh;
-    padding: 20px 20px 20px 80px;
+    padding: 20px 20px 60px 80px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -126,33 +131,37 @@ span.antiguo::after {
     /* debajo de los botones */
 }
 
-#secciones-lateral::after,
-#tools-lateral::after {
-    content: "";
-    height: 40px;
-    flex-shrink: 0;
-}
-
 #secciones-lateral.abierto,
 #tools-lateral.abierto {
     left: 0;
+}
+
+/* Botones base: mismo fondo/hover en listas, menú y controles */
+.lista a,
+#secciones-lateral .btn-indice,
+#tools-lateral .btn-indice,
+#back-button,
+#controls-container button {
+    background-color: var(--bg-listas);
+    color: var(--texto);
+    transition: background-color 0.2s;
+}
+
+.lista a:hover,
+#secciones-lateral .btn-indice:hover,
+#tools-lateral .btn-indice:hover,
+#back-button:hover,
+#controls-container button:hover {
+    background-color: var(--hover-lista);
 }
 
 /* Enlaces dentro del menú */
 #secciones-lateral .btn-indice,
 #tools-lateral .btn-indice {
     padding: 8px 12px;
-    background-color: var(--bg-listas);
     border-radius: 5px;
-    color: var(--texto);
     font-weight: bold;
     text-decoration: none;
-    transition: background-color 0.2s;
-}
-
-#secciones-lateral .btn-indice:hover,
-#tools-lateral .btn-indice:hover {
-    background-color: var(--hover-lista);
 }
 
 .oculto {
@@ -180,15 +189,7 @@ span.antiguo::after {
     font-size: clamp(13px, 1.2vw, 18px);
     border-radius: 6px;
     border: none;
-    background-color: var(--bg-listas);
-    color: var(--texto);
     cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-#back-button:hover,
-#controls-container button:hover {
-    background-color: var(--hover-lista);
 }
 
 /* --------------------- */
@@ -216,7 +217,6 @@ hr {
     align-items: center;
     width: 46px;
     height: 46px;
-    margin-left: 0;
     border-radius: 50%;
     background: #c4302b;
     text-decoration: none;

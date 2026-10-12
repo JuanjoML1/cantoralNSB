@@ -18,6 +18,9 @@
 
     --sombra: rgba(0, 0, 0, 0.2);
 
+    /* Altura real de #barra-fija (la ajusta barra_lateral.js). */
+    --barra-h: 200px;
+
     /* Colores musicales */
     --estribillo: #00028e;
     --puente: #aa8844;

@@ -20,28 +20,11 @@ body {
 
 .lista a {
     display: block;
-    /* Hace que cada enlace ocupe toda la línea, clic fácil en móvil */
     text-align: center;
-    /* Centra el texto */
     padding: 0.5em 1em;
-    /* Espacio interno: 0.2em arriba/abajo, 1em izquierda/derecha */
     margin: 0.2em 0;
-    /* Separación entre enlaces: 0.2em arriba y abajo */
-    background-color: var(--bg-listas);
-    /* Color de fondo gris claro */
     text-decoration: none;
-    /* Quita el subrayado del enlace */
-    color: var(--texto);
-    /* Color del texto gris oscuro */
     border-radius: 4px;
-    /* Esquinas ligeramente redondeadas */
-    transition: background 0.2s;
-    /* Transición suave de 0.2s al cambiar el fondo (hover) */
-}
-
-.lista a:hover {
-    background-color: var(--hover-lista);
-    /* Cambia el fondo al pasar el cursor */
 }
 
 pre {
@@ -51,18 +34,7 @@ pre {
     max-width: 100%;
     margin: 0 auto;
     box-sizing: border-box;
-    /*    outline: 2px solid red;*/
 }
-
-/* PC
-@media (hover: hover) and (pointer: fine) and (min-width: 1200px) {
-    pre {
-        max-width: 2000px;
-        column-count: 2;
-        column-gap: 20px;
-        white-space: pre-wrap;
-    }
-}*/
 
 pre .estribillo {
     font-weight: bold;
@@ -86,7 +58,6 @@ pre .ag {
 }
 
 pre.original {
-    /*Los pre que son original. Con punto es "los original que estén dentro de un pre"*/
     font-style: italic;
     color: var(--texto);
 }
@@ -127,11 +98,6 @@ pre.original {
 
 .cancion-info th {
     font-weight: bold;
-    width: auto;
-    text-align: left;
-    border-right: 1px solid var(--estribillo);
-}
-
-.cancion-info th {
     text-align: right;
+    border-right: 1px solid var(--estribillo);
 }
