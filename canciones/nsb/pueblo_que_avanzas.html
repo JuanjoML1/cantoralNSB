@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Pueblo que avanzas",
+    "numeracion": {
+        "antiguo": 216,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Mim",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "José Pedro Martins",
+        "album": "Jesús, nuestra Pascua",
+        "num": null,
+        "año": null
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": false,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=D5aF8zJ8uww"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Mim         Do        Lam
+Pueblo que avanzas buscando
+Fa#m7/5º  Si7     Mim  (1ª Lam / 2ª Mi7)
+la tierra de salvación (bis),
+Lam      Re      Sol Do
+alza tus ojos al cie-lo,
+Lam/Fa# Si7     Mim (1ª Mi7)
+en él está su Señor (bis).
+
+La tierra que te prometo
+mana leche y mana miel (bis),
+procura que la injusticia
+no siembre en ella su hiel (bis).
+
+Haz de la sed del desierto
+un manantial de esperanza (bis),
+deja maltrecho el cansancio
+con cada paso que avanzas (bis).
+
+Pueblo que tienes la herencia
+de un Dios que resucitó (bis),
+rompe los muros del miedo
+y alcanza la salvación (bis).
+
+Si se prolonga la noche
+y acosa la oscuridad (bis),
+será la fe de tus pasos
+la luz que te guiará (bis).
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tr>
+                <th>Autor</th>
+                <td data-md="origen.autor"></td>
+            </tr>
+            <tr>
+                <th>Álbum</th>
+                <td data-md="origen.album"></td>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <td data-md="origen.num"></td>
+            </tr>
+            <tr>
+                <th>Año</th>
+                <td data-md="origen.año"></td>
+            </tr>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>
