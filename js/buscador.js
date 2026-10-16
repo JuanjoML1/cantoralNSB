@@ -82,12 +82,14 @@ function filtrar() {
     });
 
     // Luego, ocultar H2 si todos sus H3/UL asociados están ocultos
+    // (saltando los span.ancla-seccion, que no cuentan como contenido)
     document.querySelectorAll("h2").forEach(h2 => {
         let next = h2.nextElementSibling;
         let algunVisible = false;
 
         while (next && next.tagName !== "H2") {
-            if (next.style.display !== "none") {
+            const esAncla = next.classList && next.classList.contains("ancla-seccion");
+            if (!esAncla && next.style.display !== "none") {
                 algunVisible = true;
                 break;
             }
