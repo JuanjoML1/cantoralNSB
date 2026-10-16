@@ -56,20 +56,27 @@ document.getElementById("btn-acerca")?.addEventListener("click", () => {
     window.location.href = "acerca.html";
 });
 
-// Ajustar la altura de la barra fija para los h2 pegajosos (index)
-// Mide #barra-fija (+ botonera superior en móvil) y la expone como --barra-h
+// Ajustar la altura fija superior y exponerla como --barra-h.
+// - PC: solo #barra-fija es sticky -> se mide.
+// - Móvil: botonera fija arriba + #barra-fija sticky debajo -> se suman.
 function actualizarAlturaBarra() {
+    const lateral = document.getElementById("lateral-controles");
+    const altoLateral = lateral ? Math.ceil(lateral.getBoundingClientRect().height) : 0;
+
     const barra = document.getElementById("barra-fija");
-    if (!barra) return;
-    let h = Math.ceil(barra.getBoundingClientRect().height);
-    // En móvil la botonera está arriba en fila: sumar su altura
-    if (window.matchMedia("(max-width: 700px)").matches) {
-        const lateral = document.getElementById("lateral-controles");
-        if (lateral) {
-            h += Math.ceil(lateral.getBoundingClientRect().height);
-        }
+    if (!barra) {
+        document.documentElement.style.setProperty("--barra-h", altoLateral + "px");
+        return;
     }
-    document.documentElement.style.setProperty("--barra-h", h + "px");
+
+    const hBarra = Math.ceil(barra.getBoundingClientRect().height);
+
+    if (window.matchMedia("(max-width: 700px)").matches) {
+        document.documentElement.style.setProperty("--barra-h", (altoLateral + hBarra) + "px");
+        return;
+    }
+
+    document.documentElement.style.setProperty("--barra-h", hBarra + "px");
 }
 
 window.addEventListener("load", actualizarAlturaBarra);

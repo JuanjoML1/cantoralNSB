@@ -50,28 +50,26 @@ h3 {
     display: block;
     height: 0;
     overflow: hidden;
-    scroll-margin-top: calc(var(--barra-h));
+    scroll-margin-top: calc(var(--barra-h) - 2px);
+}
+
+/* Las anclas a h3 (Taizé) necesitan aire extra: bajo ellas queda
+   el h2 "Taizé" pegado como sticky y taparía el h3 destino. */
+#taiz_esp,
+#taiz_org {
+    scroll-margin-top: calc(var(--barra-h) + 24px);
 }
 
 /* H2 de sección siempre visible al hacer scroll en index */
 body>h2 {
     position: sticky;
-    top: var(--barra-h);
+    /* solapa 2px con la cabecera para que no se cuele texto entre ambas;
+       el padding-top extra compensa y el texto queda en el mismo sitio */
+    top: calc(var(--barra-h) - 2px);
     background: var(--bg);
     z-index: 900;
-    padding: 10px 0 8px;
+    padding: 12px 0 8px;
     margin: 0;
-}
-
-/* El h2 vacío del final no debe ocupar ni pegarse */
-body>h2:empty,
-body>h2[style*="display: none"],
-body>h2[style*="display:none"] {
-    display: none;
-    position: static;
-    padding: 0;
-    margin: 0;
-    border: 0;
 }
 
 /* Select con ancho fijo, sin margen */
@@ -155,34 +153,6 @@ body {
 }
 
 /* Móvil: botonera arriba en fila, sin tapar el contenido */
-@media (max-width: 700px) {
-    body {
-        padding-left: 20px;
-        /* se quita el hueco lateral */
-        padding-top: 60px;
-        /* hueco para la botonera superior */
-    }
-
-    #lateral-controles {
-        top: 0;
-        left: 0;
-        right: 0;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-        padding: 8px;
-        background: var(--bg);
-        border-bottom: 1px solid var(--linea-clara);
-    }
-
-    #secciones-lateral,
-    #tools-lateral {
-        padding: 20px;
-        /* sin hueco lateral para botones en móvil */
-    }
-}
-
 #secciones-lateral,
 #tools-lateral {
     overflow-y: auto;
@@ -208,6 +178,53 @@ body {
 #secciones-lateral.abierto,
 #tools-lateral.abierto {
     left: 0;
+}
+
+/* Móvil: botonera arriba en fila, sin tapar el contenido.
+   Va DESPUÉS de la base para que gane en cascada. */
+@media (max-width: 700px) {
+    body {
+        padding-left: 20px;
+        /* se quita el hueco lateral */
+        padding-top: 60px;
+        /* justo la botonera superior fija */
+    }
+
+    #barra-fija {
+        position: sticky;
+        top: 60px;
+        /* bajo la botonera superior fija, como en PC */
+        z-index: 1000;
+    }
+
+    body>h2 {
+        /* pegado bajo barra + botonera (lo mide --barra-h),
+           con 2px de solape para que no se cuele texto */
+        padding: 8px 0 6px;
+        top: calc(var(--barra-h) - 2px);
+    }
+
+    #lateral-controles {
+        top: 0;
+        left: 0;
+        right: 0;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        padding: 8px;
+        background: var(--bg);
+        border-bottom: 1px solid var(--linea-clara);
+    }
+
+    #secciones-lateral,
+    #tools-lateral {
+        top: 60px;
+        /* bajo la botonera superior fija */
+        height: calc(100vh - 60px);
+        padding: 12px 20px 20px;
+        /* sin hueco lateral para botones en móvil */
+    }
 }
 
 /* Botones base: mismo fondo/hover en listas, menú y controles */
