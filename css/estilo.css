@@ -38,6 +38,18 @@ body {
     border-bottom: 1px solid var(--linea-clara);
 }
 
+/* En páginas de texto normal (acerca): la cabecera sube con la página */
+#barra-fija.no-sticky {
+    position: static;
+}
+
+@media (max-width: 700px) {
+    /* En móvil la botonera es fija arriba: dejarle hueco aunque no haya sticky */
+    #barra-fija.no-sticky {
+        margin-top: 60px;
+    }
+}
+
 h2,
 h3 {
     scroll-margin-top: calc(var(--barra-h) + 12px);
@@ -60,7 +72,8 @@ h3 {
     scroll-margin-top: calc(var(--barra-h) + 24px);
 }
 
-/* H2 de sección siempre visible al hacer scroll en index */
+/* H2 de sección siempre visible al hacer scroll en index.
+   Solo en index: en acerca/crear_hoja el texto es normal, sin sticky. */
 body>h2 {
     position: sticky;
     /* solapa 2px con la cabecera para que no se cuele texto entre ambas;
@@ -199,7 +212,8 @@ body {
 
     body>h2 {
         /* pegado bajo barra + botonera (lo mide --barra-h),
-           con 2px de solape para que no se cuele texto */
+           con 2px de solape para que no se cuele texto.
+           Solo en index: en acerca el texto es normal. */
         padding: 8px 0 6px;
         top: calc(var(--barra-h) - 2px);
     }
