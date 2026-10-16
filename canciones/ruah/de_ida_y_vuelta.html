@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Yo pensaba que el hombre era grande",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Re",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Cesáreo Gabarain",
+        "album": null,
+        "num": null
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": null
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Re    La           Sol  Re    La         Sol
+De la mente al corazón, de mi corazón al tuyo,
+Re      La        Sol   Re      La      Sol
+y en tu corazón entrar, y en tu corazón descansar.
+
+De la mente al corazón, de mi corazón al tuyo,
+y en tu corazón callar, y en tu corazón respirar.
+
+Y a cada respiración vas llenando este espacio
+y a cada paso que das me vas diciendo "Te amo".
+
+Y en este viaje de vuelta de tu corazón al mío,
+        Re          La         Sol
+lo transformas todo nuevo y al mundo voy contigo,
+        Re          La         Sol
+lo transformas todo nuevo y al mundo voy contigo,
+        Re          La        Sol             Re
+lo transformas todo nuevo, al mundo vuelvo contigo .
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tr>
+                <th>Autor</th>
+                <td data-md="origen.autor"></td>
+            </tr>
+            <tr>
+                <th>Álbum</th>
+                <td data-md="origen.album"></td>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <td data-md="origen.num"></td>
+            </tr>
+            <tr>
+                <th>Año</th>
+                <td data-md="origen.año"></td>
+            </tr>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

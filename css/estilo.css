@@ -44,6 +44,15 @@ h3 {
     /* ajusta a la altura de tu barra */
 }
 
+/* Ancla de sección no-sticky: destino estable de los btn-indice.
+   El h2/h3 sigue siendo sticky, pero el salto va a este span. */
+.ancla-seccion {
+    display: block;
+    height: 0;
+    overflow: hidden;
+    scroll-margin-top: calc(var(--barra-h));
+}
+
 /* H2 de sección siempre visible al hacer scroll en index */
 body>h2 {
     position: sticky;
@@ -101,12 +110,26 @@ span.antiguo::after {
 }
 
 #lateral-controles button {
+    box-sizing: border-box;
+    flex: 0 0 auto;
     width: 55px;
     height: 55px;
+    min-width: 55px;
+    min-height: 55px;
+    max-width: 55px;
+    max-height: 55px;
     padding: 0;
-    font-size: 18px;
+    margin: 0;
+    font-size: 22px;
+    line-height: 55px;
     cursor: pointer;
     text-align: center;
+    appearance: none;
+    -webkit-appearance: none;
+    border: 1px solid var(--linea-clara);
+    border-radius: 8px;
+    background: var(--bg-listas);
+    color: var(--texto);
 }
 
 #secciones-lateral,

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Alégrate",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": 9
+    },
+    "musica": {
+        "tono": "Mi",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Maranatha",
+        "album": null,
+        "num": null,
+        "año": null
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=v3KER0rmj3s"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+      Re
+Puedo ver en tu mirada tu presencia,
+     Fa#m
+la belleza de aquel que me enamoró.
+      Sim                              Sol
+Tú llegaste a mí, solo quiero ir donde quieras tú.
+     Re
+Nada falta si eres tú quien va conmigo,
+      Fa#m
+donde vaya siempre llevaré tu paz,
+       Sim           La          Sol
+pon tu nombre en mis labios para ser tu luz.
+                                La
+Vas detrás de mí guardando el camino,
+       Sol                                 La
+sé que vas delante de mí escribiendo el destino.
+<span class="estribillo">
+          Re            La                  Sim
+Envíame a mí, envíame a mí, aquí estoy para ti,
+       Fa#m                 Sol   La
+quiero ser tu palabra en el mundo.
+          Re            La                    Sim
+Envíame a mí, envíame a mí, que encuentren en Ti
+     Fa#m                 Sol   La
+el tesoro más grande y profundo.
+          Re
+Envíame a mí.
+</span>
+        Sol         La
+Te seguiré, te seguiré.
+        Sol         La
+Te seguiré, te seguiré.
+        Sol            La
+Te seguiré con toda mi vida,
+        Sol              La
+te seguiré de noche y de día,
+        Sol            La
+te seguiré por toda la tierra.
+        Sol                La                Re
+Te seguiré aquí está mi respuesta: envíame a mí.
+<span class="estribillo">
+          Re            La                  Sim
+Envíame a mí, envíame a mí, aquí estoy para ti,
+       Fa#m                 Sol   La
+quiero ser tu palabra en el mundo.
+          Re            La                    Sim
+Envíame a mí, envíame a mí, que encuentren en Ti
+     Fa#m                 Sol   La
+el tesoro más grande y profundo.
+          Re
+Envíame a mí.
+</span>
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tr>
+                <th>Autor</th>
+                <td data-md="origen.autor"></td>
+            </tr>
+            <tr>
+                <th>Álbum</th>
+                <td data-md="origen.album"></td>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <td data-md="origen.num"></td>
+            </tr>
+            <tr>
+                <th>Año</th>
+                <td data-md="origen.año"></td>
+            </tr>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

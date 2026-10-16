@@ -57,19 +57,27 @@ function filtrar() {
 
     document.querySelectorAll("ul.lista").forEach(ul => {
         const visibles = ul.querySelectorAll("li:not([style*='display: none'])").length;
-        const header = ul.previousElementSibling;
 
-        // Ocultar o mostrar la lista y su cabecera (H3 normalmente)
+        // Cabecera visual: el H2/H3 previo (ahora hay un span.ancla en medio)
+        let header = ul.previousElementSibling;
+        while (header && !["H2", "H3"].includes(header.tagName)) {
+            header = header.previousElementSibling;
+        }
+        // Ancla no-sticky asociada (span.ancla-seccion justo delante del header)
+        let ancla = header ? header.previousElementSibling : null;
+        if (ancla && !(ancla.classList && ancla.classList.contains("ancla-seccion"))) {
+            ancla = null;
+        }
+
+        // Ocultar o mostrar la lista y su cabecera (H2/H3 normalmente)
         if (visibles === 0) {
             ul.style.display = "none";
-            if (header && ["H2", "H3"].includes(header.tagName)) {
-                header.style.display = "none";
-            }
+            if (header) header.style.display = "none";
+            if (ancla) ancla.style.display = "none";
         } else {
             ul.style.display = "";
-            if (header && ["H2", "H3"].includes(header.tagName)) {
-                header.style.display = "";
-            }
+            if (header) header.style.display = "";
+            if (ancla) ancla.style.display = "";
         }
     });
 
