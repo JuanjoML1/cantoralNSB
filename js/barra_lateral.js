@@ -57,11 +57,18 @@ document.getElementById("btn-acerca")?.addEventListener("click", () => {
 });
 
 // Ajustar la altura de la barra fija para los h2 pegajosos (index)
-// Mide #barra-fija y la expone como --barra-h (top + scroll-margin)
+// Mide #barra-fija (+ botonera superior en móvil) y la expone como --barra-h
 function actualizarAlturaBarra() {
     const barra = document.getElementById("barra-fija");
     if (!barra) return;
-    const h = Math.ceil(barra.getBoundingClientRect().height);
+    let h = Math.ceil(barra.getBoundingClientRect().height);
+    // En móvil la botonera está arriba en fila: sumar su altura
+    if (window.matchMedia("(max-width: 700px)").matches) {
+        const lateral = document.getElementById("lateral-controles");
+        if (lateral) {
+            h += Math.ceil(lateral.getBoundingClientRect().height);
+        }
+    }
     document.documentElement.style.setProperty("--barra-h", h + "px");
 }
 

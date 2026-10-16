@@ -110,6 +110,11 @@ span.antiguo::after {
 /* --------------------- */
 /* Botones fijos         */
 /* --------------------- */
+body {
+    padding-left: 60px;
+    /* hueco para la botonera lateral en PC */
+}
+
 #lateral-controles {
     position: fixed;
     top: 10px;
@@ -146,6 +151,35 @@ span.antiguo::after {
         width: 38px;
         height: 38px;
         font-size: 17px;
+    }
+}
+
+/* Móvil: botonera arriba en fila, sin tapar el contenido */
+@media (max-width: 700px) {
+    body {
+        padding-left: 20px;
+        /* se quita el hueco lateral */
+        padding-top: 60px;
+        /* hueco para la botonera superior */
+    }
+
+    #lateral-controles {
+        top: 0;
+        left: 0;
+        right: 0;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        padding: 8px;
+        background: var(--bg);
+        border-bottom: 1px solid var(--linea-clara);
+    }
+
+    #secciones-lateral,
+    #tools-lateral {
+        padding: 20px;
+        /* sin hueco lateral para botones en móvil */
     }
 }
 
