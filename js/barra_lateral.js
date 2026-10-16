@@ -81,8 +81,23 @@ function actualizarAlturaBarra() {
 
 window.addEventListener("load", actualizarAlturaBarra);
 window.addEventListener("resize", actualizarAlturaBarra);
+window.addEventListener("orientationchange", () => {
+    // la rotación cambia la altura: medir dos veces (antes y tras el reflow)
+    actualizarAlturaBarra();
+    setTimeout(actualizarAlturaBarra, 300);
+});
+if (document.fonts && document.fonts.ready) {
+    // en móvil real la fuente carga tarde y agranda la barra:
+    // volver a medir cuando esté lista + margen de seguridad
+    document.fonts.ready.then(() => {
+        actualizarAlturaBarra();
+        setTimeout(actualizarAlturaBarra, 300);
+    });
+}
 if (document.readyState === "loading") {
     document.addEventListener("DOMContentLoaded", actualizarAlturaBarra);
 } else {
     actualizarAlturaBarra();
 }
+// red de seguridad: por si algo (fuente, zoom, teclado) cambia la altura tarde
+setTimeout(actualizarAlturaBarra, 1000);
