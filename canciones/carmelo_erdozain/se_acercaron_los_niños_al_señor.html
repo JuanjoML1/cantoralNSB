@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Abre tu tienda al Señor",
+    "numeracion": {
+        "antiguo": 8,
+        "nuevo": "A03",
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Re",
+        "cejilla": "cej2"
+    },
+    "origen": {
+        "autor": "Carmelo Erdozáin",
+        "album": "Adviento, María y Navidad",
+        "num": 1,
+        "año": 1999
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": null
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="estribillo">
+       La            Fa#m
+Se acercaron, se acercaron
+    Re         La               Mi
+los niños al Señor y Él los abrazó.
+                 A                  F#m
+Se acercaron, se acercaron,
+         D              A             E7           A                
+los niños al Señor y al viento proclamó:
+
+            E                   E9             A
+De los niños es el Reino de Dios,
+             E                 E9               A
+de los niños es la paz y el perdón.
+          D                                   A
+Si seguís a Dios, dichosos seréis,
+                                         E
+lo veréis, lo veréis en el cielo.
+             D                                     A
+Si escucháis su voz, dichosos seréis,
+                                E7            A
+viviréis con Él y con Él cantaréis.
+
+           A               F#m
+A las aves, a los peces,
+         D             A                           E
+a las flores dibujó y a todos dio color.
+              A                  F#m
+Niños negros, niños blancos,
+         D                  A        E7                 A
+amarillos como el sol, a todos quiere Dios.
+
+        A                 F#m
+Una tarde al sacerdote 
+                 D             A                                            E
+en la parroquia pregunté:¿monaguillo puedo ser?
+         A                  F#m
+Una tarde al sacerdote,
+          D              A             E7          A
+en mi barrio le diré: misionera yo seré.
+  
+      A             F#m
+Contigo, conmigo,
+      D                   A                        E
+el mundo cambiará y todos cantarán.
+                 A                     F#m
+Dios es bueno, Dios nos ama,
+          D                      A        E7                    A
+repartamos nuestro pan, Jesús es nuestra paz.
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tr>
+                <th>Autor</th>
+                <td data-md="origen.autor"></td>
+            </tr>
+            <tr>
+                <th>Álbum</th>
+                <td data-md="origen.album"></td>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <td data-md="origen.num"></td>
+            </tr>
+            <tr>
+                <th>Año</th>
+                <td data-md="origen.año"></td>
+            </tr>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

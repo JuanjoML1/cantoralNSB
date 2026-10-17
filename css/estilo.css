@@ -38,16 +38,10 @@ body {
     border-bottom: 1px solid var(--linea-clara);
 }
 
-/* En páginas de texto normal (acerca): la cabecera sube con la página */
+/* En páginas de texto normal (acerca): la cabecera sube con la página.
+   El hueco de la botonera lo da body padding-top, no margen extra. */
 #barra-fija.no-sticky {
     position: static;
-}
-
-@media (max-width: 700px) {
-    /* En móvil la botonera es fija arriba: dejarle hueco aunque no haya sticky */
-    #barra-fija.no-sticky {
-        margin-top: 60px;
-    }
 }
 
 h2,
@@ -62,14 +56,14 @@ h3 {
     display: block;
     height: 0;
     overflow: hidden;
-    scroll-margin-top: calc(var(--barra-h) - 2px);
+    scroll-margin-top: calc(var(--barra-h) - 40px);
 }
 
 /* Las anclas a h3 (Taizé) necesitan aire extra: bajo ellas queda
    el h2 "Taizé" pegado como sticky y taparía el h3 destino. */
 #taiz_esp,
 #taiz_org {
-    scroll-margin-top: calc(var(--barra-h) + 24px);
+    scroll-margin-top: calc(var(--barra-h) + 36px);
 }
 
 /* H2 de sección siempre visible al hacer scroll en index.
@@ -119,21 +113,31 @@ span.antiguo::after {
 }
 
 /* --------------------- */
-/* Botones fijos         */
+/* Barra superior fija   */
 /* --------------------- */
+/* El header vive fuera del contenido: en PC es una columna a la izquierda
+   y el contenido se aparta con body padding-left; en móvil es una fila
+   arriba y el contenido se aparta con body padding-top. Un solo offset
+   por eje, así nada se solapa con el resto de paddings. */
+#barra-superior {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2000;
+    /* por encima de barra-fija (1000) y menús (1000) */
+    background: var(--bg);
+}
+
 body {
-    padding-left: 60px;
-    /* hueco para la botonera lateral en PC */
+    padding-left: 64px;
+    /* hueco para la columna de botones en PC (10+44+10) */
 }
 
 #lateral-controles {
-    position: fixed;
-    top: 10px;
-    left: 10px;
     display: flex;
     flex-direction: column;
     gap: 5px;
-    z-index: 1001;
+    padding: 10px;
 }
 
 #lateral-controles button {
@@ -193,20 +197,37 @@ body {
     left: 0;
 }
 
-/* Móvil: botonera arriba en fila, sin tapar el contenido.
-   Va DESPUÉS de la base para que gane en cascada. */
+/* Móvil: la botonera es una fila fija arriba, dentro del header.
+   El contenido solo se aparta con body padding-top (61px = 8+44+8+1
+   de border): un único offset, sin solapes con sticky ni con h2. */
 @media (max-width: 700px) {
     body {
         padding-left: 20px;
         /* se quita el hueco lateral */
-        padding-top: 60px;
-        /* justo la botonera superior fija */
+        padding-top: 61px;
+        /* exactamente la altura del header móvil */
+    }
+
+    #barra-superior {
+        right: 0;
+        /* ancho completo */
+        box-sizing: border-box;
+        height: 61px;
+        border-bottom: 1px solid var(--linea-clara);
+    }
+
+    #lateral-controles {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        padding: 8px;
     }
 
     #barra-fija {
         position: sticky;
-        top: 60px;
-        /* bajo la botonera superior fija, como en PC */
+        top: 61px;
+        /* justo bajo el header fijo */
         z-index: 1000;
     }
 
@@ -214,30 +235,22 @@ body {
         /* pegado bajo barra + botonera (lo mide --barra-h),
            con 2px de solape para que no se cuele texto.
            Solo en index: en acerca el texto es normal. */
-        padding: 8px 0 6px;
-        top: calc(var(--barra-h) - 2px);
-    }
-
-    #lateral-controles {
-        top: 0;
-        left: 0;
-        right: 0;
-        flex-direction: row;
-        justify-content: center;
-        align-items: center;
-        gap: 8px;
-        padding: 8px;
-        background: var(--bg);
-        border-bottom: 1px solid var(--linea-clara);
+        padding: 56px 0 10px;
+        top: calc(var(--barra-h) - 100px);
     }
 
     #secciones-lateral,
     #tools-lateral {
-        top: 60px;
-        /* bajo la botonera superior fija */
-        height: calc(100vh - 60px);
+        top: 61px;
+        /* bajo el header fijo */
+        height: calc(100vh - 61px);
         padding: 12px 20px 20px;
         /* sin hueco lateral para botones en móvil */
+    }
+
+    #taiz_esp,
+    #taiz_org {
+        scroll-margin-top: calc(var(--barra-h) + 0px);
     }
 }
 
