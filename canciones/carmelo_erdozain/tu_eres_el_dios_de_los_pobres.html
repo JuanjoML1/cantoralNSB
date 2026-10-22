@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Abre tu tienda al Señor",
+    "numeracion": {
+        "antiguo": 8,
+        "nuevo": "A03",
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Re",
+        "cejilla": "cej2"
+    },
+    "origen": {
+        "autor": "Carmelo Erdozáin",
+        "album": "Adviento, María y Navidad",
+        "num": 1,
+        "año": 1999
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": null
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="estribillo">
+   Sol                 Re7                         Sol
+Tú eres el Dios de los pobres, el Dios humano y sencillo,
+                       Re7                         Sol
+el Dios que suda en la calle, el Dios de rostro curtido.
+    Do                                        Sol
+Por eso es que te hablo yo, así como habla mi pueblo,
+                     Re7                     Sol
+porque eres el Dios obrero, el Cristo trabajador.
+</span>
+Do                       Sol
+Tú vas de la mano con mi gente,
+             Re7           Sol
+luchas en el campo y la ciudad,
+            Do             Sol
+haces fila allá en el campamento
+            Re7          Sol
+para que te paguen tu jornal.
+Do                          Sol
+Tú comes sentado allá en el parque
+             Re7             Sol
+con Eusebio, Pancho y Juan José,
+Do                         Sol
+y hasta protestas por el sirope
+             Re7         Sol
+cuando no le ponen mucha miel.
+
+Yo te he visto en una pulpería,
+instalado en un caramanchel,
+te he visto vendiendo lotería
+sin que te avergüence ese papel.
+Yo te he visto en las gasolineras
+revisando llantas a un camión
+y hasta trabajando en carreteras
+con guantes de cuero a pleno sol.
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tr>
+                <th>Autor</th>
+                <td data-md="origen.autor"></td>
+            </tr>
+            <tr>
+                <th>Álbum</th>
+                <td data-md="origen.album"></td>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <td data-md="origen.num"></td>
+            </tr>
+            <tr>
+                <th>Año</th>
+                <td data-md="origen.año"></td>
+            </tr>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

@@ -38,8 +38,6 @@ body {
     border-bottom: 1px solid var(--linea-clara);
 }
 
-/* En páginas de texto normal (acerca): la cabecera sube con la página.
-   El hueco de la botonera lo da body padding-top, no margen extra. */
 #barra-fija.no-sticky {
     position: static;
 }
@@ -47,20 +45,15 @@ body {
 h2,
 h3 {
     scroll-margin-top: calc(var(--barra-h) + 12px);
-    /* ajusta a la altura de tu barra */
 }
 
-/* Ancla de sección no-sticky: destino estable de los btn-indice.
-   El h2/h3 sigue siendo sticky, pero el salto va a este span. */
 .ancla-seccion {
     display: block;
     height: 0;
     overflow: hidden;
-    scroll-margin-top: calc(var(--barra-h) - 40px);
+    scroll-margin-top: calc(var(--barra-h));
 }
 
-/* Las anclas a h3 (Taizé) necesitan aire extra: bajo ellas queda
-   el h2 "Taizé" pegado como sticky y taparía el h3 destino. */
 #taiz_esp,
 #taiz_org {
     scroll-margin-top: calc(var(--barra-h) + 36px);
@@ -203,14 +196,11 @@ body {
 @media (max-width: 700px) {
     body {
         padding-left: 20px;
-        /* se quita el hueco lateral */
         padding-top: 61px;
-        /* exactamente la altura del header móvil */
     }
 
     #barra-superior {
         right: 0;
-        /* ancho completo */
         box-sizing: border-box;
         height: 61px;
         border-bottom: 1px solid var(--linea-clara);
@@ -232,11 +222,12 @@ body {
     }
 
     body>h2 {
-        /* pegado bajo barra + botonera (lo mide --barra-h),
-           con 2px de solape para que no se cuele texto.
-           Solo en index: en acerca el texto es normal. */
-        padding: 56px 0 10px;
-        top: calc(var(--barra-h) - 100px);
+        position: sticky;
+        padding: 12px 0 8px;
+        top: calc(var(--barra-h) - 2px);
+        background: var(--bg);
+        z-index: 900;
+        margin: 0;
     }
 
     #secciones-lateral,
@@ -360,4 +351,12 @@ hr {
 
 .youtube-button:active {
     transform: scale(.95);
+}
+
+@media (min-width: 769px) {
+    pre {
+        column-count: 2;
+        column-gap: 3vw;
+        column-fill: balance;
+    }
 }

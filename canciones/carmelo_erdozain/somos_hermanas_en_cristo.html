@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Abre tu tienda al Señor",
+    "numeracion": {
+        "antiguo": 8,
+        "nuevo": "A03",
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Re",
+        "cejilla": "cej2"
+    },
+    "origen": {
+        "autor": "Carmelo Erdozáin",
+        "album": "Adviento, María y Navidad",
+        "num": 1,
+        "año": 1999
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": null
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="estribillo">
+Re                Sim Re
+Somos hermanas en Cristo,
+Ka                   Re
+las mensajeras del Señor.
+                          Sim
+Él siempre está a nuestro lado,
+Mim     La7           Re
+Él nos orienta con su voz.
+</span>
+    La
+Me amó el Señor, me eligió y me envió el Señor
+                       La7
+a anunciar la Buena Nueva,
+Re                     Si7
+a anunciar la Buena Nueva
+Mim    La7          Re
+en comunión y en oración.
+
+Se entregó él por mí, me amó y se entregó por mí,
+nos amó hasta el extremo,
+nos amó hasta el extremo,
+Él dio la vida por amor.
+<span class="estribillo">
+"Hágase en mí tu Palabra"
+la Virgen Santa proclamó.
+"Sé de quién me he fiado,
+yo soy la esclava del Señor."
+</span>
+Llevaréis su voz con la antorcha de la vocación,
+comulgando con la Iglesia.
+Cristo será nuestra Fiesta
+en el trabajo y la oración.
+
+Viviréis en paz, creceréis en la fraternidad,
+estaréis junto a los pobres.
+Dios estará a nuestro lado,
+os llenará el corazón.
+<span class="estribillo">
+Somos hermanas en Cristo,
+las mensajeras del Señor.
+Él siempre está a nuestro lado,
+Él nos orienta con su voz.
+</span>
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tr>
+                <th>Autor</th>
+                <td data-md="origen.autor"></td>
+            </tr>
+            <tr>
+                <th>Álbum</th>
+                <td data-md="origen.album"></td>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <td data-md="origen.num"></td>
+            </tr>
+            <tr>
+                <th>Año</th>
+                <td data-md="origen.año"></td>
+            </tr>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>
