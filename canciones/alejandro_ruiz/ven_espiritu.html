@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Abbá, Padre",
+    "numeracion": {
+        "antiguo": 401,
+        "nuevo": "A02",
+        "rcce": 365
+    },
+    "musica": {
+        "tono": "Sol",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Alejandro Ruiz",
+        "album": null,
+        "num": null,
+        "año": null
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=jzE9G65V3uM"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="estribillo">
+Mim       La7  Do     Re  Mim
+Ven, ven, ven, ven, Espíritu.
+          La7  Do Re Mim
+Ven, ven, ven, llénanos.
+          La7  Do     Re  Mim
+Ven, ven, ven, ven, Espíritu.
+          La7  Si7
+Ven, ven, ven, ven.
+</span>
+Mim    Re     La7 Do
+Ven, Espíritu Santo.
+Mim Re Do Re Mim
+Ven, Espíritu,
+Mim    Re        La7      Do
+ven, calienta mi alma sin fuerzas,
+Mim       Re         Do Re Mim
+que tengo frío en el corazón.
+Si7
+Manda tu fuego que haga arder
+   Mim      Re  Do
+mi frío con tu amor,
+     Mim       Re   La7   Si7
+mi tibieza con tu calor. ¡Ven!
+<span class="estribillo">
+Mim       La7  Do     Re  Mim
+Ven, ven, ven, ven, Espíritu.
+          La7  Do Re Mim
+Ven, ven, ven, llénanos.
+          La7  Do     Re  Mim
+Ven, ven, ven, ven, Espíritu.
+          La7  Si7
+Ven, ven, ven, ven.
+</span>
+Ven, Espíritu Santo.
+Ven, Espíritu,
+ven y riega la tierra reseca,
+la tierra de mi corazón.
+Manda tu agua, que haga brotar
+a ti mi adoración r
+la alabanza a mi Señor. ¡Ven!
+<span class="estribillo">
+Mim       La7  Do     Re  Mim
+Ven, ven, ven, ven, Espíritu.
+          La7  Do Re Mim
+Ven, ven, ven, llénanos.
+          La7  Do     Re  Mim
+Ven, ven, ven, ven, Espíritu.
+          La7  Si7
+Ven, ven, ven, ven.
+</span>
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tr>
+                <th>Autor</th>
+                <td data-md="origen.autor"></td>
+            </tr>
+            <tr>
+                <th>Álbum</th>
+                <td data-md="origen.album"></td>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <td data-md="origen.num"></td>
+            </tr>
+            <tr>
+                <th>Año</th>
+                <td data-md="origen.año"></td>
+            </tr>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

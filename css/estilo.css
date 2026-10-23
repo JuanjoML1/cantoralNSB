@@ -190,14 +190,7 @@ body {
     left: 0;
 }
 
-/* Móvil: la botonera es una fila fija arriba, dentro del header.
-   El contenido solo se aparta con body padding-top (61px = 8+44+8+1
-   de border): un único offset, sin solapes con sticky ni con h2. */
 @media (max-width: 700px) {
-    body {
-        padding-left: 20px;
-        padding-top: 61px;
-    }
 
     #barra-superior {
         right: 0;
@@ -217,14 +210,13 @@ body {
     #barra-fija {
         position: sticky;
         top: 61px;
-        /* justo bajo el header fijo */
         z-index: 1000;
     }
 
     body>h2 {
         position: sticky;
-        padding: 12px 0 8px;
-        top: calc(var(--barra-h) - 2px);
+        padding: 56px 0 8px;
+        top: calc(var(--barra-h) - 44px);
         background: var(--bg);
         z-index: 900;
         margin: 0;
@@ -233,15 +225,22 @@ body {
     #secciones-lateral,
     #tools-lateral {
         top: 61px;
-        /* bajo el header fijo */
         height: calc(100vh - 61px);
         padding: 12px 20px 20px;
-        /* sin hueco lateral para botones en móvil */
     }
 
     #taiz_esp,
     #taiz_org {
         scroll-margin-top: calc(var(--barra-h) + 0px);
+    }
+
+    .ancla-seccion {
+        scroll-margin-top: calc(var(--barra-h) - 44px);
+    }
+
+    #taiz_esp,
+    #taiz_org {
+        scroll-margin-top: calc(var(--barra-h) + 48px);
     }
 }
 
