@@ -1,0 +1,93 @@
+Tu tarea es analizar la letra de una canción y generar un objeto JSON que contenga exclusivamente su análisis, siguiendo exactamente la estructura y las reglas que se indican a continuación.
+
+## 1. Categorías disponibles
+
+Recibirás las definiciones de las categorías válidas en tres bloques:
+- TEMAS: definidos en temas.txt.
+- MOMENTOS DE LA MISA: definidos en momentos_misa.txt.
+- TIEMPOS LITÚRGICOS Y CELEBRACIONES: definidos en tiempos_liturgicos.txt.
+
+Utiliza exclusivamente las categorías incluidas en esos archivos. Respeta literalmente sus nombres y sigue sus definiciones. No inventes nuevas categorías ni cambies los nombres existentes.
+
+Clasifica la canción según las categorías definidas (cero, una o más categorías) según su letra y su función litúrgica. No es necesario asignar ninguna categoría si no hay indicios claros.
+
+## 2. Temas
+
+Asigna temas que tengan fundamento suficiente en el contenido de la canción. No confundas el tema principal con otros temas secundarios que puedan aparecer incidentalmente, y evita clasificar por la mera aparición de una palabra.
+
+Devuelve una lista de cadenas de texto con los nombres exactos de las categorías definidas en TEMAS.
+
+## 3. Citas bíblicas
+
+Identifica las referencias bíblicas que puedan reconocerse en la letra. Utiliza el libro, capítulo y versículos más concretos que puedas identificar con suficiente seguridad.
+
+Devuelve exclusivamente referencias bíblicas normalizadas, sin reproducir el texto de los versículos y sin añadir explicaciones. Ejemplos de formato:
+- "Lc 19, 1-10"
+- "Jn 10, 11-18"
+- "Sal 23"
+- "1 Co 13, 1-13"
+
+No inventes referencias para completar las listas. Si conoces el pasaje pero no puedes determinar con seguridad los versículos exactos, utiliza una referencia más amplia únicamente si puedes justificarla por el contenido. Si no identificas ninguna referencia con suficiente fundamento, devuelve una lista vacía.
+
+No confundas una coincidencia de palabras habituales del lenguaje cristiano con una cita bíblica. Prioriza la precisión sobre la cantidad de referencias.
+
+Divide las referencias en dos listas:
+- explicitas: referencias identificables por una cita directa, una expresión textual distintiva o una alusión inequívoca a un pasaje bíblico concreto.
+- relacionadas: pasajes bíblicos que presentan una relación temática o conceptual significativa con la letra, pero que no constituyen una cita directa ni una alusión inequívoca.
+
+Una misma referencia no debe aparecer simultáneamente en explicitas y relacionadas. Si una referencia es claramente explícita, inclúyela en explicitas.
+
+Utiliza la Biblia de Jerusalén como referencia bíblica principal para identificar, contrastar y localizar los pasajes relacionados con la letra de la canción.
+
+## 4. Tiempo litúrgico
+
+Clasifica la canción según los tiempos litúrgicos para los que esté específicamente indicada o resulte claramente apropiada por su letra y función.
+
+Devuelve una lista con los nombres exactos de las categorías definidas en TIEMPOS LITÚRGICOS Y CELEBRACIONES que correspondan a tiempos litúrgicos.
+
+No asignes automáticamente Tiempo Ordinario a las canciones que no correspondan a otro tiempo. No deduzcas un tiempo litúrgico solo por la presencia de un tema genérico como el amor, la cruz, la esperanza o la alabanza.
+
+## 5. Celebraciones
+
+Identifica las celebraciones a las que esté vinculada la canción. Devuelve una lista con los nombres exactos de las categorías correspondientes definidas en TIEMPOS LITÚRGICOS Y CELEBRACIONES.
+
+Las categorías de tiempo litúrgico y celebración pueden coexistir si ambas están justificadas.
+
+## 6. Momento de la misa
+
+Clasifica la canción según el momento o los momentos de la misa en los que su letra y función litúrgica encajen de forma clara.
+
+Utiliza exclusivamente las categorías definidas en MOMENTOS DE LA MISA.
+
+No confundas una canción que habla de un tema con una canción destinada a un rito concreto. Por ejemplo, una canción sobre la paz no es necesariamente adecuada para el rito de la paz, ni una canción sobre la Eucaristía es necesariamente un canto de comunión.
+
+No asignes categorías por mera asociación temática. Si no hay información suficiente para identificar un momento, devuelve una lista vacía.
+
+## 7. Uso de la letra y los metadatos
+
+La letra es la fuente principal para el análisis.
+
+Utiliza el título y los metadatos como información auxiliar, nunca como prueba suficiente para asignar categorías.
+
+No interpretes los acordes, las anotaciones musicales ni los números de estrofa como parte del contenido teológico.
+
+## 8. Formato de salida obligatorio
+
+Devuelve exclusivamente un objeto JSON válido, sin Markdown, sin bloques de código y sin comentarios antes o después del JSON.
+
+Utiliza exactamente esta estructura:
+
+{
+  "temas": [],
+  "citas_biblicas": {
+    "explicitas": [],
+    "relacionadas": []
+  },
+  "tiempo_liturgico": [],
+  "celebraciones": [],
+  "momento_misa": []
+}
+
+Si una categoría no puede asignarse con suficiente seguridad, utiliza una lista vacía.
+
+Comprueba antes de responder que el resultado es JSON válido, que todas las claves están presentes exactamente una vez y que todos los nombres de categorías coinciden literalmente con las configuraciones proporcionadas.

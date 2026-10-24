@@ -1,0 +1,53 @@
+{
+  "metadata_version": 1,
+  "titulo": "Acompáñame, María",
+  "numeracion": {
+    "antiguo": null,
+    "nuevo": null,
+    "rcce": null
+  },
+  "musica": {
+    "tono": "Do",
+    "cejilla": ""
+  },
+  "origen": {
+    "autor": "Ain Karem",
+    "album": "Vivirás",
+    "num": 13,
+    "año": 2025
+  },
+  "analisis": {
+    "temas": [
+      "María",
+      "Jesucristo",
+      "Fe-Confianza",
+      "Espíritu Santo",
+      "Cruz",
+      "Comunidad"
+    ],
+    "tiempo_liturgico": [
+      "Adviento"
+    ],
+    "celebraciones": [
+      "Eucaristía"
+    ],
+    "momento_misa": [
+      "Comunión"
+    ],
+    "citas_biblicas": {
+      "explicitas": [],
+      "relacionadas": [
+        "Lc 1, 28-38",
+        "Jn 13, 1-15"
+      ]
+    }
+  },
+  "revision": {
+    "excel": true,
+    "ia": true,
+    "revisado": false
+  },
+  "enlaces": {
+    "youtube": "https://www.youtube.com/watch?v=UtWdKrwdc0A"
+  }
+}

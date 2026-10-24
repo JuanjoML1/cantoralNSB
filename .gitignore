@@ -1,10 +1,9 @@
 /ignore
-*.py
-/analisis
 ignore/Cancionero 2025.xlsx
 ignore/Cancionero 2025.xlsx
 ignore/Cancionero 2025.xlsx
 canciones_tono.csv
-*.py
-*.py
-*.py
+actualizar_metadata.py
+analisis_to_html.py
+cabeceras.py
+detectar_inline_tmp.py

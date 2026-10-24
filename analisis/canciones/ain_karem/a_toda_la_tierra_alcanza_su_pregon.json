@@ -1,0 +1,40 @@
+{
+    "metadata_version": 1,
+    "titulo": "A toda la tierra alcanza su pregón",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Sol",
+        "cejilla": "cej1"
+    },
+    "origen": {
+        "autor": "Ain Karem",
+        "album": "Según tu Palabra",
+        "num": 2,
+        "año": 2006
+    },
+    "analisis": {
+        "temas": [
+            "Alabanza",
+            "Dios Padre"
+        ],
+        "tiempo_liturgico": [],
+        "celebraciones": [],
+        "momento_misa": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        }
+    },
+    "revision": {
+        "excel": true,
+        "ia": true,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://open.spotify.com/intl-es/track/5sBvTtLJDKXUF0KadT1rKd?si=90aa0d87eb7d4492"
+    }
+}

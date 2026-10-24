@@ -1,0 +1,47 @@
+{
+  "metadata_version": 1,
+  "titulo": "A Ti",
+  "numeracion": {
+    "antiguo": null,
+    "nuevo": null,
+    "rcce": null
+  },
+  "musica": {
+    "tono": "Sol",
+    "cejilla": ""
+  },
+  "origen": {
+    "autor": "Ain Karem",
+    "album": "Con Él la fiesta empezó",
+    "num": 7,
+    "año": 2008
+  },
+  "analisis": {
+    "temas": [
+      "Alabanza",
+      "Dios Padre",
+      "Fe-Confianza"
+    ],
+    "tiempo_liturgico": [],
+    "celebraciones": [],
+    "momento_misa": [
+      "Gloria"
+    ],
+    "citas_biblicas": {
+      "explicitas": [],
+      "relacionadas": [
+        "Sal 104",
+        "Sal 145",
+        "Is 40, 28-31"
+      ]
+    }
+  },
+  "revision": {
+    "excel": true,
+    "ia": true,
+    "revisado": false
+  },
+  "enlaces": {
+    "youtube": "https://www.youtube.com/watch?v=dfTY2mvKbVI"
+  }
+}

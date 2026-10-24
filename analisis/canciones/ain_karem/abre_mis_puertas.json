@@ -1,0 +1,56 @@
+{
+    "metadata_version": 1,
+    "titulo": "Abre mis puertas",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Re",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Ain Karem",
+        "album": "Fuego y abrazo",
+        "num": 4,
+        "año": 2019
+    },
+    "analisis": {
+        "temas": [
+            "Eucaristía",
+            "Reino de Dios",
+            "Misión",
+            "Comunidad"
+        ],
+        "tiempo_liturgico": [
+            "Tiempo Ordinario"
+        ],
+        "celebraciones": [
+            "Eucaristía"
+        ],
+        "momento_misa": [
+            "Comunión"
+        ],
+        "citas_biblicas": {
+            "explicitas": [
+                "Lc 22, 14-20",
+                "Mt 26, 26-28",
+                "Mc 14, 22-24"
+            ],
+            "relacionadas": [
+                "Hch 2, 1-13",
+                "Mt 26, 26-28",
+                "Lc 22, 14-20"
+            ]
+        }
+    },
+    "revision": {
+        "excel": true,
+        "ia": true,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=vrRGe_GkKoE"
+    }
+}
