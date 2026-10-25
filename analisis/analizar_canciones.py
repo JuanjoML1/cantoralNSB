@@ -50,11 +50,11 @@ ESQUEMA_ANALISIS_VACIO = {
     "temas": [],
     "citas_biblicas": {
         "explicitas": [],
-        "relacionadas": [],
+        "relacionadas": []
     },
     "tiempo_liturgico": [],
     "celebraciones": [],
-    "momento_misa": [],
+    "momento_misa": []
 }
 
 def leer_texto(ruta: Path, obligatorio: bool = False) -> str:
