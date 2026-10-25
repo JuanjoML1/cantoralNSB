@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Abre tu tienda al Señor",
+    "numeracion": {
+        "antiguo": 8,
+        "nuevo": "A03",
+        "rcce": null
+    },
+    "musica": {
+        "tono": "Re",
+        "cejilla": "cej2"
+    },
+    "origen": {
+        "autor": "Carmelo Erdozáin",
+        "album": "Adviento, María y Navidad",
+        "num": 1,
+        "año": 1999
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": null
+    }
+}
+</script>
+        <link href="//css/colorescss" rel="stylesheet" />
+        <link href="//css/estilocss" rel="stylesheet" />
+        <link href="//css/estilo-textocss" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracionantiguo"></span>
+                <span class="nuevo" data-md="numeracionnuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musicatono"> </span>
+                <span data-md="musicacejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="windowlocationhref='//indexhtml'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="estribillo">
+La                Mi           La
+Nos habló el Señor del pan del cielo,
+                  Mi           La
+nos habló el Señor del pan de Amor.<span class="estribillo">
+Re            Mi       La      Mi La     Re  La
+Hoy nos da su Cuerpo y Sangre, manjar de comunión. (bis)
+</span>
+Reunidos hoy por su palabra,
+reunidos hoy por su manjar.<span class="estribillo">
+Damos gracias por la Pascua, alianza y memorial. (bis)
+</span>
+Invitado estoy: voy a su mesa,
+invitado soy del buen pastor.<span class="estribillo">
+En praderas de agua fresca me cuida con su amor. (bis)
+</span>
+En su altar nos da la vida eterna,
+en su altar nos da amor y paz.<span class="estribillo">
+Memorial de eterna alianza, manjar de hermandad. (bis)
+</span>
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlacesyoutube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tr>
+                <th>Autor</th>
+                <td data-md="origenautor"></td>
+            </tr>
+            <tr>
+                <th>Álbum</th>
+                <td data-md="origenalbum"></td>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <td data-md="origennum"></td>
+            </tr>
+            <tr>
+                <th>Año</th>
+                <td data-md="origenaño"></td>
+            </tr>
+        </table>
+    </body>
+    <script src="//js/transponerjs"></script>
+    <script src="//js/cambiar_temajs"></script>
+    <script src="//js/metadatajs"></script>
+</html>

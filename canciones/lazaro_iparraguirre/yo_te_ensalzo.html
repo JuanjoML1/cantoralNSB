@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 1,
+    "titulo": "Caminaremos",
+    "numeracion": {
+        "antiguo": null,
+        "nuevo": null,
+        "rcce": 142
+    },
+    "musica": {
+        "tono": "Re",
+        "cejilla": ""
+    },
+    "origen": {
+        "autor": "Lázaro Iparraguirre",
+        "album": null,
+        "num": null,
+        "año": null
+    },
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "celebraciones": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": true,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": "https://www.youtube.com/watch?v=tKSM_vijkgE"
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Rem                Do       Rem
+Yo te ensalzo, oh, Dios, mi Rey.
+          Do   Fa La
+Tu nombre bendeciré,
+Solm          Do   Fa         Sib
+por siempre jamás, cada nuevo día,
+Solm          La           Rem
+tu nombre por siempre alabaré.
+
+Rem            Do          Rem
+Porque tú eres grande, oh, Dios,
+           Do Fa La
+insondable tu saber.
+Solm     Do   Fa       Sib
+De generación en generación,
+Solm           La        Rem
+tus grandes proezas cantaré.
+<span class="estribillo">
+  Do                   Fa
+Misericordioso es el Señor,
+La                     Rem
+compasivo y grande en amor,
+            Do            Fa La
+Él envuelve todo en su bondad,
+Solm       La         Rem
+su ternura nunca acabará.
+
+Do                         Fa
+Que la creación cante al Señor
+La                           Rem
+en acción de gracias por su amor,
+           Do          Fa
+y que los amigos del Señor
+La Solm     La           Rem
+bendigan el nombre de su Dios.
+</span>
+Fiel a su Palabra es Dios,
+bueno con su creación;
+su poder sostiene a quienes vacilan,
+a quien desfallece da vigor.
+
+Los ojos vueltos a ti
+esperando tu favor;
+abres tú la mano, sacias el deseo
+de quien su esperanza en ti fijó.
+<span class="estribillo">
+Cerca está el Señor del corazón
+de quienes lo invocan con verdad;
+siempre atento escucha su clamor,
+los libera de toda opresión.
+
+De lo más profundo de mi ser,
+su alabanza siempre cantaré;
+y las criaturas del Señor,
+bendigan el nombre de sus Dios.
+</span>
+</pre>
+        <div class="youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tr>
+                <th>Autor</th>
+                <td data-md="origen.autor"></td>
+            </tr>
+            <tr>
+                <th>Álbum</th>
+                <td data-md="origen.album"></td>
+            </tr>
+            <tr>
+                <th>Nº</th>
+                <td data-md="origen.num"></td>
+            </tr>
+            <tr>
+                <th>Año</th>
+                <td data-md="origen.año"></td>
+            </tr>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>
