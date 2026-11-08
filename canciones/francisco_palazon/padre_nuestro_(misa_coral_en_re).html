@@ -7,23 +7,20 @@
         <title data-md="titulo"></title>
         <script id="nsb-metadata" type="application/json">
 {
-    "metadata_version": 1,
+    "metadata_version": 2,
     "titulo": "Padre nuestro (misa coral en Re)",
-    "numeracion": {
-        "antiguo": null,
-        "nuevo": null,
-        "rcce": null
-    },
     "musica": {
         "tono": "Re",
         "cejilla": ""
     },
-    "origen": {
-        "autor": "Francisco Palazón",
-        "album": "Misa coral en Re",
-        "num": 6,
-        "año": 2000
-    },
+    "origen": [
+        {
+            "autor": "Francisco Palazón",
+            "album": "Misa coral en Re",
+            "num": 6,
+            "año": 2000
+        }
+    ],
     "analisis": {
         "temas": [],
         "citas_biblicas": {
@@ -35,12 +32,17 @@
         "momento_misa": []
     },
     "revision": {
-        "excel": true,
+        "excel": false,
         "ia": false,
         "revisado": false
     },
     "enlaces": {
-        "youtube": "https://www.youtube.com/watch?v=bB9XvVIANp8"
+        "youtube": [
+            {
+                "tipo": "YouTube",
+                "url": "https://www.youtube.com/watch?v=bB9XvVIANp8"
+            }
+        ]
     }
 }
 </script>
@@ -90,27 +92,29 @@ No nos dejes caer en la tentación,
   Re   La      Re
 y líbranos del mal.
 </pre>
-        <div class="youtube">
-            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
             </a>
         </div>
         <table class="cancion-info">
-            <tr>
-                <th>Autor</th>
-                <td data-md="origen.autor"></td>
-            </tr>
-            <tr>
-                <th>Álbum</th>
-                <td data-md="origen.album"></td>
-            </tr>
-            <tr>
-                <th>Nº</th>
-                <td data-md="origen.num"></td>
-            </tr>
-            <tr>
-                <th>Año</th>
-                <td data-md="origen.año"></td>
-            </tr>
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
         </table>
     </body>
     <script src="../../js/transponer.js"></script>

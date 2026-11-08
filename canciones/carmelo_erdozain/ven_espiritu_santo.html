@@ -7,23 +7,20 @@
         <title data-md="titulo"></title>
         <script id="nsb-metadata" type="application/json">
 {
-    "metadata_version": 1,
+    "metadata_version": 2,
     "titulo": "Ven, Espíritu Santo",
-    "numeracion": {
-        "antiguo": 290,
-        "nuevo": null,
-        "rcce": null
-    },
     "musica": {
         "tono": "Re",
         "cejilla": ""
     },
-    "origen": {
-        "autor": "Carmelo Erdozáin",
-        "album": "Nuevos cantos para el año litúrgico",
-        "num": 9,
-        "año": 1989
-    },
+    "origen": [
+        {
+            "autor": "Carmelo Erdozáin",
+            "album": "Nuevos cantos para el año litúrgico",
+            "num": 9,
+            "año": 1989
+        }
+    ],
     "analisis": {
         "temas": [],
         "citas_biblicas": {
@@ -35,12 +32,17 @@
         "momento_misa": []
     },
     "revision": {
-        "excel": true,
+        "excel": false,
         "ia": false,
         "revisado": false
     },
     "enlaces": {
-        "youtube": "https://www.mercaba.org/Musica/Carmelo%20Erdozain/Nuevos%20Cantos%20Para%20el%20Año%20Liturgico/9%20ven%20espiritu%20santo.mp3"
+        "youtube": [
+            {
+                "tipo": "YouTube",
+                "url": "https://www.mercaba.org/Musica/Carmelo%20Erdozain/Nuevos%20Cantos%20Para%20el%20Año%20Liturgico/9%20ven%20espiritu%20santo.mp3"
+            }
+        ]
     }
 }
 </script>
@@ -96,27 +98,29 @@ Id, anunciad la esperanza;
 id, proclamad la Palabra,
 la Palabra y el Espíritu de Pentecostés.
 </pre>
-        <div class="youtube">
-            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
             </a>
         </div>
         <table class="cancion-info">
-            <tr>
-                <th>Autor</th>
-                <td data-md="origen.autor"></td>
-            </tr>
-            <tr>
-                <th>Álbum</th>
-                <td data-md="origen.album"></td>
-            </tr>
-            <tr>
-                <th>Nº</th>
-                <td data-md="origen.num"></td>
-            </tr>
-            <tr>
-                <th>Año</th>
-                <td data-md="origen.año"></td>
-            </tr>
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
         </table>
     </body>
     <script src="../../js/transponer.js"></script>

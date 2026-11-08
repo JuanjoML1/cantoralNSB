@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 2,
+    "titulo": "Queremos construir una ciudad",
+    "musica": {
+        "tono": "Fa",
+        "cejilla": ""
+    },
+    "origen": [
+        {
+            "autor": "Carmelo Erdozáin",
+            "album": "Cerca está el Señor",
+            "num": 7,
+            "año": 1978
+        }
+    ],
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "celebraciones": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": false,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": [
+            {
+                "tipo": "YouTube",
+                "url": "https://www.mercaba.org/Musica/Carmelo%20Erdozain/Cerca%20esta%20el%20Señor/7%20queremos%20construir%20una%20ciudad.mp3"
+            }
+        ]
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+   Fa                     Do7                Fa
+Queremos construir una ciudad, una ciudad en paz.
+                           Do7                 Fa
+Queremos confirmar en el altar nuestra fraternidad.
+    Sib        Do7
+Sin que haya esclavos, ni haya señores
+    Fa           Rem            Do7
+que no puedan cantar nuestra canción,
+    Sib      Do7
+sin que haya clases, ni diferencias
+      Fa          Do7          Fa
+que impidan compartir un mismo pan.
+<span class="estribillo">
+Fa                         Sib Fa
+Todos tenemos los mismos derechos,
+Fa                         Sib Fa
+todos tenemos los mismos deberes.
+Rem                      Do7              Fa
+Todos tenemos un mismo Padre, un mismo cielo,
+Rem                      Do7              Fa
+todos tenemos un mismo Padre, un mismo cielo.
+</span>
+Queremos construir una ciudad, una ciudad en paz.
+Queremos alcanzar la libertad, fruto de la verdad.
+Allá, entre todos, compartiremos,
+las penas, el esfuerzo y el amor.
+Allá, entre todos, descubriremos
+que el grano de semilla floreció.
+<span class="estribillo">
+Fa                       Sib Fa
+Todos tenemos un mismo Maestro,
+Fa                         Sib Fa
+todos tenemos un mismo evangelio.
+Rem                      Do7              Fa
+Todos tenemos un mismo Padre, un mismo cielo,
+Rem                      Do7              Fa
+todos tenemos un mismo Padre, un mismo cielo.
+</span>
+</pre>
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

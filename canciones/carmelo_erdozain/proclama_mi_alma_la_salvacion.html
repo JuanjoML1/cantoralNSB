@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 2,
+    "titulo": "Proclama mi alma la salvación",
+    "musica": {
+        "tono": "Re",
+        "cejilla": ""
+    },
+    "origen": [
+        {
+            "autor": "Carmelo Erdozáin",
+            "album": "Adviento, María y Navidad",
+            "num": 6,
+            "año": 1999
+        }
+    ],
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "celebraciones": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": false,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": [
+            {
+                "tipo": "YouTube",
+                "url": "https://www.mercaba.org/Musica/Adviento%20y%20Navidad/Adviento%20Maria%20y%20Navidad/proclama%20mi%20alma%20la%20salvacion.mp3"
+            }
+        ]
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="estribillo">
+   Re       La           Re    Mim La Re
+Proclama mi alma la salvación, aleluya,
+            Mim        La     Re La
+porque el Señor me visitó, aleluya,
+        Mim
+y en mi casa se hospedó,
+      Sim                Fa#m Re
+y su amor me enamoró, aleluya.
+</span>
+  Re   La7      Re               Mim    Sim La7
+María, Madre de Dios, de niña el sol te visitó,
+   Fa#m  Sim          Mim     La Re    La Re
+llenó de cielo tu corazón, aleluya, aleluya.
+
+María, aurora del sol, amaneciste junto a Dios
+y en su presencia creció tu amor, aleluya, aleluya.
+
+María, Madre de Dios, tus manos son semilla y flor,
+tus sueños se abren a los de Dios, aleluya, aleluya.
+</pre>
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

@@ -7,23 +7,17 @@
         <title data-md="titulo"></title>
         <script id="nsb-metadata" type="application/json">
 {
-    "metadata_version": 1,
-    "titulo": "El Señor es mi pastor",
-    "numeracion": {
-        "antiguo": null,
-        "nuevo": null,
-        "rcce": null
-    },
+    "metadata_version": 2,
+
+    "titulo": None,
+
     "musica": {
-        "tono": "Sol",
-        "cejilla": ""
+        "tono": None,
+        "cejilla": None
     },
-    "origen": {
-        "autor": "Cesáreo Gabarain",
-        "album": "Cantos de entrada y comunión",
-        "num": 11,
-        "año": 1988
-    },
+
+    "origen": [],
+
     "analisis": {
         "temas": [],
         "citas_biblicas": {
@@ -34,16 +28,19 @@
         "celebraciones": [],
         "momento_misa": []
     },
+
     "revision": {
-        "excel": true,
-        "ia": false,
-        "revisado": false
+        "excel": False,
+        "ia": False,
+        "revisado": False
     },
+
     "enlaces": {
-        "youtube": "https://www.mercaba.org/Musica/Cesareo%20Gabarain/Cantos%20de%20Entrada%20y%20Comunion/07%20-%20Cuaresma%20(Canto%20de%20comuni%C3%B3n).mp3"
+        "youtube": []
     }
 }
-</script>
+    </script>
+
         <link href="../../css/colores.css" rel="stylesheet" />
         <link href="../../css/estilo.css" rel="stylesheet" />
         <link href="../../css/estilo-texto.css" rel="stylesheet" />
@@ -89,27 +86,29 @@ Y ese Vino es su Sangre derramada porque me quiere. (bis)
 Me da el Pan de su Amor para que ame al mundo entero. (bis)
 Yo le ofrezco mi alma y mi latido porque le quiero. (bis)
 </pre>
-        <div class="youtube">
-            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
             </a>
         </div>
         <table class="cancion-info">
-            <tr>
-                <th>Autor</th>
-                <td data-md="origen.autor"></td>
-            </tr>
-            <tr>
-                <th>Álbum</th>
-                <td data-md="origen.album"></td>
-            </tr>
-            <tr>
-                <th>Nº</th>
-                <td data-md="origen.num"></td>
-            </tr>
-            <tr>
-                <th>Año</th>
-                <td data-md="origen.año"></td>
-            </tr>
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
         </table>
     </body>
     <script src="../../js/transponer.js"></script>

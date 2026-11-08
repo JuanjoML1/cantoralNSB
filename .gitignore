@@ -7,3 +7,4 @@ actualizar_metadata.py
 analisis_to_html.py
 cabeceras.py
 detectar_inline_tmp.py
+*.py

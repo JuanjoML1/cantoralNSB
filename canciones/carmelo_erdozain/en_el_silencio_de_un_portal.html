@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 2,
+    "titulo": "En el silencio de un portal",
+    "musica": {
+        "tono": "Sol",
+        "cejilla": ""
+    },
+    "origen": [
+        {
+            "autor": "Carmelo Erdozáin",
+            "album": "Adviento, María y Navidad",
+            "num": 10,
+            "año": 1999
+        }
+    ],
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "celebraciones": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": false,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": [
+            {
+                "tipo": "YouTube",
+                "url": "https://www.mercaba.org/Musica/Adviento%20y%20Navidad/Adviento%20Maria%20y%20Navidad/con%20el%20alba%20les%20despide.mp3"
+            }
+        ]
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Sol                Do       Sol
+Con el alba les despide Nazaret,
+                           Sol
+con el alba va María, va José,
+     Re7            Sol        Do7       Si7
+dura senda sin estrellas es la ruta de Belén.
+
+Sol               Do        Sol
+En sus ojos la alegría de mujer,
+                                 Sol
+en su frente la esperanza de Israel
+                     Re
+porque pronto va a nacer.
+<span class="estribillo">
+Do        Sol           Re             Sol7
+Él es Emmanuel, sueña María, lo dice José.
+Do        Sol           Re      Re7        Sol
+Él es Emmanuel, es el Mesías, será nuestro Rey.
+</span>
+Van llamando por las puertas de Belén
+no responden y ya empieza a anochecer
+y su niño va a nacer.
+<span class="estribillo">
+Do        Sol           Re             Sol7
+Él es Emmanuel, sueña María, lo dice José.
+Do        Sol           Re      Re7        Sol
+Él es Emmanuel, es el Mesías, será nuestro Rey.
+</span>
+Ha nacido en el silencio de un portal
+los pastores ya se acercan a adorar
+Nochebuena en la tierra, Nochebuena, Navidad.
+
+Con los ángeles queremos celebrar
+con los ángeles queremos entonar
+la plegaria de la paz.
+<span class="estribillo">
+Hoy es Navidad, canta la tierra, se alegra el portal.
+Hoy es Navidad, Gloria en el Cielo y en la tierra la paz.
+</span>
+</pre>
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

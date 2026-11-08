@@ -7,23 +7,17 @@
         <title data-md="titulo"></title>
         <script id="nsb-metadata" type="application/json">
 {
-    "metadata_version": 1,
-    "titulo": "Eres toda corazón (Veo en tus ojos, María)",
-    "numeracion": {
-        "antiguo": 288,
-        "nuevo": null,
-        "rcce": null
-    },
+    "metadata_version": 2,
+
+    "titulo": None,
+
     "musica": {
-        "tono": "Sol",
-        "cejilla": ""
+        "tono": None,
+        "cejilla": None
     },
-    "origen": {
-        "autor": "Ramón Capilla",
-        "album": "Peregrina de la fe",
-        "num": null,
-        "año": null
-    },
+
+    "origen": [],
+
     "analisis": {
         "temas": [],
         "citas_biblicas": {
@@ -34,16 +28,19 @@
         "celebraciones": [],
         "momento_misa": []
     },
+
     "revision": {
-        "excel": false,
-        "ia": false,
-        "revisado": false
+        "excel": False,
+        "ia": False,
+        "revisado": False
     },
+
     "enlaces": {
-        "youtube": "https://www.youtube.com/watch?v=pu1ZOHxag2M"
+        "youtube": []
     }
 }
-</script>
+    </script>
+
         <link href="../../css/colores.css" rel="stylesheet" />
         <link href="../../css/estilo.css" rel="stylesheet" />
         <link href="../../css/estilo-texto.css" rel="stylesheet" />
@@ -84,27 +81,29 @@ lucha de Liberación;
 rostro radiante de Gloria
 que a la Esperanza llegó.
 </pre>
-        <div class="youtube">
-            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
             </a>
         </div>
         <table class="cancion-info">
-            <tr>
-                <th>Autor</th>
-                <td data-md="origen.autor"></td>
-            </tr>
-            <tr>
-                <th>Álbum</th>
-                <td data-md="origen.album"></td>
-            </tr>
-            <tr>
-                <th>Nº</th>
-                <td data-md="origen.num"></td>
-            </tr>
-            <tr>
-                <th>Año</th>
-                <td data-md="origen.año"></td>
-            </tr>
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
         </table>
     </body>
     <script src="../../js/transponer.js"></script>

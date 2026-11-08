@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 2,
+    "titulo": "El señor es mi pastor",
+    "musica": {
+        "tono": "Do",
+        "cejilla": ""
+    },
+    "origen": [
+        {
+            "autor": "Carmelo Erdozáin",
+            "album": "Cantos para una comunidad evangelizadora",
+            "num": 4,
+            "año": 1990
+        },
+        {
+            "autor": "Carmelo Erdozáin",
+            "album": "Nuevos cantos para la misa",
+            "num": 5,
+            "año": null
+        }
+    ],
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "celebraciones": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": false,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": [
+            {
+                "tipo": "YouTube",
+                "url": "https://www.mercaba.org/Musica/Carmelo%20Erdozain/Cantos%20para%20una%20Comunidad%20Evangelizadora/4%20el%20señor%20es%20mi%20pastor.mp3"
+            }
+        ]
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+     Do           Sol          Lam
+El Señor es mi pastor, nada me falta.
+<span class="estribillo">
+     Do           Sol          Lam
+El Señor es mi pastor, nada me falta.
+</span>
+Do           Sol                Do
+En verdes praderas me hace recostar,
+             Sol7               Lam
+en verdes praderas me hace recostar,
+                             Sol Lam
+me conduce hacia fuentes tranquilas
+Sol          Lam
+y repara mis fuerzas.
+                          Sol
+Él me guía por el sendero justo,
+                   Lam    (Sol)
+por el honor de su nombre.
+<span class="estribillo">
+     Do           Sol          Lam
+El Señor es mi pastor, nada me falta.
+</span>
+Lam                         Sol Lam
+Aunque camine por cañadas oscuras
+     Sol7                  Lam
+nada temo porque tú vas conmigo,
+               Sol7      Lam    (Sol)
+tu vara y tu cayado me sosiegan.
+<span class="estribillo">
+     Do           Sol          Lam
+El Señor es mi pastor, nada me falta. (bis)
+</span>
+Lam          Sol       Lam
+Preparas una mesa ante mí,
+             Sol       Lam         Sol         Lam
+preparas una mesa ante mí enfrente de mis enemigos
+Rem7 Sol                      Lam
+y me unges la cabeza con perfume,
+            Rem        Lam    Sol Lam
+y mi copa rebosa, y mi copa rebosa.
+                                                   Sol Do
+Tu bondad, tu bondad y tu misericordia, y tu misericordia.
+<span class="estribillo">
+Do       Sol           Lam Sol                  Lam
+Me acompañan, me acompañan todos los días de mi vida.
+</span>
+Lam                         Mim7
+Y habitaré en la casa del Señor
+Sol          Lam
+por años sin término. (bis)
+<span class="estribillo">
+     Do           Sol          Lam
+El Señor es mi pastor, nada me falta.
+</span>
+</pre>
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

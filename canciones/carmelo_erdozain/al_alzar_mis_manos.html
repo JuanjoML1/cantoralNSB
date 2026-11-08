@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 2,
+    "titulo": "Al alzar mis manos",
+    "musica": {
+        "tono": "Re",
+        "cejilla": ""
+    },
+    "origen": [
+        {
+            "autor": "Carmelo Erdozáin",
+            "album": "Cantos para una comunidad evangelizadora",
+            "num": 8,
+            "año": 1990
+        }
+    ],
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "celebraciones": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": false,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": [
+            {
+                "tipo": "YouTube",
+                "url": "https://www.mercaba.org/Musica/Carmelo%20Erdozain/Cantos%20para%20una%20Comunidad%20Evangelizadora/8%20al%20alzar%20mis%20manos.mp3"
+            }
+        ]
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Re           Mim7  La7   Re
+Al alzar mis manos en oración,
+           Mim7 La7           Re
+ante Ti, Señor, siento el corazón
+   Mim7            La
+en paz, alegría y amor.
+Re         Mim7 La7           Re
+Ante Ti, Señor, siento el corazón
+   Mim7    La7     Re
+en paz, alegría y amor.
+<span class="estribillo">
+Sol      Re       Do           Fa#m7
+Dios es amor, mi amor, mi salvación.
+Sol      Re Sim7  La7           Re
+Dios es amor, mi amor y mi salvación.
+</span>
+Al abrir mis manos en comunión
+viene mi Señor, Él es mi manjar,
+mi pan, mi camino y mi hogar.
+Viene mi Señor, Él es mi manjar,
+mi pan, mi camino y mi hogar.
+<span class="estribillo">
+Dios es mi pan, mi pan y mi manjar.
+Dios es mi pan, mi pan, Él es mi manjar.
+</span>
+En la noche oscura, en soledad,
+siento que Él está, Él conmigo está
+abriendo la ruta pascual.
+Siento que Él está, Él conmigo está
+abriendo la ruta pascual.
+<span class="estribillo">
+Dios es mi paz, mi paz, mi libertad.
+Dios es mi paz, mi paz y mi libertad.
+</span>
+</pre>
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

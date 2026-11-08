@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 2,
+    "titulo": "Dios es amor, justicia y paz",
+    "musica": {
+        "tono": "Mi",
+        "cejilla": ""
+    },
+    "origen": [
+        {
+            "autor": "Carmelo Erdozáin",
+            "album": "Dios es Amor",
+            "num": 1,
+            "año": 1991
+        }
+    ],
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "celebraciones": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": false,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": [
+            {
+                "tipo": "YouTube",
+                "url": "https://www.mercaba.org/Musica/Carmelo%20Erdozain/Dios%20es%20Amor/1%20dios%20es%20amor.mp3"
+            }
+        ]
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="estribillo">
+Mi   Si7 La      Si7     La
+Dios es amor, justicia y paz,
+                Mi Si7
+mi fuerza y esperanza.
+Mi   Si7 La               Mi
+Dios es amor, es mi liberación,
+      Si7         Mi
+mi alegría y salvación. (bis)
+</span>
+    Mi              Sol+ La     Mi   Si7
+El amor es comprensivo, es servicial,
+    Mi             Sol#m Do#m   Fa#7      Si7
+el amor no tiene envidia ni se alegra del mal,
+    Sol#m       La Sol#m    Do#m Fa#m Si7 Mi
+el amor no pasa nunca, es el camino   mejor.
+<span class="estribillo">
+Dios es amor, justicia y paz,
+mi fuerza y esperanza.
+Dios es amor, es mi liberación,
+mi alegría y salvación.
+
+Dios es amor, amor de Dios,
+mi meta y mi sendero.
+Dios es amor, amor de Dios,
+será mi horizonte al caminar.
+</span>
+  Fa                Do         Sib       Fa
+Podría mover las montañas, conocer los secretos,
+     Sin        Fa Do
+repartir lo que tengo.
+   Fa                 Do         Sib           Fa
+Si no tengo amor nada vale, nada sirve, no soy nada,
+Do7                 Fa
+yo no soy nada sin amor.
+<span class="estribillo">
+Dios es amor, justicia y paz,
+mi fuerza y esperanza.
+Dios es amor, es mi liberación,
+mi alegría y salvación.
+
+Dios es amor, amor de Dios,
+mi meta y mi sendero.
+Dios es amor, amor de Dios,
+será mi horizonte al caminar.
+</span>
+</pre>
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

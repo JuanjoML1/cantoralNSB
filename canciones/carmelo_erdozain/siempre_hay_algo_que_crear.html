@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 2,
+    "titulo": "Siempre hay algo que crear",
+    "musica": {
+        "tono": "Re",
+        "cejilla": ""
+    },
+    "origen": [
+        {
+            "autor": "Carmelo Erdozáin",
+            "album": "Cantos para una comunidad evangelizadora",
+            "num": 1,
+            "año": 1990
+        }
+    ],
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "celebraciones": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": false,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": [
+            {
+                "tipo": "YouTube",
+                "url": "https://www.mercaba.org/Musica/Carmelo%20Erdozain/Cantos%20para%20una%20Comunidad%20Evangelizadora/1%20siempre%20hay%20algo%20que%20crear.mp3"
+            }
+        ]
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Re                     La7         Re  Mim
+Siempre en la vida hay algo que crear,
+Fa#m                   Sol     Mim      La7  Fa#m
+siempre en la vida hay cumbres que alcanzar,
+Sim7                   La7                 Re     La7    Sim7
+siempre en la vida hay flores, siempre hay cruces que llevar,
+Mim          La7              Re   La7
+siéntete peregrino y echa a andar.
+
+Re                     La7         Re  Mim
+Siempre en la vida hay algo que crear,
+Fa#m             Sol    Mim    La7  Fa#m
+mil proclamas al viento que gritar,
+Sim7       La7           Re    La7 Sim7
+una casa gigante que nos pueda cobijar
+  Mim           Sol          Re
+a todos los peregrinos de la paz.
+<span class="estribillo">
+Re  La7     Re          Fa#m7
+Siempre hay algo que crear,
+       Sol   Mim   La7    Sol      Re
+nuevas rutas y horizontes de hermandad.
+La7         Re          Fa#m7
+Siempre hay algo que esperar,
+    Sol            La7          Re
+Jesucristo es el camino y la Verdad.
+</span>
+Siempre en la vida hay algo en qué soñar,
+siempre hay una madre a quien rezar,
+siempre hay un camino que nos lleva más allá,
+siéntete peregrino y echa a andar.
+
+Siempre en la vida hay algo en qué esperar,
+un cielo y una tierra que Él nos da,
+una oración al Padre que nos haga levantar
+un mundo sin privilegios y en igualdad.
+<span class="estribillo">
+Re  La7     Re          Fa#m7
+Siempre hay algo que crear,
+       Sol   Mim   La7    Sol      Re
+nuevas rutas y horizontes de hermandad.
+La7         Re          Fa#m7
+Siempre hay algo que esperar,
+    Sol            La7          Re
+Jesucristo es el camino y la Verdad.
+</span>
+Sólo Él es la vida y la verdad,
+sólo Él la alegría y la amistad,
+sólo Él es la ruta de la nueva humanidad,
+síguele muy de cerca y vivirás.
+</pre>
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

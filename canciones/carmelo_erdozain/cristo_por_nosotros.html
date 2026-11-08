@@ -7,23 +7,20 @@
         <title data-md="titulo"></title>
         <script id="nsb-metadata" type="application/json">
 {
-    "metadata_version": 1,
+    "metadata_version": 2,
     "titulo": "Cristo por nosotros",
-    "numeracion": {
-        "antiguo": 59,
-        "nuevo": "D11",
-        "rcce": null
-    },
     "musica": {
         "tono": "La",
         "cejilla": "cej1"
     },
-    "origen": {
-        "autor": "Carmelo Erdozáin",
-        "album": "Hoy he vuelto de lejos",
-        "num": 9,
-        "año": 1976
-    },
+    "origen": [
+        {
+            "autor": "Carmelo Erdozáin",
+            "album": "Hoy he vuelto de lejos",
+            "num": 9,
+            "año": 1976
+        }
+    ],
     "analisis": {
         "temas": [],
         "citas_biblicas": {
@@ -35,12 +32,17 @@
         "momento_misa": []
     },
     "revision": {
-        "excel": true,
+        "excel": false,
         "ia": false,
         "revisado": false
     },
     "enlaces": {
-        "youtube": "https://www.mercaba.org/Musica/Carmelo%20Erdozain/Hoy%20he%20Vuelto%20de%20Lejos/9%20cristo%20por%20nosotros%20se%20sometio.mp3"
+        "youtube": [
+            {
+                "tipo": "YouTube",
+                "url": "https://www.mercaba.org/Musica/Carmelo%20Erdozain/Hoy%20he%20Vuelto%20de%20Lejos/9%20cristo%20por%20nosotros%20se%20sometio.mp3"
+            }
+        ]
     }
 }
 </script>
@@ -113,27 +115,29 @@ para que muertos al pecado, vivamos para la justicia.
                       Sol Re La                   Miº7 Fa#
 Cargado con nuestros pecados sus heridas nos han curado.
 </pre>
-        <div class="youtube">
-            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
             </a>
         </div>
         <table class="cancion-info">
-            <tr>
-                <th>Autor</th>
-                <td data-md="origen.autor"></td>
-            </tr>
-            <tr>
-                <th>Álbum</th>
-                <td data-md="origen.album"></td>
-            </tr>
-            <tr>
-                <th>Nº</th>
-                <td data-md="origen.num"></td>
-            </tr>
-            <tr>
-                <th>Año</th>
-                <td data-md="origen.año"></td>
-            </tr>
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
         </table>
     </body>
     <script src="../../js/transponer.js"></script>

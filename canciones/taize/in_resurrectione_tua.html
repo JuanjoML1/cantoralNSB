@@ -7,23 +7,26 @@
         <title data-md="titulo"></title>
         <script id="nsb-metadata" type="application/json">
 {
-    "metadata_version": 1,
-    "titulo": "In resurrectione tua",
-    "numeracion": {
-        "antiguo": null,
-        "nuevo": "Q46",
-        "rcce": null
-    },
+    "metadata_version": 2,
+    "titulo": "Alégrense el Cielo y la Tierra",
     "musica": {
         "tono": "Do",
         "cejilla": "cej2"
     },
-    "origen": {
-        "autor": "Taizé original",
-        "album": "Venite exultemus",
-        "num": 12,
-        "año": 2001
-    },
+    "origen": [
+        {
+            "autor": "Taizé en español",
+            "album": "Venite exultemus",
+            "num": 12,
+            "año": 2001
+        },
+        {
+            "autor": "Taizé original",
+            "album": "Venite exultemus",
+            "num": 12,
+            "año": 2001
+        }
+    ],
     "analisis": {
         "temas": [],
         "citas_biblicas": {
@@ -35,12 +38,17 @@
         "momento_misa": []
     },
     "revision": {
-        "excel": true,
+        "excel": false,
         "ia": false,
         "revisado": false
     },
     "enlaces": {
-        "youtube": "https://www.youtube.com/watch?v=ba9NpRJCfiQ"
+        "youtube": [
+            {
+                "tipo": "YouTube",
+                "url": "https://www.youtube.com/watch?v=ba9NpRJCfiQ"
+            }
+        ]
     }
 }
 </script>
@@ -83,27 +91,29 @@ In resurrectione   tua,    Christe, coeli et terra laetentur.
    Do        Sol Lam Rem   Lam      Rem      Fa       Do
 In resurrectione     tua,  Christe, coeli et terra laetentur.
 </pre>
-        <div class="youtube">
-            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
             </a>
         </div>
         <table class="cancion-info">
-            <tr>
-                <th>Autor</th>
-                <td data-md="origen.autor"></td>
-            </tr>
-            <tr>
-                <th>Álbum</th>
-                <td data-md="origen.album"></td>
-            </tr>
-            <tr>
-                <th>Nº</th>
-                <td data-md="origen.num"></td>
-            </tr>
-            <tr>
-                <th>Año</th>
-                <td data-md="origen.año"></td>
-            </tr>
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
         </table>
     </body>
     <script src="../../js/transponer.js"></script>

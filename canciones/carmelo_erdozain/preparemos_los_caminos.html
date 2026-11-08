@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 2,
+    "titulo": "Preparemos los caminos",
+    "musica": {
+        "tono": "Sol",
+        "cejilla": ""
+    },
+    "origen": [
+        {
+            "autor": "Carmelo Erdozáin",
+            "album": "Adviento, María y Navidad",
+            "num": 1,
+            "año": 1999
+        }
+    ],
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "celebraciones": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": false,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": [
+            {
+                "tipo": "YouTube",
+                "url": "https://www.mercaba.org/Musica/Adviento%20y%20Navidad/Adviento%20Maria%20y%20Navidad/preparemos%20los%20caminos.mp3"
+            }
+        ]
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+<span class="estribillo">
+Sol              Do     Re7                     Sol
+Preparemos los caminos, despertemos, llega el Señor.
+          Sim    Mim Lam       Re7            Sol
+Allanemos los senderos, ya se acerca la Liberación.
+</span>
+       Mim                    Re7        Mim
+Los profetas anunciaron la llegada del Señor,
+        Do              Sol                      Re
+por las calles, por las plazas la esperanza floreció,
+           Do    Re7        Sol
+viene el Mesías, viene el Señor.
+<span class="estribillo">
+Preparemos los caminos, despertemos, llega el Señor.
+Allanemos los senderos, ya se acerca la Liberación.
+</span>
+El Bautista en el desierto nos levanta con su voz,
+entre todos preparemos la justicia y el amor,
+viene el Mesías, Libertador.
+<span class="estribillo">
+Levantemos entre todos la justicia, la libertad.
+Enlacemos nuestras manos, ya se acerca la Liberación.
+</span>
+Una Virgen nazarena aguardaba al Redentor
+confiando en las promesas fue la Aurora del Amor,
+viene el Mesías, es mi Señor.
+<span class="estribillo">
+Hosanna al Rey del Cielo, hosanna al Reino de Dios,
+hosanna al mensajero, hosanna al Hijo de Dios.
+</span>
+</pre>
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

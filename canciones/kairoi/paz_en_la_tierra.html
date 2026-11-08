@@ -7,23 +7,20 @@
         <title data-md="titulo"></title>
         <script id="nsb-metadata" type="application/json">
 {
-    "metadata_version": 1,
+    "metadata_version": 2,
     "titulo": "Paz en la tierra",
-    "numeracion": {
-        "antiguo": 201,
-        "nuevo": "I06",
-        "rcce": null
-    },
     "musica": {
         "tono": "Do",
         "cejilla": "cej2"
     },
-    "origen": {
-        "autor": "Kairoi",
-        "album": "Y ahora, Señor",
-        "num": 1,
-        "año": 1985
-    },
+    "origen": [
+        {
+            "autor": "Kairoi",
+            "album": "Y ahora, Señor",
+            "num": 1,
+            "año": 1985
+        }
+    ],
     "analisis": {
         "temas": [],
         "citas_biblicas": {
@@ -35,12 +32,17 @@
         "momento_misa": []
     },
     "revision": {
-        "excel": true,
+        "excel": false,
         "ia": false,
         "revisado": false
     },
     "enlaces": {
-        "youtube": "https://www.maristes.cat/sites/default/files/content/nodes/recurs/file/8763/1pazenlatierra.mp3"
+        "youtube": [
+            {
+                "tipo": "YouTube",
+                "url": "https://www.maristes.cat/sites/default/files/content/nodes/recurs/file/8763/1pazenlatierra.mp3"
+            }
+        ]
     }
 }
 </script>
@@ -93,27 +95,29 @@ Que tu paz, hermano, sea don.
 Es el mejor signo de amor que tú nos puedes ofrecer:
 abrazo de paz.
 </pre>
-        <div class="youtube">
-            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
             </a>
         </div>
         <table class="cancion-info">
-            <tr>
-                <th>Autor</th>
-                <td data-md="origen.autor"></td>
-            </tr>
-            <tr>
-                <th>Álbum</th>
-                <td data-md="origen.album"></td>
-            </tr>
-            <tr>
-                <th>Nº</th>
-                <td data-md="origen.num"></td>
-            </tr>
-            <tr>
-                <th>Año</th>
-                <td data-md="origen.año"></td>
-            </tr>
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
         </table>
     </body>
     <script src="../../js/transponer.js"></script>

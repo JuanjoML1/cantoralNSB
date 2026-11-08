@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 2,
+    "titulo": "Se levanta la mañana",
+    "musica": {
+        "tono": "Sol",
+        "cejilla": ""
+    },
+    "origen": [
+        {
+            "autor": "Carmelo Erdozáin",
+            "album": "Dios es Amor",
+            "num": 11,
+            "año": 1991
+        }
+    ],
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "celebraciones": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": false,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": [
+            {
+                "tipo": "YouTube",
+                "url": "https://www.mercaba.org/Musica/Carmelo%20Erdozain/Dios%20es%20Amor/11%20se%20levanta%20la%20mañana.mp3"
+            }
+        ]
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+     Sol
+Se levanta la mañana en Nazaret,
+                                Re    Sol
+amanece la esperanza en Israel, Ave María.
+
+    Sol
+Caminando al encuentro de Isabel
+                                   Re    Sol
+saludaste con los himnos de Yahvé, Ave María.
+
+       Do
+Porque eres la elegida de Israel
+             Re   Do          Re
+de Ti va a nacer, nace el Mesías,
+        Sol Re    Sol
+Ave María, gratia plena.
+
+     Sol
+A su lado en la gruta de Belén,
+                                    Re     Sol
+a su lado, Madre buena, en Nazaret, gratia plena.
+
+     Do
+A su lado caminando con Jesús
+             Re    Do           Re
+subiste a la cruz, siempre a su lado,
+        Sol Re    Sol
+Ave María, gratia plena.
+
+Sol               Do                  Sol
+Siempre por los caminos de noche y de día,
+Re    Sol  Re     Sol
+Ave María, gratia plena.
+
+Sol                               Do            Re
+Nos enseñaste las sendas de Dios, Él fue tu vocación,
+Re        Sol  Re        Sol
+Dominus tecum, Dominus tecum.
+
+     Sol
+Se levanta la mañana en Nazaret,
+                                Re    Sol
+amanece la esperanza en Israel, Ave María.
+
+     Sol
+Eres Tú nuestra alegría y nuestra luz,
+                                      Re     Sol
+eres Tú la que nos lleva hasta Jesús, gratia plena.
+
+     Do
+Eres Tú nuestra esperanza y protección,
+           Re         Do         Re
+aurora del sol, Madre de nuestro Dios,
+        Sol Re    Sol
+Ave María, gratia plena.
+
+Sol               Do                  Sol
+Siempre por los caminos de noche y de día,
+Re       Sol  Re      Sol
+Sancta María, ora pro nobis.
+</pre>
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

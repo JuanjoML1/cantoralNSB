@@ -96,6 +96,10 @@ pre.original {
     padding: 0.4em 0.7em;
 }
 
+.cancion-info .inicio-edicion {
+    border-top: 1px solid var(--estribillo);
+}
+
 .cancion-info th {
     font-weight: bold;
     text-align: right;

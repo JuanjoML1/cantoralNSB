@@ -7,23 +7,17 @@
         <title data-md="titulo"></title>
         <script id="nsb-metadata" type="application/json">
 {
-    "metadata_version": 1,
-    "titulo": "Preparad el camino al Señor",
-    "numeracion": {
-        "antiguo": 449,
-        "nuevo": "A27",
-        "rcce": 215
-    },
+    "metadata_version": 2,
+
+    "titulo": None,
+
     "musica": {
-        "tono": "Mi",
-        "cejilla": ""
+        "tono": None,
+        "cejilla": None
     },
-    "origen": {
-        "autor": "Stephen Schwartz",
-        "album": null,
-        "num": null,
-        "año": null
-    },
+
+    "origen": [],
+
     "analisis": {
         "temas": [],
         "citas_biblicas": {
@@ -34,16 +28,19 @@
         "celebraciones": [],
         "momento_misa": []
     },
+
     "revision": {
-        "excel": true,
-        "ia": false,
-        "revisado": false
+        "excel": False,
+        "ia": False,
+        "revisado": False
     },
+
     "enlaces": {
-        "youtube": "https://www.youtube.com/watch?v=mKXgawmEQw0"
+        "youtube": []
     }
 }
-</script>
+    </script>
+
         <link href="../../css/colores.css" rel="stylesheet" />
         <link href="../../css/estilo.css" rel="stylesheet" />
         <link href="../../css/estilo-texto.css" rel="stylesheet" />
@@ -85,27 +82,29 @@ Haced rectas todas sus sendas, preparad el camino al Señor.”
 Voz que clama en el desierto: “Preparad el camino al Señor.
 Allanad sus senderos por siempre, preparad el camino al Señor.”
 </pre>
-        <div class="youtube">
-            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
             </a>
         </div>
         <table class="cancion-info">
-            <tr>
-                <th>Autor</th>
-                <td data-md="origen.autor"></td>
-            </tr>
-            <tr>
-                <th>Álbum</th>
-                <td data-md="origen.album"></td>
-            </tr>
-            <tr>
-                <th>Nº</th>
-                <td data-md="origen.num"></td>
-            </tr>
-            <tr>
-                <th>Año</th>
-                <td data-md="origen.año"></td>
-            </tr>
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
         </table>
     </body>
     <script src="../../js/transponer.js"></script>

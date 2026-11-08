@@ -29,11 +29,21 @@ const NOTE_INDEX = {
 const CHORD_REGEX =
     /(Do#|Re#|Fa#|Sol#|La#|Reb|Mib|Solb|Lab|Sib|Do|Re|Mi|Fa|Sol|La|Si|C#|D#|F#|G#|A#|Db|Eb|Gb|Ab|Bb|C|D|E|F|G|A|B)(m|maj7|7|sus4|sus2|º7|º|\+|m7b5)?/g;
 
-/* Guardar originales */
+/* Guardar originales y detectar cifrado */
 const PRE_ORIGINALS = [];
-document.querySelectorAll("pre").forEach(pre => PRE_ORIGINALS.push(pre.innerHTML));
+const PRE_CIFRADOS = [];
+document.querySelectorAll("pre").forEach(pre => {
+    const original = pre.innerHTML;
+    PRE_ORIGINALS.push(original);
 
-let currentCifrado = "latin";
+    // Detectar cifrado a partir de los acordes originales
+    const esIngles = /\b(C|D|E|F|G|A|B)(#|b)?(m|maj7|7|sus4|sus2)?\b/.test(
+        original.replace(/<[^>]*>/g, "")
+    );
+
+    PRE_CIFRADOS.push(esIngles ? "english" : "latin");
+});
+let currentCifrado = null;
 let currentSemitones = 0;
 
 /* Detecta si una línea es SOLO acordes */
@@ -91,8 +101,14 @@ function transposePre(pre, semitones, notesArray) {
 /* Transponer todo */
 function transposeAll(semitones) {
     currentSemitones += semitones;
-    const notesArray = currentCifrado === "latin" ? NOTES_LATIN : NOTES_EN;
+
     document.querySelectorAll("pre").forEach((pre, i) => {
+        const cifrado = currentCifrado || PRE_CIFRADOS[i];
+
+        const notesArray = cifrado === "latin"
+            ? NOTES_LATIN
+            : NOTES_EN;
+
         pre.innerHTML = PRE_ORIGINALS[i];
         transposePre(pre, currentSemitones, notesArray);
     });
@@ -100,9 +116,21 @@ function transposeAll(semitones) {
 
 /* Cambiar cifrado */
 function toggleCifrado() {
-    currentCifrado = currentCifrado === "latin" ? "english" : "latin";
-    const notesArray = currentCifrado === "latin" ? NOTES_LATIN : NOTES_EN;
+    // Si todavía no se ha cambiado manualmente,
+    // partir del cifrado original de la primera canción.
+    if (currentCifrado === null) {
+        currentCifrado = PRE_CIFRADOS[0] || "latin";
+    }
+
+    currentCifrado = currentCifrado === "latin"
+        ? "english"
+        : "latin";
+
     document.querySelectorAll("pre").forEach((pre, i) => {
+        const notesArray = currentCifrado === "latin"
+            ? NOTES_LATIN
+            : NOTES_EN;
+
         pre.innerHTML = PRE_ORIGINALS[i];
         transposePre(pre, currentSemitones, notesArray);
     });
@@ -111,7 +139,8 @@ function toggleCifrado() {
 /* Reset */
 function resetTono() {
     currentSemitones = 0;
-    currentCifrado = "latin";
+    currentCifrado = null;
+
     document.querySelectorAll("pre").forEach((pre, i) => {
         pre.innerHTML = PRE_ORIGINALS[i];
     });

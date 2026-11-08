@@ -7,23 +7,20 @@
         <title data-md="titulo"></title>
         <script id="nsb-metadata" type="application/json">
 {
-    "metadata_version": 1,
+    "metadata_version": 2,
     "titulo": "Cantan los ángeles en Belén",
-    "numeracion": {
-        "antiguo": 46,
-        "nuevo": null,
-        "rcce": null
-    },
     "musica": {
         "tono": "Sol",
         "cejilla": ""
     },
-    "origen": {
-        "autor": "Gregorio Fernández",
-        "album": "Esperando al Señor",
-        "num": null,
-        "año": 1985
-    },
+    "origen": [
+        {
+            "autor": "Gregorio Fernández",
+            "album": "Esperando al Señor",
+            "num": null,
+            "año": 1985
+        }
+    ],
     "analisis": {
         "temas": [],
         "citas_biblicas": {
@@ -35,12 +32,17 @@
         "momento_misa": []
     },
     "revision": {
-        "excel": true,
+        "excel": false,
         "ia": false,
         "revisado": false
     },
     "enlaces": {
-        "youtube": "https://www.youtube.com/watch?v=k6iNXzX-sEc"
+        "youtube": [
+            {
+                "tipo": "YouTube",
+                "url": "https://www.youtube.com/watch?v=k6iNXzX-sEc"
+            }
+        ]
     }
 }
 </script>
@@ -105,27 +107,29 @@ Le ofrecen oro, incienso y mirra.
 Saben que aquel niño es Hijo de Dios,
 que ha venido al mundo como Salvador.
 </pre>
-        <div class="youtube">
-            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
             </a>
         </div>
         <table class="cancion-info">
-            <tr>
-                <th>Autor</th>
-                <td data-md="origen.autor"></td>
-            </tr>
-            <tr>
-                <th>Álbum</th>
-                <td data-md="origen.album"></td>
-            </tr>
-            <tr>
-                <th>Nº</th>
-                <td data-md="origen.num"></td>
-            </tr>
-            <tr>
-                <th>Año</th>
-                <td data-md="origen.año"></td>
-            </tr>
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
         </table>
     </body>
     <script src="../../js/transponer.js"></script>

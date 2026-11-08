@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 2,
+    "titulo": "Paz para respirar",
+    "musica": {
+        "tono": "Re",
+        "cejilla": ""
+    },
+    "origen": [
+        {
+            "autor": "Carmelo Erdozáin",
+            "album": "Adviento, María y Navidad",
+            "num": 14,
+            "año": 1999
+        }
+    ],
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "celebraciones": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": false,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": [
+            {
+                "tipo": "YouTube",
+                "url": "https://www.mercaba.org/Musica/Adviento%20y%20Navidad/Adviento%20Maria%20y%20Navidad/sopla%20el%20viento.mp3"
+            }
+        ]
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+Re                        La    Sim
+Sopla el viento, calla el miedo de repente,
+Fa#7                Sim
+en los montes de mi tierra,
+Sol                   Re         La
+una estrella cruza el cielo y amanece.
+Re                   La   Sim
+Gentes que ganáis la vida con vuestras manos,
+Fa#7           Sim
+reunid a los mayores,
+Sol                     Re              La
+que ha nacido el Rey de Reyes que es también
+           Re
+Rey de los pobres.
+<span class="estribillo">
+  Re                La           Sol          Re
+Alzad la piedra más grande, arrastradla con sudores,
+   Sol               Re          La     Mi    La
+partid el tronco más recio, en honor de los honores.
+  Re               La         Sol                 Re
+Coged el hacha más fuerte, cantadle al roble y al haya,
+   Sol                  Re         La  Mi       La
+pensad que el que ahora nace os protegerá en el alba.
+</span>
+Hoy la montaña se viste de amor y tregua,
+ya no silbará el acero,
+lleno de luz está el cielo de mi pueblo.
+Reunid a vuestras gentes junto al fuego,
+dejad de una vez el miedo,
+gritad conmigo sinceros:
+que en mi tierra haya paz.
+<span class="estribillo">
+Paz para respirar, paz para ver la lluvia,
+paz para la esperanza que en forma de niño ha nacido ya.
+Sus manos están aún limpias, no las manchéis con mentiras,
+dejad que os traiga la vida, dejad que os traiga la paz.
+</span></pre>
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

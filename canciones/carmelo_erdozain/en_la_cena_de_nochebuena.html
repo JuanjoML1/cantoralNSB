@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 2,
+    "titulo": "En la cena de Nochebuena",
+    "musica": {
+        "tono": "Sol",
+        "cejilla": ""
+    },
+    "origen": [
+        {
+            "autor": "Carmelo Erdozáin",
+            "album": "Adviento, María y Navidad",
+            "num": 13,
+            "año": 1999
+        }
+    ],
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "celebraciones": [],
+        "momento_misa": []
+    },
+    "revision": {
+        "excel": false,
+        "ia": false,
+        "revisado": false
+    },
+    "enlaces": {
+        "youtube": [
+            {
+                "tipo": "YouTube",
+                "url": "https://www.mercaba.org/Musica/Adviento%20y%20Navidad/Adviento%20Maria%20y%20Navidad/en%20la%20cena%20de%20la%20nochebuena.mp3"
+            }
+        ]
+    }
+}
+</script>
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+      Sol
+En la cena de la Nochebuena,
+              Mim      Re
+en familia queremos cantar
+      Sol           Do Lam
+villancicos para el Niño,
+Re      Sim        Do       Re Sol
+para el Niño que está en el portal,
+      Sol           Do Lam
+villancicos para el Niño,
+Re      Sim        Do       Re Sol
+para el Niño que está en el portal.
+<span class="estribillo">
+Sol                 Do        Sol
+Gloria en el cielo, paz en la tierra,
+                    Do     Re
+Gloria en el cielo, es Navidad.
+Sol                 Do      Sol
+Gloria en el cielo, es Nochebuena,
+             Re7             Sol
+brilla una estrella en el portal.
+  Do     Re   Sol
+Belén, Belén, cantan pastores,
+  Do     Re       Re   Sol
+Belén, Belén, al anochecer.
+</span>
+Navidad es estrella y sendero,
+en el cielo de nuestra hermandad,
+en la noche los amigos
+nos unimos en torno al hogar,
+en la noche los amigos
+nos unimos cantando la paz.
+
+Con los pobres que sufren miseria
+compartimos el pan fraternal
+con los pobres de la tierra
+compartamos justicia, hermandad,
+con los pobres de la tierra
+compartamos la fiesta y la paz.
+</pre>
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

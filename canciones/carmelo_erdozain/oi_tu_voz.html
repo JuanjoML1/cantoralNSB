@@ -7,23 +7,20 @@
         <title data-md="titulo"></title>
         <script id="nsb-metadata" type="application/json">
 {
-    "metadata_version": 1,
+    "metadata_version": 2,
     "titulo": "Oí tu voz",
-    "numeracion": {
-        "antiguo": 184,
-        "nuevo": null,
-        "rcce": null
-    },
     "musica": {
         "tono": "Sol",
         "cejilla": ""
     },
-    "origen": {
-        "autor": "Carmelo Erdozáin",
-        "album": "Nuevos cantos para la misa",
-        "num": 12,
-        "año": null
-    },
+    "origen": [
+        {
+            "autor": "Carmelo Erdozáin",
+            "album": "Nuevos cantos para la misa",
+            "num": 12,
+            "año": null
+        }
+    ],
     "analisis": {
         "temas": [],
         "citas_biblicas": {
@@ -35,12 +32,17 @@
         "momento_misa": []
     },
     "revision": {
-        "excel": true,
+        "excel": false,
         "ia": false,
         "revisado": false
     },
     "enlaces": {
-        "youtube": null
+        "youtube": [
+            {
+                "tipo": "YouTube",
+                "url": "https://www.youtube.com/watch?v=8hTWoHUf8so"
+            }
+        ]
     }
 }
 </script>
@@ -78,40 +80,41 @@ Oí tu voz, en el llanto de los hombres oí tu voz.
 Do                         Re   Lam              Re
 Oí tu voz anunciando a los pobres la justicia de Dios.
 <span class="estribillo">
-Sol      Lam Mim Sol        Mim  Do     Re Sol
+Sol      Re7 Sol        Si7 Mim  Do     Re7 Sol
 Eres el camino,  eres la verdad, eres la vida. (bis)
 </span>
 Oí tu voz, en el buen samaritano oí tu voz.
 Oí tu voz, al servir a mis hermanos oí tu voz.
-Oí tu voz, me sentí tu invitado,
-compartí tu amistad.
+Oí tu voz, me sentí tu invitado, compartí tu amistad.
 
 Sol               Do          Sol
 Oí tu voz, en los ghettos del hambre
                 Re7     Si7 Mim       Do    Re
 oí tu voz: llevaré tu mensaje de la liberación.
 </pre>
-        <div class="youtube">
-            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
             </a>
         </div>
         <table class="cancion-info">
-            <tr>
-                <th>Autor</th>
-                <td data-md="origen.autor"></td>
-            </tr>
-            <tr>
-                <th>Álbum</th>
-                <td data-md="origen.album"></td>
-            </tr>
-            <tr>
-                <th>Nº</th>
-                <td data-md="origen.num"></td>
-            </tr>
-            <tr>
-                <th>Año</th>
-                <td data-md="origen.año"></td>
-            </tr>
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
         </table>
     </body>
     <script src="../../js/transponer.js"></script>

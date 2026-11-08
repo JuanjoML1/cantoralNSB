@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+
+    <head>
+        <meta charset="utf-8" />
+        <meta content="width=device-width, initial-scale=1" name="viewport" />
+        <title data-md="titulo"></title>
+        <script id="nsb-metadata" type="application/json">
+{
+    "metadata_version": 2,
+
+    "titulo": None,
+
+    "musica": {
+        "tono": None,
+        "cejilla": None
+    },
+
+    "origen": [],
+
+    "analisis": {
+        "temas": [],
+        "citas_biblicas": {
+            "explicitas": [],
+            "relacionadas": []
+        },
+        "tiempo_liturgico": [],
+        "celebraciones": [],
+        "momento_misa": []
+    },
+
+    "revision": {
+        "excel": False,
+        "ia": False,
+        "revisado": False
+    },
+
+    "enlaces": {
+        "youtube": []
+    }
+}
+    </script>
+
+        <link href="../../css/colores.css" rel="stylesheet" />
+        <link href="../../css/estilo.css" rel="stylesheet" />
+        <link href="../../css/estilo-texto.css" rel="stylesheet" />
+    </head>
+
+    <body>
+        <div class="cancion-header">
+            <div class="numeros">
+                <span class="antiguo" data-md="numeracion.antiguo"></span>
+                <span class="nuevo" data-md="numeracion.nuevo"></span>
+            </div>
+            <h1 class="titulo" data-md="titulo"></h1>
+            <div class="tono">
+                <span data-md="musica.tono"> </span>
+                <span data-md="musica.cejilla"></span>
+            </div>
+        </div>
+        <div id="main-controls">
+            <button id="back-button" onclick="window.location.href='../../index.html'">← Volver</button>
+            <div id="controls-container">
+                <button onclick="bajarTono()">−</button>
+                <button onclick="subirTono()">+</button>
+                <button onclick="resetTono()">Reset</button>
+                <button onclick="toggleCifrado()">Do → C</button>
+            </div>
+        </div>
+        <pre>
+   Sib               Solm      Mib              Sib
+Quisieron comprar mi arpa mercaderes de otra ciudad,
+                              Mib         Sib
+quisieron comprar mi arpa por treinta monedas,
+   Fa              Sib
+quisieron velar mi lámpara,
+             Fa              Sib
+vender mi verdad y hacerme callar,
+  Solm Fa               Sib
+y viniste Tú, amigo y Señor,
+  Solm Fa        Re7      Solm7
+y viniste Tú, me diste tu voz.
+<span class="estribillo">
+Do7     Mib  Fa          Mib Sib
+Tú me hiciste muralla de bronce,
+           Fa                 Sib
+apóstol de Dios, profeta y cantor.
+</span>
+   Sib                     Solm        Mib        Sib
+Quisieron encerrarme en el templo, reducirme al silencio,
+                                   Mib          Sib
+quisieron sacarme al desierto, separarme del pueblo,
+   Fa                   Sib
+quisieron sacarme al destierro,
+         Fa              Sib
+a la soledad sin la libertad,
+  Solm Fa                  Sib
+y viniste Tú, mensajero de Luz,
+  Solm Fa       Re7       Sol7
+y viniste Tú, señor de Emaús.
+<span class="estribillo">
+Sol7           Sol#                 Re7 Mib
+Fiel mensajero de la paz, amigo del pueblo,
+Do7         Do#7  Fam Sib            Mib Sol
+profeta y Maestro,        Palabra de Dios.
+</span>
+   Do                       Fa                 Do
+Saldré por los caminos, anunciando el Reino de Dios.
+                          Fa          Do
+Saldré por los senderos, iré allanándolos,
+   Sol           Do                   Sol
+cruzando mil fronteras iré hasta el final,
+           Do
+diré la verdad.
+<span class="estribillo">
+       Sol             Sol7       Do
+Y hablaré de Él, de su nueva Alianza.
+     Sol          Sol7        Do
+Llevaré por Él la cruz bien alta.
+      Sol          Sol7       Do
+Guardaré con Él mi arpa en gracia.
+    Sol           Sol7   Do
+Soñaré con Él con su mirada.
+     Sol           Sol7     Do
+Cantaré con Él la eterna Pascua.
+    Sol          Sol7   Do
+Rezaré con Él de madrugada.
+</span>
+</pre>
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
+            </a>
+        </div>
+        <table class="cancion-info">
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
+        </table>
+    </body>
+    <script src="../../js/transponer.js"></script>
+    <script src="../../js/cambiar_tema.js"></script>
+    <script src="../../js/metadata.js"></script>
+</html>

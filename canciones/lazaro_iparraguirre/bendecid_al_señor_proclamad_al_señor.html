@@ -7,23 +7,17 @@
         <title data-md="titulo"></title>
         <script id="nsb-metadata" type="application/json">
 {
-    "metadata_version": 1,
-    "titulo": "Caminaremos",
-    "numeracion": {
-        "antiguo": null,
-        "nuevo": null,
-        "rcce": 142
-    },
+    "metadata_version": 2,
+
+    "titulo": None,
+
     "musica": {
-        "tono": "Re",
-        "cejilla": ""
+        "tono": None,
+        "cejilla": None
     },
-    "origen": {
-        "autor": "Lázaro Iparraguirre",
-        "album": null,
-        "num": null,
-        "año": null
-    },
+
+    "origen": [],
+
     "analisis": {
         "temas": [],
         "citas_biblicas": {
@@ -34,16 +28,19 @@
         "celebraciones": [],
         "momento_misa": []
     },
+
     "revision": {
-        "excel": true,
-        "ia": false,
-        "revisado": false
+        "excel": False,
+        "ia": False,
+        "revisado": False
     },
+
     "enlaces": {
-        "youtube": "https://www.youtube.com/watch?v=tKSM_vijkgE"
+        "youtube": []
     }
 }
-</script>
+    </script>
+
         <link href="../../css/colores.css" rel="stylesheet" />
         <link href="../../css/estilo.css" rel="stylesheet" />
         <link href="../../css/estilo-texto.css" rel="stylesheet" />
@@ -89,28 +86,30 @@ Re7  Sol La   Re
 Bendecid al Señor,
 Sol Solm Re  La Re
 pueblo   del Señor. (bis)
-</pre>
-        <div class="youtube">
-            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+</span></pre>
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
             </a>
         </div>
         <table class="cancion-info">
-            <tr>
-                <th>Autor</th>
-                <td data-md="origen.autor"></td>
-            </tr>
-            <tr>
-                <th>Álbum</th>
-                <td data-md="origen.album"></td>
-            </tr>
-            <tr>
-                <th>Nº</th>
-                <td data-md="origen.num"></td>
-            </tr>
-            <tr>
-                <th>Año</th>
-                <td data-md="origen.año"></td>
-            </tr>
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
         </table>
     </body>
     <script src="../../js/transponer.js"></script>

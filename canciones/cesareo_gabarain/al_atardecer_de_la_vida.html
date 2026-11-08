@@ -7,23 +7,20 @@
         <title data-md="titulo"></title>
         <script id="nsb-metadata" type="application/json">
 {
-    "metadata_version": 1,
+    "metadata_version": 2,
     "titulo": "Al atardecer de la vida",
-    "numeracion": {
-        "antiguo": 19,
-        "nuevo": "K04",
-        "rcce": null
-    },
     "musica": {
         "tono": "Do",
         "cejilla": "cej2"
     },
-    "origen": {
-        "autor": "Cesáreo Gabarain",
-        "album": "Al atardecer de la vida",
-        "num": 1,
-        "año": 1991
-    },
+    "origen": [
+        {
+            "autor": "Cesáreo Gabarain",
+            "album": "Al atardecer de la vida",
+            "num": 1,
+            "año": 1991
+        }
+    ],
     "analisis": {
         "temas": [],
         "citas_biblicas": {
@@ -35,12 +32,17 @@
         "momento_misa": []
     },
     "revision": {
-        "excel": true,
+        "excel": false,
         "ia": false,
         "revisado": false
     },
     "enlaces": {
-        "youtube": "https://www.mercaba.org/Musica/Cesareo%20Gabarain/Al%20Atardecer%20de%20la%20Vida/01%20-%20Al%20atardecer%20de%20la%20vida.mp3"
+        "youtube": [
+            {
+                "tipo": "YouTube",
+                "url": "https://www.mercaba.org/Musica/Cesareo%20Gabarain/Al%20Atardecer%20de%20la%20Vida/01%20-%20Al%20atardecer%20de%20la%20vida.mp3"
+            }
+        ]
     }
 }
 </script>
@@ -88,27 +90,29 @@ si los tristes y los enfermos me encontraron en su dolor.
 Aunque hablara miles de lenguas, si no tengo amor, nada soy,
 aunque realizara milagros, si no tengo amor, nada soy.
 </pre>
-        <div class="youtube">
-            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
             </a>
         </div>
         <table class="cancion-info">
-            <tr>
-                <th>Autor</th>
-                <td data-md="origen.autor"></td>
-            </tr>
-            <tr>
-                <th>Álbum</th>
-                <td data-md="origen.album"></td>
-            </tr>
-            <tr>
-                <th>Nº</th>
-                <td data-md="origen.num"></td>
-            </tr>
-            <tr>
-                <th>Año</th>
-                <td data-md="origen.año"></td>
-            </tr>
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
         </table>
     </body>
     <script src="../../js/transponer.js"></script>

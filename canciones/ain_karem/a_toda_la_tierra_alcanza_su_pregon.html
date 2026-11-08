@@ -7,23 +7,20 @@
         <title data-md="titulo"></title>
         <script id="nsb-metadata" type="application/json">
 {
-    "metadata_version": 1,
+    "metadata_version": 2,
     "titulo": "A toda la tierra alcanza su pregón",
-    "numeracion": {
-        "antiguo": null,
-        "nuevo": null,
-        "rcce": null
-    },
     "musica": {
         "tono": "Sol",
         "cejilla": "cej1"
     },
-    "origen": {
-        "autor": "Ain Karem",
-        "album": "Según tu Palabra",
-        "num": 2,
-        "año": 2006
-    },
+    "origen": [
+        {
+            "autor": "Ain Karem",
+            "album": "Según tu Palabra",
+            "num": 2,
+            "año": 2006
+        }
+    ],
     "analisis": {
         "temas": [],
         "citas_biblicas": {
@@ -35,12 +32,17 @@
         "momento_misa": []
     },
     "revision": {
-        "excel": true,
+        "excel": false,
         "ia": false,
         "revisado": false
     },
     "enlaces": {
-        "youtube": "https://open.spotify.com/intl-es/track/5sBvTtLJDKXUF0KadT1rKd?si=90aa0d87eb7d4492"
+        "youtube": [
+            {
+                "tipo": "YouTube",
+                "url": "https://open.spotify.com/intl-es/track/5sBvTtLJDKXUF0KadT1rKd?si=90aa0d87eb7d4492"
+            }
+        ]
     }
 }
 </script>
@@ -112,27 +114,29 @@ la gloria, la gloria, la gloria de Dios,
    Do         Sol        Re        Sol
 la gloria, la gloria, la gloria de Dios.
 </pre>
-        <div class="youtube">
-            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
             </a>
         </div>
         <table class="cancion-info">
-            <tr>
-                <th>Autor</th>
-                <td data-md="origen.autor"></td>
-            </tr>
-            <tr>
-                <th>Álbum</th>
-                <td data-md="origen.album"></td>
-            </tr>
-            <tr>
-                <th>Nº</th>
-                <td data-md="origen.num"></td>
-            </tr>
-            <tr>
-                <th>Año</th>
-                <td data-md="origen.año"></td>
-            </tr>
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
         </table>
     </body>
     <script src="../../js/transponer.js"></script>

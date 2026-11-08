@@ -7,23 +7,26 @@
         <title data-md="titulo"></title>
         <script id="nsb-metadata" type="application/json">
 {
-    "metadata_version": 1,
-    "titulo": "Dona la pace",
-    "numeracion": {
-        "antiguo": null,
-        "nuevo": "Q34",
-        "rcce": null
-    },
+    "metadata_version": 2,
+    "titulo": "Danos la paz, oh, Señor",
     "musica": {
         "tono": "Sol",
         "cejilla": "cej5"
     },
-    "origen": {
-        "autor": "Taizé original",
-        "album": "Resurrexit",
-        "num": 5,
-        "año": 1985
-    },
+    "origen": [
+        {
+            "autor": "Taizé en español",
+            "album": "Resurrexit",
+            "num": 5,
+            "año": 1985
+        },
+        {
+            "autor": "Taizé original",
+            "album": "Resurrexit",
+            "num": 5,
+            "año": 1985
+        }
+    ],
     "analisis": {
         "temas": [],
         "citas_biblicas": {
@@ -35,12 +38,17 @@
         "momento_misa": []
     },
     "revision": {
-        "excel": true,
+        "excel": false,
         "ia": false,
         "revisado": false
     },
     "enlaces": {
-        "youtube": "https://www.youtube.com/watch?v=0LG_MYoiQhs"
+        "youtube": [
+            {
+                "tipo": "YouTube",
+                "url": "https://www.youtube.com/watch?v=0LG_MYoiQhs"
+            }
+        ]
     }
 }
 </script>
@@ -83,27 +91,29 @@ Dona la pace Signore   a chi confida in te.
       Mim             Do Si7 Sol Lam Si7 Mim
 Dona, dona la pace Signore,  dona la pace.
 </pre>
-        <div class="youtube">
-            <a aria-label="Escuchar esta canción" class="youtube-button" data-md-href="enlaces.youtube" target="_blank" title="Escuchar esta canción">
+        <div class="youtube" data-md-list="enlaces.youtube">
+            <a aria-label="Escuchar esta canción" class="youtube-button" data-md="tipo" data-md-href="url" target="_blank" title="Escuchar esta canción">
             </a>
         </div>
         <table class="cancion-info">
-            <tr>
-                <th>Autor</th>
-                <td data-md="origen.autor"></td>
-            </tr>
-            <tr>
-                <th>Álbum</th>
-                <td data-md="origen.album"></td>
-            </tr>
-            <tr>
-                <th>Nº</th>
-                <td data-md="origen.num"></td>
-            </tr>
-            <tr>
-                <th>Año</th>
-                <td data-md="origen.año"></td>
-            </tr>
+            <tbody data-md-list="origen">
+                <tr>
+                    <th>Autor</th>
+                    <td data-md="autor"></td>
+                </tr>
+                <tr>
+                    <th>Álbum</th>
+                    <td data-md="album"></td>
+                </tr>
+                <tr>
+                    <th>Nº</th>
+                    <td data-md="num"></td>
+                </tr>
+                <tr>
+                    <th>Año</th>
+                    <td data-md="año"></td>
+                </tr>
+            </tbody>
         </table>
     </body>
     <script src="../../js/transponer.js"></script>
