@@ -16,7 +16,6 @@ function cargarCampos(elemento, datos) {
         el.textContent = valor ?? "-";
     });
     // Enlaces
-    // Enlaces
     const enlaces = [];
     if (elemento.matches("[data-md-href]")) {
         enlaces.push(elemento);
