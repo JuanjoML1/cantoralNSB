@@ -117,8 +117,7 @@ span.antiguo::after {
     top: 0;
     left: 0;
     z-index: 2000;
-    /* por encima de barra-fija (1000) y menús (1000) */
-    background: var(--bg);
+    background: transparent;
 }
 
 body {
@@ -172,9 +171,10 @@ body {
     top: 0;
     left: -360px;
     /* oculto por defecto */
-    width: 250px;
+    width: 350px;
     height: 100vh;
-    padding: 20px 20px 60px 80px;
+    box-sizing: border-box;
+    padding: 20px 20px 10px 80px;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -182,7 +182,6 @@ body {
     background-color: var(--bg-lateral);
     transition: left 0.3s ease;
     z-index: 1000;
-    /* debajo de los botones */
 }
 
 #secciones-lateral.abierto,
