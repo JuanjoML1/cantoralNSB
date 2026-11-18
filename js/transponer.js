@@ -1,76 +1,91 @@
 /* =====================================================
    transponer.js
    Transposición robusta para cantoral HTML en <pre>
+   Requiere acordes.js cargado previamente
    ===================================================== */
 
-/* Índice cromático */
-const NOTES_LATIN = ["Do", "Do#", "Re", "Mib", "Mi", "Fa", "Fa#", "Sol", "Sol#", "La", "Sib", "Si"];
-const NOTES_EN = ["C", "C#", "D", "D#", "E", "F", "F#", "G", "G#", "A", "A#", "B"];
+/* =====================================================
+   1. GUARDAR ORIGINALES Y DETECTAR CIFRADO
+   ===================================================== */
 
-/* Mapa nota → índice */
-const NOTE_INDEX = {
-    "Do": 0, "Do#": 1, "Reb": 1,
-    "Re": 2, "Re#": 3, "Mib": 3,
-    "Mi": 4,
-    "Fa": 5, "Fa#": 6, "Solb": 6,
-    "Sol": 7, "Sol#": 8, "Lab": 8,
-    "La": 9, "La#": 10, "Sib": 10,
-    "Si": 11,
-    "C": 0, "C#": 1, "Db": 1,
-    "D": 2, "D#": 3, "Eb": 3,
-    "E": 4,
-    "F": 5, "F#": 6, "Gb": 6,
-    "G": 7, "G#": 8, "Ab": 8,
-    "A": 9, "A#": 10, "Bb": 10,
-    "B": 11
-};
-
-/* Regex acorde */
-const CHORD_REGEX =
-    /(Do#|Re#|Fa#|Sol#|La#|Reb|Mib|Solb|Lab|Sib|Do|Re|Mi|Fa|Sol|La|Si|C#|D#|F#|G#|A#|Db|Eb|Gb|Ab|Bb|C|D|E|F|G|A|B)(m|maj7|7|sus4|sus2|º7|º|\+|m7b5)?/g;
-
-/* Guardar originales y detectar cifrado */
 const PRE_ORIGINALS = [];
 const PRE_CIFRADOS = [];
+
 document.querySelectorAll("pre").forEach(pre => {
     const original = pre.innerHTML;
     PRE_ORIGINALS.push(original);
 
-    // Detectar cifrado a partir de los acordes originales
-    const esIngles = /\b(C|D|E|F|G|A|B)(#|b)?(m|maj7|7|sus4|sus2)?\b/.test(
-        original.replace(/<[^>]*>/g, "")
-    );
+    // Detectar cifrado a partir de las líneas de acordes
+    const texto = original.replace(/<[^>]*>/g, "");
+    const lineas = texto.split("\n");
 
-    PRE_CIFRADOS.push(esIngles ? "english" : "latin");
+    let notasLatinas = 0;
+    let notasInglesas = 0;
+
+    lineas.forEach(linea => {
+        if (!isChordLine(linea)) return;
+        const latina = linea.match(
+            /\b(Do|Re|Mi|Fa|Sol|La|Si)(#|b)?/g
+        ) || [];
+        const inglesa = linea.match(
+            /\b(C|D|E|F|G|A|B)(#|b)?/g
+        ) || [];
+        notasLatinas += latina.length;
+        notasInglesas += inglesa.length;
+    });
+
+    PRE_CIFRADOS.push(
+        notasInglesas > notasLatinas ? "english" : "latin"
+    );
 });
-let currentCifrado = null;
+
+// Cifrado seleccionado: inicialmente el original
+let currentCifrado = PRE_CIFRADOS[0] || "latin";
 let currentSemitones = 0;
 
-/* Detecta si una línea es SOLO acordes */
-function isChordLine(line) {
-    const stripped = line
-        .replace(CHORD_REGEX, "")
-        .replace(/[()\[\]]/g, "")
-        .replace(/\s+/g, "");
-    return stripped.length === 0;
-}
+/* =====================================================
+   2. TRANSPONER ACORDES DE UNA LÍNEA
+   ===================================================== */
 
-/* Transpone acordes de una línea */
 function transposeLine(line, semitones, notesArray) {
-    return line.replace(CHORD_REGEX, (match, root, quality) => {
-        const index = NOTE_INDEX[root];
-        if (index === undefined) return match;
-        const newIndex = (index + semitones + 12) % 12;
-        return notesArray[newIndex] + (quality || "");
-    });
+    return line.replace(
+        CHORD_REGEX,
+        (match, root, quality) => {
+            const index = NOTE_INDEX[root];
+            if (index === undefined) return match;
+            const newIndex =
+                (index + semitones + 12) % 12;
+            return notesArray[newIndex] + (quality || "");
+        }
+    );
 }
 
-/* Transponer un <pre> completo */
-function transposePre(pre, semitones, notesArray) {
+/* =====================================================
+   3. CONVERTIR CIFRADO
+   ===================================================== */
 
+function convertirCifrado(line, cifradoOrigen, cifradoDestino) {
+    if (cifradoOrigen === cifradoDestino) return line;
+    const notasDestino = cifradoDestino === "latin"
+        ? NOTES_LATIN
+        : NOTES_EN;
+    return line.replace(
+        CHORD_REGEX,
+        (match, root, quality) => {
+            const index = NOTE_INDEX[root];
+            if (index === undefined) return match;
+            return notasDestino[index] + (quality || "");
+        }
+    );
+}
+
+/* =====================================================
+   4. TRANSPONER UN <pre> COMPLETO
+   ===================================================== */
+
+function transposePre(pre, semitones, notesArray, cifradoOrigen) {
     let html = pre.innerHTML;
-
-    /* 1️⃣ Guardar spans ag / gr */
+    // Guardar spans ag / gr
     const spanMap = [];
     html = html.replace(
         /<span class="(ag|gr)">.*?<\/span>/g,
@@ -80,115 +95,99 @@ function transposePre(pre, semitones, notesArray) {
             return key;
         }
     );
-
-    /* 2️⃣ Procesar por líneas */
-    const lines = html.split("\n").map(line =>
-        isChordLine(line)
-            ? transposeLine(line, semitones, notesArray)
-            : line
-    );
-
+    // Procesar por líneas
+    const lines = html.split("\n").map(line => {
+        if (!isChordLine(line)) return line;
+        // Convertir primero al cifrado seleccionado
+        line = convertirCifrado(
+            line,
+            cifradoOrigen,
+            currentCifrado
+        );
+        // Después transponer
+        return transposeLine(
+            line,
+            semitones,
+            notesArray
+        );
+    });
     html = lines.join("\n");
-
-    /* 3️⃣ Restaurar spans */
+    // Restaurar spans
     spanMap.forEach((span, i) => {
         html = html.replace(`@@SPAN${i}@@`, span);
     });
-
     pre.innerHTML = html;
 }
 
-/* Transponer todo */
+/* =====================================================
+   5. TRANSPONER TODO
+   ===================================================== */
+
 function transposeAll(semitones) {
     currentSemitones += semitones;
-
-    document.querySelectorAll("pre").forEach((pre, i) => {
-        const cifrado = currentCifrado || PRE_CIFRADOS[i];
-
-        const notesArray = cifrado === "latin"
-            ? NOTES_LATIN
-            : NOTES_EN;
-
-        pre.innerHTML = PRE_ORIGINALS[i];
-        transposePre(pre, currentSemitones, notesArray);
-    });
-}
-
-/* Cambiar cifrado */
-function toggleCifrado() {
-    // Si todavía no se ha cambiado manualmente,
-    // partir del cifrado original de la primera canción.
-    if (currentCifrado === null) {
-        currentCifrado = PRE_CIFRADOS[0] || "latin";
-    }
-
-    currentCifrado = currentCifrado === "latin"
-        ? "english"
-        : "latin";
-
     document.querySelectorAll("pre").forEach((pre, i) => {
         const notesArray = currentCifrado === "latin"
             ? NOTES_LATIN
             : NOTES_EN;
-
         pre.innerHTML = PRE_ORIGINALS[i];
-        transposePre(pre, currentSemitones, notesArray);
+        transposePre(
+            pre,
+            currentSemitones,
+            notesArray,
+            PRE_CIFRADOS[i]
+        );
     });
 }
 
-/* Reset */
+/* =====================================================
+   6. CAMBIAR CIFRADO
+   ===================================================== */
+
+function toggleCifrado() {
+    currentCifrado = currentCifrado === "latin"
+        ? "english"
+        : "latin";
+    document.querySelectorAll("pre").forEach((pre, i) => {
+        const notesArray = currentCifrado === "latin"
+            ? NOTES_LATIN
+            : NOTES_EN;
+        pre.innerHTML = PRE_ORIGINALS[i];
+        transposePre(
+            pre,
+            currentSemitones,
+            notesArray,
+            PRE_CIFRADOS[i]
+        );
+    });
+}
+
+/* =====================================================
+   7. RESET
+   ===================================================== */
+
 function resetTono() {
     currentSemitones = 0;
-    currentCifrado = null;
-
     document.querySelectorAll("pre").forEach((pre, i) => {
+        const notesArray = currentCifrado === "latin"
+            ? NOTES_LATIN
+            : NOTES_EN;
         pre.innerHTML = PRE_ORIGINALS[i];
+        transposePre(
+            pre,
+            0,
+            notesArray,
+            PRE_CIFRADOS[i]
+        );
     });
 }
 
-/* API */
-function subirTono() { transposeAll(1); }
-function bajarTono() { transposeAll(-1); }
+/* =====================================================
+   8. API
+   ===================================================== */
 
-/* =========================================================
-   AJUSTAR TAMAÑO DE LETRA (shrink-to-fit)
-   - El CSS manda: pre { font-size: clamp(0.75rem, 1.5vw, 1.5rem); }
-   - Esto solo recorta si el pre desborda (scroll horizontal).
-   - Nunca agranda: parte del tamaño que dé el clamp.
-   - Mínimo 11px para no hacerlo ilegible.
-   ========================================================= */
-const FONT_MIN_PX = 11;
-
-function ajustarPre(pre) {
-    // Volver al clamp antes de medir
-    pre.style.fontSize = "";
-    const disponible = pre.clientWidth;
-    if (disponible <= 0) return;
-
-    let size = parseFloat(getComputedStyle(pre).fontSize);
-    if (isNaN(size)) return;
-
-    let guard = 40; // máx. 40 pasos de 0.5px = hasta -20px
-    while (guard-- > 0 && size > FONT_MIN_PX && pre.scrollWidth > disponible) {
-        size -= 0.5;
-        pre.style.fontSize = size + "px";
-    }
+function subirTono() {
+    transposeAll(1);
 }
-
-function ajustarTodasLasCanciones() {
-    document.querySelectorAll("pre").forEach(ajustarPre);
+function bajarTono() {
+    transposeAll(-1);
 }
-
-/* Carga inicial */
-if (document.readyState === "loading") {
-    document.addEventListener("DOMContentLoaded", ajustarTodasLasCanciones);
-} else {
-    ajustarTodasLasCanciones();
-}
-
-/* Resize global con debounce (no un observer por pre) */
-let _ajusteT = null;
-window.addEventListener("resize", () => {
-    clearTimeout(_ajusteT);
-    _ajusteT = setTimeout(ajustarTodasLasCanciones, 150);
-});
